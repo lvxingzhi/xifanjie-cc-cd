@@ -3,6 +3,10 @@
     "zhCN": {
       "name": "奥术箭",
       "description": "对一名敌人造成奥术伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Bolt",
+      "description": "Inflicts Arcane damage to an enemy."
     }
   },
   "1282050": {
@@ -4259,17 +4263,29 @@
     "zhCN": {
       "name": "钉锤风暴",
       "description": "锁定随机敌人并旋转连枷，每1秒对施法者8码范围内的敌人造成10点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Flailstorm",
+      "description": "Fixates on a random enemy and spins their flails inflicting 10 Shadow damage every 1 sec to enemies within 8 yards of the caster."
     }
   },
   "1254676": {
     "zhCN": {
       "name": "风爪",
       "description": "近战攻击还会造成10169点自然伤害。"
+    },
+    "enUS": {
+      "name": "Wind Claws",
+      "description": "Melee attacks also inflict 10169 Nature damage."
     }
   },
   "1254677": {
     "zhCN": {
       "name": "风爪",
+      "description": "Inflicts 10169 Nature damage to an enemy."
+    },
+    "enUS": {
+      "name": "Wind Claws",
       "description": "Inflicts 10169 Nature damage to an enemy."
     }
   },
@@ -4277,89 +4293,149 @@
     "zhCN": {
       "name": "狂怒之风",
       "description": "施法者进入狂暴状态，急速提高30%，并脉动强风，每2秒对所有玩家造成15254点自然伤害。"
+    },
+    "enUS": {
+      "name": "Wrathful Wind",
+      "description": "Caster becomes enraged, increasing its Haste by 30% and pulses a powerful gust of wind that inflicts 15254 Nature damage every 2 sec on all players."
     }
   },
   "1254679": {
     "zhCN": {
       "name": "狂怒之风",
       "description": "施法者进入狂暴状态，急速提高30%，并脉动强风，每2秒对所有玩家造成15254点自然伤害。"
+    },
+    "enUS": {
+      "name": "Wrathful Wind",
+      "description": "Caster becomes enraged, increasing its Haste by 30% and pulses a powerful gust of wind that inflicts 15254 Nature damage every 2 sec on all players."
     }
   },
   "1271066": {
     "zhCN": {
       "name": "熵能轰击",
       "description": "迪詹崔乌斯对其主要目标释放一次熵能轰击，造成物理伤害。"
+    },
+    "enUS": {
+      "name": "Entropy Blast",
+      "description": "Degentrius unleashes an Entropy Blast at its primary target inflicting Physical damage."
     }
   },
   "1283357": {
     "zhCN": {
       "name": "碎石飞落",
       "description": "天花板降下碎石雨，对每个坠落位置4码范围内的玩家造成152535点自然伤害。"
+    },
+    "enUS": {
+      "name": "Falling Rubble",
+      "description": "Falling debris rains from the ceiling, inflicting 152535 Nature damage to players within 4 yards of each impact location."
     }
   },
   "1254686": {
     "zhCN": {
       "name": "死亡印记",
       "description": "向目标敌人冲锋，造成35592点物理伤害并为其标记死亡印记，使附近的通天峰日爪卡利鸟进入血腥疯狂状态并锁定该目标敌人。"
+    },
+    "enUS": {
+      "name": "Mark of Death",
+      "description": "Charges towards target enemy, inflicting 35592 Physical damage and mark them for death, causing nearby Skyreach Sun Talons to become Bloodcrazed and fixate on the target enemy."
     }
   },
   "1254687": {
     "zhCN": {
       "name": "死亡印记",
       "description": "向目标敌人冲锋，造成35592点物理伤害并为其标记死亡印记，使附近的通天峰日爪卡利鸟进入血腥疯狂状态并锁定该目标敌人。"
+    },
+    "enUS": {
+      "name": "Mark of Death",
+      "description": "Charges towards target enemy, inflicting 35592 Physical damage and mark them for death, causing nearby Skyreach Sun Talons to become Bloodcrazed and fixate on the target enemy."
     }
   },
   "1254689": {
     "zhCN": {
       "name": "血腥疯狂",
       "description": "锁定一个目标。近战攻击为施法者恢复其最大生命值的10%。"
+    },
+    "enUS": {
+      "name": "Bloodcrazed",
+      "description": "Fixates on a target. Melee attack heals the caster for 10% of their max health."
     }
   },
   "1271074": {
     "zhCN": {
       "name": "寒冰冲击",
       "description": "施法者对当前目标造成188127点冰霜伤害。"
+    },
+    "enUS": {
+      "name": "Icy Blast",
+      "description": "The caster inflicts 188127 Frost damage to their current target."
     }
   },
   "1254690": {
     "zhCN": {
       "name": "血腥疯狂",
       "description": "锁定一个目标。近战攻击为施法者恢复其最大生命值的10%。"
+    },
+    "enUS": {
+      "name": "Bloodcrazed",
+      "description": "Fixates on a target. Melee attack heals the caster for 10% of their max health."
     }
   },
   "388392": {
     "zhCN": {
       "name": "乏味的讲课",
       "description": "给目标上一堂枯燥的课，使其感觉厌烦并入睡。"
+    },
+    "enUS": {
+      "name": "Monotonous Lecture",
+      "description": "Bores the target to sleep with a stodgy lesson."
     }
   },
   "1283371": {
     "zhCN": {
       "name": "飓风腾跃",
       "description": "当无眠之心跃起时，风暴能量会向四周呼啸而出，对所有玩家造成45761点自然伤害，此后每1秒额外造成11440点自然伤害。接触湍急箭矢可移除此效果。"
+    },
+    "enUS": {
+      "name": "Squall Leap",
+      "description": "Stormy energy lashes outward when the Restless Heart leaps, inflicting 45761 Nature damage to all players and an additional 11440 Nature damage every 1 sec.Contacting Turbulent Arrows removes this affliction."
     }
   },
   "1258798": {
     "zhCN": {
       "name": "恐怖脉动",
       "description": "生命值低于50%时，施法者每2秒脉冲释放暗影能量，对60码范围内的玩家造成22880点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Dread Pulse",
+      "description": "Under 50% health, the caster pulses shadowy energy every 2 sec that inflicts 22880 Shadow damage to players within 60 yards."
     }
   },
   "1258802": {
     "zhCN": {
       "name": "恐怖脉动",
       "description": "生命值低于50%时，施法者每2秒脉冲释放暗影能量，对60码范围内的玩家造成22880点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Dread Pulse",
+      "description": "Under 50% health, the caster pulses shadowy energy every 2 sec that inflicts 22880 Shadow damage to players within 60 yards."
     }
   },
   "1262900": {
     "zhCN": {
       "name": "仪祭之鼓",
       "description": "吉尔加猛烈敲击仪式战鼓，引发爆炸路径，对击中的玩家造成0点暗影伤害并将其击退。吉尔加的敲击会对70码范围内的玩家造成50845点声波伤害。"
+    },
+    "enUS": {
+      "name": "Ritual Drums",
+      "description": "Zil'jan furiously strikes ritual drums, sending lanes of explosions that inflict 0 Shadow damage to players struck and knock them away.Zil'jan's strikes inflict 50845 Sonic damage to players within 70 yards."
     }
   },
   "1271094": {
     "zhCN": {
       "name": "幽影箭",
+      "description": "Inflicts 12 Shadow damage to an enemy."
+    },
+    "enUS": {
+      "name": "Umbra Bolt",
       "description": "Inflicts 12 Shadow damage to an enemy."
     }
   },
@@ -4367,407 +4443,679 @@
     "zhCN": {
       "name": "虚空爆发",
       "description": "对50码内的所有玩家造成7627点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Void Eruption",
+      "description": "Inflicts 7627 Shadow damage to all players within 50 yds."
     }
   },
   "1258806": {
     "zhCN": {
       "name": "仪式火印",
       "description": "施法者用仪式印记标记数名玩家，在12秒内每4秒使其脚下喷发一股火焰，对5码范围内的玩家造成127113点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Ritual Firebrand",
+      "description": "The caster brands several players with a ritual mark, causing a gout of flame to erupt underneath them every 4 sec for 12 sec that inflicts 127113 Fire damage to players within 5 yards."
     }
   },
   "1252675": {
     "zhCN": {
       "name": "粉碎灵魂",
       "description": "拉克图尔连续地跃起并猛击地面，对5码范围内的玩家造成101690点暗影伤害。每次冲击都会插下一根缚魂图腾。"
+    },
+    "enUS": {
+      "name": "Crush Souls",
+      "description": "Rak'tul repeatedly leaps and slams down, inflicting 101690 Shadow damage to players within 5 yards. Each impact plants a Soulbind Totem."
     }
   },
   "1252676": {
     "zhCN": {
       "name": "粉碎灵魂",
       "description": "拉克图尔连续地跃起并猛击地面，对5码范围内的玩家造成101690点暗影伤害。每次冲击都会插下一根缚魂图腾。"
+    },
+    "enUS": {
+      "name": "Crush Souls",
+      "description": "Rak'tul repeatedly leaps and slams down, inflicting 101690 Shadow damage to players within 5 yards. Each impact plants a Soulbind Totem."
     }
   },
   "1285445": {
     "zhCN": {
       "name": "魔爆术",
       "description": "每2秒对所有敌人造成9点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Explosion",
+      "description": "Inflicts 9 Arcane damage to all enemies every 2 sec."
     }
   },
   "1258820": {
     "zhCN": {
       "name": "苦难洪流",
       "description": "施法者用暗影能量轰击一名玩家，每1秒造成6356点暗影伤害，持续6秒。该效果可叠加。"
+    },
+    "enUS": {
+      "name": "Torrent of Misery",
+      "description": "The caster barrages a player with shadowy energy for 6 sec, inflicting 6356 Shadow damage every 1 sec. This effect stacks."
     }
   },
   "1285450": {
     "zhCN": {
       "name": "魔爆术",
       "description": "每2秒对所有敌人造成9点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Explosion",
+      "description": "Inflicts 9 Arcane damage to all enemies every 2 sec."
     }
   },
   "1258826": {
     "zhCN": {
       "name": "苦难洪流",
       "description": "施法者用暗影能量轰击一名玩家，每1秒造成6356点暗影伤害，持续6秒。该效果可叠加。"
+    },
+    "enUS": {
+      "name": "Torrent of Misery",
+      "description": "The caster barrages a player with shadowy energy for 6 sec, inflicting 6356 Shadow damage every 1 sec. This effect stacks."
     }
   },
   "1252690": {
     "zhCN": {
       "name": "疾风奔涌",
       "description": "兰吉特用一股强劲疾风轰击目标玩家，造成71183点自然伤害，将其击退"
+    },
+    "enUS": {
+      "name": "Gale Surge",
+      "description": "Ranjit blasts target players with a powerful gust of wind, inflicting 71183 Nature damage and knocking them back"
     }
   },
   "1252691": {
     "zhCN": {
       "name": "疾风奔涌",
       "description": "兰吉特用一股强劲疾风轰击目标玩家，造成71183点自然伤害，将其击退"
+    },
+    "enUS": {
+      "name": "Gale Surge",
+      "description": "Ranjit blasts target players with a powerful gust of wind, inflicting 71183 Nature damage and knocking them back"
     }
   },
   "1269081": {
     "zhCN": {
       "name": "虚空猛击",
       "description": "猛击地面，触发一道虚空能量冲击波，对所有敌人造成127113点暗影伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Void Slam",
+      "description": "Slams the ground that triggers a shockwave of void energy, inflicting 127113 Shadow damage to all enemies and knocking them back."
     }
   },
   "1264987": {
     "zhCN": {
       "name": "凋零瘴气",
       "description": "一股凋零瘴气充满整个洞窟，每2秒对所有玩家造成13982点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Withering Miasma",
+      "description": "A withering miasma saturates the cavern, inflicting 13982 Shadow damage to all players every 2 sec."
     }
   },
   "1264989": {
     "zhCN": {
       "name": "凋零瘴气",
       "description": "一股凋零瘴气充满整个洞窟，每2秒对所有玩家造成13982点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Withering Miasma",
+      "description": "A withering miasma saturates the cavern, inflicting 13982 Shadow damage to all players every 2 sec."
     }
   },
   "1262941": {
     "zhCN": {
       "name": "瘟疫箭",
       "description": "天灾瘟疫传播者向玩家掷出腐烂魔法，对玩家造成61014点自然伤害。"
+    },
+    "enUS": {
+      "name": "Plague Bolt",
+      "description": "The Scourge Plaguespreader hurls putrid magic at a player that inflicts 61014 Nature damage."
     }
   },
   "1252704": {
     "zhCN": {
       "name": "粉碎灵魂",
       "description": "拉克图尔连续地跃起并猛击地面，对5码范围内的玩家造成101690点暗影伤害。每次冲击都会插下一根缚魂图腾。"
+    },
+    "enUS": {
+      "name": "Crush Souls",
+      "description": "Rak'tul repeatedly leaps and slams down, inflicting 101690 Shadow damage to players within 5 yards. Each impact plants a Soulbind Totem."
     }
   },
   "1281396": {
     "zhCN": {
       "name": "战轮旋风",
       "description": "兰吉特向平台中央掷出强力的风轮，对冲击区域10码范围内的玩家造成127113点自然伤害。风轮会持续旋转，对击中的玩家造成76268点自然伤害并将其击退。风轮会形成沿着平台移动的狂风漩涡，对击中的敌人造成76268点自然伤害并将其击飞到空中。"
+    },
+    "enUS": {
+      "name": "Chakram Vortex",
+      "description": "Ranjit throws a powerful wind chakram to the center of the platform, inflicting 127113 Nature damage to players within 10 yards of the impact area. The chakram continues to spin, inflicting 76268 Nature damage to players it hits and knocking them back.The chakram forms raging wind vortexes that trail around the platform, inflicting 76268 Nature damage to any enemy hit and knocking them in the air."
     }
   },
   "152953": {
     "zhCN": {
       "name": "盲目之光",
       "description": "施法者制造出强烈的闪光，使所有敌人昏迷5秒。"
+    },
+    "enUS": {
+      "name": "Blinding Light",
+      "description": "The caster creates an intense flash of light that stuns all enemies for 5 sec."
     }
   },
   "1252733": {
     "zhCN": {
       "name": "疾风奔涌",
       "description": "兰吉特用一股强劲疾风轰击目标玩家，造成71183点自然伤害，将其击退"
+    },
+    "enUS": {
+      "name": "Gale Surge",
+      "description": "Ranjit blasts target players with a powerful gust of wind, inflicting 71183 Nature damage and knocking them back"
     }
   },
   "474496": {
     "zhCN": {
       "name": "震退猛击",
       "description": "奥能金刚库斯托斯以毁灭之力攻击当前目标，造成152535点奥术伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Repulsing Slam",
+      "description": "Arcanotron Custos strikes it's current target with destructive force inflicting 152535 Arcane damage and knocking them back."
     }
   },
   "1285508": {
     "zhCN": {
       "name": "炽热之火",
       "description": "烈火散发出灼热的高温，每2秒对所有玩家造成17796点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Blistering Fire",
+      "description": "Fire emits searing heat that inflicts 17796 Fire damage every 2 sec to all players."
     }
   },
   "1285509": {
     "zhCN": {
       "name": "炽热之火",
       "description": "烈火散发出灼热的高温，每2秒对所有玩家造成17796点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Blistering Fire",
+      "description": "Fire emits searing heat that inflicts 17796 Fire damage every 2 sec to all players."
     }
   },
   "1250708": {
     "zhCN": {
       "name": "死疽融合",
       "description": "沃达扎用死亡之幕保护自身并释放通灵能量波，每2秒对所有玩家造成22880点暗影伤害，最多持续1分钟。该效果的强度会逐渐提高。"
+    },
+    "enUS": {
+      "name": "Necrotic Convergence",
+      "description": "Vordaza protects herself with Deathshroud and unleashes waves of necrotic energy which inflict 22880 Shadow damage to all players every 2 sec for up to 1 min. This effect grows in intensity over time."
     }
   },
   "1263000": {
     "zhCN": {
       "name": "腐烂脉动",
       "description": "天灾瘟疫传播者的腐烂气息每2秒对所有玩家造成31778点自然伤害。"
+    },
+    "enUS": {
+      "name": "Festering Pulse",
+      "description": "The Scourge Plaguespreader's decaying presence inflicts 31778 Nature damage to all players every 2 sec."
     }
   },
   "1215897": {
     "zhCN": {
       "name": "贪噬之熵",
       "description": "迪詹崔乌斯用虚空能量腐蚀数名玩家，每1秒造成15246点暗影伤害。每名玩家所受效果的持续时间不同。效果结束时，会从玩家所在位置发射熵能宝珠。"
+    },
+    "enUS": {
+      "name": "Devouring Entropy",
+      "description": "Degentrius corrupts several players with Void energy, inflicting 15246 Shadow damage every 1 sec. Each afflicted player receives a different duration.Upon expiration, Entropy Orbs launch from the player's location."
     }
   },
   "1277339": {
     "zhCN": {
       "name": "暗影愈合",
       "description": "施法者传送到附近位置，并开始用虚空能量治疗自己，每1秒恢复3%的最大生命值。"
+    },
+    "enUS": {
+      "name": "Shadowmend",
+      "description": "Caster teleports to a nearby location and begins healing itself with void energy, recovering 3% of their max health every 1 sec."
     }
   },
   "1277340": {
     "zhCN": {
       "name": "暗影愈合",
       "description": "施法者传送到附近位置，并开始用虚空能量治疗自己，每1秒恢复3%的最大生命值。"
+    },
+    "enUS": {
+      "name": "Shadowmend",
+      "description": "Caster teleports to a nearby location and begins healing itself with void energy, recovering 3% of their max health every 1 sec."
     }
   },
   "1277343": {
     "zhCN": {
       "name": "制伏锁链",
       "description": "每1.5秒对被锁链束缚的敌人造成30507点暗影伤害，并使其移动速度降低40%。"
+    },
+    "enUS": {
+      "name": "Chains of Subjugation",
+      "description": "Inflicts 30507 Shadow damage to chained enemy every 1.5 sec and reduces their movement speed by 40%."
     }
   },
   "474528": {
     "zhCN": {
       "name": "飞矢烈风",
       "description": "无眠之心朝一名玩家进行箭矢齐射，持续5秒，每0.5秒对前方锥形范围内的玩家造成20338点自然伤害。"
+    },
+    "enUS": {
+      "name": "Bolt Gale",
+      "description": "The Restless Heart fires a salvo of arrows towards a player for 5 sec, inflicting 20338 Nature damage every 0.5 sec to players in a frontal cone."
     }
   },
   "1224104": {
     "zhCN": {
       "name": "虚空分泌物",
       "description": "寰宇刺击产生一滩分泌物，每1秒对站在其中的玩家造成76268点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Void Secretions",
+      "description": "Cosmic Sting forms a pool of secretions, inflicting 76268 Shadow damage every 1 sec to players standing within."
     }
   },
   "1252777": {
     "zhCN": {
       "name": "灵魂束缚",
       "description": "图腾会诱捕一名玩家，每1秒造成10169点暗影伤害，并将其拉向图腾。"
+    },
+    "enUS": {
+      "name": "Soulbind",
+      "description": "The totem ensnares a player, inflicting 10169 Shadow damage every 1 sec and pulling them toward the totem."
     }
   },
   "396716": {
     "zhCN": {
       "name": "皲皮",
       "description": "古树的树枝撕裂，碎片从中迸发出来，所有玩家因此流血，每3秒受到50845点伤害，持续1分钟。该效果可以叠加。"
+    },
+    "enUS": {
+      "name": "Splinterbark",
+      "description": "Splinters erupt from the Ancient as its branch is torn away, causing all players to bleed for 50845 every 3 sec for 1 min. This effect stacks."
     }
   },
   "1248689": {
     "zhCN": {
       "name": "加速结界",
       "description": "瑟拉奈尔以加速结界环绕自身，使其攻击速度提高100%，且自动攻击额外造成25423点奥术伤害，持续15秒。"
+    },
+    "enUS": {
+      "name": "Hastening Ward",
+      "description": "Seranel surrounds himself in a hastening ward, increasing his attack speed by 100% and his auto attacks to inflict an additional 25423 Arcane damage for 15 sec."
     }
   },
   "388537": {
     "zhCN": {
       "name": "奥术裂隙",
       "description": "能量达到100点时，维克萨姆斯用压倒性的力量引发爆炸，推开所有玩家并造成81352点奥术伤害。裂隙会在玩家的位置出现并爆发多次，每次爆发对4码范围内的敌人造成152535点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Fissure",
+      "description": "Upon reaching 100 energy, Vexamus explodes with overwhelming power inflicting 81352 Arcane damage to all players and pushing them back. Fissures erupt multiple times at player locations, each inflicting 152535 Arcane damage within 4 yards."
     }
   },
   "1279418": {
     "zhCN": {
       "name": "奥术裂隙",
       "description": "溢出能量会汇聚成为一个奥术能量裂隙，每1秒对位于其中的玩家造成50845点奥术伤害。该裂隙偶尔会释放失控能量。"
+    },
+    "enUS": {
+      "name": "Arcane Rift",
+      "description": "The excess power coalesces into a rift of arcane energy, inflicting 50845 Arcane damage every 1 sec to players within. This rift occasionally releases Uncontrolled Energy."
     }
   },
   "1269183": {
     "zhCN": {
       "name": "虚空爆炸",
       "description": "将武器猛击入地，在3秒后使虚空能量从地面喷发而出，对被击中的敌人造成91521点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Void Burst",
+      "description": "Slams the weapon into the ground and causes void energy to burst from the ground after 3 sec, inflicting 91521 Shadow damage to enemies hit."
     }
   },
   "388544": {
     "zhCN": {
       "name": "裂树击",
       "description": "茂林古树以碾压性的力量猛跺目标，造成244246点物理伤害并使目标受到的物理伤害提高100%，持续9秒。"
+    },
+    "enUS": {
+      "name": "Barkbreaker",
+      "description": "The Overgrown Ancient stomps its target with crushing force, inflicting 244246 Physical damage and increasing Physical damage taken by 100% for 9 sec."
     }
   },
   "388546": {
     "zhCN": {
       "name": "奥术裂隙",
       "description": "能量达到100点时，维克萨姆斯用压倒性的力量引发爆炸，推开所有玩家并造成81352点奥术伤害。裂隙会在玩家的位置出现并爆发多次，每次爆发对4码范围内的敌人造成152535点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Fissure",
+      "description": "Upon reaching 100 energy, Vexamus explodes with overwhelming power inflicting 81352 Arcane damage to all players and pushing them back. Fissures erupt multiple times at player locations, each inflicting 152535 Arcane damage within 4 yards."
     }
   },
   "1246666": {
     "zhCN": {
       "name": "感染羽翼",
       "description": "内克拉克斯用腐烂的羽毛刺穿所有玩家，使其每1秒受到12711点瘟疫伤害，持续30秒。"
+    },
+    "enUS": {
+      "name": "Infected Pinions",
+      "description": "Nekraxx pierces all players with festering feathers, inflicting 12711 Plague damage every 1 sec for 30 sec."
     }
   },
   "468429": {
     "zhCN": {
       "name": "疾风狙击",
       "description": "无眠之心朝房间内的一处位置轰出箭矢，对冲击点周围20码范围内的玩家造成203380点自然伤害并形成翻腾之风。"
+    },
+    "enUS": {
+      "name": "Bullseye Windblast",
+      "description": "The Restless Heart fires an arrow at a location in its chamber, inflicting 203380 Nature damage to players within 20 yards of impact and forming Billowing Wind."
     }
   },
   "1252816": {
     "zhCN": {
       "name": "死亡战栗",
       "description": "图腾每0.5秒对0码范围内的玩家造成50845点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Chill of Death",
+      "description": "The totem inflicts 50845 Shadow damage every 0.5 sec to players within 0 yards."
     }
   },
   "468442": {
     "zhCN": {
       "name": "翻腾之风",
       "description": "一圈猛烈的狂风向外扩散，每1秒对触碰的玩家造成61014点自然伤害，并使其昏迷4秒。"
+    },
+    "enUS": {
+      "name": "Billowing Wind",
+      "description": "A ring of violent wind expands, inflicting 61014 Nature damage every 1 sec to players who touch it and stunning them for 4 sec."
     }
   },
   "1269220": {
     "zhCN": {
       "name": "镜像撕裂",
       "description": "接触到目标时，分裂镜像撕裂目标，将其击退并造成50845点神圣伤害，随后每1秒造成额外10169点神圣伤害。该效果可以叠加，还会留下光耀之痕。"
+    },
+    "enUS": {
+      "name": "Mirrored Rend",
+      "description": "Coming in contact with a Fractured Image rends the target, knocking them away and inflicting 50845 Holy damage with an additional 10169 Holy damage every 1 sec. This effect stacks and leaves behind Radiant Scars."
     }
   },
   "1269222": {
     "zhCN": {
       "name": "闪烁",
       "description": "分裂镜像会周期性闪烁至新位置，对路径上的玩家造成20点神圣伤害并将其击飞。"
+    },
+    "enUS": {
+      "name": "Flicker",
+      "description": "Fractured Images periodically flicker to new locations, inflicting 20 Holy damage and knocking away players in its path."
     }
   },
   "472556": {
     "zhCN": {
       "name": "矢如雨下",
       "description": "无眠之心射出箭雨，对冲击点周围3.5码内的玩家造成127113点自然伤害并形成湍急箭矢。"
+    },
+    "enUS": {
+      "name": "Arrow Rain",
+      "description": "The Restless Heart shoots a rain of arrows, inflicting 127113 Nature damage to players within 3.5 yards of each impact and forming Turbulent Arrows."
     }
   },
   "1258997": {
     "zhCN": {
       "name": "猛拽擒握",
       "description": "施法者施加石肤，并用利爪抓住一名玩家并向上飞行，每1秒造成2点物理伤害，持续12秒。被打断时，施法者会扔下该玩家。如果施法者完成引导，则会使目标昏迷5秒。"
+    },
+    "enUS": {
+      "name": "Plungegrip",
+      "description": "The caster applies Stoneskin and pulls a player upward, inflicting 2 Physical damage every 1 sec for 12 sec.Upon interruption, the caster drops them. If the caster finishes channeling, they stun the victim for 5 sec."
     }
   },
   "1267207": {
     "zhCN": {
       "name": "深渊之枪",
       "description": "鲁拉每4秒被动地撕开一道虚空裂隙。打开3道裂隙后，鲁拉从每道裂隙中各召唤一支深渊之枪，每支长枪对她的目标造成50845点暗影伤害。此效果会关闭裂隙。"
+    },
+    "enUS": {
+      "name": "Abyssal Lance",
+      "description": "L'ura passively tears open a rift to the void every 4 sec. After 3 rifts are opened, L'ura summons an Abyssal Lance from each of them, inflicting 50845 Shadow damage to her target for each lance. This effect closes the rifts."
     }
   },
   "1277451": {
     "zhCN": {
       "name": "奥术震击",
       "description": "近战攻击造成8点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Zap",
+      "description": "Melee attacks inflict 8 Arcane damage."
     }
   },
   "1252875": {
     "zhCN": {
       "name": "蚀光步伐",
       "description": "奈萨拉遁入暗影并随机袭击玩家，对14码范围内的所有玩家造成61014点暗影伤害，并每1秒额外造成20338点暗影伤害，持续8秒。"
+    },
+    "enUS": {
+      "name": "Eclipsing Step",
+      "description": "Nysarra slips into the shadows and strikes at random players, inflicting 61014 Shadow damage and additional 20338 Shadow damage every 1 sec for 8 sec to all players within 14 yards."
     }
   },
   "1273356": {
     "zhCN": {
       "name": "太阳屏障",
       "description": "施法者为附近盟友施加太阳屏障，吸收183528点即将到来的伤害，并使他们散发太阳能量，每2秒造成10169点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Solar Barrier",
+      "description": "Caster puts Solar Barrier on nearby allies, absorbing 183528 incoming damage and causing them to radiates solar energy that inflicts 10169 Fire damage every 2 sec."
     }
   },
   "1252877": {
     "zhCN": {
       "name": "日光灌注",
       "description": "与阿拉卡纳斯连接的光线会为其灌注太阳能量，对所有玩家造成7627点火焰伤害，并使超级新星造成的伤害提高5%。此效果可叠加。日光灌注效果会在增幅超级新星时消耗。"
+    },
+    "enUS": {
+      "name": "Solar Infusion",
+      "description": "Light rays that connect with Araknath infuse it with solar energy, inflicting 7627 Fire damage to all players and increasing Supernova's damage done by 5%. This effect stacks. Solar Infusion is consumed after empowering Supernova."
     }
   },
   "388623": {
     "zhCN": {
       "name": "分枝",
       "description": "过度生长的古树向某个区域扔出它的树枝，对周围8码范围内的玩家造成152535点物理伤害并将其击退。随后，古树树枝会活化并攻击玩家。"
+    },
+    "enUS": {
+      "name": "Branch Out",
+      "description": "The Overgrown Ancient throws one of its own branches at a location, inflicting 152535 Physical damage to players within 8 yds and knocking them back.The Ancient Branch then animates and attacks players."
     }
   },
   "1252883": {
     "zhCN": {
       "name": "吞噬无能者",
       "description": "奈萨拉引导虚空吞噬所有存活的仆从，在5秒内每0.5秒恢复自身力量，并触发一次虚空能量爆发，对所有玩家造成76228点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Devour the Unworthy",
+      "description": "Nyssara channels the void to consume any surviving subordinates, restoring her own strength every 0.5 sec for 5 sec and triggers a burst of void energy inflicting 76228 Shadow damage to all players."
     }
   },
   "1271317": {
     "zhCN": {
       "name": "加速结界",
       "description": "瑟拉奈尔以加速结界环绕自身，使其攻击速度提高100%，且自动攻击额外造成25423点奥术伤害，持续15秒。"
+    },
+    "enUS": {
+      "name": "Hastening Ward",
+      "description": "Seranel surrounds himself in a hastening ward, increasing his attack speed by 100% and his auto attacks to inflict an additional 25423 Arcane damage for 15 sec."
     }
   },
   "1279517": {
     "zhCN": {
       "name": "灵魂驱除",
       "description": "裂魂咆哮使拉克图尔陷入恍惚，并使其昏迷45秒。灵魂会周期性地从其体内喷涌而出，对每个冲击点4码范围内的玩家造成139824点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Soul Expulsion",
+      "description": "Soulrending Roar sends Rak'tul into a stupor, stunning him for 45 sec. Souls periodically erupt from his form, inflicting 139824 Shadow damage to players within 4 yards of each impact."
     }
   },
   "1269283": {
     "zhCN": {
       "name": "压制力场",
       "description": "对一名敌人施加压制力场，使其移动速度降低50%，且每1秒脉冲5点奥术伤害，持续10秒。此外，如果敌人在受到压制时移动，则将对其自身及6码范围内所有盟友造成1点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Suppression Field",
+      "description": "Places a suppression field on an enemy, decreasing movement by 50% and pulsing out 5 Arcane damage every 1 sec for 10 sec. Additionally, if the enemy moves while being suppressed, they explode, inflicting 1 Arcane damage to themselves and all allies within 6 yards."
     }
   },
   "1250851": {
     "zhCN": {
       "name": "盾墙",
       "description": "指挥官克罗鲁科变得坚毅，受到的伤害降低99%。"
+    },
+    "enUS": {
+      "name": "Shield Wall",
+      "description": "Commander Kroluk fortifies himself, reducing his damage taken by 99%."
     }
   },
   "1216042": {
     "zhCN": {
       "name": "飓风腾跃",
       "description": "当无眠之心跃起时，风暴能量会向四周呼啸而出，对所有玩家造成45761点自然伤害，此后每1秒额外造成11440点自然伤害。接触湍急箭矢可移除此效果。"
+    },
+    "enUS": {
+      "name": "Squall Leap",
+      "description": "Stormy energy lashes outward when the Restless Heart leaps, inflicting 45761 Nature damage to all players and an additional 11440 Nature damage every 1 sec.Contacting Turbulent Arrows removes this affliction."
     }
   },
   "388651": {
     "zhCN": {
       "name": "奥术裂隙",
       "description": "能量达到100点时，维克萨姆斯用压倒性的力量引发爆炸，推开所有玩家并造成81352点奥术伤害。裂隙会在玩家的位置出现并爆发多次，每次爆发对4码范围内的敌人造成152535点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Fissure",
+      "description": "Upon reaching 100 energy, Vexamus explodes with overwhelming power inflicting 81352 Arcane damage to all players and pushing them back. Fissures erupt multiple times at player locations, each inflicting 152535 Arcane damage within 4 yards."
     }
   },
   "1252910": {
     "zhCN": {
       "name": "奥能之刃",
       "description": "施法者为其武器附魔，使其近战攻击对目标造成40676点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Blade",
+      "description": "The caster enchants their weapon, causing their melee attacks to inflict an additional 40676 Arcane damage to their target."
     }
   },
   "374343": {
     "zhCN": {
       "name": "能量炸弹",
       "description": "能量炸弹100 码范围1.5​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Energy Bomb",
+      "description": "Energy Bomb100 yd range1.5 sec cast"
     }
   },
   "1267274": {
     "zhCN": {
       "name": "虚空传送门",
       "description": "鲁拉每4秒被动地撕开一道虚空裂隙。打开3道裂隙后，鲁拉从每道裂隙中各召唤一支深渊之枪，每支长枪对她的目标造成50845点暗影伤害。此效果会关闭裂隙。"
+    },
+    "enUS": {
+      "name": "Void Portal",
+      "description": "L'ura passively tears open a rift to the void every 4 sec. After 3 rifts are opened, L'ura summons an Abyssal Lance from each of them, inflicting 50845 Shadow damage to her target for each lance. This effect closes the rifts."
     }
   },
   "374350": {
     "zhCN": {
       "name": "能量炸弹",
       "description": "多拉苟萨的回响利用奥术能量随机标记数名玩家，持续6秒。能量炸弹结束时，对8码范围内的所有玩家造成61014点奥术伤害。对目标施加势不可挡。"
+    },
+    "enUS": {
+      "name": "Energy Bomb",
+      "description": "The Echo of Doragosa marks random players with arcane energy for 6 sec. &nbsp;When the Energy Bomb expires, it inflicts 61014 Arcane damage to all players within 8 yards.Applies Overwhelming Power to the target."
     }
   },
   "374352": {
     "zhCN": {
       "name": "能量炸弹",
       "description": "多拉苟萨的回响利用奥术能量随机标记数名玩家，持续6秒。能量炸弹结束时，对8码范围内的所有玩家造成61014点奥术伤害。对目标施加势不可挡。"
+    },
+    "enUS": {
+      "name": "Energy Bomb",
+      "description": "The Echo of Doragosa marks random players with arcane energy for 6 sec. &nbsp;When the Energy Bomb expires, it inflicts 61014 Arcane damage to all players within 8 yards.Applies Overwhelming Power to the target."
     }
   },
   "1214038": {
     "zhCN": {
       "name": "虚灵枷锁",
       "description": "奥能金刚库斯托斯压制数名玩家的移动，每3秒造成45761点奥术伤害并使其定身，持续15秒。"
+    },
+    "enUS": {
+      "name": "Ethereal Shackles",
+      "description": "Arcanotron Custos suppresses the movement of several players, inflicting 45761 Arcane damage every 3 sec and rooting them for 15 sec."
     }
   },
   "472662": {
     "zhCN": {
       "name": "暴风斩",
       "description": "无眠之心击退主要目标，造成330493点物理伤害并使其受到的物理伤害提高40%，持续10秒。随后，无眠之心会发射劲风射击。"
+    },
+    "enUS": {
+      "name": "Tempest Slash",
+      "description": "The Restless Heart knocks away its primary target, inflicting 330493 Physical damage and increasing their Physical damage taken by 40% for 10 sec.Afterward, The Restless Heart fires a Gust Shot."
     }
   },
   "1271388": {
     "zhCN": {
       "name": "幽影鞭笞",
       "description": "奈萨拉跃向其主要目标并发动连续劈砍，每击造成76268点暗影伤害，并在最后一击时造成虚空创裂。"
+    },
+    "enUS": {
+      "name": "Umbral Lash",
+      "description": "Nysarra leaps to her primary target and unleashes consecutive slashes on them, inflicting 76268 Shadow damage with every strike and causing Void Gash on the final one."
     }
   },
   "472672": {
     "zhCN": {
       "name": "飞矢烈风",
       "description": "无眠之心朝一名玩家进行箭矢齐射，持续5秒，每0.5秒对前方锥形范围内的玩家造成20338点自然伤害。"
+    },
+    "enUS": {
+      "name": "Bolt Gale",
+      "description": "The Restless Heart fires a salvo of arrows towards a player for 5 sec, inflicting 20338 Nature damage every 0.5 sec to players in a frontal cone."
     }
   },
   "1281634": {
     "zhCN": {
       "name": "暮色骇魔",
+      "description": ""
+    },
+    "enUS": {
+      "name": "Dusk Frights",
       "description": ""
     }
   },
@@ -4775,95 +5123,159 @@
     "zhCN": {
       "name": "蔓延虚空",
       "description": "Causes all enemies within 60 yards to take 10% increased Shadow damage for 15秒.Inflicts 3 Shadow damage to enemies within 60 yards."
+    },
+    "enUS": {
+      "name": "Creeping Void",
+      "description": "Causes all enemies within 60 yards to take 10% increased Shadow damage for 15 sec.Inflicts 3 Shadow damage to enemies within 60 yards."
     }
   },
   "1281637": {
     "zhCN": {
       "name": "暮色骇魔",
       "description": "Fears enemies within 5 yards of the impact for 5秒.Immobilizes all enemies within 5 yards of the impact for 5秒."
+    },
+    "enUS": {
+      "name": "Dusk Frights",
+      "description": "Fears enemies within 5 yards of the impact for 5 sec.Immobilizes all enemies within 5 yards of the impact for 5 sec."
     }
   },
   "1224299": {
     "zhCN": {
       "name": "星界束缚",
       "description": "吉美尔鲁斯向一名玩家引导暗影触须，每1秒造成20338点暗影伤害并将玩家拖向自身，持续8秒。"
+    },
+    "enUS": {
+      "name": "Astral Grasp",
+      "description": "Gemellus channels a shadowy tendril at a player, inflicting 20338 Shadow damage every 1 sec and pulling the player towards them for 8 sec."
     }
   },
   "1259116": {
     "zhCN": {
       "name": "魔药喷溅",
       "description": "施法者喷出瘟疫，使范围内的玩家每1秒受到50845点自然伤害。"
+    },
+    "enUS": {
+      "name": "Blight Splatter",
+      "description": "Blight spews from the caster, causing players within it to suffer 50845 Nature damage every 1 sec."
     }
   },
   "1248879": {
     "zhCN": {
       "name": "死噬容器",
       "description": "拉克图尔肿胀的躯体每6秒施放出灵魂能量，对所有玩家造成54913点暗影伤害，并喷出易爆精华。"
+    },
+    "enUS": {
+      "name": "Deathgorged Vessel",
+      "description": "Rak'tul's engorged form releases soul energy every 6 sec, inflicting 54913 Shadow damage to all players and ejecting Volatile Essences."
     }
   },
   "1277556": {
     "zhCN": {
       "name": "死疽融合",
       "description": "沃达扎用死亡之幕保护自身并释放通灵能量波，每2秒对所有玩家造成22880点暗影伤害，最多持续1分钟。该效果的强度会逐渐提高。"
+    },
+    "enUS": {
+      "name": "Necrotic Convergence",
+      "description": "Vordaza protects herself with Deathshroud and unleashes waves of necrotic energy which inflict 22880 Shadow damage to all players every 2 sec for up to 1 min. This effect grows in intensity over time."
     }
   },
   "1277557": {
     "zhCN": {
       "name": "灼热光辉",
       "description": "施法者爆发出神圣光辉，灼烧最多2名附近的敌人，在8秒内每1秒造成5点神圣伤害。"
+    },
+    "enUS": {
+      "name": "Burning Radiance",
+      "description": "The caster bursts with a holy radiance searing up to 2 nearby enemies, inflicting 5 Holy damage every 1 sec for 8 sec."
     }
   },
   "1281657": {
     "zhCN": {
       "name": "酷热惩击",
       "description": "Inflicts 8 Holy damage to an enemy.Inflicts 5 Holy damage to an enemy every 1 sec for 6秒."
+    },
+    "enUS": {
+      "name": "Blistering Smite",
+      "description": "Inflicts 8 Holy damage to an enemy.Inflicts 5 Holy damage to an enemy every 1 sec for 6 sec."
     }
   },
   "1259132": {
     "zhCN": {
       "name": "瘟疫狂乱",
       "description": "施法者向玩家喷射瘟疫喷涌并激怒24秒，使其急速提高25%，并更频繁地触发魔药喷溅。"
+    },
+    "enUS": {
+      "name": "Plague Frenzy",
+      "description": "The caster ejects Plague Spew towards players and enrages for 24 sec, increasing its haste by 25% and causing Blight Splatter more frequently."
     }
   },
   "466556": {
     "zhCN": {
       "name": "炽焰腾流",
       "description": "烬晓朝玩家喷吐出火焰，每1秒造成25423点火焰伤害，持续6秒。效果结束时，火焰会形成一片燃烧区域，每1.5秒对其中的玩家造成76268点火焰伤害。区域中央的炽焰腾流会对接触的玩家造成127113点火焰伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Flaming Updraft",
+      "description": "Emberdawn spits fire at a player, inflicting 25423 Fire damage every 1 sec for 6 sec. Upon expiration, the fire forms into a flaming patch that inflicts 76268 Fire damage every 1.5 sec to players within it. The patch's central updraft inflicts 127113 Fire damage to players who touch it, knocking them away."
     }
   },
   "466559": {
     "zhCN": {
       "name": "炽焰腾流",
       "description": "烬晓朝玩家喷吐出火焰，每1秒造成25423点火焰伤害，持续6秒。效果结束时，火焰会形成一片燃烧区域，每1.5秒对其中的玩家造成76268点火焰伤害。区域中央的炽焰腾流会对接触的玩家造成127113点火焰伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Flaming Updraft",
+      "description": "Emberdawn spits fire at a player, inflicting 25423 Fire damage every 1 sec for 6 sec. Upon expiration, the fire forms into a flaming patch that inflicts 76268 Fire damage every 1.5 sec to players within it. The patch's central updraft inflicts 127113 Fire damage to players who touch it, knocking them away."
     }
   },
   "1257088": {
     "zhCN": {
       "name": "死疽波动",
       "description": "施法者释放出一道在玩家之间跳跃的死疽能量波，造成25423点暗影伤害并吸收接下来受到的39000点治疗量。"
+    },
+    "enUS": {
+      "name": "Necrotic Wave",
+      "description": "The caster unleashes a wave of necrotic energy which arcs between players, inflicting 25423 Shadow damage and absorbing the next 39000 healing received."
     }
   },
   "1214081": {
     "zhCN": {
       "name": "奥术驱除",
       "description": "奥能金刚库斯托斯释放奥术能量，在脚下生成一滩奥术残渣，对所有玩家造成76268点伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Arcane Expulsion",
+      "description": "Arcanotron Custos expels Arcane energy creating a pool of Arcane Residue at its feet, inflicting 76268 damage to all players and knocking them back."
     }
   },
   "1216135": {
     "zhCN": {
       "name": "灵魂之箭",
       "description": "施法者对一名玩家造成12点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Spirit Bolt",
+      "description": "The caster inflicts 61014 Shadow damage to a player."
     }
   },
   "1271433": {
     "zhCN": {
       "name": "光痕耀斑",
       "description": "洛萨克森的分裂镜像会攻击奈萨拉，使她伤口燃烧并陷入昏迷，持续18秒。被镜像爆炸波及的玩家受到76228点神圣伤害并陷入迷惑，持续5秒。站在伤口的燃烧区域时，目标的治疗效果提高30%且对奈萨拉造成的伤害提高300%，但每1秒会受到35592点神圣伤害直至她恢复。"
+    },
+    "enUS": {
+      "name": "Lightscar Flare",
+      "description": "A fractured image of Lothraxion strikes at Nysarra, causing her wound to flare and stunning her for 18 sec. Players caught in the image's blast suffer 76228 Holy damage and are disoriented for 5 sec.Standing in the wound's flare increases the target's healing done by 30% and damage dealt to Nysarra by 300% but inflicts 35592 Holy damage every 1 sec until she recovers."
     }
   },
   "1279627": {
     "zhCN": {
       "name": "奥术箭",
+      "description": "Inflicts 61014 Arcane damage to an enemy."
+    },
+    "enUS": {
+      "name": "Arcane Bolt",
       "description": "Inflicts 61014 Arcane damage to an enemy."
     }
   },
@@ -4871,233 +5283,389 @@
     "zhCN": {
       "name": "电路感知",
       "description": "不稳定的奥术能量跃至附近的装置，引发能量涌动。"
+    },
+    "enUS": {
+      "name": "Circuit Sense",
+      "description": "Erratic arcane energy arcs onto nearby devices, causing them to surge."
     }
   },
   "1257103": {
     "zhCN": {
       "name": "异变涌动",
       "description": "施法者身上涌出的能量对涌动点3码范围内的敌人造成1点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Erratic Surge",
+      "description": "Energy surges off the caster inflicting 1 Arcane damage to enemies within 3 yards of the surge."
     }
   },
   "1257105": {
     "zhCN": {
       "name": "游离电击",
       "description": "混乱能量在地面上爆发，对冲击点周围4码内的玩家造成23点奥术伤害，并使其昏迷2秒。"
+    },
+    "enUS": {
+      "name": "Erratic Zap",
+      "description": "Chaotic energies surge into the ground, inflicting 23 Arcane damage to players within 4 yards of the impact and stunning them for 2 sec."
     }
   },
   "472724": {
     "zhCN": {
       "name": "暗影箭",
       "description": "卡莉斯对一名玩家造成61014点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Shadow Bolt",
+      "description": "Kalis inflicts 61014 Shadow damage to a player."
     }
   },
   "159381": {
     "zhCN": {
       "name": "灼热飞羽",
       "description": "鲁克兰释放炽热羽翼冲击，对视线范围内的玩家每1秒造成113252点火焰伤害，持续3秒。"
+    },
+    "enUS": {
+      "name": "Searing Quills",
+      "description": "Rukhran unleashes waves of flaming quills, inflicting 113252 Fire damage every 1 sec to players in line of sight for 3 sec."
     }
   },
   "159382": {
     "zhCN": {
       "name": "灼热飞羽",
       "description": "施法者疯狂地煽动羽毛，向各个方向射出飞羽，持续3秒。"
+    },
+    "enUS": {
+      "name": "Searing Quills",
+      "description": "The caster flaps their feathers wildly, sending out Quills in all directions for 3 sec."
     }
   },
   "472736": {
     "zhCN": {
       "name": "衰弱尖啸",
       "description": "卡莉斯持续释放刺耳尖叫，每2秒对所有玩家造成25423点暗影伤害，并使其受到来自衰弱尖啸的伤害提高30%，持续3秒。该效果可叠加。拉奇的猛力拖拽会打断该技能。"
+    },
+    "enUS": {
+      "name": "Debilitating Shriek",
+      "description": "Kalis continually releases piercing shrieks, inflicting 25423 Shadow damage to all players every 2 sec and increasing their damage taken from Debilitating Shriek by 30% for 3 sec. This effect stacks.Latch's Heaving Yank interrupts this ability."
     }
   },
   "1253026": {
     "zhCN": {
       "name": "破胆怒吼",
       "description": "指挥官克罗鲁科发出震天咆哮，使任何落单的玩家在恐惧中逃跑，每1秒受到50845点暗影伤害，持续6秒。"
+    },
+    "enUS": {
+      "name": "Intimidating Shout",
+      "description": "Commander Kroluk bellows an intimidating shout, causing players who stand alone to run in fear and suffer 50845 Shadow damage every 1 sec for 6 sec."
     }
   },
   "1257124": {
     "zhCN": {
       "name": "法力电池",
       "description": "法力电池瞬发"
+    },
+    "enUS": {
+      "name": "Mana Battery",
+      "description": "Mana BatteryInstant"
     }
   },
   "1257126": {
     "zhCN": {
       "name": "核闪过载",
       "description": "电池过载并爆炸，每1秒造成6点奥术伤害，持续10秒。"
+    },
+    "enUS": {
+      "name": "Corespark Overload",
+      "description": "The battery overloads and explodes inflicting 6 Arcane damage every 1 sec for 10 sec."
     }
   },
   "472745": {
     "zhCN": {
       "name": "飞溅喷吐",
       "description": "拉奇朝玩家喷吐胆汁，对每个冲击点周围5码范围内的玩家造成61014点自然伤害并施加喷溅。会在冲击位置形成黏稠喷溅。"
+    },
+    "enUS": {
+      "name": "Splattering Spew",
+      "description": "Latch spews bile onto players, inflicting 61014 Nature damage to players within 5 yards of each impact and applying Splattered.Gunk Splatter forms at the impact locations."
     }
   },
   "1259182": {
     "zhCN": {
       "name": "穿刺尖叫",
       "description": "施法者发出尖啸，释放出脉冲音波能量，对击中的任何玩家造成76268点物理伤害。"
+    },
+    "enUS": {
+      "name": "Piercing Screech",
+      "description": "The caster screeches, releasing a pulse of Sonic energy that inflicts 76268 Physical damage to any players struck."
     }
   },
   "1259183": {
     "zhCN": {
       "name": "穿刺尖叫",
       "description": "施法者发出尖啸，释放出脉冲音波能量，对击中的任何玩家造成76268点物理伤害。"
+    },
+    "enUS": {
+      "name": "Piercing Screech",
+      "description": "The caster screeches, releasing a pulse of Sonic energy that inflicts 76268 Physical damage to any players struck."
     }
   },
   "1263282": {
     "zhCN": {
       "name": "残杀",
       "description": "祖拉尔为拳头灌注虚空能量，挥拳怒击，对目标造成81352点暗影伤害，并在目标位置制造一滩虚空淤泥。"
+    },
+    "enUS": {
+      "name": "Decimate",
+      "description": "Zuraal infuses his fist with void energy and lashes out, inflicting 81352 Shadow damage to their target and creating a pool of Void Sludge at their location."
     }
   },
   "1279667": {
     "zhCN": {
       "name": "影枪",
       "description": "骑在伊克的背上时，科瑞克会向一名玩家投掷黑暗能量，造成30507点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Shadow Lance",
+      "description": "While riding atop Ick, Krick throws dark energy at a player that inflicts 30507 Shadow damage."
     }
   },
   "1259188": {
     "zhCN": {
       "name": "寒冰爆裂",
       "description": "施法者向玩家发射寒冰碎片，对5码范围内的玩家造成76268点冰霜伤害。冲击会形成一片寒冰区域区域。"
+    },
+    "enUS": {
+      "name": "Cryoburst",
+      "description": "The caster launches icy shards at players, inflicting 76268 Frost damage to players within 5 yards. The impact forms a Cryopatch."
     }
   },
   "1279668": {
     "zhCN": {
       "name": "暗影枪骑兵",
       "description": "骑在伊克的背上时，科瑞克会向一名玩家投掷黑暗能量，造成30507点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Shadow Lancer",
+      "description": "While riding atop Ick, Krick throws dark energy at a player that inflicts 30507 Shadow damage."
     }
   },
   "468659": {
     "zhCN": {
       "name": "掷斧",
       "description": "对一名玩家造成40676点物理伤害。"
+    },
+    "enUS": {
+      "name": "Throw Axe",
+      "description": "Inflicts 40676 Physical damage to a player."
     }
   },
   "1271479": {
     "zhCN": {
       "name": "虚空爆发",
       "description": "施法者释放出一股奥术能量爆发，对60码范围内的玩家造成127113点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Netherburst",
+      "description": "The caster unleashes a burst of arcane power, inflicting 127113 Arcane damage to players within 60 yards."
     }
   },
   "472758": {
     "zhCN": {
       "name": "飞溅喷吐",
       "description": "拉奇朝玩家喷吐胆汁，对每个冲击点周围5码范围内的玩家造成61014点自然伤害并施加喷溅。会在冲击位置形成黏稠喷溅。"
+    },
+    "enUS": {
+      "name": "Splattering Spew",
+      "description": "Latch spews bile onto players, inflicting 61014 Nature damage to players within 5 yards of each impact and applying Splattered.Gunk Splatter forms at the impact locations."
     }
   },
   "1283770": {
     "zhCN": {
       "name": "防御协议",
       "description": "阿拉卡纳斯进入防御姿态，扎根原地并散发灼热高温，每1秒对5码范围内的玩家造成127113点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Defensive Protocol",
+      "description": "Araknath is in a defensive stance, rooting itself and emitting blistering heat, inflicting 127113 Fire damage every 1 sec to players standing within 5 yards."
     }
   },
   "388796": {
     "zhCN": {
       "name": "发芽",
       "description": "每1秒，茂林古树都会使所有玩家脚下的休眠鞭笞者之种生根发芽，持续4秒。每个出现的种子都会击退4码范围内的玩家并对其造成127113点物理伤害，然后留下一株休眠的饥饿的鞭笞者。"
+    },
+    "enUS": {
+      "name": "Germinate",
+      "description": "The Overgrown Ancient forces dormant lasher seeds beneath all players' feet to sprout every 1 sec for 4 sec.Each emerging seed inflicts 127113 Physical damage to players within 4 yds and knocks them back, then leaves behind a dormant Hungry Lasher."
     }
   },
   "1263292": {
     "zhCN": {
       "name": "缩小",
       "description": "施法者将目标变小，在0.5秒内造成20338点暗影伤害，持续8秒，并使其体型大幅缩小。如果目标接触到正常体型的玩家，则会昏迷4秒。"
+    },
+    "enUS": {
+      "name": "Shrink",
+      "description": "The caster shrinks their target, inflicting 20338 Shadow damage for 0.5 sec for 8 sec and greatly reducing their size. If the target comes into contact with a full-sized player, the target is stunned for 4 sec."
     }
   },
   "388799": {
     "zhCN": {
       "name": "发芽",
       "description": "每1秒，茂林古树都会使所有玩家脚下的休眠鞭笞者之种生根发芽，持续4秒。每个出现的种子都会击退4码范围内的玩家并对其造成127113点物理伤害，然后留下一株休眠的饥饿的鞭笞者。"
+    },
+    "enUS": {
+      "name": "Germinate",
+      "description": "The Overgrown Ancient forces dormant lasher seeds beneath all players' feet to sprout every 1 sec for 4 sec.Each emerging seed inflicts 127113 Physical damage to players within 4 yds and knocks them back, then leaves behind a dormant Hungry Lasher."
     }
   },
   "1263297": {
     "zhCN": {
       "name": "崩解虚空",
       "description": "达到100能量时，祖拉尔开始汇聚身边的虚空能量，将所有玩家和凝结虚空拉向自身。5秒后，祖拉尔释放汇聚的虚空能量，对所有玩家造成101690点暗影伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Crashing Void",
+      "description": "Upon reaching 100 energy, Zuraal begins to gather void energy around himself, pulling all players and Coalesced Void in. Zuraal unleashes the gathered void energy after 5 sec, inflicting 101690 Shadow damage to all players and knocking them back."
     }
   },
   "1259202": {
     "zhCN": {
       "name": "寒冰爆裂",
       "description": "施法者向玩家发射寒冰碎片，对5码范围内的玩家造成76268点冰霜伤害。冲击会形成一片寒冰区域区域。"
+    },
+    "enUS": {
+      "name": "Cryoburst",
+      "description": "The caster launches icy shards at players, inflicting 76268 Frost damage to players within 5 yards. The impact forms a Cryopatch."
     }
   },
   "1257155": {
     "zhCN": {
       "name": "蟾蜍雨",
       "description": "施法者召来一阵蟾蜍暴雨，每个落点3码范围内的玩家受到127113点自然伤害。"
+    },
+    "enUS": {
+      "name": "Rain of Toads",
+      "description": "The caster causes a torrent of toads to rain down, inflicting 127113 Nature damage to players within 3 yards of each impact."
     }
   },
   "1259205": {
     "zhCN": {
       "name": "寒冰区域",
       "description": "形成一片光滑的冰面，站在上方的玩家每2秒受到25423点冰霜伤害。"
+    },
+    "enUS": {
+      "name": "Cryopatch",
+      "description": "A slippery icy patch forms, inflicting 25423 Frost damage every 2 sec to players standing on it."
     }
   },
   "1257160": {
     "zhCN": {
       "name": "蟾蜍雨",
       "description": "施法者召来一阵蟾蜍暴雨，每个落点3码范围内的玩家受到127113点自然伤害。"
+    },
+    "enUS": {
+      "name": "Rain of Toads",
+      "description": "The caster causes a torrent of toads to rain down, inflicting 127113 Nature damage to players within 3 yards of each impact."
     }
   },
   "472777": {
     "zhCN": {
       "name": "黏稠喷溅",
       "description": "拉奇的胆汁覆盖地面，每1.5秒对其中的玩家造成76268点自然伤害，并使其受到来自飞溅喷吐的伤害提高100%。"
+    },
+    "enUS": {
+      "name": "Gunk Splatter",
+      "description": "Latch's bile coats the ground, inflicting 76268 Nature damage every 1.5 sec to players within it and increasing their damage taken from Splattering Spew by 100%."
     }
   },
   "1251023": {
     "zhCN": {
       "name": "碎魂者",
       "description": "拉克图尔对目标进行两次猛击，每次造成177958点物理伤害。随后施展一记强化终结技，造成139824点暗影伤害并将目标击飞至高空。最后一击会留下一片幽魂凋零。"
+    },
+    "enUS": {
+      "name": "Spiritbreaker",
+      "description": "Rak'tul pummels his target twice, inflicting 177958 Physical damage with each strike. He then delivers a final empowered blow, inflicting 139824 Shadow damage and launching the target high into the air.The final blow leaves behind a patch of Spectral Decay."
     }
   },
   "1251024": {
     "zhCN": {
       "name": "碎魂者",
       "description": "拉克图尔对目标进行两次猛击，每次造成177958点物理伤害。随后施展一记强化终结技，造成139824点暗影伤害并将目标击飞至高空。最后一击会留下一片幽魂凋零。"
+    },
+    "enUS": {
+      "name": "Spiritbreaker",
+      "description": "Rak'tul pummels his target twice, inflicting 177958 Physical damage with each strike. He then delivers a final empowered blow, inflicting 139824 Shadow damage and launching the target high into the air.The final blow leaves behind a patch of Spectral Decay."
     }
   },
   "1224401": {
     "zhCN": {
       "name": "宇宙辐射",
       "description": "吉美尔鲁斯对被拖入其触手范围内的玩家释放辐射，每1秒造成91521点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Cosmic Radiation",
+      "description": "Gemellus radiates players pulled within its grasp, inflicting 91521 Shadow damage every 1 sec."
     }
   },
   "1248980": {
     "zhCN": {
       "name": "易爆精华",
       "description": "释放出的灵魂能量在命中时爆裂，对2码范围内的玩家造成101690点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Volatile Essence",
+      "description": "Released soul energy bursts upon impact, inflicting 101690 Shadow damage to players within 2 yards."
     }
   },
   "388822": {
     "zhCN": {
       "name": "力量真空",
       "description": "多拉苟萨的回响将所有玩家拉到她的位置，然后用爆炸性的能量执行打击，造成203325点奥术伤害并击退20码内的所有玩家。对所有被击中的玩家施加势不可挡。"
+    },
+    "enUS": {
+      "name": "Power Vacuum",
+      "description": "The Echo of Doragosa pulls all players to her location, then strikes with explosive energy inflicting 203325 Arcane damage and knocking back all players within 20 yards.Applies Overwhelming Power to anyone hit."
     }
   },
   "1271511": {
     "zhCN": {
       "name": "核心暴露",
       "description": "对所有玩家造成76268点神圣伤害，并使其受到的神圣伤害提高20%，持续1分钟。"
+    },
+    "enUS": {
+      "name": "Core Exposure",
+      "description": "Inflicts 76268 Holy damage to all players and increases Holy damage taken by 20% for 1 min."
     }
   },
   "1259226": {
     "zhCN": {
       "name": "专注防御",
       "description": "施法者举起盾牌，使来自正面的伤害降低99%，并每1.5秒对60码范围内的玩家造成20338点冰霜伤害，持续12秒。格挡期间，对施法者背后的攻击爆击几率提高100%。"
+    },
+    "enUS": {
+      "name": "Focused Guard",
+      "description": "The caster raises their shield, reducing damage from the front by 99% and inflicting 20338 Frost damage to players within 60 yards every 1.5 sec for 12 sec.While guarding, attacks done to the caster from behind have 100% increased Critical Strike chance."
     }
   },
   "472795": {
     "zhCN": {
       "name": "猛力拖拽",
       "description": "拉奇向玩家投出钩子，将命中的第一个目标拉拽向他的位置。如果击中了玩家，拉奇会紧接着施放猛力劈砍。"
+    },
+    "enUS": {
+      "name": "Heaving Yank",
+      "description": "Latch throws a hook towards a player, pulling the first target hit to his location. If a player is struck, Latch follows up with Heaving Chop."
     }
   },
   "1269468": {
     "zhCN": {
       "name": "割裂",
+      "description": "Inflicts 76268 Shadow damage to enemies within 2 yards of the impact."
+    },
+    "enUS": {
+      "name": "Rupture",
       "description": "Inflicts 76268 Shadow damage to enemies within 2 yards of the impact."
     }
   },
@@ -5105,161 +5673,269 @@
     "zhCN": {
       "name": "割裂",
       "description": "Inflicts 10169 Shadow damage to enemies within 100 yards."
+    },
+    "enUS": {
+      "name": "Rupture",
+      "description": "Inflicts 10169 Shadow damage to enemies within 100 yards."
     }
   },
   "1269470": {
     "zhCN": {
       "name": "割裂",
       "description": "死亡时，虚空能量会从单位体内喷发而出。"
+    },
+    "enUS": {
+      "name": "Rupture",
+      "description": "On death, void energy ejects from unit's body."
     }
   },
   "1287905": {
     "zhCN": {
       "name": "光线",
       "description": "太阳射线每1秒对阻挡它的玩家造成20338点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Light Ray",
+      "description": "The solar beam inflicts 20338 Fire damage every 1 sec to players blocking it."
     }
   },
   "1263336": {
     "zhCN": {
       "name": "暗影爆裂",
       "description": "施法者释放一股能量爆发，对冲击点8码范围内的玩家造成127113点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Shadow Burst",
+      "description": "The caster unleashes a burst of energy, inflicting 127113 Shadow damage to players within 8 yards of impact."
     }
   },
   "388841": {
     "zhCN": {
       "name": "缚咒武器",
       "description": "近战攻击会额外造成40676点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Spellbound Weapon",
+      "description": "Melee attacks inflict additional 40676 Arcane damage."
     }
   },
   "1244907": {
     "zhCN": {
       "name": "符文战刃",
       "description": "向目标投掷奥术灌注的战刃，造成35592点奥术伤害，此后每1秒造成额外20338点奥术伤害，持续10秒。战刃会额外弹射至附近1名玩家。"
+    },
+    "enUS": {
+      "name": "Runic Glaive",
+      "description": "Hurls an Arcane infused glaive at a target inflicting 35592 Arcane damage and an additional 20338 Arcane damage every 1 sec for 10 sec. The glaive bounces to 1 additional nearby player."
     }
   },
   "1261299": {
     "zhCN": {
       "name": "投掷萨隆邪铁",
       "description": "加弗斯特向玩家投掷萨隆邪铁矿石，对冲击点10码范围内的玩家造成76268点物理伤害。矿石被摧毁后会变成萨隆邪铁淤泥。"
+    },
+    "enUS": {
+      "name": "Throw Saronite",
+      "description": "Garfrost throws saronite ore at players, inflicting 76268 Physical damage to players within 10 yards of impact.The ore becomes Saronite Sludge and explodes into Ore Chunks when destroyed."
     }
   },
   "1249014": {
     "zhCN": {
       "name": "蚀光步伐",
       "description": "奈萨拉遁入暗影并随机袭击玩家，对14码范围内的所有玩家造成61014点暗影伤害，并每1秒额外造成20338点暗影伤害，持续8秒。"
+    },
+    "enUS": {
+      "name": "Eclipsing Step",
+      "description": "Nysarra slips into the shadows and strikes at random players, inflicting 61014 Shadow damage and additional 20338 Shadow damage every 1 sec for 8 sec to all players within 14 yards."
     }
   },
   "1259255": {
     "zhCN": {
       "name": "灵魂撕裂",
       "description": "Inflicts 30507 Shadow damage to an enemy.Inflicts 8135 Shadow damage to an enemy every 1 sec for 8秒."
+    },
+    "enUS": {
+      "name": "Spirit Rend",
+      "description": "Inflicts 30507 Shadow damage to an enemy.Inflicts 8135 Shadow damage to an enemy every 1 sec for 8 sec."
     }
   },
   "1271543": {
     "zhCN": {
       "name": "石肤",
       "description": "施法者吸收106点伤害。在保护期间，他们免疫沉默和控制效果。"
+    },
+    "enUS": {
+      "name": "Stoneskin",
+      "description": "The caster absorbs 106 damage. While protected, they are immune to silencing and crowd controlling effects."
     }
   },
   "1216250": {
     "zhCN": {
       "name": "奥术齐射",
       "description": "施法者连续射出魔法能量，每道能量箭矢对一名玩家造成4点物理伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Salvo",
+      "description": "The caster launches a salvo of magical energy, inflicting 21609 Arcane damage to a player with each bolt."
     }
   },
   "1216253": {
     "zhCN": {
       "name": "奥术齐射",
       "description": "施法者连续射出魔法能量，每道能量箭矢对一名玩家造成4点物理伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Salvo",
+      "description": "The caster launches a salvo of magical energy, inflicting 21609 Arcane damage to a player with each bolt."
     }
   },
   "388862": {
     "zhCN": {
       "name": "涌动",
       "description": "对目标敌人造成177958点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Surge",
+      "description": "Inflicts 177958 Arcane damage to target enemy."
     }
   },
   "388863": {
     "zhCN": {
       "name": "法力虚空",
       "description": "用腐化虚空之力灌注目标，每1秒造成17796点奥术伤害，持续6秒。持续时间结束后，虚空之力会压缩，对4码范围内的玩家造成10000点奥术伤害并吸取50845点法力值。"
+    },
+    "enUS": {
+      "name": "Mana Void",
+      "description": "Infuses the target with a corrupted void, inflicting 17796 Arcane damage every 1 sec for 6 sec. Upon expiration, the void condenses inflicting 50845 Arcane damage and draining 10000 Mana from players within 4 yards."
     }
   },
   "390912": {
     "zhCN": {
       "name": "爆炸之种",
       "description": "施法者制造会爆炸的种子，对冲击点6码范围内的所有玩家造成152535点自然伤害并使其陷入迷惑。"
+    },
+    "enUS": {
+      "name": "Detonation Seeds",
+      "description": "The caster creates exploding seeds, inflicting 152535 Nature damage and Disorients all players within 6 yards of impact."
     }
   },
   "388866": {
     "zhCN": {
       "name": "法力虚空",
       "description": "用腐化虚空之力灌注目标，每1秒造成17796点奥术伤害，持续6秒。持续时间结束后，虚空之力会压缩，对4码范围内的玩家造成10000点奥术伤害并吸取50845点法力值。"
+    },
+    "enUS": {
+      "name": "Mana Void",
+      "description": "Infuses the target with a corrupted void, inflicting 17796 Arcane damage every 1 sec for 6 sec. Upon expiration, the void condenses inflicting 50845 Arcane damage and draining 10000 Mana from players within 4 yards."
     }
   },
   "390915": {
     "zhCN": {
       "name": "爆炸之种",
       "description": "施法者制造会爆炸的种子，对冲击点6码范围内的所有玩家造成152535点自然伤害并使其陷入迷惑。"
+    },
+    "enUS": {
+      "name": "Detonation Seeds",
+      "description": "The caster creates exploding seeds, inflicting 152535 Nature damage and Disorients all players within 6 yards of impact."
     }
   },
   "1249027": {
     "zhCN": {
       "name": "蚀光步伐",
       "description": "奈萨拉遁入暗影并随机袭击玩家，对14码范围内的所有玩家造成61014点暗影伤害，并每1秒额外造成20338点暗影伤害，持续8秒。"
+    },
+    "enUS": {
+      "name": "Eclipsing Step",
+      "description": "Nysarra slips into the shadows and strikes at random players, inflicting 61014 Shadow damage and additional 20338 Shadow damage every 1 sec for 8 sec to all players within 14 yards."
     }
   },
   "1261315": {
     "zhCN": {
       "name": "近战",
       "description": "对目标造成物理伤害。"
+    },
+    "enUS": {
+      "name": "Melee",
+      "description": "Inflicts Physical damage to the target."
     }
   },
   "390918": {
     "zhCN": {
       "name": "爆炸之种",
       "description": "施法者制造会爆炸的种子，对冲击点6码范围内的所有玩家造成152535点自然伤害并使其陷入迷惑。"
+    },
+    "enUS": {
+      "name": "Seed Detonation",
+      "description": "The caster creates exploding seeds, inflicting 152535 Nature damage and Disorients all players within 6 yards of impact."
     }
   },
   "1259274": {
     "zhCN": {
       "name": "幽灵打击",
       "description": "施法者的近战攻击对60码范围内的玩家额外造成10169点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Spectral Strikes",
+      "description": "The caster's melee attacks inflict an additional 10169 Shadow damage to players within 60 yards."
     }
   },
   "1265419": {
     "zhCN": {
       "name": "绝望音符",
       "description": "鲁拉唱响黑暗歌谣，每0.3秒对所有玩家造成3813点暗影伤害，持续1.5秒。这首歌会产生数个绝望音符。"
+    },
+    "enUS": {
+      "name": "Notes of Despair",
+      "description": "L'ura sings her dark song, inflicting 3813 Shadow damage to all players every 0.3 sec for 1.5 sec. This song creates multiple Note of Despair."
     }
   },
   "1265420": {
     "zhCN": {
       "name": "绝望音符",
       "description": "鲁拉唱响黑暗歌谣，每0.3秒对所有玩家造成3813点暗影伤害，持续1.5秒。这首歌会产生数个绝望音符。"
+    },
+    "enUS": {
+      "name": "Note of Despair",
+      "description": "L'ura sings her dark song, inflicting 3813 Shadow damage to all players every 0.3 sec for 1.5 sec. This song creates multiple Note of Despair."
     }
   },
   "1265421": {
     "zhCN": {
       "name": "绝望哀歌",
       "description": "鲁拉唱响绝望哀歌，立即对所有玩家造成50845点暗影伤害。这首歌会使所有绝望音符每2秒辐射5085点暗影伤害，直到被沉默。"
+    },
+    "enUS": {
+      "name": "Dirge of Despair",
+      "description": "L'ura performs the Dirge of Despair, immediately inflicting 50845 Shadow damage to all players. This song causes all Note of Despair to radiates 5085 Shadow damage every 2 sec until they are silenced."
     }
   },
   "1265426": {
     "zhCN": {
       "name": "不谐射线",
       "description": "鲁拉用声波能量冲击目标玩家，对直线范围内的所有玩家造成61014点物理伤害，并沉默被击中的绝望音符。此伤害无视护甲。"
+    },
+    "enUS": {
+      "name": "Discordant Beam",
+      "description": "L'ura blasts target players with sonic energy, inflicting 61014 Physical damage to all players in the line and silencing any Note of Despair hit. This damage ignores armor."
     }
   },
   "1255187": {
     "zhCN": {
       "name": "神圣之火",
       "description": "使玩家陷入神圣之火的烈焰之中，造成25423点神圣伤害，并每1秒额外造成25423点神圣伤害，持续15秒。"
+    },
+    "enUS": {
+      "name": "Holy Fire",
+      "description": "Sets a player ablaze in Holy Fire inflicting 25423 Holy damage and an additional 25423 Holy damage every 1 sec for 15 sec."
     }
   },
   "390938": {
     "zhCN": {
       "name": "激励",
+      "description": "Causes the caster to inflict 15% increased Physical damage."
+    },
+    "enUS": {
+      "name": "Agitation",
       "description": "Causes the caster to inflict 15% increased Physical damage."
     }
   },
@@ -5267,390 +5943,650 @@
     "zhCN": {
       "name": "猛冲钉刺",
       "description": "施法者冲锋并钉刺一名敌人，造成40676点自然伤害。"
+    },
+    "enUS": {
+      "name": "Darting Sting",
+      "description": "The caster charges and stings an enemy, inflicting 40676 Nature damage."
     }
   },
   "390944": {
     "zhCN": {
       "name": "猛冲钉刺",
       "description": "施法者冲锋并钉刺一名敌人，造成40676点自然伤害。"
+    },
+    "enUS": {
+      "name": "Darting Sting",
+      "description": "The caster charges and stings an enemy, inflicting 40676 Nature damage."
     }
   },
   "1263399": {
     "zhCN": {
       "name": "渗漏猛击",
       "description": "祖拉尔用虚空能量猛击地面，对所有玩家造成61014点暗影伤害，随后每1秒造成额外20338点暗影伤害，持续6秒。猛击还会使凝结虚空出现在附近位置。"
+    },
+    "enUS": {
+      "name": "Oozing Slam",
+      "description": "Zuraal slams the ground with void energy, inflicting 61014 Shadow damage to all players and inflicting additional 20338 Shadow damage every 1 sec for 6 sec.The slam also spawns Coalesced Void in nearby locations."
     }
   },
   "1255208": {
     "zhCN": {
       "name": "灼热撕裂",
       "description": "洛萨克森对当前目标发动精准的二段斩击。每次斩击对范围内的敌人造成127113点物理伤害，并在6秒内每1秒额外造成20338点神圣伤害，同时在地面刻下一道光耀之痕。"
+    },
+    "enUS": {
+      "name": "Searing Rend",
+      "description": "Lothraxion lashes out with a precise, double-slash aimed at his current target, with each strike inflicting 127113 Physical damage and an additional 20338 Holy damage every 1 sec for 6 sec. Carves Radiant Scars into the ground."
     }
   },
   "1216298": {
     "zhCN": {
       "name": "灵魂煎熬",
       "description": "施法者对一名玩家每1秒造成5点暗影伤害，持续15秒。"
+    },
+    "enUS": {
+      "name": "Soul Torment",
+      "description": "The caster inflicts 25423 Shadow damage to a player every 1 sec for 15 sec."
     }
   },
   "1263406": {
     "zhCN": {
       "name": "亡者大军",
       "description": "天灾领主泰兰努斯从骨堆中复活腐尸并从注能骨堆召唤天灾瘟疫传播者。"
+    },
+    "enUS": {
+      "name": "Army of the Dead",
+      "description": "Scourgelord Tyrannus raises Rotlings from Bone Piles and Scourge Plaguespreaders from Infused Bone Piles."
     }
   },
   "1257268": {
     "zhCN": {
       "name": "弃置精华",
       "description": "将生命值输送给一名盟友。"
+    },
+    "enUS": {
+      "name": "Forfeit Essence",
+      "description": "Funnels health into an ally."
     }
   },
   "1265463": {
     "zhCN": {
       "name": "不谐射线",
       "description": "鲁拉用声波能量冲击目标玩家，对直线范围内的所有玩家造成61014点物理伤害，并沉默被击中的绝望音符。此伤害无视护甲。"
+    },
+    "enUS": {
+      "name": "Discordant Beam",
+      "description": "L'ura blasts target players with sonic energy, inflicting 61014 Physical damage to all players in the line and silencing any Note of Despair hit. This damage ignores armor."
     }
   },
   "472888": {
     "zhCN": {
       "name": "碎骨猛砍",
       "description": "拉奇砍击主要目标，每0.75秒造成203380点物理伤害，持续3秒。"
+    },
+    "enUS": {
+      "name": "Bone Hack",
+      "description": "Latch chops his primary target, inflicting 203380 Physical damage every 0.75 sec for 3 sec."
     }
   },
   "388923": {
     "zhCN": {
       "name": "爆发苏醒",
       "description": "达到100能量时，茂林古树将释放自身充沛的生命魔法来唤醒所有休眠的鞭笞者，当它们从地上挣脱时对所有玩家造成81352点自然伤害。"
+    },
+    "enUS": {
+      "name": "Burst Forth",
+      "description": "Upon reaching 100 energy, the Overgrown Ancient releases its abundant life magic to awaken all dormant Lashers, inflicting 81352 Nature damage to all players as they burst free from the ground."
     }
   },
   "1283901": {
     "zhCN": {
       "name": "盾牌猛击",
       "description": "将盾牌砸向地面，引发奥术爆炸，对击中的敌人造成127113点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Shield Slam",
+      "description": "Slams the shield on the ground, causing arcane explosions that inflicts 127113 Arcane damage to enemies hit."
     }
   },
   "1283905": {
     "zhCN": {
       "name": "盾牌猛击",
       "description": "将盾牌砸向地面，引发奥术爆炸，对击中的敌人造成127113点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Shield Slam",
+      "description": "Slams the shield on the ground, causing arcane explosions that inflicts 127113 Arcane damage to enemies hit."
     }
   },
   "1277761": {
     "zhCN": {
       "name": "孢子充能",
       "description": "臃肿的鞭笞者的孢子强化了烦人的鞭笞菇幼苗，使其攻击在8秒内额外造成自然伤害。"
+    },
+    "enUS": {
+      "name": "Sporecharged",
+      "description": "The Bloated Lasher's spores empower the Pesty Lashling, causing their attacks to inflict additional Nature damage for 8 sec."
     }
   },
   "1271623": {
     "zhCN": {
       "name": "冰霜新星",
       "description": "施法者用一团寒霜冲击目标，对8码范围内的玩家造成81352点冰霜伤害，并使其定身5秒。"
+    },
+    "enUS": {
+      "name": "Frost Nova",
+      "description": "The caster blasts their target with a rime of frost, inflicting 81352 Frost damage to players within 8 yards and rooting them for 5 sec."
     }
   },
   "388940": {
     "zhCN": {
       "name": "邪恶伏击",
       "description": "隐藏在一阵能量中伏击敌人，对6码范围内的玩家造成61014点奥术伤害并将其击退。奥术能量残留在被击中的玩家身上，持续8秒，每5.2秒造成61014点伤害。"
+    },
+    "enUS": {
+      "name": "Vicious Ambush",
+      "description": "Ambushes the target in a whirl of energy inflicting 61014 Arcane damage to players within 6 yards and knocking them back. Arcane energy lingers on the damaged players for 8 sec, inflicting 61014 damage every 5.2 sec."
     }
   },
   "388942": {
     "zhCN": {
       "name": "邪恶伏击",
       "description": "隐藏在一阵能量中伏击敌人，对6码范围内的玩家造成61014点奥术伤害并将其击退。奥术能量残留在被击中的玩家身上，持续8秒，每5.2秒造成61014点伤害。"
+    },
+    "enUS": {
+      "name": "Vicious Ambush",
+      "description": "Ambushes the target in a whirl of energy inflicting 61014 Arcane damage to players within 6 yards and knocking them back. Arcane energy lingers on the damaged players for 8 sec, inflicting 61014 damage every 5.2 sec."
     }
   },
   "1263440": {
     "zhCN": {
       "name": "虚空挥砍",
       "description": "祖拉尔向目标发动三次强力挥击，前两击各造成152535点物理伤害，最后一击造成127113点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Void Slash",
+      "description": "Zuraal unleashes three powerful swipes at his target, inflicting 152535 &nbsp;Physical damage twice with another final strike inflicting 127113 Shadow damage."
     }
   },
   "1281874": {
     "zhCN": {
       "name": "高热耗竭",
       "description": "次级构装体将能量聚集给阿拉卡纳斯后，会向前方释放灼热气流，对冲击区域内的玩家造成101690点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Heat Exhaustion",
+      "description": "The lesser constructs exhaust heat in front of them after focusing energy into Araknath, inflicting 101690 Fire damage to players in the impact area."
     }
   },
   "388957": {
     "zhCN": {
       "name": "裂隙之息",
       "description": "掠夺者引导一股强大的能量，每0.3秒造成30507点奥术伤害，持续2.5秒。"
+    },
+    "enUS": {
+      "name": "Riftbreath",
+      "description": "The Ravager channels a breath of powerful energy, inflicting 30507 Arcane damage every 0.3 sec for 2.5 sec."
     }
   },
   "388958": {
     "zhCN": {
       "name": "裂隙之息",
       "description": "掠夺者引导一股强大的能量，每0.3秒造成30507点奥术伤害，持续2.5秒。"
+    },
+    "enUS": {
+      "name": "Riftbreath",
+      "description": "The Ravager channels a breath of powerful energy, inflicting 30507 Arcane damage every 0.3 sec for 2.5 sec."
     }
   },
   "1259359": {
     "zhCN": {
       "name": "吞噬无能者",
       "description": "奈萨拉引导虚空吞噬所有存活的仆从，在2.3秒内每1.1秒恢复自身力量，并触发一次虚空能量爆发，对所有玩家造成15点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Devour the Unworthy",
+      "description": "Nyssara channels the void to consume any surviving subordinates, restoring her own strength every 1.1 sec for 2.3 sec &nbsp;and triggers a burst of void energy, inflicting 15 Shadow damage to all players."
     }
   },
   "1277799": {
     "zhCN": {
       "name": "野蛮劈砍",
       "description": "施法者对当前目标造成70点物理伤害。"
+    },
+    "enUS": {
+      "name": "Brutal Chop",
+      "description": "The caster inflicts 355915 Physical damage to its current target."
     }
   },
   "1253224": {
     "zhCN": {
       "name": "冲锋",
       "description": "施法者向目标冲锋。"
+    },
+    "enUS": {
+      "name": "Charge",
+      "description": "The caster charges to the target."
     }
   },
   "388976": {
     "zhCN": {
       "name": "裂隙之息",
       "description": "掠夺者引导一股强大的能量，每0.3秒造成30507点奥术伤害，持续2.5秒。"
+    },
+    "enUS": {
+      "name": "Riftbreath",
+      "description": "The Ravager channels a breath of powerful energy, inflicting 30507 Arcane damage every 0.3 sec for 2.5 sec."
     }
   },
   "1257328": {
     "zhCN": {
       "name": "烧灼",
       "description": "对目标造成17796点火焰伤害"
+    },
+    "enUS": {
+      "name": "Sear",
+      "description": "Inflict 17796 Fire damage to the target"
     }
   },
   "388982": {
     "zhCN": {
       "name": "邪恶伏击",
       "description": "隐藏在一阵能量中伏击敌人，对6码范围内的玩家造成61014点奥术伤害并将其击退。奥术能量残留在被击中的玩家身上，持续8秒，每5.2秒造成61014点伤害。"
+    },
+    "enUS": {
+      "name": "Vicious Ambush",
+      "description": "Ambushes the target in a whirl of energy inflicting 61014 Arcane damage to players within 6 yards and knocking them back. Arcane energy lingers on the damaged players for 8 sec, inflicting 61014 damage every 5.2 sec."
     }
   },
   "1245046": {
     "zhCN": {
       "name": "闪现术",
       "description": "将法师向前传送。"
+    },
+    "enUS": {
+      "name": "Blink",
+      "description": "Teleports the mage forward."
     }
   },
   "388984": {
     "zhCN": {
       "name": "邪恶伏击",
       "description": "隐藏在一阵能量中伏击敌人，对6码范围内的玩家造成61014点奥术伤害并将其击退。奥术能量残留在被击中的玩家身上，持续8秒，每5.2秒造成61014点伤害。"
+    },
+    "enUS": {
+      "name": "Vicious Ambush",
+      "description": "Ambushes the target in a whirl of energy inflicting 61014 Arcane damage to players within 6 yards and knocking them back. Arcane energy lingers on the damaged players for 8 sec, inflicting 61014 damage every 5.2 sec."
     }
   },
   "1263484": {
     "zhCN": {
       "name": "虚空挥砍",
       "description": "祖拉尔向目标发动三次强力挥击，前两击各造成152535点物理伤害，最后一击造成127113点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Void Slash",
+      "description": "Zuraal unleashes three powerful swipes at his target, inflicting 152535 &nbsp;Physical damage twice with another final strike inflicting 127113 Shadow damage."
     }
   },
   "1271676": {
     "zhCN": {
       "name": "剑刃风暴",
       "description": "指挥官克罗鲁科进入战斗狂热状态，锁定一名玩家，每1秒对7码范围内的玩家造成76268点物理伤害。在其战队被击败前，指挥官克罗鲁科会持续使用剑刃风暴。"
+    },
+    "enUS": {
+      "name": "Bladestorm",
+      "description": "Commander Kroluk enters a battle-trance, fixating on a player and inflicting 76268 Physical damage every 1 sec to players within 7 yards.Commander Kroluk continues to Bladestorm until his warparty is defeated."
     }
   },
   "1271678": {
     "zhCN": {
       "name": "暗影炸弹",
       "description": "1分钟后，科瑞克之影自毁并产生爆炸，对所有玩家造成254225点暗影伤害，每1秒额外造成50845点暗影伤害，持续10秒。该效果可叠加。"
+    },
+    "enUS": {
+      "name": "Shade Bomb",
+      "description": "Krick's shade explodes after 1 min, destroying itself. This inflicts 254225 Shadow damage to all players and an additional 50845 Shadow damage every 1 sec for 10 sec. This effect stacks."
     }
   },
   "1269631": {
     "zhCN": {
       "name": "熵能宝珠",
       "description": "不稳定的能量团会对击中的玩家造成76268点暗影伤害，并额外使其移动速度降低70%，持续5秒。"
+    },
+    "enUS": {
+      "name": "Entropy Orb",
+      "description": "Volatile masses inflict 76268 Shadow damage to players struck and additionaly reduce their movement speed by 70% for 5 sec."
     }
   },
   "1251204": {
     "zhCN": {
       "name": "束缚幻影",
       "description": "沃达扎操控新的祭品为她效命，生成不稳定的幻影追踪玩家。"
+    },
+    "enUS": {
+      "name": "Wrest Phantoms",
+      "description": "Vordaza wrests fresh sacrifices to do her bidding, manifesting Unstable Phantoms that seek out players."
     }
   },
   "1263492": {
     "zhCN": {
       "name": "虚空挥砍",
       "description": "祖拉尔向目标发动三次强力挥击，前两击各造成152535点物理伤害，最后一击造成127113点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Void Slash",
+      "description": "Zuraal unleashes three powerful swipes at his target, inflicting 152535 &nbsp;Physical damage twice with another final strike inflicting 127113 Shadow damage."
     }
   },
   "1263494": {
     "zhCN": {
       "name": "虚空挥砍",
       "description": "祖拉尔向目标发动三次强力挥击，前两击各造成152535点物理伤害，最后一击造成127113点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Void Slash",
+      "description": "Zuraal unleashes three powerful swipes at his target, inflicting 152535 &nbsp;Physical damage twice with another final strike inflicting 127113 Shadow damage."
     }
   },
   "1245068": {
     "zhCN": {
       "name": "吞噬虚空",
       "description": "虚空灌注者对随机玩家释放吞噬虚空，每0.5秒造成10169点暗影伤害，持续15秒。"
+    },
+    "enUS": {
+      "name": "Consuming Void",
+      "description": "Void Infuser unleashes consuming void upon a random player inflicting 10169 Shadow damage every 0.5 sec for 15 sec."
     }
   },
   "1255310": {
     "zhCN": {
       "name": "光耀之痕",
       "description": "神圣能量的锯齿烙印每1秒对区域内玩家造成50845点神圣伤害。"
+    },
+    "enUS": {
+      "name": "Radiant Scar",
+      "description": "A jagged brand of divine energy inflicts 50845 Holy damage every 1 sec to players within the area."
     }
   },
   "1253270": {
     "zhCN": {
       "name": "无情跳跃",
       "description": "指挥官克罗鲁科不顾一切地跳向距离最远的玩家，对冲击点12码范围内的玩家造成76268点物理伤害，此后每1秒额外造成20338点物理伤害，持续12秒。冲击力会引发碎石飞落。"
+    },
+    "enUS": {
+      "name": "Reckless Leap",
+      "description": "Commander Kroluk recklessly leaps towards the furthest player, inflicting 76268 Physical damage and an additional 20338 Physical damage every 1 sec for 12 sec to players within 12 yards of the impact location. The force of the impact causes Falling Rubble."
     }
   },
   "1253272": {
     "zhCN": {
       "name": "破胆怒吼",
       "description": "指挥官克罗鲁科发出震天咆哮，使任何落单的玩家在恐惧中逃跑，每1秒受到50845点暗影伤害，持续6秒。"
+    },
+    "enUS": {
+      "name": "Intimidating Shout",
+      "description": "Commander Kroluk bellows an intimidating shout, causing players who stand alone to run in fear and suffer 50845 Shadow damage every 1 sec for 6 sec."
     }
   },
   "1265561": {
     "zhCN": {
       "name": "奥能之刃",
       "description": "施法者为其武器附魔，使其近战攻击对目标造成40676点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Arcane Blade",
+      "description": "The caster enchants their weapon, causing their melee attacks to inflict an additional 40676 Arcane damage to their target."
     }
   },
   "1263523": {
     "zhCN": {
       "name": "过载",
       "description": "萨普瑞什释放一次巨大的冲击，对所有玩家造成50845点暗影伤害，随后每2秒造成35592点暗影伤害，持续8秒。冲击会点燃所有虚空炸弹，对所有玩家造成25423点暗影伤害，并对其施加渗透虚空。"
+    },
+    "enUS": {
+      "name": "Overload",
+      "description": "Saprish releases a massive blast, inflicting 50845 Shadow damage to all players and 35592 Shadow damage every 2 sec for 8 sec.This blast ignites all Void Bombs, inflicting 25423 Shadow damage to all players and applying Seeping Void."
     }
   },
   "1216419": {
     "zhCN": {
       "name": "射击",
       "description": "施法者朝一名玩家射出利箭，造成8点物理伤害。"
+    },
+    "enUS": {
+      "name": "Shoot",
+      "description": "The caster shoots an arrow at a player, inflicting 40676 Physical damage."
     }
   },
   "1255335": {
     "zhCN": {
       "name": "灼热撕裂",
       "description": "洛萨克森对当前目标发动精准的二段斩击。每次斩击对范围内的敌人造成127113点物理伤害，并在6秒内每1秒额外造成20338点神圣伤害，同时在地面刻下一道光耀之痕。"
+    },
+    "enUS": {
+      "name": "Searing Rend",
+      "description": "Lothraxion lashes out with a precise, double-slash aimed at his current target, with each strike inflicting 127113 Physical damage and an additional 20338 Holy damage every 1 sec for 6 sec. Carves Radiant Scars into the ground."
     }
   },
   "1263528": {
     "zhCN": {
       "name": "驱逐",
       "description": "总督奈扎尔释放出一股排斥之力，将所有玩家击退。"
+    },
+    "enUS": {
+      "name": "Repulse",
+      "description": "Viceroy Nezhar unleashes a repulsing force that knocks all players back."
     }
   },
   "1263529": {
     "zhCN": {
       "name": "崩塌虚空",
       "description": "达到100能量时，奈扎尔传送到房间中央，击退所有玩家，随后施放推斥原力不断将其推离。虚空能量开始向着奈扎尔崩塌，在9秒后形成虚空风暴。"
+    },
+    "enUS": {
+      "name": "Collapsing Void",
+      "description": "At 100 energy, Nezhar teleports to the center of the room, knocking all players back while continuously pushing them with Repulsing Force. Void energy begins to collapse towards Nezhar, forming a Void Storm after 9 sec."
     }
   },
   "1263532": {
     "zhCN": {
       "name": "虚空风暴",
       "description": "刮起猛烈的风暴，每2秒造成45761点暗影伤害，持续10秒。此外，风暴内部的玩家每1秒会额外受到91521点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Void Storm",
+      "description": "Raging storm that inflicts 45761 Shadow damage every 2 sec for 10 sec. Additionally, players inside the storm are suffer an additional 91521 Shadow damage every 1 sec."
     }
   },
   "1263538": {
     "zhCN": {
       "name": "暗影触须",
       "description": "奈扎尔从地下召唤出虚空触须。"
+    },
+    "enUS": {
+      "name": "Umbral Tentacles",
+      "description": "Nezhar summons void tentacles from underneath the ground."
     }
   },
   "470963": {
     "zhCN": {
       "name": "剑刃风暴",
       "description": "指挥官克罗鲁科进入战斗狂热状态，锁定一名玩家，每1秒对7码范围内的玩家造成76268点物理伤害。在其战队被击败前，指挥官克罗鲁科会持续使用剑刃风暴。"
+    },
+    "enUS": {
+      "name": "Bladestorm",
+      "description": "Commander Kroluk enters a battle-trance, fixating on a player and inflicting 76268 Physical damage every 1 sec to players within 7 yards.Commander Kroluk continues to Bladestorm until his warparty is defeated."
     }
   },
   "1263542": {
     "zhCN": {
       "name": "群体虚空灌输",
       "description": "总督奈扎尔向玩家注入虚空能量，每1秒造成30507点暗影伤害，持续5秒。"
+    },
+    "enUS": {
+      "name": "Mass Void Infusion",
+      "description": "Viceroy Nezhar infuses players with void energy, inflicting 30507 Shadow damage every 1 sec for 5 sec."
     }
   },
   "468924": {
     "zhCN": {
       "name": "剑刃风暴",
       "description": "20秒。克罗鲁科的追击永不停歇，直到所有召唤的爪牙都倒在它脚下。"
+    },
+    "enUS": {
+      "name": "Bladestorm",
+      "description": "20 sec. The Kroluk never ceases, until every summoned minion lies broken at his feet."
     }
   },
   "389054": {
     "zhCN": {
       "name": "凶恶猛扑",
       "description": "戳刺并撕咬目标，造成45761点物理伤害。"
+    },
+    "enUS": {
+      "name": "Vicious Lunge",
+      "description": "Lunges at the target and bites them inflicting 45761 Physical damage."
     }
   },
   "389055": {
     "zhCN": {
       "name": "凶恶猛扑",
       "description": "戳刺并撕咬目标，造成45761点物理伤害。"
+    },
+    "enUS": {
+      "name": "Vicious Lunge",
+      "description": "Lunges at the target and bites them inflicting 45761 Physical damage."
     }
   },
   "1216449": {
     "zhCN": {
       "name": "矢如雨下",
       "description": "施法者向空中射出一阵箭雨，对冲击点周围3码内的玩家造成25点物理伤害。"
+    },
+    "enUS": {
+      "name": "Arrow Rain",
+      "description": "The caster fires a volley of arrows into the air, inflicting 127113 Physical damage to players within 3 yards of impact."
     }
   },
   "1216454": {
     "zhCN": {
       "name": "矢如雨下",
       "description": "施法者向空中射出一阵箭雨，对冲击点周围3码内的玩家造成25点物理伤害。"
+    },
+    "enUS": {
+      "name": "Arrow Rain",
+      "description": "The caster fires a volley of arrows into the air, inflicting 127113 Physical damage to players within 3 yards of impact."
     }
   },
   "1216459": {
     "zhCN": {
       "name": "幻臾嗜血",
       "description": "施法者使盟友陷入狂暴，使其急速提高35%，持续15秒。"
+    },
+    "enUS": {
+      "name": "Ephemeral Bloodlust",
+      "description": "The caster sends its allies into a frenzy, increasing their haste by 35% for 15 sec."
     }
   },
   "1216462": {
     "zhCN": {
       "name": "精确切割",
       "description": "施法者精准切开要害部位，造成物理伤害，并使受到的治疗效果降低10%，持续6秒。"
+    },
+    "enUS": {
+      "name": "Precise Cut",
+      "description": "The caster cuts a vital organ, inflicting Physical damage and reducing healing taken by 10% for 6 sec."
     }
   },
   "1255377": {
     "zhCN": {
       "name": "驱逐",
       "description": "对所有敌人造成91521点自然伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Repel",
+      "description": "Inflicts 91521 Nature damage to all enemies and knocks them back."
     }
   },
   "468966": {
     "zhCN": {
       "name": "变形术",
       "description": "将敌人变成一只不能施法、不能攻击的法力浮龙，移动速度降低60%，最多持续6秒。"
+    },
+    "enUS": {
+      "name": "Polymorph",
+      "description": "Transforms the enemy into a helpless Mana Wyrm that cannot cast spells or attack and movement speed is reduced by 60% for up to 6 sec."
     }
   },
   "1261546": {
     "zhCN": {
       "name": "碎矿猛击",
       "description": "加弗斯特释放毁灭性的重锤猛击，对其主要目标5码范围内的玩家造成355915点物理伤害并使其昏迷8秒。如果猛击击打到萨隆邪铁矿石上，则不会使造成昏迷，而是摧毁矿石。"
+    },
+    "enUS": {
+      "name": "Orebreaker",
+      "description": "Garfrost unleashes a devastating mace slam on players within 5 yards of his primary target, inflicting 355915 Physical damage and stunning them for 8 sec.If the slam strikes saronite ore, it no longer stuns, instead destroying the ore."
     }
   },
   "245742": {
     "zhCN": {
       "name": "暗影突袭",
       "description": "黯牙扑向一名玩家，造成30507点物理伤害，并且每1秒额外造成25423点物理伤害，持续5秒。"
+    },
+    "enUS": {
+      "name": "Shadow Pounce",
+      "description": "Darkfang pounces on a player, inflicting 30507 Physical damage and additional 25423 Physical damage every 1 sec for 5 sec."
     }
   },
   "1253367": {
     "zhCN": {
       "name": "太阳耀斑",
       "description": "日翼幼雏锁定一名随机玩家并以生命为代价脉动其炽热能量，每2秒损失最大生命值的10%，对所有玩家造成25423点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Solar Flare",
+      "description": "The Sunwing fixates on a random player and pulses its fiery energy at the cost of its health, burning 10% of its maximum health and inflicting 25423 Fire damage to all players every 2 sec."
     }
   },
   "1253368": {
     "zhCN": {
       "name": "爆燃追击",
       "description": "日翼幼雏锁定一名随机玩家并以生命为代价脉动其炽热能量，每2秒损失最大生命值的10%，对所有玩家造成25423点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Burning Pursuit",
+      "description": "The Sunwing fixates on a random player and pulses its fiery energy at the cost of its health, burning 10% of its maximum health and inflicting 25423 Fire damage to all players every 2 sec."
     }
   },
   "1279994": {
     "zhCN": {
       "name": "闪现术",
       "description": "施法者传送至附近位置并释放能量冲击，对60码范围内的玩家造成30507点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Blink",
+      "description": "The caster teleports towards a nearby location and releases a surge of energy inflicting 30507 Arcane damage to players within 60 yards."
     }
   },
   "1279995": {
     "zhCN": {
       "name": "闪现术",
       "description": "施法者传送至附近位置并释放能量冲击，对60码范围内的玩家造成30507点奥术伤害。"
+    },
+    "enUS": {
+      "name": "Blink",
+      "description": "The caster teleports towards a nearby location and releases a surge of energy inflicting 30507 Arcane damage to players within 60 yards."
     }
   },
   "471038": {
     "zhCN": {
       "name": "剑刃风暴",
       "description": "指挥官克罗鲁科进入战斗狂热状态，锁定一名玩家，每1秒对7码范围内的玩家造成76268点物理伤害。在其战队被击败前，指挥官克罗鲁科会持续使用剑刃风暴。"
+    },
+    "enUS": {
+      "name": "Bladestorm",
+      "description": "Commander Kroluk enters a battle-trance, fixating on a player and inflicting 76268 Physical damage every 1 sec to players within 7 yards.Commander Kroluk continues to Bladestorm until his warparty is defeated."
     }
   },
   "114803": {
