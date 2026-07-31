@@ -7377,6 +7377,10 @@
     "zhCN": {
       "name": "毒伤",
       "description": "赞恩将淬毒的利刃深深刺入当前目标，造成228803点物理伤害，并施加断心药膏。"
+    },
+    "enUS": {
+      "name": "Envenom",
+      "description": "Zaen drives a poisoned blade in deep at his current target, inflicting 228803 Physical damage and applying Heartstop Poison."
     }
   },
   "1247366": {
@@ -9093,6 +9097,10 @@
     "zhCN": {
       "name": "甲壳守护",
       "description": "使附近盟友受到的伤害降低50%。"
+    },
+    "enUS": {
+      "name": "Shell Guard",
+      "description": "Reduces damage to nearby allies by 50%."
     }
   },
   "1250023": {
@@ -9109,6 +9117,10 @@
     "zhCN": {
       "name": "[Virulent Twister]",
       "description": "[Virulent Twister]无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Virulent Twister",
+      "description": "Inflicts 4 Nature damage every 0.3 sec."
     }
   },
   "1309416": {
@@ -9525,6 +9537,10 @@
     "zhCN": {
       "name": "过度注入",
       "description": "死亡时释放大规模的邪能爆发。"
+    },
+    "enUS": {
+      "name": "Over-infused",
+      "description": "Releases a massive burst of fel energy upon death."
     }
   },
   "1256300": {
@@ -9601,185 +9617,309 @@
     "zhCN": {
       "name": "邪能护盾",
       "description": "利希尔以邪能屏障环绕自身，受到的伤害降低50%，持续10秒。"
+    },
+    "enUS": {
+      "name": "Felshield",
+      "description": "Lithiel enshrouds herself in a fel barrier, reducing the damage she takes by 50% for 10 sec."
     }
   },
   "1219468": {
     "zhCN": {
       "name": "魔法宴会面具",
       "description": "匿名出席。"
+    },
+    "enUS": {
+      "name": "Enchanted Party Mask",
+      "description": "Incognito."
     }
   },
   "1282959": {
     "zhCN": {
       "name": "看门者",
       "description": "这个生物的存在阻挡了前往煞戎努斯的路。"
+    },
+    "enUS": {
+      "name": "Gatekeeper",
+      "description": "The presence of this creature is blocking the way to Charonus."
     }
   },
   "1250199": {
     "zhCN": {
       "name": "蛤蟆卵",
       "description": "薯身蟾主母产下薯身幼蟾卵，这些蛋会立即开始孵化成为新生的薯身幼蟾。"
+    },
+    "enUS": {
+      "name": "Toadspawn",
+      "description": "The Potatoad Matriarch spawns Potadpole Eggs that immediately begin to Hatch into Newborn Potadpoles."
     }
   },
   "1250200": {
     "zhCN": {
       "name": "蛤蟆卵",
       "description": "薯身蟾主母产下薯身幼蟾卵，这些蛋会立即开始孵化成为新生的薯身幼蟾。"
+    },
+    "enUS": {
+      "name": "Toadspawn",
+      "description": "The Potatoad Matriarch spawns Potadpole Eggs that immediately begin to Hatch into Newborn Potadpoles."
     }
   },
   "1235865": {
     "zhCN": {
       "name": "荆棘之刃",
       "description": "莱克希伏击一名玩家并从背后偷袭，对其造成50845点自然伤害，并使其流血，每2秒造成20338点物理伤害，持续8秒。"
+    },
+    "enUS": {
+      "name": "Thornblade",
+      "description": "Lekshi ambushes a player and backstabs them, inflicting 50845 Nature damage and causing them to bleed for 20338 Physical damage every 2 sec for 8 sec."
     }
   },
   "1250203": {
     "zhCN": {
       "name": "孵化",
       "description": "薯身蟾卵会孵化为新生的薯身幼蟾。"
+    },
+    "enUS": {
+      "name": "Hatch",
+      "description": "The Potatoad Egg hatches into a Newborn Potadpole."
     }
   },
   "1262497": {
     "zhCN": {
       "name": "巨兽践踏",
       "description": "阿特洛苏斯对所有玩家造成91521点物理伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Monstrous Stomp",
+      "description": "Atroxus inflicts 91521 Physical damage to all players, knocking them back."
     }
   },
   "1301413": {
     "zhCN": {
       "name": "[Boneslicer]",
       "description": "[Boneslicer]无限范围5​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Boneslicer",
+      "description": "Zul'jan hurls an axe at a player, inflicting 174568 Physical damage to all players caught in its path and an additional 43642 Physical damage every 1 sec for 7 sec. This effect ignores armor."
     }
   },
   "269230": {
     "zhCN": {
       "name": "狩猎跃击",
       "description": "跳向目标玩家并释放一系列撕裂攻击，每次攻击都会对锥形范围内的玩家造成6251点物理伤害。"
+    },
+    "enUS": {
+      "name": "Hunting Leap",
+      "description": "Jumps towards a targeted player and unleashes a series of gutripping attacks, inflicting 6251 Physical to players in a cone with each attack."
     }
   },
   "269231": {
     "zhCN": {
       "name": "狩猎跃击",
       "description": "跳向目标玩家并释放一系列撕裂攻击，每次攻击都会对锥形范围内的玩家造成6251点物理伤害。"
+    },
+    "enUS": {
+      "name": "Hunting Leap",
+      "description": "Jumps towards a targeted player and unleashes a series of gutripping attacks, inflicting 6251 Physical to players in a cone with each attack."
     }
   },
   "269232": {
     "zhCN": {
       "name": "狩猎跃击",
       "description": "跳向目标玩家并释放一系列撕裂攻击，每次攻击都会对锥形范围内的玩家造成6251点物理伤害。"
+    },
+    "enUS": {
+      "name": "Hunting Leap",
+      "description": "Jumps towards a targeted player and unleashes a series of gutripping attacks, inflicting 6251 Physical to players in a cone with each attack."
     }
   },
   "1307567": {
     "zhCN": {
       "name": "[Mass Envenom]",
       "description": "[Mass Envenom]60 码范围2.5​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Mass Envenom",
+      "description": "Inflicts 6 Nature damage and an additional 3 Nature damage every 1 sec for 8 sec."
     }
   },
   "1307571": {
     "zhCN": {
       "name": "[Envenom]",
       "description": "[Envenom]60 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Envenom",
+      "description": "Inflicts 6 Nature damage and an additional 3 Nature damage every 1 sec for 8 sec."
     }
   },
   "1307573": {
     "zhCN": {
       "name": "[Triple Shot]",
       "description": "[Triple Shot]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Triple Shot",
+      "description": "Rav'i shoots globs of venom at 3 enemies that each inflict 116379 Nature damage and an additional 41217 Nature damage to enemies within 5 yd every 1 sec for 10 sec."
     }
   },
   "1217464": {
     "zhCN": {
       "name": "非法灌注",
       "description": "凯斯媞亚为咬咬注入邪能魔法。"
+    },
+    "enUS": {
+      "name": "Illicit Infusion",
+      "description": "Kystia infuses Nibbles with fel magic."
     }
   },
   "1307602": {
     "zhCN": {
       "name": "[Evolved]",
       "description": "[Evolved]瞬发"
+    },
+    "enUS": {
+      "name": "Evolved",
+      "description": "The caster attempts to evolve, healing &nbsp;5% of it's max health every 1 sec for 6 sec. &nbsp;Upon completion, the caster gains a shield that absorbs the next 50 damage and grants immunity to crowd control effects."
     }
   },
   "1268707": {
     "zhCN": {
       "name": "毒性喷吐",
       "description": "施法者朝目标位置喷吐剧毒，生成一个毒池，毒池每1秒造成50819点自然伤害，持续20秒。"
+    },
+    "enUS": {
+      "name": "Venomous Spit",
+      "description": "The caster spits venom at the target's location, creating a pool of poison that inflicts 50819 Nature damage every 1 sec for 20 sec."
     }
   },
   "1262577": {
     "zhCN": {
       "name": "幽魂劈砍",
       "description": "回响斩击附近的玩家，将其击退并造成每2秒15254点物理伤害的流血效果，持续20秒。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Spectral Slash",
+      "description": "The echo slashes at nearby players, knocking them back and causing them to bleed for 15254 Physical damage every 2 sec for 20 sec. This effect stacks."
     }
   },
   "1301508": {
     "zhCN": {
       "name": "[Boneslicer]",
       "description": "[Boneslicer]无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Boneslicer",
+      "description": "Zul'jan hurls an axe at a player, inflicting 174568 Physical damage to all players caught in its path and an additional 43642 Physical damage every 1 sec for 7 sec. This effect ignores armor."
     }
   },
   "1242135": {
     "zhCN": {
       "name": "凶残创裂",
       "description": "棘喉兽撕裂目标，造成254225点物理伤害，并使其流血，每1秒额外受到25423点物理伤害，持续16秒或直到生命值完全恢复。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Grievous Gash",
+      "description": "The thornmaw rends its target, inflicting 254225 Physical damage and causing them to bleed an additional 25423 Physical damage every 1 sec for 16 sec or until fully healed. This effect stacks."
     }
   },
   "1242138": {
     "zhCN": {
       "name": "炽阳吐息",
       "description": "棘喉兽向前方锥形区域喷吐光能，对范围内的玩家造成203380点神圣伤害。"
+    },
+    "enUS": {
+      "name": "Solar Breath",
+      "description": "The thornmaw expels light energy in a frontal cone, inflicting 203380 Holy damage to players within the effect."
     }
   },
   "1240100": {
     "zhCN": {
       "name": "光明坠落",
       "description": "鲁伊亚召唤神圣能量从天而降，对落点4码范围内的玩家造成152535点神圣伤害。"
+    },
+    "enUS": {
+      "name": "Lightfall",
+      "description": "Ruia calls down waves of falling Light energy, inflicting 152535 Holy damage to players within 4 yards of the impact."
     }
   },
   "1238053": {
     "zhCN": {
       "name": "母熊之怒",
       "description": "幼崽发出的哭喊激怒了附近7码范围内的熊，使它们造成的伤害提高5%，持续20秒。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Mother's Wrath",
+      "description": "The cub lets out a cry angering nearby bears within 7 yards, increasing their damage dealt by 5% for 20 sec. This effect stacks."
     }
   },
   "1305637": {
     "zhCN": {
       "name": "[Septic Spatter]",
       "description": "[Septic Spatter]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Septic Spatter",
+      "description": "The leech pops, splashing poisoned blood that inflicts 30 Nature damage on impact and 7 Nature damage every 1.5 sec to players within the pools."
     }
   },
   "1258537": {
     "zhCN": {
       "name": "召唤浮龙",
       "description": "施法者在4秒内每1秒召唤一只小小邪能浮龙。"
+    },
+    "enUS": {
+      "name": "Summon Wyrms",
+      "description": "The caster summons a Tiny Felwyrm every 1 sec for 4 sec."
     }
   },
   "1270826": {
     "zhCN": {
       "name": "防御姿态",
       "description": "防御姿态17 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Defensive Stance",
+      "description": "Defensive Stance17 yd rangeInstant"
     }
   },
   "1289258": {
     "zhCN": {
       "name": "腐蚀精华",
       "description": "Reduces the movement speed of the target by 10% for 8秒.Inflicts 38134 Shadow damage to an enemy every 2 sec for 8秒."
+    },
+    "enUS": {
+      "name": "Decroding Essence",
+      "description": "Reduces the movement speed of the target by 10% for 8 sec.Inflicts 38134 Shadow damage to an enemy every 2 sec for 8 sec."
     }
   },
   "1219631": {
     "zhCN": {
       "name": "邪能灌注货物",
       "description": "货物中蕴含的不稳定魔法正在外泄，每3秒对所有玩家造成20338点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Fel-Infused Freight",
+      "description": "A shipment that is barely containing the volatile magic within, inflicting 20338 Fire damage to all players every 3 sec."
     }
   },
   "1238063": {
     "zhCN": {
       "name": "光芒箭",
       "description": "施法者向目标释放光能，造成61014点神圣伤害。"
+    },
+    "enUS": {
+      "name": "Light Bolt",
+      "description": "The caster launches light energy at a target, inflicting 61014 Holy damage."
     }
   },
   "1289265": {
     "zhCN": {
       "name": "腐蚀精华",
+      "description": ""
+    },
+    "enUS": {
+      "name": "Decroding Essence",
       "description": ""
     }
   },
@@ -9787,342 +9927,570 @@
     "zhCN": {
       "name": "荆棘之刃",
       "description": "施法者闪现至目标身后发动背刺，造成30507点自然伤害并使目标流血，每2秒额外造成30507点物理伤害，持续6秒。"
+    },
+    "enUS": {
+      "name": "Thornblade",
+      "description": "The caster appears behind a target and backstabs them, inflicting 30507 Nature damage and causing them to bleed an additional 30507 Physical damage every 2 sec for 6 sec."
     }
   },
   "1307700": {
     "zhCN": {
       "name": "[Carrion Burst]",
       "description": "[Carrion Burst]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Carrion Burst",
+      "description": "The stench of rotting meat and viscera clings to all enemies, inflicting 29095 Nature damage every 3 sec for 9 sec. This effect stacks."
     }
   },
   "1238071": {
     "zhCN": {
       "name": "荆棘之刃",
       "description": "施法者闪现至目标身后发动背刺，造成30507点自然伤害并使目标流血，每2秒额外造成30507点物理伤害，持续6秒。"
+    },
+    "enUS": {
+      "name": "Thornblade",
+      "description": "The caster appears behind a target and backstabs them, inflicting 30507 Nature damage and causing them to bleed an additional 30507 Physical damage every 2 sec for 6 sec."
     }
   },
   "1307703": {
     "zhCN": {
       "name": "[Fresh Meat]",
       "description": "[Fresh Meat]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Fresh Meat",
+      "description": "The taste of Fresh Meat throws Rav'i into a Feeding Frenzy, causing her to eat twice as fast."
     }
   },
   "1238076": {
     "zhCN": {
       "name": "荆棘之刃",
       "description": "施法者闪现至目标身后发动背刺，造成30507点自然伤害并使目标流血，每2秒额外造成30507点物理伤害，持续6秒。"
+    },
+    "enUS": {
+      "name": "Thornblade",
+      "description": "The caster appears behind a target and backstabs them, inflicting 30507 Nature damage and causing them to bleed an additional 30507 Physical damage every 2 sec for 6 sec."
     }
   },
   "1295426": {
     "zhCN": {
       "name": "[Flay]",
       "description": "[Flay]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Flay",
+      "description": "Caster charges toward an enemy and slashes them, inflicting 6 Physical damage and causes them to bleed for an additional 4 Physical damage every 1 sec for 3 sec."
     }
   },
   "1295427": {
     "zhCN": {
       "name": "[Flay]",
       "description": "[Flay]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Flay",
+      "description": "Caster charges toward an enemy and slashes them, inflicting 6 Physical damage and causes them to bleed for an additional 4 Physical damage every 1 sec for 3 sec."
     }
   },
   "734276": {
     "zhCN": {
       "name": "绝命凶径",
       "description": "赞恩花费宝贵的片刻时间瞄准所有玩家。准备完毕后，他将对视线内的所有玩家开火，造成203380点物理伤害，并在15秒内额外造成457605点流血伤害。"
+    },
+    "enUS": {
+      "name": "Murder in a Row",
+      "description": "Zaen takes a few precious moments to take aim at all players. When he is ready to fire, he shoots all players in his line of sight, inflicting 203380 Physical damage and an additional 457605 Bleed damage over 15 sec."
     }
   },
   "1238084": {
     "zhCN": {
       "name": "孢子棘刺",
       "description": "鞭笞者的近战攻击会在目标身上残留花粉，每2秒造成1点自然伤害并使其移动速度降低2%，持续16秒。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Spore Spines",
+      "description": "Pollen from the lasher's melee attacks linger on the target, inflicting 1 Nature damage every 2 sec and slowing them by 2% for 16 sec.This effect stacks."
     }
   },
   "1242180": {
     "zhCN": {
       "name": "护光者的荒芜",
       "description": "护光者的荒芜100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Lightwarden's Blight",
+      "description": "Lightwarden's Blight100 yd rangeInstant"
     }
   },
   "474197": {
     "zhCN": {
       "name": "魔化狂怒",
       "description": "歼灭者萨祖克斯陷入魔化狂怒，对所有玩家造成101690点混乱伤害。当此效果激活时，萨祖克斯获得75%的攻击速度，受到的伤害提高30%，并获得燃烧脚步，持续15秒。"
+    },
+    "enUS": {
+      "name": "Demonic Rage",
+      "description": "Xathuux the Annihilator flies into a Demonic Rage, inflicting 101690 Chaos damage to all players. While this effect is active, Xathuux gains 75% attack speed, suffers 30% increased incoming damage, and gains Burning Steps for 15 sec."
     }
   },
   "1242200": {
     "zhCN": {
       "name": "护光者的荒芜",
       "description": "被注入圣光能量的生物死亡时会爆炸，对附近玩家造成152535点神圣伤害，并生成一滩荒芜树脂。"
+    },
+    "enUS": {
+      "name": "Lightwarden's Blight",
+      "description": "Upon death the light-infused creature explodes, inflicting 152535 Holy damage to nearby players and creating a pool of Blight Resin."
     }
   },
   "1240152": {
     "zhCN": {
       "name": "光明坠落",
       "description": "鲁伊亚召唤神圣能量从天而降，对落点4码范围内的玩家造成152535点神圣伤害。"
+    },
+    "enUS": {
+      "name": "Lightfall",
+      "description": "Ruia calls down waves of falling Light energy, inflicting 152535 Holy damage to players within 4 yards of the impact."
     }
   },
   "1295453": {
     "zhCN": {
       "name": "[Infernal Crush]",
       "description": "[Infernal Crush]100 码范围3​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Infernal Crush",
+      "description": "Xathuux the Annihilator slams the ground with his fel-infused axe, causing energy to erupt under target players, inflicting 96982 Fire damage and additional 29095 Fire damage every 1 sec for 8 sec."
     }
   },
   "1295455": {
     "zhCN": {
       "name": "[Infernal Crush]",
       "description": "[Infernal Crush]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Infernal Crush",
+      "description": "Xathuux the Annihilator slams the ground with his fel-infused axe, causing energy to erupt under target players, inflicting 96982 Fire damage and additional 29095 Fire damage every 1 sec for 8 sec."
     }
   },
   "1217633": {
     "zhCN": {
       "name": "腐蚀唾液",
       "description": "浮龙朝其当前目标吐出腐蚀液体，立即造成43218点火焰伤害，随后每3秒造成20338点火焰伤害，持续15秒。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Corroding Spittle",
+      "description": "The wyrm spits at their current target, inflicting 43218 Fire damage immediately and 20338 Fire damage every 3 sec for 15 sec. This effect stacks."
     }
   },
   "1234021": {
     "zhCN": {
       "name": "裂地强击",
       "description": "囤宝狂人猛击地面，对前方锥形范围内的玩家造成254225点自然伤害。"
+    },
+    "enUS": {
+      "name": "Earthshatter Slam",
+      "description": "The Hoardmonger slams the ground, inflicting 254225 Nature damage to players in a frontal cone."
     }
   },
   "1293420": {
     "zhCN": {
       "name": "[Evolution Ritual]",
       "description": "[Evolution Ritual]0.001 秒 施法时间"
+    },
+    "enUS": {
+      "name": "Evolution Ritual",
+      "description": "Shielded by the ritual. Unattackable and immune."
     }
   },
   "1264753": {
     "zhCN": {
       "name": "治疗术",
       "description": "治疗术瞬发"
+    },
+    "enUS": {
+      "name": "Heal",
+      "description": "HealInstant"
     }
   },
   "1307765": {
     "zhCN": {
       "name": "[Feeding Frenzy]",
       "description": "[Feeding Frenzy]瞬发"
+    },
+    "enUS": {
+      "name": "Feeding Frenzy",
+      "description": "Rav'i runs to feast on the nearest Carrion Pile, gaining a shield that absorbs all damage. Until her shield is removed, Rav'i applies Carrion Burst to all enemies every 1.5 sec.[Rav'i is a Messy Eater, and throws chunks of rotting meat across the pit while in a Feeding Frenzy.]"
     }
   },
   "474231": {
     "zhCN": {
       "name": "燃烧脚步",
       "description": "邪能魔法从歼灭者萨祖克斯的脚下向外蔓延，每1秒对站在其中的玩家造成55930点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Burning Steps",
+      "description": "Xathuux the Annihilator spreads fel magic across the ground from his feet inflicting 55930 Fire damage every 1 sec to any players standing in it."
     }
   },
   "1307768": {
     "zhCN": {
       "name": "[Feeding Frenzy]",
       "description": "[Feeding Frenzy]瞄准 (1​分钟 施法时间)"
+    },
+    "enUS": {
+      "name": "Feeding Frenzy",
+      "description": "Feeding FrenzyChanneled (1 min cast)"
     }
   },
   "474234": {
     "zhCN": {
       "name": "燃烧脚步",
       "description": "邪能魔法从歼灭者萨祖克斯的脚下向外蔓延，每1秒对站在其中的玩家造成55930点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Burning Steps",
+      "description": "Xathuux the Annihilator spreads fel magic across the ground from his feet inflicting 55930 Fire damage every 1 sec to any players standing in it."
     }
   },
   "474238": {
     "zhCN": {
       "name": "非法灌注",
       "description": "凯斯媞亚为咬咬重新注入邪能魔法，使其对玩家产生敌意。"
+    },
+    "enUS": {
+      "name": "Illicit Infusion",
+      "description": "Kystia reinfuses Nibbles with fel magic, turning her hostile towards players."
     }
   },
   "474240": {
     "zhCN": {
       "name": "邪能新星",
       "description": "凯斯媞亚传送到一名随机玩家的位置，释放毁灭性的爆发浪潮，对附近玩家造成152535点火焰伤害，并将其击退。"
+    },
+    "enUS": {
+      "name": "Fel Nova",
+      "description": "Kystia teleports to a random player's location and sends out an explosive wave of destructive energy, inflicting 152535 Fire damage to nearby players and knocking them back."
     }
   },
   "1242244": {
     "zhCN": {
       "name": "荒芜弥漫",
       "description": "鲁伊亚将光能灌注给附近盟友，施加护光者的荒芜效果。"
+    },
+    "enUS": {
+      "name": "Blight Propagation",
+      "description": "Ruia channels light energy into nearby allies, applying Lightwarden's Blight."
     }
   },
   "1232012": {
     "zhCN": {
       "name": "锯刃之拳",
       "description": "囤宝狂人从他的白骨堆中取出骨刺，使其能够释放骨刺猛击。"
+    },
+    "enUS": {
+      "name": "Serrated Fists",
+      "description": "The Hoardmonger gathers from his bone pile, granting him access to Bonespike Slam."
     }
   },
   "1238158": {
     "zhCN": {
       "name": "光绽授粉",
       "description": "施法者周身环绕花粉护盾，吸收314619点伤害并免疫控制效果。附近盟友获得花粉涌动效果，攻击速度提高50%，造成的伤害增加50%，持续1分钟秒或持续到护盾被击破。"
+    },
+    "enUS": {
+      "name": "Lightboom Pollination",
+      "description": "The caster envelops itself in a cloud of pollen, absorbing 314619 damage taken and becoming immune to crowd controlling effects. Nearby allies gain Pollen Surge, increasing their attack speed by 50% and damage done by 50%. This effect persists for 1 min or until the shield is removed."
     }
   },
   "1240210": {
     "zhCN": {
       "name": "粉碎打击",
       "description": "鲁伊亚标记数个目标，随后每2秒朝每个目标方向发射一道锥形冲击波，持续6秒。每道冲击波会对范围内的玩家造成76268点物理伤害并施加粉碎。"
+    },
+    "enUS": {
+      "name": "Pulverizing Strikes",
+      "description": "Ruia marks several targets and launches a wave of force toward each of them in a frontal cone every 2 sec for 6 sec. Each impact inflicts 76268 Physical damage to players within the effect and applies Pulverized."
     }
   },
   "1238173": {
     "zhCN": {
       "name": "花粉涌动",
       "description": "附近盟友的光绽授粉使得造成的伤害提高50%，攻击速度提高50%。"
+    },
+    "enUS": {
+      "name": "Pollen Surge",
+      "description": "Damage done is increased by 50% and attack speed is increased by 50% by a nearby ally's Lightboom Pollination."
     }
   },
   "1246372": {
     "zhCN": {
       "name": "唤醒光绽",
       "description": "兹欧凯特将光能灌注入土壤，催生光诞鞭笞者并重新唤醒任何处于休眠状态的光诞鞭笞者。光诞鞭笞者重新唤醒时具有邪恶愈合。"
+    },
+    "enUS": {
+      "name": "Awaken the Lightbloom",
+      "description": "Ziekket sows Light energy into the soil, sprouting Lightspawn Lashers and reawakening any that are Dormant.Lashers reawaken with Vicious Regrowth."
     }
   },
   "1238200": {
     "zhCN": {
       "name": "狂热盛放",
       "description": "施法者疯狂寻求援助，引导8秒，激活附近休眠的鞭笞者。引导完成后，鞭笞者将苏醒并攻击玩家。"
+    },
+    "enUS": {
+      "name": "Frantic Blooming",
+      "description": "The caster frantically looks for aid, channeling on dormant nearby lashers for 8 sec. When the channel finishes, the lashers awaken and attack players."
     }
   },
   "1240257": {
     "zhCN": {
       "name": "粉碎打击",
       "description": "鲁伊亚标记数个目标，随后每2秒朝每个目标方向发射一道锥形冲击波，持续6秒。每道冲击波会对范围内的玩家造成76268点物理伤害并施加粉碎。"
+    },
+    "enUS": {
+      "name": "Pulverizing Strikes",
+      "description": "Ruia marks several targets and launches a wave of force toward each of them in a frontal cone every 2 sec for 6 sec. Each impact inflicts 76268 Physical damage to players within the effect and applies Pulverized."
     }
   },
   "1289416": {
     "zhCN": {
       "name": "[Envenom]",
       "description": "[Envenom]60 码范围2.5​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Envenom",
+      "description": "Inflicts 6 Nature damage and an additional 3 Nature damage every 1 sec for 8 sec."
     }
   },
   "1240280": {
     "zhCN": {
       "name": "粉碎",
       "description": "施法者猛击当前目标，造成305070点物理伤害。该攻击无法被躲闪或招架。"
+    },
+    "enUS": {
+      "name": "Pulverize",
+      "description": "The caster pulverizes their current target, inflicting 305070 Physical damage. This cannot be dodged or parried."
     }
   },
   "1238232": {
     "zhCN": {
       "name": "种子射击",
       "description": "施法者向目标喷射种子，命中时造成61014点自然伤害。"
+    },
+    "enUS": {
+      "name": "Seed Shot",
+      "description": "The caster spits a seed at a target, inflicting 61014 Nature damage on impact."
     }
   },
   "1213658": {
     "zhCN": {
       "name": "不满的顾客",
       "description": "显然不满这里的服务。"
+    },
+    "enUS": {
+      "name": "Unsatisfied Customer",
+      "description": "Clearly unhappy with the service around here."
     }
   },
   "1254622": {
     "zhCN": {
       "name": "警惕凝视",
       "description": "纳洛拉克屏息凝神地注视着，等待最终试炼的到来。"
+    },
+    "enUS": {
+      "name": "Watchful Gaze",
+      "description": "Nalorak watches and waits in anticipation for the final trial."
     }
   },
   "1309919": {
     "zhCN": {
       "name": "[Frigid Roar]",
       "description": "[Frigid Roar]3.5​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Frigid Roar",
+      "description": "The bear lets loose a frigid roar, reducing Haste and Movement Speed by 50%."
     }
   },
   "1223906": {
     "zhCN": {
       "name": "邪能新星",
       "description": "凯斯媞亚传送到一名随机玩家的位置，释放毁灭性的爆发浪潮，对附近玩家造成152535点火焰伤害，并将其击退。"
+    },
+    "enUS": {
+      "name": "Fel Nova",
+      "description": "Kystia teleports to a random player's location and sends out an explosive wave of destructive energy, inflicting 152535 Fire damage to nearby players and knocking them back."
     }
   },
   "1309924": {
     "zhCN": {
       "name": "[Volatile Totem]",
       "description": "[Volatile Totem]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Volatile Totem",
+      "description": "Nanea creates multiple totems to assist her in combat that release Volatile Flames."
     }
   },
   "1309925": {
     "zhCN": {
       "name": "[Volatile Totem]",
       "description": "[Volatile Totem]3​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Volatile Totem",
+      "description": "Nanea creates multiple totems to assist her in combat that release Volatile Flames."
     }
   },
   "1309931": {
     "zhCN": {
       "name": "[Volatile Flames]",
       "description": "[Volatile Flames]无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Volatile Flames",
+      "description": "Flames radiate from the totem, inflicting 5 Fire damage every 2.5 sec."
     }
   },
   "1307894": {
     "zhCN": {
       "name": "[Ravenous Stomp]",
       "description": "[Ravenous Stomp]100 码范围3​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Ravenous Stomp",
+      "description": "Rav'i stomps impatiently, sending a quake through the temple that inflicts 145473 Nature damage to all enemies and breaks several stalactites from the ceiling. Each stalactite inflicts 320042 Nature damage to enemies within 5 yards of the impact and stuns players caught in the impact for 2 sec.Flying Twinfangs are skewered by the falling rocks, dropping Fresh Meat into Rav'i's pit."
     }
   },
   "1309947": {
     "zhCN": {
       "name": "[Harsh Winter]",
       "description": "[Harsh Winter]0.001 秒 施法时间"
+    },
+    "enUS": {
+      "name": "Harsh Winter",
+      "description": "The Winter Squall conjures a dense cloud in a 0 yard radius around itself. Players cannot target into or out of the cloud. Players within the cloud suffer 0 Frost damage every 5.2 sec."
     }
   },
   "1297667": {
     "zhCN": {
       "name": "[Burning Fel]",
       "description": "[Burning Fel]50 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Burning Fel",
+      "description": "Inflicts 38793 Fire damage to enemies within 50 yards."
     }
   },
   "1223939": {
     "zhCN": {
       "name": "毒伤",
       "description": "赞恩将淬毒的利刃深深刺入当前目标，造成228803点物理伤害，并施加断心药膏。"
+    },
+    "enUS": {
+      "name": "Envenom",
+      "description": "Zaen drives a poisoned blade in deep at his current target, inflicting 228803 Physical damage and applying Heartstop Poison."
     }
   },
   "474375": {
     "zhCN": {
       "name": "混乱之箭",
       "description": "利希尔·烬怒释放一道毁灭性的冲击，造成81352点混乱伤害。"
+    },
+    "enUS": {
+      "name": "Chaos Bolt",
+      "description": "Lithiel Cinderfury unleashes a devastating blast inflicting 81352 Chaos damage."
     }
   },
   "1307915": {
     "zhCN": {
       "name": "[Ravenous Stomp]",
       "description": "[Ravenous Stomp]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Ravenous Stomp",
+      "description": "Rav'i stomps impatiently, sending a quake through the temple that inflicts 145473 Nature damage to all enemies and breaks several stalactites from the ceiling. Each stalactite inflicts 320042 Nature damage to enemies within 5 yards of the impact and stuns players caught in the impact for 2 sec.Flying Twinfangs are skewered by the falling rocks, dropping Fresh Meat into Rav'i's pit."
     }
   },
   "1297676": {
     "zhCN": {
       "name": "[Punishing Might]",
       "description": "[Punishing Might]瞬发"
+    },
+    "enUS": {
+      "name": "Punishing Might",
+      "description": "Caster becomes empowered everytime her melee attack is missed or dodged, increasing her Physical damage done by 30% until she lands a melee attack. This effect stacks."
     }
   },
   "1309964": {
     "zhCN": {
       "name": "[Harsh Winter]",
       "description": "[Harsh Winter]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Harsh Winter",
+      "description": "The Winter Squall conjures a dense cloud in a 4 yard radius around itself. Players cannot target into or out of the cloud. Players within the cloud suffer 4 Frost damage every 2 sec."
     }
   },
   "1307921": {
     "zhCN": {
       "name": "[Fresh Meat]",
       "description": "[Fresh Meat]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Fresh Meat",
+      "description": "Fresh Meat100 yd rangeInstant"
     }
   },
   "1309970": {
     "zhCN": {
       "name": "[Health Funnel]",
       "description": "[Health Funnel]瞬发"
+    },
+    "enUS": {
+      "name": "Health Funnel",
+      "description": "Heals target for 100% of their max health every 2 sec for 30 sec.Caster loses 5% of their max health every 2 sec."
     }
   },
   "1297682": {
     "zhCN": {
       "name": "[Drain Life]",
       "description": "[Drain Life]100 码范围2​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Drain Life",
+      "description": "Drains life from the target every 1 sec, transfering them to the caster."
     }
   },
   "1297683": {
     "zhCN": {
       "name": "[Drain Life]",
       "description": "[Drain Life]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Drain Life",
+      "description": "Drains life from the target every 1 sec, transfering them to the caster."
     }
   },
   "1297684": {
     "zhCN": {
       "name": "[Dark Pact]",
       "description": "[Dark Pact]1.5​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Dark Pact",
+      "description": "Caster sacrifices 10% of its max health and shields itself for 35% of its max health"
     }
   },
   "1297686": {
     "zhCN": {
       "name": "[Dark Pact]",
       "description": "[Dark Pact]瞬发"
+    },
+    "enUS": {
+      "name": "Dark Pact",
+      "description": "Caster sacrifices 10% of its max health and shields itself for 35% of its max health"
     }
   },
   "1238294": {
@@ -10139,227 +10507,379 @@
     "zhCN": {
       "name": "[Whirlwind]",
       "description": "[Whirlwind]12 码范围4​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Whirlwind",
+      "description": "Inflicts 30 Physical damage to enemies within 12 yards."
     }
   },
   "1297693": {
     "zhCN": {
       "name": "[Felfire Bombardment]",
       "description": "[Felfire Bombardment]60 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Felfire Bombardment",
+      "description": ""
     }
   },
   "1297695": {
     "zhCN": {
       "name": "[Felfire Bombardment]",
       "description": "[Felfire Bombardment]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Felfire Bombardment",
+      "description": "Inflicts 20 Fire damage to enemies within 5 yards of the impact."
     }
   },
   "1297696": {
     "zhCN": {
       "name": "[Healing Breeze]",
       "description": "[Healing Breeze]3.5​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Healing Breeze",
+      "description": "The caster conjures a healing breezing, healing nearby allies for 5 of their maximum health every 2 sec."
     }
   },
   "1297699": {
     "zhCN": {
       "name": "[Rotten Supplies]",
       "description": "[Rotten Supplies]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Rotten Supplies",
+      "description": "Inflicts 4 Nature damage and leaves behind Rotten Ground for 20 sec."
     }
   },
   "1297701": {
     "zhCN": {
       "name": "[Rotten Ground]",
       "description": "[Rotten Ground]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Rotten Ground",
+      "description": "Inflicts 8 Nature damage every 1 sec."
     }
   },
   "474408": {
     "zhCN": {
       "name": "召唤邪犬",
       "description": "利希尔·烬怒召唤出一只邪犬。"
+    },
+    "enUS": {
+      "name": "Summon Vilefiend",
+      "description": "Lithiel Cinderfury summons a Vilefiend."
     }
   },
   "1226031": {
     "zhCN": {
       "name": "毒液喷溅",
       "description": "阿特洛苏斯向周围溅射毒液，对击中的玩家造成101690点自然伤害，随后每1秒造成30507点自然伤害，持续5秒。每个冲击位置会生成一个持续1分钟的毒池。"
+    },
+    "enUS": {
+      "name": "Poison Splash",
+      "description": "Atroxus splashes poison around itself, inflicting 101690 Nature damage with an additional 30507 Nature damage every 1 sec for 5 sec to players struck. Each impact creates a poison pool for 1 min."
     }
   },
   "1234233": {
     "zhCN": {
       "name": "腐坏补给",
       "description": "囤宝狂人在7秒内伸手从袋子里掏出腐烂的食物投掷出去，接触目标玩家时造成50845点自然伤害，或在竞技场各处散落腐烂的蘑菇。"
+    },
+    "enUS": {
+      "name": "Spoiled Supplies",
+      "description": "The Hoardmonger reaches into his sack and tosses rotten food over 7 sec, impacting targeted players for 50845 Nature damage or littering Rotten Mushrooms around the arena."
     }
   },
   "1246527": {
     "zhCN": {
       "name": "唤醒光绽",
       "description": "兹欧凯特将光能灌注入土壤，催生光诞鞭笞者并重新唤醒任何处于休眠状态的光诞鞭笞者。光诞鞭笞者重新唤醒时具有邪恶愈合。"
+    },
+    "enUS": {
+      "name": "Awaken the Lightbloom",
+      "description": "Ziekket sows Light energy into the soil, sprouting Lightspawn Lashers and reawakening any that are Dormant.Lashers reawaken with Vicious Regrowth."
     }
   },
   "1236289": {
     "zhCN": {
       "name": "暴风雪之怒",
       "description": "寒冬哨兵以巨大的暴风雪环绕整个场地，对站在其中的玩家造成101690点冰霜伤害。"
+    },
+    "enUS": {
+      "name": "Blizzard's Wrath",
+      "description": "The Sentinel of Winter surrounds the arena in a massive blizzard, inflicting 101690 Frost damage to players standing within."
     }
   },
   "1310025": {
     "zhCN": {
       "name": "[Gravitic Orbs]",
       "description": "[Gravitic Orbs]4​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Gravitic Orbs",
+      "description": "Charonus summons a seeking Gravitic Orb near each player. The orb afflicts target player with Condensed Mass every 1 sec.If the orb comes within 6 yards of an Unstable Singularity, its essence is torn apart and the orb is destroyed."
     }
   },
   "1301834": {
     "zhCN": {
       "name": "[Light Bolt Volley]",
       "description": "[Light Bolt Volley]100 码范围4​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Light Bolt Volley",
+      "description": "Inflicts 18 Holy damage to enemies within 100 yards."
     }
   },
   "1250640": {
     "zhCN": {
       "name": "毒性喷吐",
       "description": "施法者朝目标位置喷吐剧毒，生成一个毒池，毒池每1秒造成50819点自然伤害，持续20秒。"
+    },
+    "enUS": {
+      "name": "Venomous Spit",
+      "description": "The caster spits venom at the target's location, creating a pool of poison that inflicts 50819 Nature damage every 1 sec for 20 sec."
     }
   },
   "1297749": {
     "zhCN": {
       "name": "[Frozen Tempest]",
       "description": "[Frozen Tempest]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Frozen Tempest",
+      "description": "The Sentinel of Winter manifests a massive storm, inflicting 30507 Frost damage to all players every 1 sec, pushing them away.Players outside of the eye of the storm suffer an additional 145473 Frost damage every 1 sec."
     }
   },
   "1267029": {
     "zhCN": {
       "name": "召唤林地之力",
       "description": "施法者疯狂地跑向任何附近休眠的鞭笞者。"
+    },
+    "enUS": {
+      "name": "Call The Grove",
+      "description": "The caster frantically runs toward any nearby dormant lashers."
     }
   },
   "1217881": {
     "zhCN": {
       "name": "暗影撕咬",
       "description": "噬咬敌人，造成9点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Shadow Bite",
+      "description": "Bite the enemy, inflicting 9 Shadow damage."
     }
   },
   "474457": {
     "zhCN": {
       "name": "古尔丹之指",
       "description": "利希尔·烬怒召唤恶魔魔法轰击每个附近的敌人，对每个目标6码范围内的所有敌人造成61014点暗影烈焰伤害。野生小鬼会从冲击点涌出并攻击附近的目标。"
+    },
+    "enUS": {
+      "name": "Fingers of Gul'dan",
+      "description": "Lithiel Cinderfury calls down demonic magic to each nearby enemy inflicting 61014 Shadowflame damage to all enemies within 6 yds of each target. Wild Imps to burst from the impact sites and attack nearby targets."
     }
   },
   "474462": {
     "zhCN": {
       "name": "古尔丹之指",
       "description": "利希尔·烬怒召唤恶魔魔法轰击每个附近的敌人，对每个目标6码范围内的所有敌人造成61014点暗影烈焰伤害。野生小鬼会从冲击点涌出并攻击附近的目标。"
+    },
+    "enUS": {
+      "name": "Fingers of Gul'dan",
+      "description": "Lithiel Cinderfury calls down demonic magic to each nearby enemy inflicting 61014 Shadowflame damage to all enemies within 6 yds of each target. Wild Imps to burst from the impact sites and attack nearby targets."
     }
   },
   "1228126": {
     "zhCN": {
       "name": "钉锤风暴",
       "description": "冲向一个随机敌人，在6秒内每0.5秒对8码范围内的敌人造成20338点物理伤害。"
+    },
+    "enUS": {
+      "name": "Macestorm",
+      "description": "Charges to a random enemy and inflicts 20338 Physical damage to enemies within 8 yards every 0.5 sec. for 6 sec."
     }
   },
   "1238368": {
     "zhCN": {
       "name": "光颚射线",
       "description": "施法者的每个头都向目标投射光能，每1秒对目标位置4码范围内的玩家造成35592点神圣伤害，持续6秒。"
+    },
+    "enUS": {
+      "name": "Lightmaw Beams",
+      "description": "Each of the caster's heads beams down light energy at a target, inflicting 35592 Holy damage to players within 4 yards of their location every 1 sec for 6 sec."
     }
   },
   "1228127": {
     "zhCN": {
       "name": "钉锤风暴",
       "description": "冲向一个随机敌人，在6秒内每0.5秒对8码范围内的敌人造成20338点物理伤害。"
+    },
+    "enUS": {
+      "name": "Macestorm",
+      "description": "Charges to a random enemy and inflicts 20338 Physical damage to enemies within 8 yards every 0.5 sec. for 6 sec."
     }
   },
   "474478": {
     "zhCN": {
       "name": "影舞步",
       "description": "赞恩释放一连串快速的枪击，3秒内每0.5秒对所有玩家造成20338点物理伤害。"
+    },
+    "enUS": {
+      "name": "Killing Spree",
+      "description": "Zaen unleashes a rapid barrage of gunfire, inflicting 20338 Physical damage to all players every 0.5 sec over 3 sec."
     }
   },
   "1297778": {
     "zhCN": {
       "name": "[Arc Lightning]",
       "description": "[Arc Lightning]50 码范围4​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Arc Lightning",
+      "description": "Caster strikes an enemy with a lightning bolt that arcs to another nearby enemy, inflicting 20 Nature damage. The spell affects up to 3 targets."
     }
   },
   "474483": {
     "zhCN": {
       "name": "影舞步",
       "description": "赞恩释放一连串快速的枪击，3秒内每0.5秒对所有玩家造成20338点物理伤害。"
+    },
+    "enUS": {
+      "name": "Killing Spree",
+      "description": "Zaen unleashes a rapid barrage of gunfire, inflicting 20338 Physical damage to all players every 0.5 sec over 3 sec."
     }
   },
   "1287544": {
     "zhCN": {
       "name": "昏迷",
       "description": "Stuns the caster, rendering it unable to move or attack for 3秒."
+    },
+    "enUS": {
+      "name": "Stunned",
+      "description": "Stuns the caster, rendering it unable to move or attack for 3 sec."
     }
   },
   "1215872": {
     "zhCN": {
       "name": "邪能光束",
       "description": "邪能魔法光束每1秒对接触的敌人造成50845点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Fel Beam",
+      "description": "Beams of Fel magic inflict 50845 Fire damage every 1 sec to enemies they come into contact with."
     }
   },
   "1297792": {
     "zhCN": {
       "name": "[Overwhelming Onslaught]",
       "description": "[Overwhelming Onslaught]100 码范围7​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Overwhelming Onslaught",
+      "description": "Nalorakk unleashes a devastating set of attacks on all players, inflicting 315193 Physical damage every 1 sec for 3 sec. These attacks ignore armor. The final hit stuns Zul'Jarra and knocks all players back. Nalorakk then targets Zul'Jarra with Forceful Slam."
     }
   },
   "1297793": {
     "zhCN": {
       "name": "[Overwhelming Onslaught]",
       "description": "[Overwhelming Onslaught]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Overwhelming Onslaught",
+      "description": "Nalorakk unleashes a devastating set of attacks on all players, inflicting 315193 Physical damage every 1 sec for 3 sec. These attacks ignore armor. The final hit stuns Zul'Jarra and knocks all players back. Nalorakk then targets Zul'Jarra with Forceful Slam."
     }
   },
   "1297796": {
     "zhCN": {
       "name": "[Stunned]",
       "description": "[Stunned]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Stunned",
+      "description": "Stunned100 yd rangeInstant"
     }
   },
   "1297797": {
     "zhCN": {
       "name": "[Forceful Slam]",
       "description": "[Forceful Slam]100 码范围5​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Forceful Slam",
+      "description": "Nalorakk unleashes a power slam on Zul'jarra. inflicting 775859 Physical damage to all players within 6 yards of impact. If there is no player hit, Zul'jarra bears the full force of the slam, causing her to let out a Demoralizing Scream."
     }
   },
   "1250695": {
     "zhCN": {
       "name": "险恶光环",
       "description": "每2秒对施法者100码范围内的所有敌人造成61014点自然伤害，持续10秒。"
+    },
+    "enUS": {
+      "name": "Insidious Aura",
+      "description": "Inflicts 61014 Nature damage to all enemies within 100 yards of the caster every 2 sec for 10 sec."
     }
   },
   "1226120": {
     "zhCN": {
       "name": "毒液喷溅",
       "description": "阿特洛苏斯向周围溅射毒液，对击中的玩家造成101690点自然伤害，随后每1秒造成30507点自然伤害，持续5秒。每个冲击位置会生成一个持续1分钟的毒池。"
+    },
+    "enUS": {
+      "name": "Poison Splash",
+      "description": "Atroxus splashes poison around itself, inflicting 101690 Nature damage with an additional 30507 Nature damage every 1 sec for 5 sec to players struck. Each impact creates a poison pool for 1 min."
     }
   },
   "1217930": {
     "zhCN": {
       "name": "禁锢",
       "description": "施法者囚禁住恶魔，使其瘫痪。"
+    },
+    "enUS": {
+      "name": "Imprison",
+      "description": "The caster imprisons the demon, incapacitating them."
     }
   },
   "44427": {
     "zhCN": {
       "name": "激怒",
       "description": "变得狂怒无比。"
+    },
+    "enUS": {
+      "name": "Enrage",
+      "description": "Become furious."
     }
   },
   "1234314": {
     "zhCN": {
       "name": "雪流",
       "description": "碎裂的震颤核心被击败后，会在原地生成一堆深雪。站在雪堆中的玩家移动速度降低40%，并免疫强制位移效果。"
+    },
+    "enUS": {
+      "name": "Snowdrift",
+      "description": "Upon defeat, the Fractured Shivercore forms a pile of deep snow at its location. Players standing within have their movement speed reduced by 40% and are immune to forced movement effects."
     }
   },
   "1246607": {
     "zhCN": {
       "name": "凝聚光线",
       "description": "兹欧凯特释放出强力光能射线，每0.5秒对效果范围内的玩家造成25423点神圣伤害。处于休眠状态的光诞鞭笞者被射线击中时会立即液化成一滩光明树脂。"
+    },
+    "enUS": {
+      "name": "Concentrated Lightbeam",
+      "description": "Ziekket releases a powerful beam of Light energy, inflicting 25423 Holy damage every 0.5 sec to players within the effect.Any Dormant Lightspawn Lashers hit by the beam are instantly liquified into puddles of Lightsap."
     }
   },
   "1228176": {
     "zhCN": {
       "name": "熔岩箭",
+      "description": "Inflicts 61014 Fire damage to an enemy."
+    },
+    "enUS": {
+      "name": "Lava Bolt",
       "description": "Inflicts 61014 Fire damage to an enemy."
     }
   },
@@ -10367,239 +10887,399 @@
     "zhCN": {
       "name": "释放恶魔",
       "description": "释放恶魔30 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Release Demon",
+      "description": "Release Demon30 yd rangeInstant"
     }
   },
   "1201554": {
     "zhCN": {
       "name": "诱惑",
       "description": "萨亚德诱惑目标，使其迷惑6秒。"
+    },
+    "enUS": {
+      "name": "Seduction",
+      "description": "The sayaad seduces the target, disorienting them for 6 sec."
     }
   },
   "474515": {
     "zhCN": {
       "name": "断心药膏",
       "description": "一种致命的毒药，使目标的最大生命值减少30%，并在15秒内造成533873点自然伤害。"
+    },
+    "enUS": {
+      "name": "Heartstop Poison",
+      "description": "A lethal poison that reduces the target's maximum health by 30% and inflicts 533873 Nature damage over 15 sec."
     }
   },
   "1254815": {
     "zhCN": {
       "name": "进食充分",
       "description": "饥荒化身正在吞食餐点。"
+    },
+    "enUS": {
+      "name": "Well Fed",
+      "description": "The Avatar of Starvation is devouring a meal."
     }
   },
   "1228198": {
     "zhCN": {
       "name": "腐蚀唾液",
       "description": "咬咬朝玩家吐出唾沫，立即造成30507点火焰伤害，并在接下来的30秒内每3秒造成55930点火焰伤害。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Corroding Spittle",
+      "description": "Nibbles spits at players, inflicting 30507 Fire damage immediately and 55930 Fire damage every 3 sec for 30 sec. This effect stacks."
     }
   },
   "5543": {
     "zhCN": {
       "name": "消隐",
       "description": "施法者进入隐形状态，持续2秒。"
+    },
+    "enUS": {
+      "name": "Fade Out",
+      "description": "Turns the caster invisible for 2 sec."
     }
   },
   "1238439": {
     "zhCN": {
       "name": "剃刀俯冲",
       "description": "施法者跃向玩家并用喙撕扯，使其每1秒受到17796点物理伤害，持续10秒。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Razor Dive",
+      "description": "The caster jumps to a player and rips them with their beak, causing them to bleed 17796 Physical damage every 1 sec for 10 sec. This effect stacks."
     }
   },
   "1238440": {
     "zhCN": {
       "name": "剃刀俯冲",
       "description": "施法者跃向玩家并用喙撕扯，使其每1秒受到17796点物理伤害，持续10秒。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Razor Dive",
+      "description": "The caster jumps to a player and rips them with their beak, causing them to bleed 17796 Physical damage every 1 sec for 10 sec. This effect stacks."
     }
   },
   "1254826": {
     "zhCN": {
       "name": "血涌",
       "description": "激怒，造成的伤害提高20$"
+    },
+    "enUS": {
+      "name": "Bloodsurge",
+      "description": "Enraged and inflicting 20$ increased damage"
     }
   },
   "474545": {
     "zhCN": {
       "name": "绝命凶径",
       "description": "赞恩花费宝贵的片刻时间瞄准所有玩家。准备完毕后，他将对视线内的所有玩家开火，造成203380点物理伤害，并在15秒内额外造成457605点流血伤害。"
+    },
+    "enUS": {
+      "name": "Murder in a Row",
+      "description": "Zaen takes a few precious moments to take aim at all players. When he is ready to fire, he shoots all players in his line of sight, inflicting 203380 Physical damage and an additional 457605 Bleed damage over 15 sec."
     }
   },
   "1217973": {
     "zhCN": {
       "name": "厄运诅咒",
       "description": "对目标施加末日迫近，1分钟后造成等同于目标生命值100%的暗影伤害。"
+    },
+    "enUS": {
+      "name": "Curse of Doom",
+      "description": "Inflicts impending doom upon the target, inflicting Shadow damage equal to 100% of the target's health after 1 min."
     }
   },
   "1299902": {
     "zhCN": {
       "name": "[Venom Jet]",
       "description": "[Venom Jet]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Venom Jet",
+      "description": "The Writhing Coil unleashes a spray of venom at an enemy, inflicting 387929 Nature damage to enemies in a cone in front of it."
     }
   },
   "1238463": {
     "zhCN": {
       "name": "光颚射线",
       "description": "施法者的每个头都向目标投射光能，每1秒对目标位置4码范围内的玩家造成35592点神圣伤害，持续6秒。"
+    },
+    "enUS": {
+      "name": "Lightmaw Beams",
+      "description": "Each of the caster's heads beams down light energy at a target, inflicting 35592 Holy damage to players within 4 yards of their location every 1 sec for 6 sec."
     }
   },
   "1217989": {
     "zhCN": {
       "name": "邪能护盾",
       "description": "凯斯媞亚以邪能屏障环绕自身，使她受到的伤害降低[abs(20 * 4)]%。"
+    },
+    "enUS": {
+      "name": "Felshield",
+      "description": "Kystia enshrouds herself in a fel barrier, reducing the damage she takes by [abs(20 * 4)]%."
     }
   },
   "1217992": {
     "zhCN": {
       "name": "工作事故",
       "description": "施法者将货物投向附近目标，在5码范围内造成25点物理伤害并使目标昏迷，持续3秒。"
+    },
+    "enUS": {
+      "name": "Workplace Accident",
+      "description": "The caster throws the shipment at a nearby target, dealing 25 Physical damage within 5 yards and stunning for 3 sec."
     }
   },
   "1299913": {
     "zhCN": {
       "name": "[Null Eruption]",
       "description": "[Null Eruption]100 码范围4​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Null Eruption",
+      "description": "Inflicts 15 Shadow damage to enemies within 10 yards of the impact.Inflicts 4 Shadow damage to all enemies within 10 yards of the impact every 1 sec for 5 sec."
     }
   },
   "1287627": {
     "zhCN": {
       "name": "灼热邪焰",
       "description": "利希尔·烬怒将自身包裹在邪能烈焰中，每1秒对敌人辐射15254点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Searing Fel Flame",
+      "description": "Lithiel Cinderfury engulfs herself in fel fire, radiating 15254 Fire damage to enemies every 1 sec."
     }
   },
   "1230289": {
     "zhCN": {
       "name": "非法灌注",
       "description": "凯斯媞亚为咬咬注入邪能魔法，使其在生命值高于20%时对玩家产生敌意。"
+    },
+    "enUS": {
+      "name": "Illicit Infusion",
+      "description": "Kystia infuses Nibbles with fel magic, turning her hostile to players while she is above 20% health."
     }
   },
   "1261011": {
     "zhCN": {
       "name": "荆棘之扇",
       "description": "莱克希释放出大量荆棘，每1秒对15码范围内的玩家所在位置造成101690点自然伤害，持续3秒。"
+    },
+    "enUS": {
+      "name": "Fan Of Thorns",
+      "description": "Lekshi unleashes a flurry of thorns, inflicting 101690 Nature damage to players within 15 yards of their location every 1 sec for 3 sec."
     }
   },
   "1222100": {
     "zhCN": {
       "name": "空灵冲刺",
       "description": "虚灵之影冲向其目标，对直线范围内的所有玩家造成61014点暗影伤害，此后每1秒额外造成17796点暗影伤害，持续25秒。"
+    },
+    "enUS": {
+      "name": "Nether Dash",
+      "description": "The Ethereal Shade dashes through its target, inflicting 61014 Shadow damage and an additional 17796 Shadow damage every 1 sec for 25 sec to all players in a line."
     }
   },
   "1261013": {
     "zhCN": {
       "name": "荆棘之扇",
       "description": "莱克希释放出大量荆棘，每1秒对15码范围内的玩家所在位置造成101690点自然伤害，持续3秒。"
+    },
+    "enUS": {
+      "name": "Fan Of Thorns",
+      "description": "Lekshi unleashes a flurry of thorns, inflicting 101690 Nature damage to players within 15 yards of their location every 1 sec for 3 sec."
     }
   },
   "1297876": {
     "zhCN": {
       "name": "[Triple Shot]",
       "description": "[Triple Shot]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Triple Shot",
+      "description": "Rav'i shoots globs of venom at 3 enemies that each inflict 116379 Nature damage and an additional 41217 Nature damage to enemies within 5 yd every 1 sec for 10 sec."
     }
   },
   "1222103": {
     "zhCN": {
       "name": "空灵冲刺",
       "description": "虚灵之影冲向其目标，对直线范围内的所有玩家造成61014点暗影伤害，此后每1秒额外造成17796点暗影伤害，持续25秒。"
+    },
+    "enUS": {
+      "name": "Nether Dash",
+      "description": "The Ethereal Shade dashes through its target, inflicting 61014 Shadow damage and an additional 17796 Shadow damage every 1 sec for 25 sec to all players in a line."
     }
   },
   "1215961": {
     "zhCN": {
       "name": "邪能光束",
       "description": "邪能魔法光束每1秒对接触的敌人造成50845点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Fel Beam",
+      "description": "Beams of Fel magic inflict 50845 Fire damage every 1 sec to enemies they come into contact with."
     }
   },
   "1230298": {
     "zhCN": {
       "name": "混沌弹幕",
       "description": "凯斯媞亚对其当前目标释放毁灭性的混沌冲击，造成152535点混乱伤害，然后以衰减的效果跳跃至附近玩家身上。"
+    },
+    "enUS": {
+      "name": "Chaos Barrage",
+      "description": "Kystia unleashes a devastating blast of chaos at her current target, dealing 152535 Chaos damage and then jumping to nearby players at reduced effectiveness."
     }
   },
   "1222105": {
     "zhCN": {
       "name": "空灵冲刺",
       "description": "虚灵之影冲向其目标，对直线范围内的所有玩家造成61014点暗影伤害，此后每1秒额外造成17796点暗影伤害，持续25秒。"
+    },
+    "enUS": {
+      "name": "Nether Dash",
+      "description": "The Ethereal Shade dashes through its target, inflicting 61014 Shadow damage and an additional 17796 Shadow damage every 1 sec for 25 sec to all players in a line."
     }
   },
   "1246687": {
     "zhCN": {
       "name": "闪电箭",
       "description": "造成61014点自然伤害。"
+    },
+    "enUS": {
+      "name": "Lightning Bolt",
+      "description": "Inflicts 61014 Nature damage."
     }
   },
   "1230304": {
     "zhCN": {
       "name": "光明灌注",
       "description": "当咬咬体内的邪能魔法耗尽时，她会恢复光明形态。在光明形态下，咬咬会试图用圣光灌注来净化凯斯媞亚体内的邪能。"
+    },
+    "enUS": {
+      "name": "Light Infusion",
+      "description": "When Nibbles is drained of fel magic she reverts to her light form. While in her light form, Nibbles attempts to purge the fel from Kystia with an infusion of light."
     }
   },
   "1299938": {
     "zhCN": {
       "name": "[Shadowbolt Volley]",
       "description": "[Shadowbolt Volley]100 码范围4​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Shadowbolt Volley",
+      "description": "Inflicts 20 Shadow damage to enemies within 60 yards."
     }
   },
   "1299940": {
     "zhCN": {
       "name": "[Vindictive Onslaught]",
       "description": "[Vindictive Onslaught]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Vindictive Onslaught",
+      "description": "The Writhing Coil directs a sequence of vicious attacks at an enemy."
     }
   },
   "1215985": {
     "zhCN": {
       "name": "邪能光束",
       "description": "邪能魔法光束每1秒对接触的敌人造成50845点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Fel Beam",
+      "description": "Beams of Fel magic inflict 50845 Fire damage every 1 sec to enemies they come into contact with."
     }
   },
   "1250805": {
     "zhCN": {
       "name": "召唤仪式",
       "description": "召唤仪式无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Summoning Ritual",
+      "description": "Summoning RitualUnlimited rangeInstant"
     }
   },
   "1302007": {
     "zhCN": {
       "name": "[Blade Dance]",
       "description": "[Blade Dance]瞄准 (1.2​秒 施法时间)"
+    },
+    "enUS": {
+      "name": "Blade Dance",
+      "description": "Caster strikes all enemies every 0.4 sec for 1.2 sec, inflicting 5 Fire damage."
     }
   },
   "1302010": {
     "zhCN": {
       "name": "[Blade Dance]",
       "description": "[Blade Dance]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Blade Dance",
+      "description": "Caster strikes all enemies every 0.4 sec for 1.2 sec, inflicting 5 Fire damage."
     }
   },
   "1250813": {
     "zhCN": {
       "name": "孵化",
       "description": "薯身蟾卵会孵化为新生的薯身幼蟾。"
+    },
+    "enUS": {
+      "name": "Hatch",
+      "description": "The Potatoad Egg hatches into a Newborn Potadpole."
     }
   },
   "1250829": {
     "zhCN": {
       "name": "薯身蟾抽击",
       "description": "新生的薯身幼蟾会狂热地扑向玩家，造成25423点物理伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Potad-Toss",
+      "description": "The Newborn Potadpole enthusiastically leaps at a player, inflicting 25423 Physical damage and knocking them back."
     }
   },
   "1250831": {
     "zhCN": {
       "name": "薯身蟾抽击",
       "description": "新生的薯身幼蟾会狂热地扑向玩家，造成25423点物理伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Potad-Toss",
+      "description": "The Newborn Potadpole enthusiastically leaps at a player, inflicting 25423 Physical damage and knocking them back."
     }
   },
   "1246751": {
     "zhCN": {
       "name": "凝聚光线",
       "description": "兹欧凯特释放出强力光能射线，每0.5秒对效果范围内的玩家造成25423点神圣伤害。处于休眠状态的光诞鞭笞者被射线击中时会立即液化成一滩光明树脂。"
+    },
+    "enUS": {
+      "name": "Concentrated Lightbeam",
+      "description": "Ziekket releases a powerful beam of Light energy, inflicting 25423 Holy damage every 0.5 sec to players within the effect.Any Dormant Lightspawn Lashers hit by the beam are instantly liquified into puddles of Lightsap."
     }
   },
   "1246753": {
     "zhCN": {
       "name": "光明树脂",
       "description": "粘稠的树脂覆盖地面，对站在效果范围内的玩家每2秒造成81352点神圣伤害，并使其移动速度降低40%。"
+    },
+    "enUS": {
+      "name": "Lightsap",
+      "description": "Viscous resin covers the ground, inflicting 81352 Holy damage every 2 sec to players standing within the effect and reducing their movement speed by 40%."
     }
   },
   "1269284": {
     "zhCN": {
       "name": "邪能步伐",
+      "description": "Inflicts 12711 Fire damage to enemies within 300 yards."
+    },
+    "enUS": {
+      "name": "Fel Steps",
       "description": "Inflicts 12711 Fire damage to enemies within 300 yards."
     }
   },
@@ -10607,126 +11287,210 @@
     "zhCN": {
       "name": "尖刺盾牌",
       "description": "施法者带刺的外壳可吸收100点伤害，并对攻击者反弹1点自然伤害。"
+    },
+    "enUS": {
+      "name": "Spiny Shield",
+      "description": "The caster's prickly exoskeleton absorbs 100 damage and inflicts 1 Nature damage back on attackers."
     }
   },
   "1238588": {
     "zhCN": {
       "name": "尖刺盾牌",
       "description": "施法者带刺的外壳可吸收100点伤害，并对攻击者反弹1点自然伤害。"
+    },
+    "enUS": {
+      "name": "Spiny Shield",
+      "description": "The caster's prickly exoskeleton absorbs 100 damage and inflicts 1 Nature damage back on attackers."
     }
   },
   "1216074": {
     "zhCN": {
       "name": "洒落物区域",
       "description": "满地都是洒落的饮料和食物，使移动速度降低70%。真是恶心！"
+    },
+    "enUS": {
+      "name": "Spill Zone",
+      "description": "A mess of spilled drinks and food, reducing movement speed by 70%. Gross!"
     }
   },
   "1216076": {
     "zhCN": {
       "name": "作呕",
       "description": "这位顾客正感到胃部翻腾。"
+    },
+    "enUS": {
+      "name": "Nauseous",
+      "description": "This patron's stomach is in upheaval."
     }
   },
   "1300044": {
     "zhCN": {
       "name": "[Venom Jet]",
       "description": "[Venom Jet]60 码范围4​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Venom Jet",
+      "description": "The Writhing Coil unleashes a spray of venom at an enemy, inflicting 387929 Nature damage to enemies in a cone in front of it."
     }
   },
   "1271385": {
     "zhCN": {
       "name": "喷涌之花",
       "description": "施法者从花朵中喷射圣光能量，每2秒对60码范围内的玩家造成61014点神圣伤害，持续6秒。"
+    },
+    "enUS": {
+      "name": "Spouting Floret",
+      "description": "The caster ejects Light energy from its blossoms, inflicting Holy 61014 damage to players within 60 yards every 2 sec for 6 sec."
     }
   },
   "1246820": {
     "zhCN": {
       "name": "熔岩图腾",
       "description": "熔岩图腾喷射灼热岩浆，每2秒对所有玩家造成38134点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Magma Totem",
+      "description": "The Magma Totem pulses searing magma, inflicting 38134 Fire damage to all players every 2 sec."
     }
   },
   "1246821": {
     "zhCN": {
       "name": "灼热岩浆",
       "description": "熔岩图腾喷射灼热岩浆，每2秒对所有玩家造成38134点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Searing Magma",
+      "description": "The Magma Totem pulses searing magma, inflicting 38134 Fire damage to all players every 2 sec."
     }
   },
   "1310309": {
     "zhCN": {
       "name": "[Macestorm]",
       "description": "[Macestorm]100 码范围瞄准 (6​秒 施法时间)"
+    },
+    "enUS": {
+      "name": "Macestorm",
+      "description": "Charges to a random enemy and inflicts 8 Physical damage to enemies within 8 yards every 1 sec. for 6 sec."
     }
   },
   "1246825": {
     "zhCN": {
       "name": "灼热岩浆",
       "description": "熔岩图腾喷射灼热岩浆，每2秒对所有玩家造成38134点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Searing Magma",
+      "description": "The Magma Totem pulses searing magma, inflicting 38134 Fire damage to all players every 2 sec."
     }
   },
   "1238638": {
     "zhCN": {
       "name": "子弹种子",
       "description": "施法者投掷爆炸种子，对效果范围内的玩家造成177958点自然伤害。"
+    },
+    "enUS": {
+      "name": "Bullet Seeds",
+      "description": "The caster pelts explosive seeds that inflict 177958 Nature damage to players within the effect."
     }
   },
   "1310319": {
     "zhCN": {
       "name": "[Bolster]",
       "description": "[Bolster]瞬发"
+    },
+    "enUS": {
+      "name": "Bolster",
+      "description": "Causes an enemy to take 20% increased Physical damage for 20 sec.Causes the caster to inflict 50% increased Physical damage."
     }
   },
   "1310320": {
     "zhCN": {
       "name": "[Exhausted]",
       "description": "[Exhausted]瞬发"
+    },
+    "enUS": {
+      "name": "Exhausted",
+      "description": "Stuns the caster, rendering it unable to move or attack for 15 sec.Causes an enemy to take 20% increased Physical damage for 15 sec."
     }
   },
   "1310321": {
     "zhCN": {
       "name": "[Concussion]",
       "description": "[Concussion]瞬发"
+    },
+    "enUS": {
+      "name": "Concussion",
+      "description": "Stuns the caster, rendering it unable to move or attack for 5 sec.Causes an enemy to take 20% increased Physical damage for 5 sec."
     }
   },
   "1238642": {
     "zhCN": {
       "name": "子弹种子",
       "description": "施法者投掷爆炸种子，对效果范围内的玩家造成177958点自然伤害。"
+    },
+    "enUS": {
+      "name": "Bullet Seeds",
+      "description": "The caster pelts explosive seeds that inflict 177958 Nature damage to players within the effect."
     }
   },
   "1300083": {
     "zhCN": {
       "name": "[Burrowing Charge]",
       "description": "[Burrowing Charge]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Burrowing Charge",
+      "description": "The Writhing Coil burrows across the ground, inflicting 387929 Nature damage to enemies in its path."
     }
   },
   "474740": {
     "zhCN": {
       "name": "绝命凶径",
       "description": "赞恩花费宝贵的片刻时间瞄准所有玩家。准备完毕后，他将对视线内的所有玩家开火，造成203380点物理伤害，并在15秒内额外造成457605点流血伤害。"
+    },
+    "enUS": {
+      "name": "Murder in a Row",
+      "description": "Zaen takes a few precious moments to take aim at all players. When he is ready to fire, he shoots all players in his line of sight, inflicting 203380 Physical damage and an additional 457605 Bleed damage over 15 sec."
     }
   },
   "1310324": {
     "zhCN": {
       "name": "[Mending Void]",
       "description": "[Mending Void]100 码范围瞄准 (20​秒 施法时间)"
+    },
+    "enUS": {
+      "name": "Mending Void",
+      "description": "Heals the target for 3% of maximum health every 2 sec for 20 sec."
     }
   },
   "1306230": {
     "zhCN": {
       "name": "[Venom Burst]",
       "description": "[Venom Burst]瞬发"
+    },
+    "enUS": {
+      "name": "Venom Burst",
+      "description": "Bursts upon death, inflicting 6 Nature damage."
     }
   },
   "1287798": {
     "zhCN": {
       "name": "[Vine Grip]",
       "description": "[Vine Grip]20 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Vine Grip",
+      "description": "Orweyna attaches players to the Writhing Coil with powerful vines. All attached players moving 10yd farther from the Writhing Coil causes it to Uncoil."
     }
   },
   "1306232": {
     "zhCN": {
       "name": "[Septic Spatter]",
       "description": "[Septic Spatter]无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Septic Spatter",
+      "description": "The leech pops, splashing poisoned blood that inflicts 30 Nature damage on impact and 7 Nature damage every 1.5 sec to players within the pools."
     }
   },
   "1250937": {
@@ -10743,47 +11507,79 @@
     "zhCN": {
       "name": "[Septic Spatter]",
       "description": "[Septic Spatter]无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Septic Spatter",
+      "description": "The leech pops, splashing poisoned blood that inflicts 30 Nature damage on impact and 7 Nature damage every 1.5 sec to players within the pools."
     }
   },
   "1246847": {
     "zhCN": {
       "name": "射击",
       "description": "射击一名敌人，造成101690点物理伤害。"
+    },
+    "enUS": {
+      "name": "Shoot",
+      "description": "Shoots at an enemy, inflicting 101690 Physical damage."
     }
   },
   "1287811": {
     "zhCN": {
       "name": "[Uncoil]",
       "description": "[Uncoil]无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Uncoil",
+      "description": "The Writhing Coil is ripped apart into its constituent snakes , inflicting 145473 Nature damage to all players."
     }
   },
   "1257094": {
     "zhCN": {
       "name": "粉碎",
       "description": "被粉碎打击击中后，玩家受到来自粉碎打击的伤害提高100%，持续6秒。"
+    },
+    "enUS": {
+      "name": "Pulverized",
+      "description": "Upon being struck by Pulverizing Strikes, players take 100% increased damage from Pulverizing Strikes for 6 sec."
     }
   },
   "1246858": {
     "zhCN": {
       "name": "光绽精华",
       "description": "兹欧凯特从大地中抽取光绽能量的球体。这些光球会向他移动，抵达时触发荧光迸发。光球触碰到玩家时会立即爆炸，使该玩家获得光绽之力。"
+    },
+    "enUS": {
+      "name": "Lightbloom's Essence",
+      "description": "Ziekket draws out globules of Lightbloom energy from the earth that move toward him, triggering a Fluorescent Outburst upon reaching him.The orbs instead burst when touched by players, granting that player Lightbloom's Might."
     }
   },
   "1218187": {
     "zhCN": {
       "name": "邪能光束",
       "description": "邪能魔法光束每1秒对接触的敌人造成50845点火焰伤害。"
+    },
+    "enUS": {
+      "name": "Fel Beam",
+      "description": "Beams of Fel magic inflict 50845 Fire damage every 1 sec to enemies they come into contact with."
     }
   },
   "474763": {
     "zhCN": {
       "name": "绝命凶径",
       "description": "赞恩花费宝贵的片刻时间瞄准所有玩家。准备完毕后，他将对视线内的所有玩家开火，造成203380点物理伤害，并在15秒内额外造成457605点流血伤害。"
+    },
+    "enUS": {
+      "name": "Murder in a Row",
+      "description": "Zaen takes a few precious moments to take aim at all players. When he is ready to fire, he shoots all players in his line of sight, inflicting 203380 Physical damage and an additional 457605 Bleed damage over 15 sec."
     }
   },
   "1246860": {
     "zhCN": {
       "name": "狂野怒火",
+      "description": ""
+    },
+    "enUS": {
+      "name": "Bestial Wrath",
       "description": ""
     }
   },
@@ -10791,197 +11587,329 @@
     "zhCN": {
       "name": "当日送达",
       "description": "赞恩呼叫楼上的仓库工人朝玩家投掷违禁的货物，命中时造成203380点火焰伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Same-Day Delivery",
+      "description": "Zaen calls upon the warehouse workers above to throw Forbidden Freight at players, causing 203380 Fire damage on impact and knocking them away."
     }
   },
   "474768": {
     "zhCN": {
       "name": "送达！",
       "description": "赞恩呼叫楼上的仓库工人朝玩家投掷违禁的货物，命中时造成203380点火焰伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Delivery!",
+      "description": "Zaen calls upon the warehouse workers above to throw Forbidden Freight at players, causing 203380 Fire damage on impact and knocking them away."
     }
   },
   "1246865": {
     "zhCN": {
       "name": "狂野怒火",
       "description": "施法者及其宠物进入狂怒状态，造成的伤害提高25%，持续10秒。"
+    },
+    "enUS": {
+      "name": "Bestial Wrath",
+      "description": "Sends the caster and its pet into a rage, increasing their damage done by 25% for 10 sec."
     }
   },
   "1300116": {
     "zhCN": {
       "name": "[Whirling Gust]",
       "description": "[Whirling Gust]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Whirling Gust",
+      "description": "Inflicts 40 Nature damage to enemies within 10 yards of the impact."
     }
   },
   "1310357": {
     "zhCN": {
       "name": "[Toxic Barrage]",
       "description": "[Toxic Barrage]瞬发"
+    },
+    "enUS": {
+      "name": "Toxic Barrage",
+      "description": "The Writhing Coil prepares to afflict its enemies with Toxic Atrophy 3 times in succession."
     }
   },
   "1246877": {
     "zhCN": {
       "name": "压制狩猎",
       "description": "压制狩猎50 码范围2​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Overwhelm Prey",
+      "description": "Overwhelm Prey50 yd range2 sec cast"
     }
   },
   "1238687": {
     "zhCN": {
       "name": "苦难盛宴",
       "description": "施法者汲取所有玩家的精华来满足饥渴，每1秒造成33049点暗影伤害，并恢复伤害值50%%的生命，持续5秒。"
+    },
+    "enUS": {
+      "name": "Feast of Misery",
+      "description": "The caster siphons the essence of all players to satiate its hunger, inflicting 33049 Shadow damage and healing itself for 50% of that amount every 1 sec for 5 sec."
     }
   },
   "1246882": {
     "zhCN": {
       "name": "锁定",
       "description": "锁定一个玩家。"
+    },
+    "enUS": {
+      "name": "Fixate",
+      "description": "Fixates on a player."
     }
   },
   "1253028": {
     "zhCN": {
       "name": "密林三杰",
       "description": "梅提克、莱克希和科兹齐特紧密相连，共同承受受到的伤害。"
+    },
+    "enUS": {
+      "name": "Thicket's Trinity",
+      "description": "Meittik, Lekshi, and Kezkitt are bonded, causing them to share all damage taken."
     }
   },
   "1300138": {
     "zhCN": {
       "name": "[Void Beam]",
       "description": "[Void Beam]100 码范围2​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Void Beam",
+      "description": "Caster inflicts 5 Shadow damage to enemies within 8 yards of impact every 0.5 sec for 4 sec."
     }
   },
   "1310378": {
     "zhCN": {
       "name": "[Scent of Blood]",
       "description": "[Scent of Blood]瞬发"
+    },
+    "enUS": {
+      "name": "Scent of Blood",
+      "description": "If the nearest Carrion Pile contains Fresh Meat, Rav'i gains Scent of Blood, increasing attack speed by 30%."
     }
   },
   "1296050": {
     "zhCN": {
       "name": "[Regurgitate]",
       "description": "[Regurgitate]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Regurgitate",
+      "description": "Rav'i hurls 3 waves of stomach acid in lines toward an enemy, inflicting 290947 Nature damage to enemies within 10 yards and enemies caught in the waves, and decreasing their movement speed by 50% and their damage done by 50%."
     }
   },
   "1296058": {
     "zhCN": {
       "name": "[Regurgitate]",
       "description": "[Regurgitate]100 码范围3​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Regurgitate",
+      "description": "Rav'i hurls 3 waves of stomach acid in lines toward an enemy, inflicting 290947 Nature damage to enemies within 10 yards and enemies caught in the waves, and decreasing their movement speed by 50% and their damage done by 50%."
     }
   },
   "1300156": {
     "zhCN": {
       "name": "[Void Beam]",
       "description": "[Void Beam]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Void Beam",
+      "description": "Caster inflicts 5 Shadow damage to enemies within 8 yards of impact every 0.5 sec for 4 sec."
     }
   },
   "1306308": {
     "zhCN": {
       "name": "[Ravenous]",
       "description": "[Ravenous]瞬发"
+    },
+    "enUS": {
+      "name": "Ravenous",
+      "description": "RavenousInstant"
     }
   },
   "1238725": {
     "zhCN": {
       "name": "苦难盛宴",
       "description": "施法者汲取所有玩家的精华来满足饥渴，每1秒造成33049点暗影伤害，并恢复伤害值50%%的生命，持续5秒。"
+    },
+    "enUS": {
+      "name": "Feast of Misery",
+      "description": "The caster siphons the essence of all players to satiate its hunger, inflicting 33049 Shadow damage and healing itself for 50% of that amount every 1 sec for 5 sec."
     }
   },
   "1296069": {
     "zhCN": {
       "name": "[Regurgitate]",
       "description": "[Regurgitate]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Regurgitate",
+      "description": "Rav'i hurls 3 waves of stomach acid in lines toward an enemy, inflicting 290947 Nature damage to enemies within 10 yards and enemies caught in the waves, and decreasing their movement speed by 50% and their damage done by 50%."
     }
   },
   "1310413": {
     "zhCN": {
       "name": "[Ravenous Stomp]",
       "description": "[Ravenous Stomp]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Ravenous Stomp",
+      "description": "Rav'i stomps impatiently, sending a quake through the temple that inflicts 145473 Nature damage to all enemies and breaks several stalactites from the ceiling. Each stalactite inflicts 320042 Nature damage to enemies within 5 yards of the impact and stuns players caught in the impact for 2 sec.Flying Twinfangs are skewered by the falling rocks, dropping Fresh Meat into Rav'i's pit."
     }
   },
   "1251027": {
     "zhCN": {
       "name": "严重受伤",
       "description": "纳尼亚在战斗结束后身负重伤。"
+    },
+    "enUS": {
+      "name": "Gravely Wounded",
+      "description": "Nanea is severely wounded after the battle."
     }
   },
   "1253083": {
     "zhCN": {
       "name": "制造篝火",
       "description": "制造篝火瞬发"
+    },
+    "enUS": {
+      "name": "Create Bonfire",
+      "description": "Create BonfireInstant"
     }
   },
   "1306333": {
     "zhCN": {
       "name": "[Ravenous Claws]",
       "description": "[Ravenous Claws]瞬发"
+    },
+    "enUS": {
+      "name": "Ravenous Claws",
+      "description": "Melee swings increase attack speed by 20% for 2 sec. This effect stacks."
     }
   },
   "1306338": {
     "zhCN": {
       "name": "[Ravenous Claws]",
       "description": "[Ravenous Claws]无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Ravenous Claws",
+      "description": "Melee swings increase attack speed by 20% for 2 sec. This effect stacks."
     }
   },
   "1226469": {
     "zhCN": {
       "name": "灾厄强化",
       "description": "被灾厄浪潮强化，急速提高100%。"
+    },
+    "enUS": {
+      "name": "Malefic Empowerment",
+      "description": "Empowered by Malefic Wave, increasing haste by 100%."
     }
   },
   "1236709": {
     "zhCN": {
       "name": "唤棘者咆哮",
       "description": "伊库兹发出怒吼，每2秒对所有玩家造成50845点自然伤害，并在其周围引发血棘之根，持续6秒。"
+    },
+    "enUS": {
+      "name": "Thorncaller Roar",
+      "description": "Ikuzz roars, inflicting 50845 Nature damage to all players while Bloodthorn Roots erupt around it every 2 sec for 6 sec."
     }
   },
   "1238760": {
     "zhCN": {
       "name": "饥荒雕像",
       "description": "图腾使玩家陷入难以满足的饥渴，降低其最大生命值3%，持续15秒。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Starvation Effigy",
+      "description": "The totem drives players into an insatiable hunger, reducing their maximum health by 3% for 15 sec. This effect stacks."
     }
   },
   "1306345": {
     "zhCN": {
       "name": "[Messy Eater]",
       "description": "[Messy Eater]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Messy Eater",
+      "description": "Rav'i's chomping throws chunks of rotting meat across the pit. Each chunk inflicts 116379 Nature damage to enemies within 3.5 yards of its impact location. Each chunk that isn't caught by an enemy explodes in a Carrion Burst."
     }
   },
   "1242860": {
     "zhCN": {
       "name": "回响重击",
       "description": "纳洛拉克标记玩家，持续4秒，随后在这些玩家的位置生成纳洛拉克的回响。所有纳洛拉克的回响会立即对8码范围内的玩家造成101690点自然伤害。"
+    },
+    "enUS": {
+      "name": "Echoing Maul",
+      "description": "Nalorakk marks players for 4 sec, then sends an Echo of Nalorakk to their position. All Echoes of Nalorakk immediately inflict 101690 Nature damage to players within 8 yards."
     }
   },
   "1246957": {
     "zhCN": {
       "name": "原始回响",
       "description": "对周围的玩家造成12点物理伤害，并使其受到来自原始回响的伤害提高25%，持续15秒。此效果可叠加，且无视护甲。"
+    },
+    "enUS": {
+      "name": "Primal Echo",
+      "description": "Inflicts 12 Physical damage to nearby players and increases damage taken from Primal Echo by 25% for 15 sec. This effect stacks and ignores armor."
     }
   },
   "1242869": {
     "zhCN": {
       "name": "回响重击",
       "description": "纳洛拉克标记玩家，持续4秒，随后在这些玩家的位置生成纳洛拉克的回响。所有纳洛拉克的回响会立即对8码范围内的玩家造成101690点自然伤害。"
+    },
+    "enUS": {
+      "name": "Echoing Maul",
+      "description": "Nalorakk marks players for 4 sec, then sends an Echo of Nalorakk to their position. All Echoes of Nalorakk immediately inflict 101690 Nature damage to players within 8 yards."
     }
   },
   "1265400": {
     "zhCN": {
       "name": "冰霜撕咬",
       "description": "施法者撕咬目标，造成35592点冰霜伤害。"
+    },
+    "enUS": {
+      "name": "Frostbite",
+      "description": "The caster bites the target, inflicting 35592 Frost damage."
     }
   },
   "1234681": {
     "zhCN": {
       "name": "贪婪咆哮",
       "description": "囤宝狂人发出震耳欲聋的咆哮，对所有玩家造成86437点声波伤害。无视护甲。"
+    },
+    "enUS": {
+      "name": "Ravenous Bellow",
+      "description": "The Hoardmonger lets out a mighty roar, inflicting 86437 Physical damage to all players. Ignores armor."
     }
   },
   "1265402": {
     "zhCN": {
       "name": "冰霜撕咬",
       "description": "施法者撕咬目标，造成35592点冰霜伤害。"
+    },
+    "enUS": {
+      "name": "Frostbite",
+      "description": "The caster bites the target, inflicting 35592 Frost damage."
     }
   },
   "1236731": {
     "zhCN": {
       "name": "唤棘者咆哮",
+      "description": ""
+    },
+    "enUS": {
+      "name": "Thorncaller Roar",
       "description": ""
     }
   },
@@ -10989,114 +11917,720 @@
     "zhCN": {
       "name": "回响重击",
       "description": "纳洛拉克标记玩家，持续4秒，随后在这些玩家的位置生成纳洛拉克的回响。所有纳洛拉克的回响会立即对8码范围内的玩家造成101690点自然伤害。"
+    },
+    "enUS": {
+      "name": "Echoing Maul",
+      "description": "Nalorakk marks players for 4 sec, then sends an Echo of Nalorakk to their position. All Echoes of Nalorakk immediately inflict 101690 Nature damage to players within 8 yards."
     }
   },
   "1246986": {
     "zhCN": {
       "name": "毒矛乱射",
       "description": "大量毒矛纷纷落下，对每个冲击区域内4码范围内的玩家造成35点自然伤害。"
+    },
+    "enUS": {
+      "name": "Poison Spear Volley",
+      "description": "A volley of poison-tipped spears rains down, inflicting 35 Nature damage to players standing 4 yards of each impact area."
     }
   },
   "1236746": {
     "zhCN": {
       "name": "青翠践踏",
       "description": "伊库兹践踏地面，对所有玩家造成76268点物理伤害并将其击退。4秒后，血棘之根将在玩家所在位置出现。"
+    },
+    "enUS": {
+      "name": "Verdant Stomp",
+      "description": "Ikuzz stomps, inflicting 76268 Physical damage to all players and knocking them back. After 4 sec, Bloodthorn Roots emerge at players' locations."
     }
   },
   "1236747": {
     "zhCN": {
       "name": "青翠践踏",
       "description": "伊库兹践踏地面，对所有玩家造成76268点物理伤害并将其击退。4秒后，血棘之根将在玩家所在位置出现。"
+    },
+    "enUS": {
+      "name": "Verdant Stomp",
+      "description": "Ikuzz stomps, inflicting 76268 Physical damage to all players and knocking them back. After 4 sec, Bloodthorn Roots emerge at players' locations."
     }
   },
   "1306381": {
     "zhCN": {
       "name": "[Fetid Spit]",
       "description": "[Fetid Spit]40 码范围2.5​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Fetid Spit",
+      "description": "Inflicts 6 Nature damage."
     }
   },
   "1306383": {
     "zhCN": {
       "name": "[Nascent Hunger]",
       "description": "[Nascent Hunger]无限范围瞄准 (0​秒 施法时间)"
+    },
+    "enUS": {
+      "name": "Nascent Hunger",
+      "description": "Fixating on a random player."
     }
   },
   "1238801": {
     "zhCN": {
       "name": "饥肠辘辘",
       "description": "图腾使玩家陷入难以满足的饥渴，降低其最大生命值3%，持续15秒。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Insatiable Hunger",
+      "description": "The totem drives players into an insatiable hunger, reducing their maximum health by 3% for 15 sec. This effect stacks."
     }
   },
   "1306385": {
     "zhCN": {
       "name": "[Evolve]",
       "description": "[Evolve]瞄准 (6​秒 施法时间)"
+    },
+    "enUS": {
+      "name": "Evolve",
+      "description": "The caster attempts to evolve, healing &nbsp;5% of it's max health every 1 sec for 6 sec. &nbsp;Upon completion, the caster gains a shield that absorbs the next 50 damage and grants immunity to crowd control effects."
     }
   },
   "1300243": {
     "zhCN": {
       "name": "[Brutalize]",
       "description": "[Brutalize]100 码范围2​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Brutalize",
+      "description": "Inflicts 70 Physical damage on target enemy every 1.5 sec for 6 sec."
     }
   },
   "1300244": {
     "zhCN": {
       "name": "[Brutalize]",
       "description": "[Brutalize]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Brutalize",
+      "description": "Inflicts 70 Physical damage on target enemy every 1.5 sec for 6 sec."
     }
   },
   "1300248": {
     "zhCN": {
       "name": "[Devour]",
       "description": "[Devour]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Devour",
+      "description": "Devours the target, healing the caster for 50% of their health."
     }
   },
   "1300249": {
     "zhCN": {
       "name": "[Devour]",
       "description": "[Devour]100 码范围9​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Devour",
+      "description": "Devours the target, healing the caster for 50% of their health."
     }
   },
   "1300250": {
     "zhCN": {
       "name": "[Devouring Might]",
       "description": "[Devouring Might]瞬发"
+    },
+    "enUS": {
+      "name": "Devouring Might",
+      "description": "Damage done increased by 20%."
     }
   },
   "1216284": {
     "zhCN": {
       "name": "潜行",
       "description": "使施法者进入潜行状态。"
+    },
+    "enUS": {
+      "name": "Stealth",
+      "description": "Puts the caster in stealth mode."
     }
   },
   "1300259": {
     "zhCN": {
       "name": "[Dark Bloom]",
       "description": "[Dark Bloom]100 码范围4​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Dark Bloom",
+      "description": "Taz'rah unleashes a wave of void energy, inflicting 174568 Shadow damage to all players and causes Void Fissure to erupt, inflicting 242456 Shadow damage to players hit."
     }
   },
   "1255205": {
     "zhCN": {
       "name": "拔根而起",
       "description": "施法者在玩家位置召唤巨型根须，造成76268点自然伤害并将其击退。"
+    },
+    "enUS": {
+      "name": "Uproot",
+      "description": "The caster summons massive roots at players' locations, inflicting 76268 Nature damage and knocking them back."
     }
   },
   "1300262": {
     "zhCN": {
       "name": "[Dark Bloom]",
       "description": "[Dark Bloom]无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Dark Bloom",
+      "description": "Taz'rah unleashes a wave of void energy, inflicting 174568 Shadow damage to all players and causes Void Fissure to erupt, inflicting 242456 Shadow damage to players hit."
     }
   },
   "1218347": {
     "zhCN": {
       "name": "绝命凶径",
       "description": "赞恩花费宝贵的片刻时间瞄准所有玩家。准备完毕后，他将对视线内的所有玩家开火，造成203380点物理伤害，并在15秒内额外造成457605点流血伤害。"
+    },
+    "enUS": {
+      "name": "Murder in a Row",
+      "description": "Zaen takes a few precious moments to take aim at all players. When he is ready to fire, he shoots all players in his line of sight, inflicting 203380 Physical damage and an additional 457605 Bleed damage over 15 sec."
     }
   },
   "1216300": {
     "zhCN": {
       "name": "妙手空空",
       "description": "施法者跃向附近敌人进行扒窃，造成20338点物理伤害，并在8秒内额外造成81352点流血伤害。"
+    },
+    "enUS": {
+      "name": "Cutpurse",
+      "description": "The caster leaps to a nearby enemy to pickpocket them, inflicting 20338 Physical damage and an additional 81352 Bleed damage over 8 sec."
+    }
+  },
+  "1298221": {
+    "zhCN": {
+      "name": "[Ssscavenging]",
+      "description": "[Ssscavenging]瞬发"
+    },
+    "enUS": {
+      "name": "Ssscavenging",
+      "description": "Rav'i runs to feast on the nearest Carrion Pile, gaining a shield that absorbs all damage. Until her shield is removed, Rav'i applies Carrion Burst to all enemies every 3 sec.[Rav'i is a Messy Eater, and throws chunks of rotting meat across the pit while Ssscavenging.]If the Carrion Pile contains Fresh Meat, Rav'i goes into a Feeding Frenzy instead."
+    }
+  },
+  "1234734": {
+    "zhCN": {
+      "name": "腐坏补给",
+      "description": "囤宝狂人在7秒内伸手从袋子里掏出腐烂的食物投掷出去，接触目标玩家时造成50845点自然伤害，或在竞技场各处散落腐烂的蘑菇。"
+    },
+    "enUS": {
+      "name": "Spoiled Supplies",
+      "description": "The Hoardmonger reaches into his sack and tosses rotten food over 7 sec, impacting targeted players for 50845 Nature damage or littering Rotten Mushrooms around the arena."
+    }
+  },
+  "1298223": {
+    "zhCN": {
+      "name": "[Ssscavenging]",
+      "description": "[Ssscavenging]瞄准 (1​分钟 施法时间)"
+    },
+    "enUS": {
+      "name": "Ssscavenging",
+      "description": "Rav'i runs to feast on the nearest Carrion Pile, gaining a shield that absorbs all damage. Until her shield is removed, Rav'i applies Carrion Burst to all enemies every 3 sec.[Rav'i is a Messy Eater, and throws chunks of rotting meat across the pit while Ssscavenging.]If the Carrion Pile contains Fresh Meat, Rav'i goes into a Feeding Frenzy instead."
+    }
+  },
+  "1214260": {
+    "zhCN": {
+      "name": "兴高采烈！",
+      "description": "这位顾客对服务很满意。"
+    },
+    "enUS": {
+      "name": "Elated!",
+      "description": "This patron is satisfied with their service."
+    }
+  },
+  "1247030": {
+    "zhCN": {
+      "name": "毒矛乱射",
+      "description": "大量毒矛纷纷落下，对每个冲击区域内4码范围内的玩家造成35点自然伤害。"
+    },
+    "enUS": {
+      "name": "Poison Spear Volley",
+      "description": "A volley of poison-tipped spears rains down, inflicting 35 Nature damage to players standing 4 yards of each impact area."
+    }
+  },
+  "1247039": {
+    "zhCN": {
+      "name": "荧光迸发",
+      "description": "兹欧凯特吸收了光绽精华，触发强力反应，对所有玩家造成50845点神圣伤害。此效果会使兹欧凯特获得荧光护盾。"
+    },
+    "enUS": {
+      "name": "Fluorescent Outburst",
+      "description": "Ziekket absorbs the Lightbloom's Essence, triggering a powerful reaction that inflicts 50845 Holy damage to all players. This effect grants Ziekket a Fluorescent Shield."
+    }
+  },
+  "1234753": {
+    "zhCN": {
+      "name": "基岩猛击",
+      "description": "梅提克以极大力量打击主要目标，造成101690点自然伤害和254225点物理伤害。冲击力会破坏附近表层土壤，在场地上生成肥沃壤土区域。"
+    },
+    "enUS": {
+      "name": "Bedrock Slam",
+      "description": "Meittik strikes their primary target with immense force, inflicting 101690 Nature damage and 254225 Physical damage. The force of the impact ruptures nearby topsoil, creating patches of Fertile Loam."
+    }
+  },
+  "1247050": {
+    "zhCN": {
+      "name": "荧光护盾",
+      "description": "兹欧凯特被光能包裹，吸收接下来受到的52436点伤害，并使其造成的伤害提高10%。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Fluorescent Shield",
+      "description": "Ziekket becomes enveloped in Light energy, absorbing the next 52436 damage taken and increasing his damage done by 10%. This effect stacks."
+    }
+  },
+  "1263420": {
+    "zhCN": {
+      "name": "光狂疯乱",
+      "description": "伊库兹完全吸收了光绽的力量，移动速度提高20%，且每2秒会脉冲20338点神圣伤害。"
+    },
+    "enUS": {
+      "name": "Lightcrazed Frenzy",
+      "description": "Ikuzz fully absorbs the power of the Lightbloom, increasing its movement speed by 20% and causing it to pulse 20338 Holy damage every 2 sec."
+    }
+  },
+  "1310547": {
+    "zhCN": {
+      "name": "[Toxic Atrophy]",
+      "description": "[Toxic Atrophy]500 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Toxic Atrophy",
+      "description": "Releases a toxin that causes all enemies' muscles to wither away, reducing their damage done by 20% and their movement speed by 20%. This effect stacks."
+    }
+  },
+  "1222484": {
+    "zhCN": {
+      "name": "毒池",
+      "description": "阿特洛苏斯的酸性毒液每1秒会对站在其中的玩家造成40676点自然伤害。"
+    },
+    "enUS": {
+      "name": "Poison Pool",
+      "description": "Atroxus's acidic venom inflicts 40676 Nature damage every 1 sec to players standing within it."
+    }
+  },
+  "1234773": {
+    "zhCN": {
+      "name": "基岩猛击",
+      "description": "梅提克以极大力量打击主要目标，造成101690点自然伤害和254225点物理伤害。冲击力会破坏附近表层土壤，在场地上生成肥沃壤土区域。"
+    },
+    "enUS": {
+      "name": "Bedrock Slam",
+      "description": "Meittik strikes their primary target with immense force, inflicting 101690 Nature damage and 254225 Physical damage. The force of the impact ruptures nearby topsoil, creating patches of Fertile Loam."
+    }
+  },
+  "1296216": {
+    "zhCN": {
+      "name": "[Ssscavenging]",
+      "description": "[Ssscavenging]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Ssscavenging",
+      "description": "Rav'i runs to feast on the nearest Carrion Pile, gaining a shield that absorbs all damage. Until her shield is removed, Rav'i applies Carrion Burst to all enemies every 3 sec.[Rav'i is a Messy Eater, and throws chunks of rotting meat across the pit while Ssscavenging.]If the Carrion Pile contains Fresh Meat, Rav'i goes into a Feeding Frenzy instead."
+    }
+  },
+  "1296219": {
+    "zhCN": {
+      "name": "[Fetid Roar]",
+      "description": "[Fetid Roar]100 码范围3​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Fetid Roar",
+      "description": "Rav'i roars with rage at her meal being interrupted, consuming all stacks of Stuffed to inflict 15 Nature damage per stack to all players."
+    }
+  },
+  "1296220": {
+    "zhCN": {
+      "name": "[Triple Shot]",
+      "description": "[Triple Shot]100 码范围2​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Triple Shot",
+      "description": "Rav'i shoots globs of venom at 3 enemies that each inflict 116379 Nature damage and an additional 41217 Nature damage to enemies within 5 yd every 1 sec for 10 sec."
+    }
+  },
+  "1242976": {
+    "zhCN": {
+      "name": "回响重击",
+      "description": "回响重击100 码范围4​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Echoing Maul",
+      "description": "Echoing Maul100 yd range4 sec cast"
+    }
+  },
+  "1259365": {
+    "zhCN": {
+      "name": "血棘之根",
+      "description": "地面涌出根须，每1秒对玩家造成30507点自然伤害并将其定身在原地，直到根须被摧毁。"
+    },
+    "enUS": {
+      "name": "Bloodthorn Roots",
+      "description": "Roots emerge from the ground, inflicting 30507 &nbsp;Nature damage every 1 sec to players and rooting them in place until destroyed."
+    }
+  },
+  "1308518": {
+    "zhCN": {
+      "name": "[Laced Edge]",
+      "description": "[Laced Edge]60 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Laced Edge",
+      "description": "Teleports behind a player and slashes them, inflicting 6 Nature damage and an additional 3 Nature damage every 1 sec for 4 sec."
+    }
+  },
+  "1234802": {
+    "zhCN": {
+      "name": "肥沃壤土",
+      "description": "裸露的土壤会使站在其上的玩家移动速度降低50%，并且每1秒受到40676点自然伤害。"
+    },
+    "enUS": {
+      "name": "Fertile Loam",
+      "description": "Unearthed subsoil slows players standing within the effect by 50% and inflicts 40676 Nature damage every 1 sec."
+    }
+  },
+  "1222519": {
+    "zhCN": {
+      "name": "激怒蠕行者",
+      "description": "阿特洛苏斯搅动周围的毒池，使一只剧毒蠕行者出现并攻击玩家。"
+    },
+    "enUS": {
+      "name": "Provoke Creeper",
+      "description": "Atroxus agitates the surrounding pools, causing a Toxic Creeper to emerge and attack players."
+    }
+  },
+  "1243002": {
+    "zhCN": {
+      "name": "战神之怒",
+      "description": "纳洛拉克以头撞击祖尔加拉，使其进入震荡冲击状态，随后命令纳洛拉克的回响向她的位置冲锋。每个回响会在碰撞首个目标时施放回响狂怒。任何抵达祖尔加拉的回响都会触发挫志怒吼。每个回响额外经历一次战神之怒后才会消失。"
+    },
+    "enUS": {
+      "name": "Fury of the War God",
+      "description": "Nalorakk headbutts Zul'jarra into a Concussive Shock, then commands the Echoes of Nalorakk to charge her position. These collide with the first target encountered casting Echoing Fury.Any Echo of Nalorakk that reaches Zul'jarra triggers Demoralizing Scream. Each Echo remains for one additional Fury of the War God, then vanishes."
+    }
+  },
+  "1300351": {
+    "zhCN": {
+      "name": "[Poison Splash]",
+      "description": "[Poison Splash]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Poison Splash",
+      "description": "Atroxus splashes poison around itself, inflicting 43642 Nature damage to all enemies every 1 sec. The poison glob inflicts 101690 Nature damage and an additional 30507 Nature damage every 1 sec for 5 sec to players struck. Each impact creates a poison pool for 1 min."
+    }
+  },
+  "1243011": {
+    "zhCN": {
+      "name": "战神之怒",
+      "description": "纳洛拉克以头撞击祖尔加拉，使其进入震荡冲击状态，随后命令纳洛拉克的回响向她的位置冲锋。每个回响会在碰撞首个目标时施放回响狂怒。任何抵达祖尔加拉的回响都会触发挫志怒吼。每个回响额外经历一次战神之怒后才会消失。"
+    },
+    "enUS": {
+      "name": "Fury of the War God",
+      "description": "Nalorakk headbutts Zul'jarra into a Concussive Shock, then commands the Echoes of Nalorakk to charge her position. These collide with the first target encountered casting Echoing Fury.Any Echo of Nalorakk that reaches Zul'jarra triggers Demoralizing Scream. Each Echo remains for one additional Fury of the War God, then vanishes."
+    }
+  },
+  "1243018": {
+    "zhCN": {
+      "name": "震荡冲击",
+      "description": "纳洛拉克重击祖尔加拉，使其失去行动能力。祖尔加拉无法自保，容易受到纳洛拉克的回响的攻击。"
+    },
+    "enUS": {
+      "name": "Concussive Shock",
+      "description": "Nalorakk disables Zul'jarra with a hefty blow. Unable to defend herself, she stands vulnerable to Nalorakk's echoes."
+    }
+  },
+  "1214352": {
+    "zhCN": {
+      "name": "火焰炸弹",
+      "description": "赞恩朝玩家投掷一颗定时炸弹。持续6秒后炸弹爆炸，对6码范围内的玩家造成91521点火焰伤害，并摧毁爆炸范围内的任何违禁的货物。"
+    },
+    "enUS": {
+      "name": "Fire Bomb",
+      "description": "Zaen hurls a ticking bomb at a player. After 6 sec the bomb explodes, dealing 91521 Fire damage to players within 6 yards and destroying any Forbidden Freight caught in the blast."
+    }
+  },
+  "1234833": {
+    "zhCN": {
+      "name": "贪婪之虫",
+      "description": "向目标所在位置射出一群咬人的昆虫，每1秒对附近区域的任何敌人造成50845点自然伤害。"
+    },
+    "enUS": {
+      "name": "Ravenous Swarm",
+      "description": "Projects a swarm of biting insects to the location of the target inflicting 50845 Nature damage every 1 sec to any enemies in the nearby area."
+    }
+  },
+  "1214355": {
+    "zhCN": {
+      "name": "火焰炸弹",
+      "description": "赞恩朝玩家投掷一颗定时炸弹。持续6秒后炸弹爆炸，对6码范围内的玩家造成91521点火焰伤害，并摧毁爆炸范围内的任何违禁的货物。"
+    },
+    "enUS": {
+      "name": "Fire Bomb",
+      "description": "Zaen hurls a ticking bomb at a player. After 6 sec the bomb explodes, dealing 91521 Fire damage to players within 6 yards and destroying any Forbidden Freight caught in the blast."
+    }
+  },
+  "1300372": {
+    "zhCN": {
+      "name": "[Cosmic Crash]",
+      "description": "[Cosmic Crash]100 码范围瞬发"
+    },
+    "enUS": {
+      "name": "Cosmic Crash",
+      "description": "Charonus crashes void comets at players' locations, inflicting 116379 Shadow damage to players within 8 yards of impact and an additional 14547 Shadow damage every 1 sec for 20 sec and knocking them back."
+    }
+  },
+  "1214357": {
+    "zhCN": {
+      "name": "火焰炸弹",
+      "description": "赞恩朝玩家投掷一颗定时炸弹。持续6秒后炸弹爆炸，对6码范围内的玩家造成91521点火焰伤害，并摧毁爆炸范围内的任何违禁的货物。"
+    },
+    "enUS": {
+      "name": "Fire Bomb",
+      "description": "Zaen hurls a ticking bomb at a player. After 6 sec the bomb explodes, dealing 91521 Fire damage to players within 6 yards and destroying any Forbidden Freight caught in the blast."
+    }
+  },
+  "1306517": {
+    "zhCN": {
+      "name": "[Blood Sacrifice]",
+      "description": "[Blood Sacrifice]3​秒 施法时间"
+    },
+    "enUS": {
+      "name": "Blood Sacrifice",
+      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 9 Physical damage and causing the next 36 healing to be absorbed."
+    }
+  },
+  "1234846": {
+    "zhCN": {
+      "name": "剧毒孢子",
+      "description": "腐烂的蘑菇释放出毒性云雾，每2秒造成5085点自然伤害，持续12秒。此效果可叠加。"
+    },
+    "enUS": {
+      "name": "Toxic Spores",
+      "description": "Rotten Mushrooms apply a noxious cloud, inflicting 5085 Nature damage every 2 sec for 12 sec. This effect stacks."
+    }
+  },
+  "1218465": {
+    "zhCN": {
+      "name": "服务员",
+      "description": "顾客就座后会随机点要食物或饮料，并在一段时间内等待你的服务，超时后顾客会变得不耐烦。有些顾客天生急躁，需要你立即提供服务。"
+    },
+    "enUS": {
+      "name": "Server",
+      "description": "Patrons request a random food or drink refreshment upon taking a seat, and will await your service for a short duration before becoming frustrated. Some patrons are impatient and will require your service quickly."
+    }
+  },
+  "1218466": {
+    "zhCN": {
+      "name": "清洁工",
+      "description": "取得魔法扫帚，然后走向杂物和污渍进行清理，保持非法降雨酒吧的整洁！"
+    },
+    "enUS": {
+      "name": "Cleaner",
+      "description": "Gather the enchanted broom and then move towards messes and spills to keep the Illicit Rain clean!"
+    }
+  },
+  "1218467": {
+    "zhCN": {
+      "name": "表演者",
+      "description": "用令人难忘的精彩表演提升非法降雨酒馆的气氛值。穿上你的舞鞋，收集节拍音符来保持韵律。快速连续收集多个音符还能提升同事的工作表现！"
+    },
+    "enUS": {
+      "name": "Entertainer",
+      "description": "Elevate the atmosphere of the Illicit Rain with a performance they'll never forget. Put on your dancing shoes, and gather notes of rhythm to stay on beat. Gathering multiple notes in rapid succession will improve the performance of your coworkers too!"
+    }
+  },
+  "1218468": {
+    "zhCN": {
+      "name": "保镖",
+      "description": "粗鲁的顾客偶尔会出现并大发脾气，破坏非法降雨酒馆的气氛值。将这些粗鲁顾客踢向出口，强制他们离开。"
+    },
+    "enUS": {
+      "name": "Bouncer",
+      "description": "Rowdy patrons occasionally show up and throw a temper tantrum, ruining the atmosphere of the Illicit Rain. Punt rowdy patrons towards the exit to force them to leave."
+    }
+  },
+  "1249186": {
+    "zhCN": {
+      "name": "冲锋",
+      "description": "祖尔加拉向纳洛拉克冲锋"
+    },
+    "enUS": {
+      "name": "Charge",
+      "description": "Zul'jarra charges toward Nalorakk."
+    }
+  },
+  "1234850": {
+    "zhCN": {
+      "name": "播光急奔",
+      "description": "莱克希在肥沃壤土间快速穿梭，对路径上的玩家造成101690点神圣伤害，并在每个终点播下一株光明之花。"
+    },
+    "enUS": {
+      "name": "Lightsower Dash",
+      "description": "Lekshi dashes between patches of Fertile Loam, inflicting 101690 Holy damage to players in their path and sowing a Lightblossom at each destination."
+    }
+  },
+  "1306550": {
+    "zhCN": {
+      "name": "[Blood Sacrifice]",
+      "description": "[Blood Sacrifice]无限范围瞬发"
+    },
+    "enUS": {
+      "name": "Blood Sacrifice",
+      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 9 Physical damage and causing the next 36 healing to be absorbed."
+    }
+  },
+  "1234855": {
+    "zhCN": {
+      "name": "险恶光环",
+      "description": "每2秒对施法者100码范围内的所有敌人造成61014点自然伤害，持续10秒。"
+    },
+    "enUS": {
+      "name": "Insidious Aura",
+      "description": "Inflicts 61014 Nature damage to all enemies within 100 yards of the caster every 2 sec for 10 sec."
+    }
+  },
+  "1243078": {
+    "zhCN": {
+      "name": "战争的重担",
+      "description": "披上这件斗篷会带来极大的负担，使受到的伤害提高100。"
+    },
+    "enUS": {
+      "name": "Burden of War",
+      "description": "Dawning the Mantle serves as an extreme hindrance, increasing damage taken by 100."
+    }
+  },
+  "1222598": {
+    "zhCN": {
+      "name": "绝命凶径",
+      "description": "赞恩花费宝贵的片刻时间瞄准所有玩家。准备完毕后，他将对视线内的所有玩家开火，造成203380点物理伤害，并在15秒内额外造成457605点流血伤害。"
+    },
+    "enUS": {
+      "name": "Murder in a Row",
+      "description": "Zaen takes a few precious moments to take aim at all players. When he is ready to fire, he shoots all players in his line of sight, inflicting 203380 Physical damage and an additional 457605 Bleed damage over 15 sec."
+    }
+  },
+  "1253320": {
+    "zhCN": {
+      "name": "邪恶愈合",
+      "description": "光诞鞭笞者以全新的力量再次苏醒，急速和造成的伤害提高30%。该效果还会使其免疫打断和控制效果。"
+    },
+    "enUS": {
+      "name": "Vicious Regrowth",
+      "description": "Lightspawn Lashers reawaken with renewed power, increasing their haste and damage done by 30%. This effect also makes them immune to interrupts and crowd controlling effects."
+    }
+  },
+  "1234890": {
+    "zhCN": {
+      "name": "粉碎冲锋",
+      "description": "向前猛冲，造成203380点物理伤害并将玩家击退。"
+    },
+    "enUS": {
+      "name": "Smashing Charge",
+      "description": "Charges forward inflicting 203380 Physical damage and knocking back players."
+    }
+  },
+  "1218508": {
+    "zhCN": {
+      "name": "伪装",
+      "description": "将目标伪装成非法降雨酒馆的员工。"
+    },
+    "enUS": {
+      "name": "Disguised",
+      "description": "Disguises the target as an Illicit Rain employee."
+    }
+  },
+  "1249236": {
+    "zhCN": {
+      "name": "火焰吐息",
+      "description": "喷出多个火球，对冲击点附近的敌人造成127113点火焰伤害，随后每1秒造成25423点火焰伤害，持续10秒。"
+    },
+    "enUS": {
+      "name": "Fire Spit",
+      "description": "Spits multiple fireballs that Inflict 127113 Fire damage and 25423 Fire every 1 sec for 10 sec to enemies near where they impact."
+    }
+  },
+  "1249238": {
+    "zhCN": {
+      "name": "火焰吐息",
+      "description": "喷出多个火球，对冲击点附近的敌人造成127113点火焰伤害，随后每1秒造成25423点火焰伤害，持续10秒。"
+    },
+    "enUS": {
+      "name": "Fire Spit",
+      "description": "Spits multiple fireballs that Inflict 127113 Fire damage and 25423 Fire every 1 sec for 10 sec to enemies near where they impact."
+    }
+  },
+  "1290205": {
+    "zhCN": {
+      "name": "闪电箭",
+      "description": "造成12点自然伤害。"
+    },
+    "enUS": {
+      "name": "Lightning Bolt",
+      "description": "Inflicts 12 Nature damage."
+    }
+  },
+  "1241058": {
+    "zhCN": {
+      "name": "凶残痛击",
+      "description": "鲁伊亚疯狂挥击，对玩家造成81352点物理伤害，并使其流血，每1秒额外受到20338点物理伤害，持续20秒或直到生命值完全恢复。该效果可叠加。"
+    },
+    "enUS": {
+      "name": "Grievous Thrash",
+      "description": "Ruia thrashes about, inflicting 81352 Physical damage to players and causing them to bleed an additional 20338 Physical damage every 1 sec for 20 sec or until fully healed. This effect stacks."
+    }
+  },
+  "1234917": {
+    "zhCN": {
+      "name": "粉碎冲锋",
+      "description": "向前猛冲，造成203380点物理伤害并将玩家击退。"
+    },
+    "enUS": {
+      "name": "Smashing Charge",
+      "description": "Charges forward inflicting 203380 Physical damage and knocking back players."
+    }
+  },
+  "1263590": {
+    "zhCN": {
+      "name": "碎霜",
+      "description": "碎裂的震颤核心迸射出寒冰碎片，碎片在6秒后落地，对5码范围内的玩家造成30507点冰霜伤害。如果没有玩家被击中，碎片会破裂并引发白霜爆破。"
+    },
+    "enUS": {
+      "name": "Rimeshatter",
+      "description": "The Fractured Shivercore bursts releasing ice shards that impact 6 sec later inflicting 30507 Frost damage to players within 5 yards.If no players are struck the shard fragments cause a Rime Detonation."
+    }
+  },
+  "1241067": {
+    "zhCN": {
+      "name": "峡谷之灵",
+      "description": "鲁伊亚召唤灵魂，每8秒持续施放光明之火、光明坠落、粉碎打击和凶残痛击，直至被击败。"
+    },
+    "enUS": {
+      "name": "Spirits of the Vale",
+      "description": "Ruia calls upon the spirits, casting Lightfire, Lightfall, Pulverizing Strikes, and Grievous Thrash every 8 sec until he is defeated."
+    }
+  },
+  "1263597": {
+    "zhCN": {
+      "name": "白霜爆破",
+      "description": "对所有玩家造成40676点冰霜伤害，并将其定身在原地，持续4秒。"
+    },
+    "enUS": {
+      "name": "Rime Detonation",
+      "description": "Inflicts 40676 Frost damage to all players and roots them in place for 4 sec."
+    }
+  },
+  "1222642": {
+    "zhCN": {
+      "name": "巨型爪击",
+      "description": "阿特洛苏斯对一名玩家发动强力的一击，造成127113点自然伤害，此后每1秒额外造成35592点自然伤害，持续10秒。"
+    },
+    "enUS": {
+      "name": "Hulking Claw",
+      "description": "Atroxus delivers a powerful blow to a player that inflicts 127113 Nature damage with an additional 35592 Nature damage every 1 sec for 10 sec."
     }
   }
 }
