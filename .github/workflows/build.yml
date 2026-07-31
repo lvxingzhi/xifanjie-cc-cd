@@ -14,7 +14,7 @@ on:
         type: boolean
         default: false
   push:
-    branches: [main]
+    branches: [master]
     paths-ignore: ['data/**', 'data.json']   # 回写数据不触发重跑
 
 permissions:
