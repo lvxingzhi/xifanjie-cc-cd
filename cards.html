@@ -4,89 +4,94 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>大秘境副本技能速查 · 制作者: 西番芥</title>
-<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23ff7a6e'/><rect width='64' height='64' rx='16' fill='none' stroke='%23e85d4f' stroke-width='3'/><text x='50%25' y='56%25' font-family='PingFang SC,Microsoft Yahei,sans-serif' font-size='34' font-weight='800' fill='%23fff' text-anchor='middle' dominant-baseline='middle'>西</text></svg>" />
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2322C55E'/><rect width='64' height='64' fill='none' stroke='%2315803D' stroke-width='4'/><text x='50%25' y='56%25' font-family='PingFang SC,Microsoft Yahei,sans-serif' font-size='34' font-weight='800' fill='%23fff' text-anchor='middle' dominant-baseline='middle'>西</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=DM+Sans:wght@400;500;700&family=Press+Start+2P&family=Space+Grotesk:wght@500;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --cream: #fff6ec;
-    --ink: #3d2f23;
-    --ink-2: #7a6852;
-    --outline: #ead9bd;
-    --outline-dark: #d9b98c;
-    --coral: #ff7a6e;
-    --coral-deep: #e85d4f;
-    --coral-bg: #ffe3de;
-    --blue: #5fb8ff;
-    --blue-deep: #2f7fd6;
-    --blue-bg: #dff0ff;
-    --green: #5fd02c;
-    --green-deep: #46a302;
-    --green-bg: #e7f9d9;
-    --yellow: #ffc93c;
-    --yellow-deep: #c98a00;
-    --yellow-bg: #fff2cc;
-    --purple: #b18cff;
-    --purple-deep: #8b5cf6;
-    --purple-bg: #efe7ff;
+    --text: #1E293B;
+    --text-muted: #64748B;
+    --border: #E2E8F0;
+    --bg: #F8FAFC;
+    --card: #FFFFFF;
+    --primary: #3B82F6;
+    --primary-dark: #2563EB;
+    --primary-soft: #DBEAFE;
+    --cta: #F97316;
+    --cta-dark: #EA580C;
+    --cta-soft: #FFEDD5;
+    --mint: #5EEAD4;
+    --mint-soft: #CCFBF1;
+    --pink: #F9A8D4;
+    --pink-soft: #FDF2F8;
+    --purple: #A78BFA;
+    --purple-soft: #EDE9FE;
+    --green: #22C55E;
+    --green-dark: #15803D;
+    --green-soft: #DCFCE7;
+    --off-bg: #F1F5F9;
+    --off-line: #CBD5E1;
+    --sh: 0 6px 0 rgba(30, 41, 59, .18), 0 14px 26px rgba(30, 41, 59, .10);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font: 13px/1.6 "Baloo 2", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", PingFang SC, "Microsoft Yahei", sans-serif;
-    background-color: var(--cream);
-    background-image: radial-gradient(rgba(160, 120, 60, .10) 1.5px, transparent 1.5px);
-    background-size: 24px 24px;
-    color: var(--ink);
+    font: 13px/1.6 "DM Sans", "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", PingFang SC, "Microsoft Yahei", sans-serif;
+    background-color: var(--bg);
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 7px, rgba(30, 41, 59, .018) 7px, rgba(30, 41, 59, .018) 8px),
+      repeating-linear-gradient(90deg, transparent, transparent 7px, rgba(30, 41, 59, .018) 7px, rgba(30, 41, 59, .018) 8px);
+    color: var(--text);
     padding: 14px 12px 40px;
     min-height: 100vh;
   }
 
-  /* ===== 工具栏（粘土控制台） ===== */
+  /* ===== 工具栏 ===== */
   .toolbar {
     max-width: 860px; margin: 0 auto 18px;
-    padding: 11px 14px; background: #fff; border: 2px solid var(--outline); border-radius: 18px;
-    box-shadow: 0 5px 0 var(--outline), 0 10px 20px rgba(122, 90, 50, .08);
+    padding: 11px 14px; background: #fff; border: 3px solid var(--text); border-radius: 16px;
+    box-shadow: var(--sh);
     display: flex; flex-wrap: wrap; gap: 9px; align-items: center;
   }
   .toolbar select, .toolbar button {
-    background: #fffdf8; color: var(--ink); border: 2px solid var(--outline);
+    background: #fff; color: var(--text); border: 3px solid var(--text);
     border-radius: 12px; padding: 7px 12px; font-size: 13px; font-weight: 700; cursor: pointer;
     transition: border-color .15s;
   }
-  .toolbar select:hover, .toolbar button:hover { border-color: var(--coral); }
+  .toolbar select:hover, .toolbar button:hover { border-color: var(--primary); }
   .toolbar .back {
-    color: var(--blue-deep); text-decoration: none; font-weight: 800;
-    padding: 7px 12px; border-radius: 12px; border: 2px solid var(--blue); background: var(--blue-bg);
+    color: var(--primary-dark); text-decoration: none; font-weight: 800;
+    padding: 7px 12px; border-radius: 12px; border: 3px solid var(--text); background: var(--primary-soft);
+    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
   }
-  .toolbar .back:hover { background: var(--blue); color: #fff; }
+  .toolbar .back:hover { background: var(--primary); color: #fff; }
   .toolbar .share-btn {
-    background: var(--green); color: #fff; border-color: var(--green-deep);
-    box-shadow: 0 3px 0 var(--green-deep);
+    background: linear-gradient(135deg, #2563EB, #3B82F6); color: #fff;
+    box-shadow: 0 3px 0 var(--primary-dark);
   }
-  .toolbar .share-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--green-deep); }
+  .toolbar .share-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--primary-dark); }
   .toolbar .lang-switch {
     display: inline-flex; gap: 4px;
-    background: #f6eddc; border: 2px solid var(--outline); border-radius: 999px; padding: 3px;
+    background: var(--off-bg); border: 3px solid var(--text); border-radius: 999px; padding: 3px;
   }
   .toolbar .lang-switch button {
-    background: transparent; color: var(--ink-2); border: none;
+    background: transparent; color: var(--text-muted); border: none;
     padding: 5px 12px; font-size: 13px; font-weight: 700; cursor: pointer; line-height: 1.3;
     border-radius: 999px;
   }
   .toolbar .lang-switch button.active {
-    background: var(--green); color: #fff;
-    box-shadow: 0 3px 0 var(--green-deep);
+    background: var(--primary); color: #fff;
+    box-shadow: 0 2px 0 var(--primary-dark);
   }
-  .toolbar .hint { color: var(--ink-2); font-size: 11.5px; font-weight: 600; margin-left: auto; }
+  .toolbar .hint { color: var(--text-muted); font-size: 11.5px; font-weight: 600; margin-left: auto; }
 
   /* ===== 卡片容器 ===== */
   .cards { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
 
-  /* ===== 单张粘土卡片 ===== */
+  /* ===== 单张卡片（clay-card 风格） ===== */
   .card {
-    background: #fff; border-radius: 20px; border: 2px solid var(--outline);
-    box-shadow: 0 8px 0 var(--outline), 0 16px 30px rgba(122, 90, 50, .10);
+    background: #fff; border-radius: 18px; border: 3px solid var(--text);
+    box-shadow: var(--sh);
     position: relative; overflow: hidden;
     page-break-inside: avoid;
   }
@@ -102,54 +107,54 @@
   /* ===== 卡片头部 ===== */
   .card-header {
     padding: 14px 18px;
-    border-bottom: 2px solid var(--outline);
+    border-bottom: 3px solid var(--text);
     display: flex; align-items: center; gap: 12px;
     position: relative; z-index: 1;
-    background: linear-gradient(90deg, var(--coral-bg), #fff 55%);
+    background: linear-gradient(90deg, var(--primary-soft), #fff 55%);
   }
   .card-title-wrap { flex: 1; min-width: 0; }
   .card-title {
-    font-size: 21px; font-weight: 900; color: var(--coral-deep); line-height: 1.2;
+    font-size: 21px; font-weight: 900; color: var(--text); line-height: 1.2;
     font-family: "ZCOOL KuaiLe", "Baloo 2", "PingFang SC", sans-serif;
     letter-spacing: 1px;
   }
-  .card-title-en { margin-top: 2px; font-size: 11.5px; color: var(--ink-2); font-weight: 600; }
+  .card-title-en { margin-top: 2px; font-size: 11.5px; color: var(--text-muted); font-weight: 600; }
   .card-season {
-    background: linear-gradient(135deg, var(--purple), var(--purple-deep)); color: #fff;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff;
     padding: 5px 13px; border-radius: 999px;
     font-size: 11px; font-weight: 800; letter-spacing: .5px; white-space: nowrap;
-    border: 2px solid var(--purple-deep);
-    box-shadow: 0 3px 0 #6d3fe0;
+    border: 3px solid var(--text);
+    box-shadow: 0 3px 0 rgba(30, 41, 59, .3);
   }
 
-  /* ===== 怪物分组（粘土小卡） ===== */
+  /* ===== 怪物分组 ===== */
   .mob-list { padding: 12px 14px; position: relative; z-index: 1; }
   .mob-block {
-    margin-bottom: 9px; border: 2px solid var(--outline); border-radius: 14px;
-    background: #fffdf8; overflow: hidden; position: relative;
-    box-shadow: 0 3px 0 var(--outline);
+    margin-bottom: 9px; border: 3px solid var(--text); border-radius: 12px;
+    background: #fff; overflow: hidden; position: relative;
+    box-shadow: 0 3px 0 rgba(30, 41, 59, .2);
   }
   .mob-block:last-child { margin-bottom: 0; }
-  .mob-block.is-boss { border-color: var(--coral); box-shadow: 0 3px 0 var(--coral); background: #fff6f3; }
+  .mob-block.is-boss { border-color: var(--text); box-shadow: 0 3px 0 var(--primary-dark); background: var(--primary-soft); }
 
   .mob-header {
     padding: 7px 12px;
-    border-bottom: 1px solid var(--outline); border-left: 4px solid var(--yellow);
-    background: linear-gradient(90deg, #fbf2e0, #fffdf8);
+    border-bottom: 1px solid var(--border); border-left: 4px solid var(--primary);
+    background: #fff;
     display: flex; align-items: center; gap: 7px;
   }
-  .mob-block.is-boss .mob-header { border-left-color: var(--coral); background: #fff0eb; }
+  .mob-block.is-boss .mob-header { border-left-color: var(--primary-dark); background: var(--primary-soft); }
   .boss-badge {
-    background: linear-gradient(135deg, var(--coral), #ff9d8f); color: #fff; font-weight: 900; font-size: 10px;
+    background: linear-gradient(135deg, var(--cta), var(--cta-dark)); color: #fff; font-weight: 900; font-size: 10px;
     padding: 2px 8px; border-radius: 999px; letter-spacing: 1px;
-    border: 2px solid var(--coral-deep);
+    border: 2px solid var(--text);
   }
-  .mob-name-zh { font-size: 13.5px; font-weight: 800; color: var(--ink); }
-  .mob-block.is-boss .mob-name-zh { color: var(--coral-deep); }
-  .mob-name-en { font-size: 10.5px; color: var(--ink-2); font-weight: 600; margin-left: 3px; }
+  .mob-name-zh { font-size: 13.5px; font-weight: 800; color: var(--text); }
+  .mob-block.is-boss .mob-name-zh { color: var(--primary-dark); }
+  .mob-name-en { font-size: 10.5px; color: var(--text-muted); font-weight: 600; margin-left: 3px; }
   .mob-count {
-    margin-left: auto; font-size: 10.5px; color: var(--yellow-deep); font-weight: 800;
-    background: var(--yellow-bg); border: 2px solid var(--yellow);
+    margin-left: auto; font-size: 10.5px; color: var(--primary-dark); font-weight: 800;
+    background: var(--primary-soft); border: 2px solid var(--text);
     padding: 1px 10px; border-radius: 999px; white-space: nowrap;
   }
 
@@ -157,7 +162,7 @@
   .spell-list { padding: 0; }
   .spell-row {
     padding: 6px 12px;
-    border-bottom: 1px dashed var(--outline);
+    border-bottom: 1px dashed var(--border);
     position: relative;
   }
   .spell-row:last-child { border-bottom: none; }
@@ -167,49 +172,49 @@
     position: absolute; right: 8px; top: 50%;
     transform: translateY(-50%) rotate(-8deg);
     font-size: 9px; font-weight: 700;
-    color: rgba(122, 90, 50, .09);
+    color: rgba(30, 41, 59, .08);
     letter-spacing: 1px;
     pointer-events: none; user-select: none;
     white-space: nowrap;
   }
 
   /* 技能名 + 描述 同行 */
-  .spell-name { font-size: 13px; font-weight: 800; color: var(--blue-deep); }
-  .spell-desc-inline { font-size: 12px; color: var(--ink-2); margin-left: 6px; }
+  .spell-name { font-size: 13px; font-weight: 800; color: var(--primary-dark); }
+  .spell-desc-inline { font-size: 12px; color: var(--text-muted); margin-left: 6px; }
   .spell-tags {
     display: inline-flex; flex-wrap: wrap; gap: 4px; margin-left: 6px;
     vertical-align: middle;
   }
-  .spell-meta { font-size: 10px; color: var(--ink-2); margin-top: 1px; }
+  .spell-meta { font-size: 10px; color: var(--text-muted); margin-top: 1px; }
 
-  /* ===== 粘土小标签 ===== */
+  /* ===== 彩色小标签（弱化粉红黄，低饱和） ===== */
   .tag {
-    display: inline-block; padding: 1px 8px; border-radius: 999px;
+    display: inline-block; padding: 1px 9px; border-radius: 999px;
     font-size: 10px; font-weight: 800; line-height: 1.7;
-    border: 2px solid transparent; white-space: nowrap;
+    border: 2px solid var(--text); box-shadow: 0 2px 0 rgba(30, 41, 59, .2); white-space: nowrap;
   }
-  .tag-int { background: var(--coral-bg); color: var(--coral-deep); border-color: var(--coral); }
-  .tag-mag { background: var(--purple-bg); color: var(--purple-deep); border-color: var(--purple); }
-  .tag-enrage { background: #ffe9dd; color: #e8590c; border-color: #ff9d6b; }
-  .tag-bleed { background: #ffdcdc; color: #c92a2a; border-color: #ff8f8f; }
-  .tag-poison { background: var(--green-bg); color: var(--green-deep); border-color: #a5e07c; }
-  .tag-disease { background: #f2f7d2; color: #7a9e0f; border-color: #c6d96f; }
-  .tag-curse { background: var(--purple-bg); color: var(--purple-deep); border-color: var(--purple); }
+  .tag-int { background: var(--green-soft); color: var(--green-dark); }
+  .tag-mag { background: #DBEAFE; color: #1D4ED8; }
+  .tag-enrage { background: var(--cta-soft); color: #C2410C; }
+  .tag-bleed { background: #FBE8E8; color: #9F1239; }
+  .tag-poison { background: var(--green-soft); color: var(--green-dark); }
+  .tag-disease { background: #F0F7E6; color: #4D7C0F; }
+  .tag-curse { background: #EEEAFB; color: #5B21B6; }
 
   /* ===== 底部 ===== */
   .card-footer {
-    background: linear-gradient(90deg, var(--yellow-bg), #fff 55%);
-    border-top: 2px solid var(--outline);
+    background: linear-gradient(90deg, var(--primary-soft), #fff 55%);
+    border-top: 3px solid var(--text);
     padding: 8px 16px; display: flex; align-items: center; gap: 12px;
     position: relative; z-index: 1;
   }
   .footer-brand {
-    font-size: 11.5px; font-weight: 800; color: var(--coral-deep);
-    background: var(--coral-bg); border: 2px solid var(--coral);
+    font-size: 11.5px; font-weight: 800; color: var(--primary-dark);
+    background: var(--primary-soft); border: 2px solid var(--text);
     border-radius: 999px; padding: 2px 12px;
   }
-  .footer-social { margin-left: auto; text-align: right; font-size: 9.5px; color: var(--ink-2); line-height: 1.4; font-weight: 600; }
-  .footer-social .hl { color: var(--coral-deep); font-weight: 800; }
+  .footer-social { margin-left: auto; text-align: right; font-size: 9.5px; color: var(--text-muted); line-height: 1.4; font-weight: 600; }
+  .footer-social .hl { color: var(--primary-dark); font-weight: 800; }
 
   /* ===== 分享模式 ===== */
   body.share-mode .toolbar { display: none; }
@@ -219,13 +224,13 @@
   body.share-mode .card-title { font-size: 18px; }
   body.share-mode .mob-list { padding: 8px 10px; }
   body.share-mode .spell-row { padding: 5px 9px; }
-  body.share-mode .card { border-width: 2px; box-shadow: 0 6px 0 var(--outline), 0 12px 22px rgba(122, 90, 50, .08); }
+  body.share-mode .card { box-shadow: 0 4px 0 rgba(30, 41, 59, .18), 0 10px 20px rgba(30, 41, 59, .08); }
   /* 分享模式水印更明显 */
-  body.share-mode .watermark-layer svg text { fill: rgba(122, 90, 50, .14); }
-  body.share-mode .spell-row-watermark { color: rgba(122, 90, 50, .16); }
+  body.share-mode .watermark-layer svg text { fill: rgba(30, 41, 59, .12); }
+  body.share-mode .spell-row-watermark { color: rgba(30, 41, 59, .14); }
 
   /* ===== 空状态 ===== */
-  .empty { text-align: center; padding: 60px 20px; color: var(--ink-2); font-size: 14px; font-weight: 600; }
+  .empty { text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 14px; font-weight: 600; }
 
   /* ===== 响应式 ===== */
   @media (max-width: 720px) {
@@ -293,7 +298,7 @@ function buildWatermarkSvg(idx) {
   return '<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">' +
     '<defs>' +
       '<pattern id="' + id + '" x="0" y="0" width="320" height="200" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">' +
-        '<text x="10" y="80" font-size="14" font-weight="700" fill="rgba(122,90,50,.05)" letter-spacing="3" ' +
+        '<text x="10" y="80" font-size="14" font-weight="700" fill="rgba(30,41,59,.06)" letter-spacing="3" ' +
           'font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei,sans-serif">' +
           escapeHtml(text) +
         '</text>' +
