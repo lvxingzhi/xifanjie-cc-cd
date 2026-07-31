@@ -13,7 +13,7 @@ MythicDungeonTools (外部上游, GPL-2.0)
 mdt_site/  (Python, 一键构建)
    ├ 读 MythicDungeonTools.toc 确定当前赛季（mainline 游戏类型）
    ├ 解析 load XML + 副本 Lua + 本地化（MDT 换赛季改 TOC，自动跟随）
-   ├ Wowhead 增量补全技能描述（zhCN + enUS 中英双语，缓存提交进仓库，平时零请求）
+   ├ Wowhead 增量补全技能描述（zhCN + enUS 中英双语，只补缓存缺失项，缓存提交进仓库）
    └ 生成 data.json（仓库根目录，与 index.html/cards.html 同级）
         ▼
 commit + push → GitHub Pages 直接服务 main 分支
@@ -54,11 +54,10 @@ python -m mdt_site --fetch --wowhead-workers 10   # 调整 Wowhead 拉取并发�
 
 ## 新赛季流程
 
-1. 本地跑 `python -m mdt_site --branch <新赛季分支> --fetch` 补全 Wowhead 缓存（断点续传可中断重跑）
-2. `git commit data/spells_cache.json` 并 push
-3. GitHub 上手动触发 workflow（或等每周定时任务）
+1. GitHub 上手动触发 workflow（或等每周定时任务），在 `branch` 输入框填新赛季分支名
+2. CI 自动 `--fetch` 补全 Wowhead 缓存并回写，无需本地操作
 
-平时构建全走缓存，零 Wowhead 请求。技能缓存只增不减——老副本回归时直接命中，无需重新请求。
+技能缓存只增不减——老副本回归时直接命中，无需重新请求；每次构建只补缓存缺失项，缓存完整时零 Wowhead 请求。
 
 ## 数据来源与许可
 

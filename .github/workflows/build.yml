@@ -9,10 +9,6 @@ on:
         description: 'MDT 分支（master=正式服, ptr12.1=PTR 测试服）'
         type: string
         default: 'master'
-      fetch_wowhead:
-        description: '查询 Wowhead 补全新技能描述（新赛季使用）'
-        type: boolean
-        default: false
   push:
     branches: [master]
     paths-ignore: ['data/**', 'data.json']   # 回写数据不触发重跑
@@ -36,13 +32,9 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
-      - name: 构建数据（定向拉取 MDT，仅所需文件）
+      - name: 构建数据（定向拉取 MDT，仅所需文件，自动补全 Wowhead 技能描述）
         run: |
-          ARGS=""
-          if [ "${{ github.event_name == 'workflow_dispatch' && inputs.fetch_wowhead == 'true' || 'false' }}" = "true" ]; then
-            ARGS="--fetch"
-          fi
-          python -m mdt_site --branch "${{ github.event_name == 'workflow_dispatch' && inputs.branch || 'master' }}" $ARGS
+          python -m mdt_site --branch "${{ github.event_name == 'workflow_dispatch' && inputs.branch || 'master' }}" --fetch
 
       - name: 回写数据（data.json + 技能缓存）
         run: |
