@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>大秘境副本技能速查 · 制作者: 西番芥</title>
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23ff7a6e'/><rect width='64' height='64' rx='16' fill='none' stroke='%23e85d4f' stroke-width='3'/><text x='50%25' y='56%25' font-family='PingFang SC,Microsoft Yahei,sans-serif' font-size='34' font-weight='800' fill='%23fff' text-anchor='middle' dominant-baseline='middle'>西</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #fff6ec;
+    --ink: #3d2f23;
+    --ink-2: #7a6852;
+    --outline: #ead9bd;
+    --outline-dark: #d9b98c;
+    --coral: #ff7a6e;
+    --coral-deep: #e85d4f;
+    --coral-bg: #ffe3de;
+    --blue: #5fb8ff;
+    --blue-deep: #2f7fd6;
+    --blue-bg: #dff0ff;
+    --green: #5fd02c;
+    --green-deep: #46a302;
+    --green-bg: #e7f9d9;
+    --yellow: #ffc93c;
+    --yellow-deep: #c98a00;
+    --yellow-bg: #fff2cc;
+    --purple: #b18cff;
+    --purple-deep: #8b5cf6;
+    --purple-bg: #efe7ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font: 13px/1.6 "Baloo 2", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", PingFang SC, "Microsoft Yahei", sans-serif;
+    background-color: var(--cream);
+    background-image: radial-gradient(rgba(160, 120, 60, .10) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+    color: var(--ink);
+    padding: 14px 12px 40px;
+    min-height: 100vh;
+  }
+
+  /* ===== 工具栏（粘土控制台） ===== */
+  .toolbar {
+    max-width: 860px; margin: 0 auto 18px;
+    padding: 11px 14px; background: #fff; border: 2px solid var(--outline); border-radius: 18px;
+    box-shadow: 0 5px 0 var(--outline), 0 10px 20px rgba(122, 90, 50, .08);
+    display: flex; flex-wrap: wrap; gap: 9px; align-items: center;
+  }
+  .toolbar select, .toolbar button {
+    background: #fffdf8; color: var(--ink); border: 2px solid var(--outline);
+    border-radius: 12px; padding: 7px 12px; font-size: 13px; font-weight: 700; cursor: pointer;
+    transition: border-color .15s;
+  }
+  .toolbar select:hover, .toolbar button:hover { border-color: var(--coral); }
+  .toolbar .back {
+    color: var(--blue-deep); text-decoration: none; font-weight: 800;
+    padding: 7px 12px; border-radius: 12px; border: 2px solid var(--blue); background: var(--blue-bg);
+  }
+  .toolbar .back:hover { background: var(--blue); color: #fff; }
+  .toolbar .share-btn {
+    background: var(--green); color: #fff; border-color: var(--green-deep);
+    box-shadow: 0 3px 0 var(--green-deep);
+  }
+  .toolbar .share-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--green-deep); }
+  .toolbar .lang-switch {
+    display: inline-flex; gap: 4px;
+    background: #f6eddc; border: 2px solid var(--outline); border-radius: 999px; padding: 3px;
+  }
+  .toolbar .lang-switch button {
+    background: transparent; color: var(--ink-2); border: none;
+    padding: 5px 12px; font-size: 13px; font-weight: 700; cursor: pointer; line-height: 1.3;
+    border-radius: 999px;
+  }
+  .toolbar .lang-switch button.active {
+    background: var(--green); color: #fff;
+    box-shadow: 0 3px 0 var(--green-deep);
+  }
+  .toolbar .hint { color: var(--ink-2); font-size: 11.5px; font-weight: 600; margin-left: auto; }
+
+  /* ===== 卡片容器 ===== */
+  .cards { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+
+  /* ===== 单张粘土卡片 ===== */
+  .card {
+    background: #fff; border-radius: 20px; border: 2px solid var(--outline);
+    box-shadow: 0 8px 0 var(--outline), 0 16px 30px rgba(122, 90, 50, .10);
+    position: relative; overflow: hidden;
+    page-break-inside: avoid;
+  }
+
+  /* ===== 水印层 ===== */
+  .watermark-layer {
+    position: absolute; inset: 0;
+    pointer-events: none; user-select: none;
+    z-index: 10; overflow: hidden;
+  }
+  .watermark-layer svg { width: 100%; height: 100%; }
+
+  /* ===== 卡片头部 ===== */
+  .card-header {
+    padding: 14px 18px;
+    border-bottom: 2px solid var(--outline);
+    display: flex; align-items: center; gap: 12px;
+    position: relative; z-index: 1;
+    background: linear-gradient(90deg, var(--coral-bg), #fff 55%);
+  }
+  .card-title-wrap { flex: 1; min-width: 0; }
+  .card-title {
+    font-size: 21px; font-weight: 900; color: var(--coral-deep); line-height: 1.2;
+    font-family: "ZCOOL KuaiLe", "Baloo 2", "PingFang SC", sans-serif;
+    letter-spacing: 1px;
+  }
+  .card-title-en { margin-top: 2px; font-size: 11.5px; color: var(--ink-2); font-weight: 600; }
+  .card-season {
+    background: linear-gradient(135deg, var(--purple), var(--purple-deep)); color: #fff;
+    padding: 5px 13px; border-radius: 999px;
+    font-size: 11px; font-weight: 800; letter-spacing: .5px; white-space: nowrap;
+    border: 2px solid var(--purple-deep);
+    box-shadow: 0 3px 0 #6d3fe0;
+  }
+
+  /* ===== 怪物分组（粘土小卡） ===== */
+  .mob-list { padding: 12px 14px; position: relative; z-index: 1; }
+  .mob-block {
+    margin-bottom: 9px; border: 2px solid var(--outline); border-radius: 14px;
+    background: #fffdf8; overflow: hidden; position: relative;
+    box-shadow: 0 3px 0 var(--outline);
+  }
+  .mob-block:last-child { margin-bottom: 0; }
+  .mob-block.is-boss { border-color: var(--coral); box-shadow: 0 3px 0 var(--coral); background: #fff6f3; }
+
+  .mob-header {
+    padding: 7px 12px;
+    border-bottom: 1px solid var(--outline); border-left: 4px solid var(--yellow);
+    background: linear-gradient(90deg, #fbf2e0, #fffdf8);
+    display: flex; align-items: center; gap: 7px;
+  }
+  .mob-block.is-boss .mob-header { border-left-color: var(--coral); background: #fff0eb; }
+  .boss-badge {
+    background: linear-gradient(135deg, var(--coral), #ff9d8f); color: #fff; font-weight: 900; font-size: 10px;
+    padding: 2px 8px; border-radius: 999px; letter-spacing: 1px;
+    border: 2px solid var(--coral-deep);
+  }
+  .mob-name-zh { font-size: 13.5px; font-weight: 800; color: var(--ink); }
+  .mob-block.is-boss .mob-name-zh { color: var(--coral-deep); }
+  .mob-name-en { font-size: 10.5px; color: var(--ink-2); font-weight: 600; margin-left: 3px; }
+  .mob-count {
+    margin-left: auto; font-size: 10.5px; color: var(--yellow-deep); font-weight: 800;
+    background: var(--yellow-bg); border: 2px solid var(--yellow);
+    padding: 1px 10px; border-radius: 999px; white-space: nowrap;
+  }
+
+  /* ===== 技能列表 ===== */
+  .spell-list { padding: 0; }
+  .spell-row {
+    padding: 6px 12px;
+    border-bottom: 1px dashed var(--outline);
+    position: relative;
+  }
+  .spell-row:last-child { border-bottom: none; }
+
+  /* 技能行内水印 */
+  .spell-row-watermark {
+    position: absolute; right: 8px; top: 50%;
+    transform: translateY(-50%) rotate(-8deg);
+    font-size: 9px; font-weight: 700;
+    color: rgba(122, 90, 50, .09);
+    letter-spacing: 1px;
+    pointer-events: none; user-select: none;
+    white-space: nowrap;
+  }
+
+  /* 技能名 + 描述 同行 */
+  .spell-name { font-size: 13px; font-weight: 800; color: var(--blue-deep); }
+  .spell-desc-inline { font-size: 12px; color: var(--ink-2); margin-left: 6px; }
+  .spell-tags {
+    display: inline-flex; flex-wrap: wrap; gap: 4px; margin-left: 6px;
+    vertical-align: middle;
+  }
+  .spell-meta { font-size: 10px; color: var(--ink-2); margin-top: 1px; }
+
+  /* ===== 粘土小标签 ===== */
+  .tag {
+    display: inline-block; padding: 1px 8px; border-radius: 999px;
+    font-size: 10px; font-weight: 800; line-height: 1.7;
+    border: 2px solid transparent; white-space: nowrap;
+  }
+  .tag-int { background: var(--coral-bg); color: var(--coral-deep); border-color: var(--coral); }
+  .tag-mag { background: var(--purple-bg); color: var(--purple-deep); border-color: var(--purple); }
+  .tag-enrage { background: #ffe9dd; color: #e8590c; border-color: #ff9d6b; }
+  .tag-bleed { background: #ffdcdc; color: #c92a2a; border-color: #ff8f8f; }
+  .tag-poison { background: var(--green-bg); color: var(--green-deep); border-color: #a5e07c; }
+  .tag-disease { background: #f2f7d2; color: #7a9e0f; border-color: #c6d96f; }
+  .tag-curse { background: var(--purple-bg); color: var(--purple-deep); border-color: var(--purple); }
+
+  /* ===== 底部 ===== */
+  .card-footer {
+    background: linear-gradient(90deg, var(--yellow-bg), #fff 55%);
+    border-top: 2px solid var(--outline);
+    padding: 8px 16px; display: flex; align-items: center; gap: 12px;
+    position: relative; z-index: 1;
+  }
+  .footer-brand {
+    font-size: 11.5px; font-weight: 800; color: var(--coral-deep);
+    background: var(--coral-bg); border: 2px solid var(--coral);
+    border-radius: 999px; padding: 2px 12px;
+  }
+  .footer-social { margin-left: auto; text-align: right; font-size: 9.5px; color: var(--ink-2); line-height: 1.4; font-weight: 600; }
+  .footer-social .hl { color: var(--coral-deep); font-weight: 800; }
+
+  /* ===== 分享模式 ===== */
+  body.share-mode .toolbar { display: none; }
+  body.share-mode { padding: 8px 8px 24px; }
+  body.share-mode .cards { gap: 14px; }
+  body.share-mode .card-header { padding: 11px 14px; }
+  body.share-mode .card-title { font-size: 18px; }
+  body.share-mode .mob-list { padding: 8px 10px; }
+  body.share-mode .spell-row { padding: 5px 9px; }
+  body.share-mode .card { border-width: 2px; box-shadow: 0 6px 0 var(--outline), 0 12px 22px rgba(122, 90, 50, .08); }
+  /* 分享模式水印更明显 */
+  body.share-mode .watermark-layer svg text { fill: rgba(122, 90, 50, .14); }
+  body.share-mode .spell-row-watermark { color: rgba(122, 90, 50, .16); }
+
+  /* ===== 空状态 ===== */
+  .empty { text-align: center; padding: 60px 20px; color: var(--ink-2); font-size: 14px; font-weight: 600; }
+
+  /* ===== 响应式 ===== */
+  @media (max-width: 720px) {
+    body { padding: 8px 6px 30px; }
+    .card-title { font-size: 18px; }
+    .mob-name-zh { font-size: 12.5px; }
+    .spell-name { font-size: 12px; }
+    .spell-desc-inline { font-size: 11px; }
+    .toolbar .hint { width: 100%; margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a href="index.html" class="back">&larr; 返回</a>
+  <div class="lang-switch" id="langSwitch">
+    <button type="button" data-lang="zh" class="active">中文</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
+  <select id="season"><option value="" data-i18n="allSeasons">全部赛季</option></select>
+  <select id="dungeon"><option value="" data-i18n="allDungeons">全部副本</option></select>
+  <button type="button" class="share-btn" id="shareBtn">分享模式</button>
+  <span class="hint" data-i18n="hint">长截图分享</span>
+</div>
+
+<div class="cards" id="cards"></div>
+
+<script>
+const WATERMARK = "制作者:西番芥";
+const BILIBILI_ID = "346688237";
+
+const ESC = { "\u0026": "\u0026amp;", "\u003c": "\u0026lt;", "\u003e": "\u0026gt;", "\u0022": "\u0026quot;", "\u0027": "\u0026#39;" };
+const escapeHtml = (s) => String(s == null ? "" : s).replace(/[\u0026\u003c\u003e\u0022\u0027]/g, (c) => ESC[c]);
+
+// ===== 中英双语（与 index.html 同步，localStorage 记忆） =====
+const I18N = {
+  zh: {
+    allSeasons: "全部赛季", allDungeons: "全部副本",
+    share: "分享模式", shareExit: "退出分享模式", hint: "长截图分享",
+    tagInt: "可打断", tagMagic: "魔法", tagEnrage: "激怒", tagBleed: "流血",
+    tagPoison: "中毒", tagDisease: "疾病", tagCurse: "诅咒",
+    spells: "技能", empty: "暂无数据",
+  },
+  en: {
+    allSeasons: "All Seasons", allDungeons: "All Dungeons",
+    share: "Share Mode", shareExit: "Exit Share Mode", hint: "Long screenshot share",
+    tagInt: "Int", tagMagic: "Magic", tagEnrage: "Enrage", tagBleed: "Bleed",
+    tagPoison: "Poison", tagDisease: "Disease", tagCurse: "Curse",
+    spells: "spells", empty: "No data",
+  },
+};
+const t = (k) => (I18N[lang] && I18N[lang][k]) || I18N.zh[k] || k;
+
+// 副本下拉显示名（选中值始终为中文名，仅显示随语言切换）
+function dungeonLabel(d) {
+  return lang === "en" ? (d.en || d.name) : d.name;
+}
+
+/* 生成SVG平铺水印 */
+function buildWatermarkSvg(idx) {
+  /* 用SVG pattern实现真正的平铺重复水印，保证覆盖整个卡片 */
+  const text = WATERMARK;
+  const id = "wm" + idx;
+  return '<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">' +
+    '<defs>' +
+      '<pattern id="' + id + '" x="0" y="0" width="320" height="200" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">' +
+        '<text x="10" y="80" font-size="14" font-weight="700" fill="rgba(122,90,50,.05)" letter-spacing="3" ' +
+          'font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei,sans-serif">' +
+          escapeHtml(text) +
+        '</text>' +
+      '</pattern>' +
+    '</defs>' +
+    '<rect width="100%" height="100%" fill="url(#' + id + ')"/>' +
+  '</svg>';
+}
+
+let allRows = [], allDungeons = [], allSeasons = [];
+let lang = localStorage.getItem("mss_lang") === "en" ? "en" : "zh";
+
+async function load() {
+  const res = await fetch("data.json", { cache: "no-cache" });
+  if (!res.ok) throw new Error("HTTP " + res.status);
+  const data = await res.json();
+
+  allSeasons = Object.keys(data.seasons || {});
+  allDungeons = data.dungeons || [];
+  allRows = data.rows || [];
+
+  const sSel = document.getElementById("season");
+  allSeasons.forEach((s) => {
+    const opt = document.createElement("option");
+    opt.value = s; opt.textContent = s;
+    sSel.appendChild(opt);
+  });
+
+  fillDungeonSelect();
+
+  render();
+}
+
+function fillDungeonSelect() {
+  const dSel = document.getElementById("dungeon");
+  const prev = dSel.value;
+  dSel.innerHTML = '<option value="">' + escapeHtml(t("allDungeons")) + '</option>';
+  allDungeons.forEach((d) => {
+    const opt = document.createElement("option");
+    opt.value = d.name;
+    opt.textContent = dungeonLabel(d);
+    dSel.appendChild(opt);
+  });
+  if (prev && [...dSel.options].some((o) => o.value === prev)) dSel.value = prev;
+}
+
+function buildSpellTags(r) {
+  const allDebuffsTrue = r.isEnrage && r.isBleed && r.isPoison && r.isDisease && r.isCurse;
+  const tags = [];
+  if (r.interruptible) tags.push('<span class="tag tag-int">' + t("tagInt") + '</span>');
+  if (r.isMagic) tags.push('<span class="tag tag-mag">' + t("tagMagic") + '</span>');
+  if (!allDebuffsTrue) {
+    if (r.isEnrage) tags.push('<span class="tag tag-enrage">' + t("tagEnrage") + '</span>');
+    if (r.isBleed) tags.push('<span class="tag tag-bleed">' + t("tagBleed") + '</span>');
+    if (r.isPoison) tags.push('<span class="tag tag-poison">' + t("tagPoison") + '</span>');
+    if (r.isDisease) tags.push('<span class="tag tag-disease">' + t("tagDisease") + '</span>');
+    if (r.isCurse) tags.push('<span class="tag tag-curse">' + t("tagCurse") + '</span>');
+  }
+  return tags.join("");
+}
+
+function render() {
+  const season = document.getElementById("season").value;
+  const dungeon = document.getElementById("dungeon").value;
+  const container = document.getElementById("cards");
+
+  let rows = allRows;
+  if (season) rows = rows.filter((r) => r.season === season);
+  if (dungeon) rows = rows.filter((r) => r.dungeonZh === dungeon);
+
+  const dedupSeen = new Set();
+  rows = rows.filter((r) => {
+    const tagSig = [r.interruptible, r.isMagic, r.isEnrage, r.isBleed, r.isPoison, r.isDisease, r.isCurse]
+      .map((b) => (b ? 1 : 0)).join("");
+    const key = [
+      r.dungeonZh || "",
+      r.npcId || r.mobZh || "",
+      (r.spellName || "").trim(),
+      (r.spellNameEn || "").trim(),
+      (r.description || "").trim(),
+      (r.descriptionEn || "").trim(),
+      tagSig,
+    ].join("||");
+    if (dedupSeen.has(key)) return false;
+    dedupSeen.add(key);
+    return true;
+  });
+
+  const groups = {};
+  for (const r of rows) {
+    const key = r.dungeonZh || "未知";
+    if (!groups[key]) groups[key] = { dungeonZh: key, dungeonEn: r.dungeonEn, season: r.season, rows: [] };
+    groups[key].rows.push(r);
+  }
+
+  const dungeonNames = Object.keys(groups);
+  if (!dungeonNames.length) {
+    container.innerHTML = '<div class="empty">' + escapeHtml(t("empty")) + '</div>';
+    return;
+  }
+
+  container.innerHTML = dungeonNames.map((name, idx) => {
+    const g = groups[name];
+
+    const mobs = {}; const mobOrder = [];
+    for (const r of g.rows) {
+      const k = (r.npcId || r.mobZh) + "|" + r.mobZh;
+      if (!mobs[k]) {
+        mobs[k] = { mobZh: r.mobZh, mobEn: r.mobEn, isBoss: r.isBoss, spells: [] };
+        mobOrder.push(k);
+      }
+      mobs[k].spells.push(r);
+    }
+    mobOrder.sort((a, b) => (mobs[b].isBoss ? 1 : 0) - (mobs[a].isBoss ? 1 : 0));
+
+    const mobsHtml = mobOrder.map((k) => {
+      const m = mobs[k];
+      const en = lang === "en";
+      const mobMain = en ? (m.mobEn || m.mobZh) : m.mobZh;
+      const mobSub = en ? m.mobZh : (m.mobEn || "");
+      const spellsHtml = m.spells.map((r) => {
+        const tags = buildSpellTags(r);
+        const desc = en ? (r.descriptionEn || r.description) : r.description;
+        const spellName = en ? (r.spellNameEn || r.spellName) : r.spellName;
+        const descHtml = desc
+          ? '<span class="spell-desc-inline">' + escapeHtml(desc) + '</span>'
+          : '';
+        const tagsHtml = tags ? '<span class="spell-tags">' + tags + '</span>' : '';
+
+        return '<div class="spell-row">' +
+          '<div>' +
+            '<span class="spell-name">' + escapeHtml(spellName) + '</span>' +
+            descHtml +
+            tagsHtml +
+          '</div>' +
+          '<span class="spell-row-watermark">' + WATERMARK + '</span>' +
+          '</div>';
+      }).join("");
+
+      return '<div class="mob-block' + (m.isBoss ? ' is-boss' : '') + '">' +
+        '<div class="mob-header">' +
+          (m.isBoss ? '<span class="boss-badge">BOSS</span>' : '') +
+          '<span class="mob-name-zh">' + escapeHtml(mobMain) + '</span>' +
+          '<span class="mob-name-en">' + escapeHtml(mobSub) + '</span>' +
+          '<span class="mob-count">' + m.spells.length + ' ' + t("spells") + '</span>' +
+        '</div>' +
+        '<div class="spell-list">' + spellsHtml + '</div>' +
+        '</div>';
+    }).join("");
+
+    return '<div class="card">' +
+      '<div class="watermark-layer">' + buildWatermarkSvg(idx) + '</div>' +
+      '<div class="card-header">' +
+        '<div class="card-title-wrap">' +
+          '<div class="card-title">' + escapeHtml(lang === "en" ? (g.dungeonEn || g.dungeonZh) : g.dungeonZh) + '</div>' +
+          '<div class="card-title-en">' + escapeHtml(lang === "en" ? g.dungeonZh : (g.dungeonEn || '')) + '</div>' +
+        '</div>' +
+        '<span class="card-season">' + escapeHtml(g.season) + '</span>' +
+      '</div>' +
+      '<div class="mob-list">' + mobsHtml + '</div>' +
+      '<div class="card-footer">' +
+        '<span class="footer-brand">制作者: 西番芥</span>' +
+        '<span class="footer-social">' +
+          'B站 <span class="hl">西番芥</span> · space.bilibili.com/' + BILIBILI_ID +
+        '</span>' +
+      '</div>' +
+      '</div>';
+  }).join("");
+}
+
+document.getElementById("season").addEventListener("change", render);
+document.getElementById("dungeon").addEventListener("change", render);
+document.getElementById("shareBtn").addEventListener("click", () => {
+  document.body.classList.toggle("share-mode");
+  const btn = document.getElementById("shareBtn");
+  btn.textContent = document.body.classList.contains("share-mode") ? t("shareExit") : t("share");
+});
+
+// 中英切换
+function applyStaticLang() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    el.textContent = t(el.getAttribute("data-i18n"));
+  });
+  document.querySelectorAll("#langSwitch button").forEach((b) => {
+    b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+  });
+  const shareBtn = document.getElementById("shareBtn");
+  shareBtn.textContent = document.body.classList.contains("share-mode") ? t("shareExit") : t("share");
+}
+function applyLang() {
+  applyStaticLang();
+  fillDungeonSelect();
+  render();
+}
+document.querySelectorAll("#langSwitch button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    lang = btn.getAttribute("data-lang") === "en" ? "en" : "zh";
+    localStorage.setItem("mss_lang", lang);
+    applyLang();
+  });
+});
+
+// 数据加载前先应用记忆的语言（静态文案），加载完成后 applyLang 再整表切换
+applyStaticLang();
+load();
+</script>
+</body>
+</html>

@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="西番芥的秘境工具箱 · WoW 大秘境技能速查，像玩游戏一样学副本！" />
+<title>西番芥的秘境工具箱 · WoW 大秘境技能速查</title>
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23ff7a6e'/><rect width='64' height='64' rx='16' fill='none' stroke='%23e85d4f' stroke-width='3'/><text x='50%25' y='56%25' font-family='PingFang SC,Microsoft Yahei,sans-serif' font-size='34' font-weight='800' fill='%23fff' text-anchor='middle' dominant-baseline='middle'>西</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #fff6ec;
+    --card: #ffffff;
+    --ink: #3d2f23;
+    --ink-2: #7a6852;
+    --outline: #ead9bd;
+    --outline-dark: #d9b98c;
+    --coral: #ff7a6e;
+    --coral-deep: #e85d4f;
+    --coral-bg: #ffe3de;
+    --blue: #5fb8ff;
+    --blue-deep: #2f7fd6;
+    --blue-bg: #dff0ff;
+    --green: #5fd02c;
+    --green-deep: #46a302;
+    --green-bg: #e7f9d9;
+    --yellow: #ffc93c;
+    --yellow-deep: #c98a00;
+    --yellow-bg: #fff2cc;
+    --purple: #b18cff;
+    --purple-deep: #8b5cf6;
+    --purple-bg: #efe7ff;
+    --red: #ff5252;
+    --shadow: 0 8px 0 var(--outline), 0 14px 26px rgba(122, 90, 50, .12);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--cream); color: var(--ink); }
+  body {
+    font: 14px/1.6 "Baloo 2", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", PingFang SC, "Microsoft Yahei", sans-serif;
+    min-height: 100vh;
+    background-color: var(--cream);
+    background-image: radial-gradient(rgba(160, 120, 60, .10) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+  }
+  a { color: var(--blue-deep); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ===== 顶部 Hero 区（粘土风 + 漂浮泡泡） ===== */
+  .hero {
+    position: relative; overflow: hidden;
+    background:
+      radial-gradient(900px 280px at 12% -15%, rgba(255, 122, 110, .20), transparent 60%),
+      radial-gradient(720px 260px at 90% -20%, rgba(95, 184, 255, .22), transparent 60%),
+      radial-gradient(520px 200px at 55% 110%, rgba(255, 201, 60, .18), transparent 60%),
+      linear-gradient(180deg, #fff0de 0%, var(--cream) 100%);
+    border-bottom: 2px solid var(--outline);
+    padding: 30px 24px 28px;
+  }
+  .hero-inner { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; }
+  .blob {
+    position: absolute; border-radius: 45% 55% 60% 40% / 50% 45% 55% 50%;
+    opacity: .55; pointer-events: none;
+    animation: floaty 9s ease-in-out infinite alternate;
+  }
+  .blob-1 { width: 132px; height: 108px; background: var(--coral-bg); border: 2px solid var(--coral); top: -34px; left: 5%; }
+  .blob-2 { width: 104px; height: 92px; background: var(--blue-bg); border: 2px solid var(--blue); top: 46px; right: 3%; animation-delay: 1.2s; }
+  .blob-3 { width: 74px; height: 74px; background: var(--yellow-bg); border: 2px solid var(--yellow); bottom: 6px; left: 38%; animation-delay: 2.4s; }
+  .blob-4 { width: 62px; height: 84px; background: var(--purple-bg); border: 2px solid var(--purple); bottom: -24px; right: 28%; animation-delay: 3s; }
+  @keyframes floaty {
+    from { transform: translateY(-6px) rotate(-3deg); }
+    to   { transform: translateY(9px) rotate(4deg); }
+  }
+
+  .hero-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .logo {
+    width: 56px; height: 56px; border-radius: 17px;
+    background: linear-gradient(135deg, var(--coral) 0%, #ffab66 100%);
+    color: #fff; font-weight: 900; font-size: 27px;
+    display: grid; place-items: center; flex: 0 0 auto;
+    border: 2px solid var(--coral-deep);
+    box-shadow: 0 5px 0 var(--coral-deep), 0 10px 20px rgba(232, 93, 79, .25);
+    font-family: "ZCOOL KuaiLe", "PingFang SC", sans-serif;
+  }
+  .brand { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .brand-name {
+    font-size: 26px; font-weight: 900; letter-spacing: 1px; color: var(--ink);
+    font-family: "ZCOOL KuaiLe", "Baloo 2", "PingFang SC", sans-serif;
+    line-height: 1.2;
+  }
+  .brand-name .accent { color: var(--coral-deep); }
+  .brand-tag { font-size: 12.5px; color: var(--ink-2); font-weight: 600; }
+  .brand-tag .dot { color: var(--outline-dark); margin: 0 8px; }
+  .level-chip {
+    margin-left: auto;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    color: #fff; font-weight: 800; font-size: 13px;
+    border: 2px solid var(--purple-deep);
+    border-radius: 999px; padding: 7px 16px;
+    box-shadow: 0 4px 0 var(--purple-deep), 0 8px 16px rgba(139, 92, 246, .25);
+    white-space: nowrap;
+  }
+  .hero-links { display: flex; gap: 10px; flex-wrap: wrap; }
+  .hero-links a {
+    padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 800;
+    color: var(--ink); border: 2px solid var(--outline-dark); background: #fff;
+    box-shadow: 0 4px 0 var(--outline-dark);
+    transition: transform .06s, box-shadow .06s;
+  }
+  .hero-links a:hover { transform: translateY(2px); box-shadow: 0 2px 0 var(--outline-dark); text-decoration: none; }
+  .hero-links a.primary {
+    background: var(--green); color: #fff; border-color: var(--green-deep);
+    box-shadow: 0 4px 0 var(--green-deep), 0 8px 16px rgba(95, 208, 44, .30);
+  }
+  .hero-links a.primary:hover { box-shadow: 0 2px 0 var(--green-deep); }
+
+  /* ===== 成就统计卡片 ===== */
+  .stats {
+    margin-top: 22px;
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px;
+  }
+  .stat {
+    background: #fff; border: 2px solid var(--outline); border-radius: 18px;
+    box-shadow: 0 5px 0 var(--outline), 0 10px 20px rgba(122, 90, 50, .08);
+    padding: 14px 16px;
+    display: flex; align-items: center; gap: 12px;
+    transition: transform .15s;
+  }
+  .stat:hover { transform: translateY(-3px); }
+  .stat .icon {
+    width: 50px; height: 50px; border-radius: 16px; flex: 0 0 auto;
+    display: grid; place-items: center; font-size: 24px;
+    border: 2px solid; box-shadow: 0 4px 0 rgba(122, 90, 50, .18);
+  }
+  .stat .icon.i-coral { background: var(--coral-bg); border-color: var(--coral); }
+  .stat .icon.i-blue { background: var(--blue-bg); border-color: var(--blue); }
+  .stat .icon.i-yellow { background: var(--yellow-bg); border-color: var(--yellow); }
+  .stat .icon.i-purple { background: var(--purple-bg); border-color: var(--purple); }
+  .stat .num {
+    font-size: 26px; font-weight: 900; color: var(--ink); line-height: 1;
+    font-family: "Baloo 2", "PingFang SC", sans-serif;
+  }
+  .stat .num.acc { color: var(--blue-deep); }
+  .stat .num.ok { color: var(--green-deep); }
+  .stat .num.mag { color: var(--purple-deep); }
+  .stat .label { font-size: 12px; color: var(--ink-2); margin-top: 4px; font-weight: 600; }
+
+  /* ===== 成就墙 ===== */
+  .achieve { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .achieve .a {
+    display: inline-flex; align-items: center; gap: 6px;
+    border-radius: 999px; padding: 7px 15px; font-weight: 800; font-size: 13px;
+    border: 2px solid; white-space: nowrap;
+  }
+  .achieve .a.off {
+    background: #f2e9d8; color: #b3a488; border-color: #d8cbb0;
+    box-shadow: 0 3px 0 #d8cbb0; filter: grayscale(.5);
+  }
+  .achieve .a.a0.on { background: var(--coral-bg); color: var(--coral-deep); border-color: var(--coral); box-shadow: 0 3px 0 var(--coral); }
+  .achieve .a.a1.on { background: var(--blue-bg); color: var(--blue-deep); border-color: var(--blue); box-shadow: 0 3px 0 var(--blue); }
+  .achieve .a.a2.on { background: var(--yellow-bg); color: var(--yellow-deep); border-color: var(--yellow); box-shadow: 0 3px 0 var(--yellow); }
+  .achieve .a.a3.on { background: var(--purple-bg); color: var(--purple-deep); border-color: var(--purple); box-shadow: 0 3px 0 var(--purple); }
+
+  /* ===== 工具栏（游戏控制台） ===== */
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .toolbar {
+    margin-top: 18px;
+    padding: 13px 15px;
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    background: #fff; border: 2px solid var(--outline); border-radius: 20px;
+    box-shadow: 0 6px 0 var(--outline), 0 12px 24px rgba(122, 90, 50, .08);
+  }
+  .toolbar select, .toolbar input[type=text] {
+    background: #fffdf8; border: 2px solid var(--outline); color: var(--ink);
+    padding: 8px 13px; border-radius: 13px; font-size: 13px; outline: none; font-weight: 600;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .toolbar select:focus, .toolbar input[type=text]:focus {
+    border-color: var(--coral); box-shadow: 0 0 0 4px rgba(255, 122, 110, .18);
+  }
+  .toolbar input[type=text] { min-width: 260px; flex: 1; max-width: 460px; }
+  .toolbar > label {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700;
+    color: var(--ink-2); cursor: pointer; user-select: none;
+    padding: 7px 14px; border-radius: 999px;
+    border: 2px solid var(--outline); background: #fffdf8;
+    transition: all .15s;
+  }
+  .toolbar > label:hover { border-color: var(--outline-dark); }
+  .toolbar > label:has(input:checked) {
+    color: var(--green-deep); border-color: var(--green); background: var(--green-bg);
+  }
+  .toolbar input[type=checkbox] { accent-color: var(--green); width: 15px; height: 15px; }
+
+  .lang-switch {
+    display: inline-flex; gap: 4px;
+    background: #f6eddc; border: 2px solid var(--outline); border-radius: 999px; padding: 4px;
+  }
+  .lang-switch button {
+    background: transparent; color: var(--ink-2); border: none;
+    padding: 6px 14px; font-size: 13px; font-weight: 700; cursor: pointer; line-height: 1.2;
+    border-radius: 999px; transition: all .15s;
+  }
+  .lang-switch button.active {
+    background: var(--green); color: #fff;
+    box-shadow: 0 3px 0 var(--green-deep);
+  }
+
+  .toolbar .count {
+    margin-left: auto; color: var(--ink-2); font-size: 12.5px; font-weight: 700; white-space: nowrap;
+  }
+  .toolbar .count b { color: var(--coral-deep); font-weight: 900; }
+
+  /* 技能掌握度进度条 */
+  .progress-chip { margin-left: auto; display: flex; align-items: center; gap: 10px; min-width: 210px; }
+  .progress-track {
+    flex: 1; height: 16px; background: #f6eddc;
+    border-radius: 999px; border: 2px solid var(--outline); overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%; width: 0%; border-radius: 999px;
+    background: linear-gradient(90deg, var(--coral), var(--yellow), var(--green));
+    transition: width .35s ease;
+  }
+
+  /* ===== 列设置 ===== */
+  .col-picker { position: relative; }
+  .col-picker button {
+    background: #fffdf8; color: var(--ink); border: 2px solid var(--outline);
+    border-radius: 13px; padding: 8px 14px; font-size: 13px; font-weight: 700; cursor: pointer;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .col-picker button:hover { border-color: var(--coral); }
+  .col-picker-menu {
+    position: absolute; top: calc(100% + 8px); left: 0;
+    background: #fff; border: 2px solid var(--outline); border-radius: 14px;
+    padding: 9px; min-width: 150px; z-index: 30;
+    box-shadow: 0 6px 0 var(--outline), 0 16px 32px rgba(122, 90, 50, .18);
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .col-picker-menu[hidden] { display: none; }
+  .col-picker-menu label {
+    display: flex; align-items: center; gap: 8px; padding: 7px 10px;
+    border-radius: 10px; cursor: pointer; font-size: 13px; font-weight: 700;
+    color: var(--ink-2); user-select: none;
+  }
+  .col-picker-menu label:hover { background: var(--coral-bg); color: var(--coral-deep); }
+  .col-picker-menu input { accent-color: var(--coral); }
+
+  /* ===== 表格 ===== */
+  main { padding: 18px 0 60px; }
+  .table-wrap {
+    background: #fff; border: 2px solid var(--outline); border-radius: 20px;
+    box-shadow: 0 7px 0 var(--outline), 0 16px 30px rgba(122, 90, 50, .09);
+    overflow: hidden;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    background: linear-gradient(180deg, #fdf1e0, #f9e7d0);
+    color: var(--ink-2); text-align: left;
+    padding: 12px 14px; border-bottom: 2px solid var(--outline);
+    font-weight: 800; font-size: 12px; white-space: nowrap;
+    text-transform: uppercase; letter-spacing: .8px;
+  }
+  tbody td { padding: 10px 14px; border-bottom: 1px dashed var(--outline); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(even) { background: #fffcf5; }
+  tbody tr:hover { background: var(--coral-bg); }
+
+  /* 粘土小标签 */
+  .tag {
+    display: inline-block; padding: 2px 11px; border-radius: 999px;
+    font-size: 12px; font-weight: 800; line-height: 1.7;
+    border: 2px solid transparent; white-space: nowrap;
+  }
+  .tag-int { background: var(--coral-bg); color: var(--coral-deep); border-color: var(--coral); }
+  .tag-mag { background: var(--purple-bg); color: var(--purple-deep); border-color: var(--purple); }
+  .tag-enrage { background: #ffe9dd; color: #e8590c; border-color: #ff9d6b; }
+  .tag-bleed { background: #ffdcdc; color: #c92a2a; border-color: #ff8f8f; }
+  .tag-poison { background: var(--green-bg); color: var(--green-deep); border-color: #a5e07c; }
+  .tag-disease { background: #f2f7d2; color: #7a9e0f; border-color: #c6d96f; }
+  .tag-curse { background: var(--purple-bg); color: var(--purple-deep); border-color: var(--purple); }
+  .tag-boss {
+    background: var(--yellow-bg); color: var(--yellow-deep); border-color: var(--yellow);
+    box-shadow: 0 2px 0 rgba(201, 138, 0, .35);
+  }
+  .tag-no { color: #d5c8ae; border-color: transparent; background: transparent; }
+  .desc { color: var(--ink-2); max-width: 520px; line-height: 1.6; }
+  .spellname a { color: var(--blue-deep); font-weight: 700; }
+  .spellname a:hover { color: var(--coral-deep); }
+  .spellname .sid { color: #b5a488; font-size: 12px; margin-top: 2px; }
+  .dungeon { color: var(--coral-deep); font-weight: 800; white-space: nowrap; }
+  .mob { white-space: nowrap; font-weight: 600; }
+  .mob .en { color: var(--ink-2); font-size: 12px; font-weight: 400; }
+
+  .empty { padding: 70px 20px; text-align: center; color: var(--ink-2); font-weight: 600; }
+  .empty .big {
+    display: inline-grid; place-items: center; margin-bottom: 16px;
+    width: 96px; height: 96px; border-radius: 50%;
+    background: var(--blue-bg); border: 2px solid var(--blue);
+    box-shadow: 0 5px 0 var(--blue); font-size: 44px;
+  }
+
+  /* ===== 页脚 ===== */
+  .site-footer {
+    max-width: 1200px; margin: 10px auto 0; padding: 20px 24px;
+    color: var(--ink-2); font-size: 13px;
+    border-top: 2px dashed var(--outline);
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  }
+  .site-footer .author {
+    background: var(--coral-bg); color: var(--coral-deep);
+    border: 2px solid var(--coral); border-radius: 999px; padding: 2px 12px; font-weight: 800;
+  }
+  .site-footer .right { margin-left: auto; }
+
+  /* ===== 响应式 ===== */
+  @media (max-width: 1000px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .level-chip { margin-left: 0; }
+    .hero-links { margin-left: auto; }
+  }
+  @media (max-width: 900px) {
+    .hero-links { width: 100%; margin-left: 0; }
+    .toolbar input[type=text] { min-width: 0; max-width: none; width: 100%; }
+    .progress-chip { width: 100%; min-width: 0; margin-left: 0; }
+    .toolbar .count { margin-left: 0; }
+    .desc { max-width: 300px; }
+  }
+  @media (max-width: 600px) {
+    .stats { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .hero { padding: 22px 16px 20px; }
+    .container { padding: 0 12px; }
+    .brand-name { font-size: 21px; }
+    .stat { padding: 12px; gap: 10px; }
+    .stat .icon { width: 44px; height: 44px; font-size: 20px; }
+    .stat .num { font-size: 22px; }
+    thead th, tbody td { padding: 9px 11px; font-size: 13px; }
+    .blob { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+
+  <div class="hero-inner">
+    <div class="hero-row">
+      <div class="logo">西</div>
+      <div class="brand">
+        <div class="brand-name">西番芥的<span class="accent">秘境工具箱</span></div>
+        <div class="brand-tag">
+          WoW 大秘境技能速查
+          <span class="dot">·</span>
+          数据基于 MythicDungeonTools
+          <span class="dot">·</span>
+          更新于 <span id="updated">—</span>
+        </div>
+      </div>
+      <span class="level-chip" id="levelChip">🦉 Lv.1</span>
+      <div class="hero-links">
+        <a href="https://space.bilibili.com/346688237" id="bilibili" target="_blank" rel="noopener">B 站主页</a>
+        <a href="cards.html" class="primary">副本卡片 🃏</a>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="icon i-coral">📚</div>
+        <div><div class="num" id="statTotal">—</div><div class="label" data-i18n="statTotal">总技能条目</div></div>
+      </div>
+      <div class="stat">
+        <div class="icon i-blue">🏰</div>
+        <div><div class="num acc" id="statDungeon">—</div><div class="label" data-i18n="statDungeon">覆盖副本</div></div>
+      </div>
+      <div class="stat">
+        <div class="icon i-yellow">⚡</div>
+        <div><div class="num ok" id="statInt">—</div><div class="label" data-i18n="statInt">可打断技能</div></div>
+      </div>
+      <div class="stat">
+        <div class="icon i-purple">✨</div>
+        <div><div class="num mag" id="statMag">—</div><div class="label" data-i18n="statMag">魔法可驱散</div></div>
+      </div>
+    </div>
+
+    <div class="achieve" id="achieve"></div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="toolbar">
+    <div class="lang-switch" id="langSwitch">
+      <button type="button" data-lang="zh" class="active">中文</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <select id="season"><option value="" data-i18n="allSeasons">全部赛季</option></select>
+    <select id="dungeon"><option value="" data-i18n="allDungeons">全部副本</option></select>
+    <input type="text" id="q" placeholder="搜索 技能名 / 怪物 / 描述…" autocomplete="off" />
+    <label><input type="checkbox" id="onlyInterrupt" /> <span data-i18n="onlyInterrupt">仅打断</span></label>
+    <label><input type="checkbox" id="onlyMagic" /> <span data-i18n="onlyMagic">仅可驱散</span></label>
+    <div class="col-picker">
+      <button type="button" id="colPickerBtn"><span data-i18n="colPicker">列设置</span> ▾</button>
+      <div class="col-picker-menu" id="colPickerMenu" hidden></div>
+    </div>
+    <div class="progress-chip">
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+      <span class="count" id="count">加载中…</span>
+    </div>
+  </div>
+
+  <main>
+    <div class="table-wrap">
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th class="col-dungeon" data-i18n="dungeon">副本</th>
+            <th class="col-mob" data-i18n="mob">怪物</th>
+            <th class="col-spell" data-i18n="spell">技能</th>
+            <th class="col-int" data-i18n="int">打断</th>
+            <th class="col-mag" data-i18n="mag">魔法</th>
+            <th class="col-enrage" data-i18n="enrage">激怒</th>
+            <th class="col-bleed" data-i18n="bleed">流血</th>
+            <th class="col-poison" data-i18n="poison">中毒</th>
+            <th class="col-disease" data-i18n="disease">疾病</th>
+            <th class="col-curse" data-i18n="curse">诅咒</th>
+            <th class="col-desc" data-i18n="desc">描述</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="empty" id="empty" hidden></div>
+    </div>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <span>由 <span class="author">西番芥</span> 整理 · 仅供 WoW 玩家学习交流</span>
+  <span class="right">数据源：MythicDungeonTools · 暴雪官方本地化</span>
+</footer>
+
+<script>
+const WOWHEAD_BASE = "https://www.wowhead.com/spell=";
+const AUTHOR = "西番芥";
+
+// 成就墙：满足条件即点亮（gamified）
+const ACH = [
+  { icon: "🏰", zh: "副本开拓者", en: "Dungeon Explorer", need: (s) => s.dungeons >= 8 },
+  { icon: "📚", zh: "技能百科", en: "Spell Master", need: (s) => s.total >= 300 },
+  { icon: "⚡", zh: "打断大师", en: "Interrupt Ace", need: (s) => s.intCount >= 80 },
+  { icon: "✨", zh: "净化使者", en: "Purifier", need: (s) => s.magCount >= 40 },
+];
+
+// 列定义：key 对应 CSS class col-xxx，label 是显示名，default 是默认是否显示
+const COLUMNS = [
+  { key: "dungeon", labelKey: "dungeon", default: true },
+  { key: "mob", labelKey: "mob", default: true },
+  { key: "spell", labelKey: "spell", default: true },
+  { key: "int", labelKey: "int", default: true },
+  { key: "mag", labelKey: "mag", default: true },
+  { key: "enrage", labelKey: "enrage", default: false },
+  { key: "bleed", labelKey: "bleed", default: false },
+  { key: "poison", labelKey: "poison", default: false },
+  { key: "disease", labelKey: "disease", default: false },
+  { key: "curse", labelKey: "curse", default: false },
+
+  { key: "desc", labelKey: "desc", default: true },
+];
+
+const COL_STORAGE_KEY = "mss_visible_cols_v1";
+
+function getVisibleCols() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(COL_STORAGE_KEY) || "null");
+    if (saved && typeof saved === "object") return saved;
+  } catch (e) { /* fallback to defaults */ }
+  const def = {};
+  COLUMNS.forEach((c) => { def[c.key] = c.default; });
+  return def;
+}
+
+function applyColVisibility(visible) {
+  COLUMNS.forEach((c) => {
+    const cls = "col-" + c.key;
+    const show = !!visible[c.key];
+    document.querySelectorAll("." + cls).forEach((el) => {
+      el.style.display = show ? "" : "none";
+    });
+  });
+}
+
+function renderColPickerMenu() {
+  const visible = getVisibleCols();
+  const menu = document.getElementById("colPickerMenu");
+  menu.innerHTML = COLUMNS.map((c) => (
+    '<label><input type="checkbox" data-col="' + c.key + '" ' +
+    (visible[c.key] ? "checked" : "") + ' /> ' + t(c.labelKey) + '</label>'
+  )).join("");
+}
+
+function setupColPicker() {
+  renderColPickerMenu();
+
+  const menu = document.getElementById("colPickerMenu");
+  const btn = document.getElementById("colPickerBtn");
+
+  menu.addEventListener("change", (e) => {
+    if (e.target.tagName !== "INPUT") return;
+    const key = e.target.getAttribute("data-col");
+    const visible = getVisibleCols();
+    visible[key] = e.target.checked;
+    localStorage.setItem(COL_STORAGE_KEY, JSON.stringify(visible));
+    applyColVisibility(visible);
+  });
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu.hidden = !menu.hidden;
+  });
+  document.addEventListener("click", (e) => {
+    if (!menu.hidden && !menu.contains(e.target) && e.target !== btn) {
+      menu.hidden = true;
+    }
+  });
+
+  // 初始应用
+  applyColVisibility(getVisibleCols());
+}
+
+const state = {
+  rows: [],
+  seasons: [],
+  dungeons: [],
+  season: "",
+  dungeon: "",
+  q: "",
+  onlyInterrupt: false,
+  onlyMagic: false,
+  intCount: 0,
+  magCount: 0,
+  lang: localStorage.getItem("mss_lang") === "en" ? "en" : "zh",
+};
+
+const $ = (s) => document.querySelector(s);
+
+// HTML 转义（输出时防 XSS），用 \uXXXX 避开实体被工具二次解码
+const ESC = { "\u0026": "\u0026amp;", "\u003c": "\u0026lt;", "\u003e": "\u0026gt;", "\u0022": "\u0026quot;", "\u0027": "\u0026#39;" };
+const escapeHtml = (s) => String(s == null ? "" : s).replace(/[\u0026\u003c\u003e\u0022\u0027]/g, (c) => ESC[c]);
+
+// ===== 中英双语（localStorage 记忆，默认中文） =====
+const I18N = {
+  zh: {
+    dungeon: "副本", mob: "怪物", spell: "技能",
+    int: "打断", mag: "魔法", enrage: "激怒", bleed: "流血",
+    poison: "中毒", disease: "疾病", curse: "诅咒", desc: "描述",
+    tagBoss: "BOSS", tagInt: "可打断", tagMagic: "魔法", tagEnrage: "激怒", tagBleed: "流血",
+    tagPoison: "中毒", tagDisease: "疾病", tagCurse: "诅咒", tagNo: "—",
+    allSeasons: "全部赛季", allDungeons: "全部副本",
+    onlyInterrupt: "仅打断", onlyMagic: "仅可驱散", colPicker: "列设置",
+    searchPlaceholder: "搜索 技能名 / 怪物 / 描述…",
+    countHit: "命中", countOf: "/ 共", countRows: "条",
+    statTotal: "总技能条目", statDungeon: "覆盖副本", statInt: "可打断技能", statMag: "魔法可驱散",
+    empty: "没有匹配的技能，换个关键词再试试吧！",
+    loading: "加载中…", loadFail: "加载失败",
+  },
+  en: {
+    dungeon: "Dungeon", mob: "Mob", spell: "Spell",
+    int: "Int", mag: "Magic", enrage: "Enrage", bleed: "Bleed",
+    poison: "Poison", disease: "Disease", curse: "Curse", desc: "Description",
+    tagBoss: "BOSS", tagInt: "Int", tagMagic: "Magic", tagEnrage: "Enrage", tagBleed: "Bleed",
+    tagPoison: "Poison", tagDisease: "Disease", tagCurse: "Curse", tagNo: "—",
+    allSeasons: "All Seasons", allDungeons: "All Dungeons",
+    onlyInterrupt: "Int only", onlyMagic: "Dispel only", colPicker: "Columns",
+    searchPlaceholder: "Search spell / mob / description…",
+    countHit: "Matched", countOf: "/", countRows: "rows",
+    statTotal: "Total Spells", statDungeon: "Dungeons", statInt: "Interruptible", statMag: "Magic (Dispel)",
+    empty: "No matching spells. Try another keyword!",
+    loading: "Loading…", loadFail: "Load failed",
+  },
+};
+const t = (k) => (I18N[state.lang] && I18N[state.lang][k]) || I18N.zh[k] || k;
+
+// 静态文案切换（表头/工具栏/统计/列设置），不动数据
+function applyStaticLang() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    el.textContent = t(el.getAttribute("data-i18n"));
+  });
+  const q = $("#q");
+  if (q) q.placeholder = t("searchPlaceholder");
+  document.querySelectorAll("#langSwitch button").forEach((b) => {
+    b.classList.toggle("active", b.getAttribute("data-lang") === state.lang);
+  });
+  renderColPickerMenu();
+}
+
+// 完整切换：静态文案 + 副本下拉显示名 + 表格数据 + 成就墙
+function applyLang() {
+  applyStaticLang();
+  refreshDungeonSelect();
+  renderAchievements();
+  renderLevel();
+  render();
+}
+
+// 副本下拉显示名（选中值始终为中文名，仅显示随语言切换）
+function dungeonLabel(d) {
+  const en = state.lang === "en";
+  const name = en ? (d.en || d.name) : d.name;
+  return name + (en ? " (" + d.count + ")" : "（" + d.count + "）");
+}
+
+// 成就墙
+function renderAchievements() {
+  const s = {
+    dungeons: state.dungeons.length,
+    total: state.rows.length,
+    intCount: state.intCount,
+    magCount: state.magCount,
+  };
+  $("#achieve").innerHTML = ACH.map((a, i) => {
+    const on = a.need(s);
+    const name = state.lang === "en" ? a.en : a.zh;
+    return '<span class="a a' + i + ' ' + (on ? "on" : "off") + '" title="' + escapeHtml(name) + '">' +
+      a.icon + ' ' + escapeHtml(name) + '</span>';
+  }).join("");
+}
+
+// 等级徽章
+function renderLevel() {
+  const lvl = Math.min(99, 1 + Math.floor(state.rows.length / 40));
+  $("#levelChip").textContent = "🦉 " + (state.lang === "en" ? "LV." : "Lv.") + " " + lvl;
+}
+
+async function load() {
+  try {
+    const res = await fetch("data.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+
+    state.seasons = Object.keys(data.seasons || {});
+    state.dungeons = data.dungeons || [];
+    state.rows = (data.rows || []).map((r) => ({
+      season: r.season || "",
+      dungeonZh: r.dungeonZh || "",
+      dungeonEn: r.dungeonEn || "",
+      mobZh: r.mobZh || "",
+      mobEn: r.mobEn || "",
+      npcId: r.npcId || "",
+      isBoss: !!r.isBoss,
+      spellName: r.spellName || "",
+      spellNameEn: r.spellNameEn || "",
+      spellId: r.spellId || "",
+      description: r.description || "",
+      descriptionEn: r.descriptionEn || "",
+
+      interruptible: !!r.interruptible,
+      isMagic: !!r.isMagic,
+      isEnrage: !!r.isEnrage,
+      isBleed: !!r.isBleed,
+      isPoison: !!r.isPoison,
+      isDisease: !!r.isDisease,
+      isCurse: !!r.isCurse,
+    }));
+
+    state.intCount = state.rows.filter((r) => r.interruptible).length;
+    state.magCount = state.rows.filter((r) => r.isMagic).length;
+
+    // 填赛季下拉
+    const sSel = $("#season");
+    state.seasons.forEach((s) => {
+      const opt = document.createElement("option");
+      opt.value = s;
+      opt.textContent = s;
+      sSel.appendChild(opt);
+    });
+
+    // 填副本下拉（联动赛季）
+    const dSel = $("#dungeon");
+    state.dungeons.forEach((d) => {
+      const opt = document.createElement("option");
+      opt.value = d.name;
+      opt.textContent = dungeonLabel(d);
+      dSel.appendChild(opt);
+    });
+
+    // 统计卡片
+    $("#statTotal").textContent = state.rows.length;
+    $("#statDungeon").textContent = state.dungeons.length;
+    $("#statInt").textContent = state.intCount;
+    $("#statMag").textContent = state.magCount;
+    // 展示构建时间与 MDT 数据版本（而非浏览器时间）
+    const built = data.builtAt ? new Date(data.builtAt) : null;
+    const sha = (data.mdtSha || "").slice(0, 7);
+    $("#updated").textContent = built
+      ? built.toLocaleDateString() + (sha ? " · MDT " + sha : "")
+      : "—";
+
+    applyLang();
+  } catch (err) {
+    $("#count").textContent = t("loadFail");
+    $("#empty").hidden = false;
+    $("#empty").innerHTML = "<div class=\"big\">⚠️</div>加载 data.json 失败：" + escapeHtml(err.message);
+  }
+}
+
+function render() {
+  const q = state.q.trim().toLowerCase();
+  const list = state.rows.filter((r) => {
+    if (state.season && r.season !== state.season) return false;
+    if (state.dungeon && r.dungeonZh !== state.dungeon) return false;
+    if (state.onlyInterrupt && !r.interruptible) return false;
+    if (state.onlyMagic && !r.isMagic) return false;
+    if (q) {
+      // 搜索命中中英文任一字段
+      const hay = [
+        r.spellName, r.spellNameEn, r.mobZh, r.mobEn,
+        r.dungeonZh, r.dungeonEn, r.description, r.descriptionEn,
+      ].join(" ").toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+
+  // 技能掌握度进度条
+  const hit = list.length, total = state.rows.length;
+  $("#progFill").style.width = total ? Math.round(hit / total * 100) + "%" : "0%";
+
+  $("#count").textContent = t("countHit") + " ";
+  const b = document.createElement("b");
+  b.textContent = hit;
+  $("#count").appendChild(b);
+  $("#count").append(" " + t("countOf") + " " + total + " " + t("countRows"));
+
+  const tbody = $("#tbody");
+  if (!list.length) {
+    tbody.innerHTML = "";
+    $("#empty").hidden = false;
+    $("#empty").innerHTML = "<div class=\"big\">🔍</div>" + escapeHtml(t("empty"));
+    return;
+  }
+  $("#empty").hidden = true;
+  const en = state.lang === "en";
+  const tagCell = (show, cls, i18nKey) => show
+    ? '<span class="tag tag-' + cls + '">' + t(i18nKey) + '</span>'
+    : '<span class="tag tag-no">' + t("tagNo") + '</span>';
+  tbody.innerHTML = list.map((r) => {
+    // 五项减益全 true 视为 MDT 脏数据，隐藏标签（保留原语义）
+    const allDebuffs = r.isEnrage && r.isBleed && r.isPoison && r.isDisease && r.isCurse;
+    // 中英切换：主名 + 副名（小字）
+    const dungeonName = en ? (r.dungeonEn || r.dungeonZh) : r.dungeonZh;
+    const mobMain = en ? (r.mobEn || r.mobZh) : r.mobZh;
+    const mobSub = en ? r.mobZh : r.mobEn;
+    const spellName = en ? (r.spellNameEn || r.spellName) : r.spellName;
+    const desc = en ? (r.descriptionEn || r.description) : r.description;
+    return "<tr>" +
+    "<td class=\"dungeon col-dungeon\">" + escapeHtml(dungeonName) + "</td>" +
+    "<td class=\"mob col-mob\">" + (r.isBoss ? "<span class=\"tag tag-boss\">⭐ " + t("tagBoss") + "</span> " : "") + escapeHtml(mobMain) + (mobSub ? "<br><span class=\"en\">" + escapeHtml(mobSub) + "</span>" : "") + "</td>" +
+    "<td class=\"spellname col-spell\"><a href=\"" + WOWHEAD_BASE + encodeURIComponent(r.spellId) + "\" target=\"_blank\" rel=\"noopener\">" + escapeHtml(spellName) + "</a>" +
+    "<div class=\"sid\">ID " + escapeHtml(r.spellId) + "</div></td>" +
+    "<td class=\"col-int\">" + tagCell(r.interruptible, "int", "tagInt") + "</td>" +
+    "<td class=\"col-mag\">" + tagCell(r.isMagic, "mag", "tagMagic") + "</td>" +
+    "<td class=\"col-enrage\">" + tagCell(r.isEnrage && !allDebuffs, "enrage", "tagEnrage") + "</td>" +
+    "<td class=\"col-bleed\">" + tagCell(r.isBleed && !allDebuffs, "bleed", "tagBleed") + "</td>" +
+    "<td class=\"col-poison\">" + tagCell(r.isPoison && !allDebuffs, "poison", "tagPoison") + "</td>" +
+    "<td class=\"col-disease\">" + tagCell(r.isDisease && !allDebuffs, "disease", "tagDisease") + "</td>" +
+    "<td class=\"col-curse\">" + tagCell(r.isCurse && !allDebuffs, "curse", "tagCurse") + "</td>" +
+    "<td class=\"desc col-desc\">" + escapeHtml(desc || "") + "</td>" +
+    "</tr>";
+  }).join("");
+  // 重新应用列可见性
+  applyColVisibility(getVisibleCols());
+}
+
+function refreshDungeonSelect() {
+  const dSel = $("#dungeon");
+  const prev = dSel.value;
+  dSel.innerHTML = "<option value=\"\">" + escapeHtml(t("allDungeons")) + "</option>";
+  const filtered = state.season
+    ? state.dungeons.filter((d) => state.rows.some((r) => r.season === state.season && r.dungeonZh === d.name))
+    : state.dungeons;
+  filtered.forEach((d) => {
+    const opt = document.createElement("option");
+    opt.value = d.name;
+    opt.textContent = dungeonLabel(d);
+    dSel.appendChild(opt);
+  });
+  // 尝试恢复之前选中的副本
+  if (prev && [...dSel.options].some((o) => o.value === prev)) dSel.value = prev;
+  else state.dungeon = "";
+}
+
+function bindEvents() {
+  $("#season").addEventListener("change", (e) => { state.season = e.target.value; refreshDungeonSelect(); render(); });
+  $("#dungeon").addEventListener("change", (e) => { state.dungeon = e.target.value; render(); });
+  $("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+  $("#onlyInterrupt").addEventListener("change", (e) => { state.onlyInterrupt = e.target.checked; render(); });
+  $("#onlyMagic").addEventListener("change", (e) => { state.onlyMagic = e.target.checked; render(); });
+  // 中英切换
+  document.querySelectorAll("#langSwitch button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.lang = btn.getAttribute("data-lang") === "en" ? "en" : "zh";
+      localStorage.setItem("mss_lang", state.lang);
+      applyLang();
+    });
+  });
+}
+
+bindEvents();
+setupColPicker();
+applyStaticLang();  // 先应用 localStorage 记忆的语言（数据加载前静态文案即可切换）
+load();
+</script>
+</body>
+</html>

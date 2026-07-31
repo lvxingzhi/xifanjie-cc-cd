@@ -1,0 +1,57 @@
+name: Build & Update
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'          # 每周一 03:00 UTC 自动刷新（镜像 MDT 当前内容）
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'MDT 分支（master=正式服, ptr12.1=PTR 测试服）'
+        type: string
+        default: 'master'
+      fetch_wowhead:
+        description: '查询 Wowhead 补全新技能描述（新赛季使用）'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths-ignore: ['data/**', 'data.json']   # 回写数据不触发重跑
+
+permissions:
+  contents: write    # 回写 data.json + data/（技能缓存）
+
+concurrency:
+  group: update
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 构建数据（定向拉取 MDT，仅所需文件）
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name == 'workflow_dispatch' && inputs.fetch_wowhead == 'true' || 'false' }}" = "true" ]; then
+            ARGS="--fetch"
+          fi
+          python -m mdt_site --branch "${{ github.event_name == 'workflow_dispatch' && inputs.branch || 'master' }}" $ARGS
+
+      - name: 回写数据（data.json + 技能缓存）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json data/
+          if git diff --cached --quiet; then
+            echo "::notice::数据无变化，无需回写"
+          else
+            git commit -m "chore: 更新站点数据 [skip ci]"
+            git push
+          fi
