@@ -16,14 +16,16 @@
     --border: #E2E8F0;
     --bg: #FFF9F5;
     --card: #FFFFFF;
-    --primary: #3B82F6;
-    --primary-dark: #2563EB;
-    --primary-soft: #DBEAFE;
-    --cta: #F97316;
-    --cta-dark: #EA580C;
-    --cta-soft: #FFEDD5;
-    --mint: #5EEAD4;
-    --mint-soft: #CCFBF1;
+    --primary: #FDBCB4;   /* LearnHub 珊瑚粉 */
+    --primary-dark: #C9665A;   /* 深珊瑚：文字/链接用 */
+    --primary-soft: #FFF0EE;   /* 珊瑚浅底 */
+    --secondary: #ADD8E6;      /* 天蓝 */
+    --secondary-dark: #8BC4D6;
+    --cta: #22C55E;   /* 绿色 CTA */
+    --cta-dark: #16A34A;
+    --cta-soft: #DCFCE7;
+    --mint: #98FF98;
+    --mint-soft: #E9FFE9;
     --pink: #F9A8D4;
     --pink-soft: #FDF2F8;
     --purple: #A78BFA;
@@ -58,10 +60,10 @@
   .hero {
     position: relative; overflow: hidden;
     background:
-      radial-gradient(720px 240px at 8% -25%, rgba(59, 130, 246, .16), transparent 60%),
-      radial-gradient(640px 240px at 40% -30%, rgba(249, 168, 212, .14), transparent 60%),
-      radial-gradient(600px 240px at 72% -25%, rgba(94, 234, 212, .16), transparent 60%),
-      radial-gradient(560px 220px at 95% -20%, rgba(249, 115, 22, .10), transparent 60%),
+      radial-gradient(720px 240px at 8% -25%, rgba(253, 188, 180, .32), transparent 60%),
+      radial-gradient(640px 240px at 40% -30%, rgba(249, 168, 212, .20), transparent 60%),
+      radial-gradient(600px 240px at 72% -25%, rgba(152, 255, 152, .20), transparent 60%),
+      radial-gradient(560px 220px at 95% -20%, rgba(173, 216, 230, .28), transparent 60%),
       linear-gradient(180deg, #FFFFFF 0%, var(--bg) 100%);
     border-bottom: 3px solid var(--text);
     padding: 112px 24px 28px;
@@ -87,11 +89,11 @@
   .hero-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
   .logo {
     width: 56px; height: 56px; border-radius: 16px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: #fff; font-weight: 900; font-size: 26px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--nav-pink-deep) 100%);
+    color: var(--text); font-weight: 900; font-size: 26px;
     display: grid; place-items: center; flex: 0 0 auto;
     border: 3px solid var(--text);
-    box-shadow: 0 4px 0 rgba(30, 41, 59, .3), 0 10px 18px rgba(37, 99, 235, .25);
+    box-shadow: 0 4px 0 rgba(30, 41, 59, .3), 0 10px 18px rgba(245, 166, 157, .35);
     font-family: "ZCOOL KuaiLe", "PingFang SC", sans-serif;
   }
   .brand { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
@@ -112,11 +114,11 @@
   }
   .hero-links a:hover { transform: translateY(2px); box-shadow: 0 2px 0 rgba(30, 41, 59, .28); text-decoration: none; }
   .hero-links a.primary {
-    background: linear-gradient(135deg, #2563EB, #3B82F6); color: #fff;
-    border-color: var(--primary-dark);
-    box-shadow: 0 4px 0 var(--primary-dark), 0 10px 16px rgba(37, 99, 235, .3);
+    background: linear-gradient(135deg, var(--cta-dark), var(--cta)); color: #fff;
+    border-color: var(--cta-dark);
+    box-shadow: 0 4px 0 var(--cta-dark), 0 10px 16px rgba(34, 197, 94, .3);
   }
-  .hero-links a.primary:hover { transform: translateY(-2px); box-shadow: 0 6px 0 var(--primary-dark), 0 14px 20px rgba(37, 99, 235, .35); }
+  .hero-links a.primary:hover { transform: translateY(-2px); box-shadow: 0 6px 0 var(--cta-dark), 0 14px 20px rgba(34, 197, 94, .35); }
 
   /* ===== 成就统计卡片 ===== */
   .stats {
@@ -138,7 +140,7 @@
     box-shadow: 0 3px 0 rgba(30, 41, 59, .2);
   }
   .stat .icon.i-coral { background: var(--mint); }
-  .stat .icon.i-blue { background: #93C5FD; }
+  .stat .icon.i-blue { background: var(--secondary); }
   .stat .icon.i-yellow { background: var(--pink); }
   .stat .icon.i-purple { background: var(--purple); }
   .stat .num {
@@ -162,8 +164,8 @@
     background: var(--off-bg); color: #94A3B8; box-shadow: 0 3px 0 var(--off-line); filter: grayscale(.5);
   }
   .achieve .a.a0.on { background: var(--green-soft); color: var(--green-dark); }
-  .achieve .a.a1.on { background: var(--pink); color: #fff; }
-  .achieve .a.a2.on { background: var(--primary); color: #fff; }
+  .achieve .a.a1.on { background: var(--pink); color: var(--text); }
+  .achieve .a.a2.on { background: var(--primary); color: var(--text); }
   .achieve .a.a3.on { background: var(--purple-soft); color: #5B21B6; }
 
   /* ===== 工具栏（游戏控制台） ===== */
@@ -181,7 +183,7 @@
     transition: border-color .15s, box-shadow .15s;
   }
   .toolbar select:focus, .toolbar input[type=text]:focus {
-    border-color: var(--primary); box-shadow: 0 0 0 4px rgba(34, 197, 94, .25);
+    border-color: var(--primary); box-shadow: 0 0 0 4px rgba(253, 188, 180, .4);
   }
   .toolbar input[type=text] { min-width: 260px; flex: 1; max-width: 460px; }
   .toolbar > label {
@@ -207,7 +209,7 @@
     border-radius: 999px; transition: all .15s;
   }
   .lang-switch button.active {
-    background: var(--primary); color: #fff;
+    background: var(--primary); color: var(--text);
     box-shadow: 0 2px 0 var(--primary-dark);
   }
 
@@ -269,7 +271,7 @@
   }
   tbody td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
   tbody tr:last-child td { border-bottom: none; }
-  tbody tr:nth-child(even) { background: #FAFCFB; }
+  tbody tr:nth-child(even) { background: #FBF6F1; }
   tbody tr:hover { background: var(--primary-soft); }
 
   /* 彩色小标签（弱化粉红黄，低饱和） */
@@ -279,8 +281,8 @@
     border: 2px solid var(--text); box-shadow: 0 2px 0 rgba(30, 41, 59, .22); white-space: nowrap;
   }
   .tag-int { background: var(--green-soft); color: var(--green-dark); }
-  .tag-mag { background: #DBEAFE; color: #1D4ED8; }
-  .tag-enrage { background: var(--cta-soft); color: #C2410C; }
+  .tag-mag { background: #DBF0F8; color: #1E6E96; }
+  .tag-enrage { background: #FFE9D9; color: #C2410C; }
   .tag-bleed { background: #FBE8E8; color: #9F1239; }
   .tag-poison { background: var(--green-soft); color: var(--green-dark); }
   .tag-disease { background: #F0F7E6; color: #4D7C0F; }

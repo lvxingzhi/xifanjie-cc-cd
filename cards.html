@@ -15,14 +15,16 @@
     --border: #E2E8F0;
     --bg: #FFF9F5;
     --card: #FFFFFF;
-    --primary: #3B82F6;
-    --primary-dark: #2563EB;
-    --primary-soft: #DBEAFE;
-    --cta: #F97316;
-    --cta-dark: #EA580C;
-    --cta-soft: #FFEDD5;
-    --mint: #5EEAD4;
-    --mint-soft: #CCFBF1;
+    --primary: #FDBCB4;   /* LearnHub 珊瑚粉 */
+    --primary-dark: #C9665A;   /* 深珊瑚：文字/链接用 */
+    --primary-soft: #FFF0EE;   /* 珊瑚浅底 */
+    --secondary: #ADD8E6;      /* 天蓝 */
+    --secondary-dark: #8BC4D6;
+    --cta: #22C55E;   /* 绿色 CTA */
+    --cta-dark: #16A34A;
+    --cta-soft: #DCFCE7;
+    --mint: #98FF98;
+    --mint-soft: #E9FFE9;
     --pink: #F9A8D4;
     --pink-soft: #FDF2F8;
     --purple: #A78BFA;
@@ -70,12 +72,12 @@
     padding: 7px 12px; border-radius: 12px; border: 3px solid var(--text); background: var(--primary-soft);
     box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
   }
-  .toolbar .back:hover { background: var(--primary); color: #fff; }
+  .toolbar .back:hover { background: var(--primary); color: var(--text); }
   .toolbar .share-btn {
-    background: linear-gradient(135deg, #2563EB, #3B82F6); color: #fff;
-    box-shadow: 0 3px 0 var(--primary-dark);
+    background: linear-gradient(135deg, var(--cta-dark), var(--cta)); color: #fff;
+    box-shadow: 0 3px 0 var(--cta-dark);
   }
-  .toolbar .share-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--primary-dark); }
+  .toolbar .share-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--cta-dark); }
   .toolbar .lang-switch {
     display: inline-flex; gap: 4px;
     background: var(--off-bg); border: 3px solid var(--text); border-radius: 999px; padding: 3px;
@@ -86,7 +88,7 @@
     border-radius: 999px;
   }
   .toolbar .lang-switch button.active {
-    background: var(--primary); color: #fff;
+    background: var(--primary); color: var(--text);
     box-shadow: 0 2px 0 var(--primary-dark);
   }
   .toolbar .hint { color: var(--text-muted); font-size: 11.5px; font-weight: 600; margin-left: auto; }
@@ -126,7 +128,7 @@
   }
   .card-title-en { margin-top: 2px; font-size: 11.5px; color: var(--text-muted); font-weight: 600; }
   .card-season {
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff;
+    background: linear-gradient(135deg, var(--primary), var(--nav-pink-deep)); color: var(--text);
     padding: 5px 13px; border-radius: 999px;
     font-size: 11px; font-weight: 800; letter-spacing: .5px; white-space: nowrap;
     border: 3px solid var(--text);
@@ -200,8 +202,8 @@
     border: 2px solid var(--text); box-shadow: 0 2px 0 rgba(30, 41, 59, .2); white-space: nowrap;
   }
   .tag-int { background: var(--green-soft); color: var(--green-dark); }
-  .tag-mag { background: #DBEAFE; color: #1D4ED8; }
-  .tag-enrage { background: var(--cta-soft); color: #C2410C; }
+  .tag-mag { background: #DBF0F8; color: #1E6E96; }
+  .tag-enrage { background: #FFE9D9; color: #C2410C; }
   .tag-bleed { background: #FBE8E8; color: #9F1239; }
   .tag-poison { background: var(--green-soft); color: var(--green-dark); }
   .tag-disease { background: #F0F7E6; color: #4D7C0F; }
