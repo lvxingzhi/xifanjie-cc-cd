@@ -33,6 +33,12 @@
     --off-bg: #F1F5F9;
     --off-line: #CBD5E1;
     --sh: 0 6px 0 rgba(30, 41, 59, .18), 0 14px 26px rgba(30, 41, 59, .10);
+    --nav-pink: #FDBCB4;      /* LearnHub 珊瑚粉 */
+    --nav-pink-deep: #F5A69D;
+    --nav-blue: #ADD8E6;      /* 天蓝 */
+    --nav-blue-deep: #8BC4D6;
+    --nav-green: #22C55E;     /* CTA 绿 */
+    --nav-green-deep: #16A34A;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -42,7 +48,7 @@
       repeating-linear-gradient(0deg, transparent, transparent 7px, rgba(30, 41, 59, .018) 7px, rgba(30, 41, 59, .018) 8px),
       repeating-linear-gradient(90deg, transparent, transparent 7px, rgba(30, 41, 59, .018) 7px, rgba(30, 41, 59, .018) 8px);
     color: var(--text);
-    padding: 14px 12px 40px;
+    padding: 96px 12px 40px;
     min-height: 100vh;
   }
 
@@ -216,8 +222,84 @@
   .footer-social { margin-left: auto; text-align: right; font-size: 9.5px; color: var(--text-muted); line-height: 1.4; font-weight: 600; }
   .footer-social .hl { color: var(--primary-dark); font-weight: 800; }
 
+  /* ===== 悬浮导航栏（LearnHub 粘土积木风） ===== */
+  html { scroll-behavior: smooth; }
+  .topnav {
+    position: fixed; top: 1rem; left: 1rem; right: 1rem; z-index: 50;
+  }
+  .topnav-inner {
+    max-width: 1152px; margin: 0 auto;
+    background: #fff; border: 3px solid var(--text); border-radius: 18px;
+    box-shadow: 0 5px 0 rgba(30, 41, 59, .16), 0 14px 26px rgba(30, 41, 59, .12);
+    padding: 10px 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .topnav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none !important; }
+  .topnav-logo {
+    width: 40px; height: 40px; border-radius: 12px; flex: 0 0 auto;
+    background: var(--nav-pink); border: 3px solid var(--text);
+    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
+    display: grid; place-items: center;
+    font-family: "ZCOOL KuaiLe", "PingFang SC", sans-serif;
+    font-size: 19px; font-weight: 900; color: var(--text); line-height: 1;
+  }
+  .topnav-name {
+    font-family: "ZCOOL KuaiLe", "Baloo 2", "PingFang SC", sans-serif;
+    font-size: 18px; font-weight: 900; color: var(--text); white-space: nowrap; line-height: 1.2;
+  }
+  .topnav-name .acc { color: #E07A6E; }
+  .topnav-links { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+  .topnav-links a {
+    padding: 7px 12px; border-radius: 10px; font-size: 14px; font-weight: 800;
+    color: var(--text-muted); text-decoration: none; white-space: nowrap; transition: all .15s;
+  }
+  .topnav-links a:hover { color: var(--text); background: #FFF3F0; }
+  .topnav-right { display: flex; align-items: center; gap: 10px; }
+  .topnav-chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #FFF3F0; color: #C06050;
+    font-family: "Press Start 2P", "Space Grotesk", sans-serif;
+    font-size: 10px; font-weight: 700; letter-spacing: .5px;
+    border: 3px solid var(--text); border-radius: 999px; padding: 7px 12px;
+    box-shadow: 0 3px 0 rgba(30, 41, 59, .25); white-space: nowrap;
+  }
+  .topnav-cta {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--nav-green); color: #fff;
+    border: 3px solid var(--nav-green-deep); border-radius: 12px;
+    padding: 7px 16px; font-size: 14px; font-weight: 800;
+    box-shadow: 0 3px 0 var(--nav-green-deep);
+    text-decoration: none !important; white-space: nowrap;
+    transition: transform .06s, box-shadow .06s;
+  }
+  .topnav-cta:hover { transform: translateY(-2px); box-shadow: 0 5px 0 var(--nav-green-deep); }
+  .topnav-cta:active { transform: translateY(1px); box-shadow: 0 2px 0 var(--nav-green-deep); }
+  .topnav-burger {
+    display: none; width: 40px; height: 40px; border-radius: 12px; flex: 0 0 auto;
+    background: var(--nav-blue); border: 3px solid var(--text);
+    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
+    cursor: pointer; align-items: center; justify-content: center; color: var(--text);
+  }
+  .topnav-burger svg { width: 20px; height: 20px; }
+  .topnav-menu {
+    display: none; flex-direction: column; gap: 4px;
+    max-width: 1152px; margin: 8px auto 0;
+    background: #fff; border: 3px solid var(--text); border-radius: 16px;
+    box-shadow: 0 5px 0 rgba(30, 41, 59, .16), 0 14px 26px rgba(30, 41, 59, .12);
+    padding: 10px;
+  }
+  .topnav-menu.open { display: flex; }
+  .topnav-menu a {
+    display: block; padding: 11px 14px; border-radius: 10px;
+    font-size: 14px; font-weight: 800; color: var(--text);
+    text-decoration: none; transition: background .15s;
+  }
+  .topnav-menu a:hover { background: var(--primary-soft); }
+  .topnav-menu .topnav-cta { justify-content: center; margin-top: 4px; }
+
   /* ===== 分享模式 ===== */
   body.share-mode .toolbar { display: none; }
+  body.share-mode .topnav { display: none; }
   body.share-mode { padding: 8px 8px 24px; }
   body.share-mode .cards { gap: 14px; }
   body.share-mode .card-header { padding: 11px 14px; }
@@ -234,16 +316,51 @@
 
   /* ===== 响应式 ===== */
   @media (max-width: 720px) {
-    body { padding: 8px 6px 30px; }
+    .topnav-links { display: none; }
+    .topnav-right { margin-left: auto; }
+    .topnav-burger { display: inline-flex; }
+    body { padding: 96px 6px 30px; }
     .card-title { font-size: 18px; }
     .mob-name-zh { font-size: 12.5px; }
     .spell-name { font-size: 12px; }
     .spell-desc-inline { font-size: 11px; }
     .toolbar .hint { width: 100%; margin-left: 0; }
   }
+  @media (max-width: 600px) {
+    .topnav-name .acc { display: none; }
+    .topnav-chip { display: none; }
+    .topnav-inner { padding: 8px 12px; gap: 8px; }
+    .topnav-cta { padding: 7px 12px; }
+  }
 </style>
 </head>
 <body>
+
+<nav class="topnav" aria-label="主导航">
+  <div class="topnav-inner">
+    <a href="index.html" class="topnav-brand" aria-label="返回速查表">
+      <span class="topnav-logo">西</span>
+      <span class="topnav-name">西番芥的<span class="acc">秘境工具箱</span></span>
+    </a>
+    <div class="topnav-links">
+      <a href="index.html">速查表</a>
+      <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener">B站主页</a>
+    </div>
+    <div class="topnav-right">
+      <span class="topnav-chip">🃏 卡片视图</span>
+      <a href="index.html" class="topnav-cta">返回速查表</a>
+    </div>
+    <button class="topnav-burger" id="topnavBurger" aria-label="打开菜单" aria-expanded="false">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+  </div>
+  <div class="topnav-menu" id="topnavMenu">
+    <span class="topnav-chip">🃏 卡片视图</span>
+    <a href="index.html">速查表</a>
+    <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener">B站主页</a>
+    <a href="index.html" class="topnav-cta">返回速查表</a>
+  </div>
+</nav>
 
 <div class="toolbar">
   <a href="index.html" class="back">&larr; 返回</a>
@@ -504,6 +621,21 @@ document.querySelectorAll("#langSwitch button").forEach((btn) => {
 // 数据加载前先应用记忆的语言（静态文案），加载完成后 applyLang 再整表切换
 applyStaticLang();
 load();
+// 移动端导航菜单
+(function () {
+  const burger = document.getElementById("topnavBurger"), menu = document.getElementById("topnavMenu");
+  if (!burger || !menu) return;
+  burger.addEventListener("click", () => {
+    const open = menu.classList.toggle("open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  menu.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => {
+      menu.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+    })
+  );
+})();
 </script>
 </body>
 </html>

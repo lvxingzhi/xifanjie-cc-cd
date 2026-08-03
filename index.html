@@ -34,6 +34,12 @@
     --off-bg: #F1F5F9;
     --off-line: #CBD5E1;
     --sh: 0 6px 0 rgba(30, 41, 59, .18), 0 14px 26px rgba(30, 41, 59, .10);
+    --nav-pink: #FDBCB4;      /* LearnHub 珊瑚粉 */
+    --nav-pink-deep: #F5A69D;
+    --nav-blue: #ADD8E6;      /* 天蓝 */
+    --nav-blue-deep: #8BC4D6;
+    --nav-green: #22C55E;     /* CTA 绿 */
+    --nav-green-deep: #16A34A;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
@@ -58,7 +64,7 @@
       radial-gradient(560px 220px at 95% -20%, rgba(249, 115, 22, .10), transparent 60%),
       linear-gradient(180deg, #FFFFFF 0%, var(--bg) 100%);
     border-bottom: 3px solid var(--text);
-    padding: 30px 24px 28px;
+    padding: 112px 24px 28px;
   }
   .hero-inner { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; }
   /* 彩色装饰块：彩色方块 + 粗黑边框 + 粘土阴影（借鉴参考站） */
@@ -97,18 +103,7 @@
   .brand-name .accent { color: var(--primary-dark); }
   .brand-tag { font-size: 12.5px; color: var(--text-muted); font-weight: 600; }
   .brand-tag .dot { color: var(--off-line); margin: 0 8px; }
-  .level-chip {
-    margin-left: auto;
-    display: inline-flex; align-items: center; gap: 7px;
-    background: var(--primary-soft); color: var(--primary-dark);
-    font-family: "Press Start 2P", "Space Grotesk", sans-serif;
-    font-weight: 700; font-size: 10px; letter-spacing: .5px;
-    border: 3px solid var(--text);
-    border-radius: 999px; padding: 8px 16px;
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .3);
-    white-space: nowrap;
-  }
-  .hero-links { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-links { display: flex; gap: 12px; flex-wrap: wrap; margin-left: auto; }
   .hero-links a {
     padding: 11px 22px; border-radius: 12px; font-size: 14px; font-weight: 800;
     color: var(--text); border: 3px solid var(--text); background: #fff;
@@ -324,10 +319,85 @@
   }
   .site-footer .right { margin-left: auto; }
 
+  /* ===== 悬浮导航栏（LearnHub 粘土积木风） ===== */
+  html { scroll-behavior: smooth; }
+  #stats, #toolbar { scroll-margin-top: 104px; }
+  .topnav {
+    position: fixed; top: 1rem; left: 1rem; right: 1rem; z-index: 50;
+  }
+  .topnav-inner {
+    max-width: 1152px; margin: 0 auto;
+    background: #fff; border: 3px solid var(--text); border-radius: 18px;
+    box-shadow: 0 5px 0 rgba(30, 41, 59, .16), 0 14px 26px rgba(30, 41, 59, .12);
+    padding: 10px 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .topnav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none !important; }
+  .topnav-logo {
+    width: 40px; height: 40px; border-radius: 12px; flex: 0 0 auto;
+    background: var(--nav-pink); border: 3px solid var(--text);
+    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
+    display: grid; place-items: center;
+    font-family: "ZCOOL KuaiLe", "PingFang SC", sans-serif;
+    font-size: 19px; font-weight: 900; color: var(--text); line-height: 1;
+  }
+  .topnav-name {
+    font-family: "ZCOOL KuaiLe", "Baloo 2", "PingFang SC", sans-serif;
+    font-size: 18px; font-weight: 900; color: var(--text); white-space: nowrap; line-height: 1.2;
+  }
+  .topnav-name .acc { color: #E07A6E; }
+  .topnav-links { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+  .topnav-links a {
+    padding: 7px 12px; border-radius: 10px; font-size: 14px; font-weight: 800;
+    color: var(--text-muted); text-decoration: none; white-space: nowrap; transition: all .15s;
+  }
+  .topnav-links a:hover { color: var(--text); background: #FFF3F0; }
+  .topnav-right { display: flex; align-items: center; gap: 10px; }
+  .topnav-chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #FFF3F0; color: #C06050;
+    font-family: "Press Start 2P", "Space Grotesk", sans-serif;
+    font-size: 10px; font-weight: 700; letter-spacing: .5px;
+    border: 3px solid var(--text); border-radius: 999px; padding: 7px 12px;
+    box-shadow: 0 3px 0 rgba(30, 41, 59, .25); white-space: nowrap;
+  }
+  .topnav-cta {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--nav-green); color: #fff;
+    border: 3px solid var(--nav-green-deep); border-radius: 12px;
+    padding: 7px 16px; font-size: 14px; font-weight: 800;
+    box-shadow: 0 3px 0 var(--nav-green-deep);
+    text-decoration: none !important; white-space: nowrap;
+    transition: transform .06s, box-shadow .06s;
+  }
+  .topnav-cta:hover { transform: translateY(-2px); box-shadow: 0 5px 0 var(--nav-green-deep); }
+  .topnav-cta:active { transform: translateY(1px); box-shadow: 0 2px 0 var(--nav-green-deep); }
+  .topnav-burger {
+    display: none; width: 40px; height: 40px; border-radius: 12px; flex: 0 0 auto;
+    background: var(--nav-blue); border: 3px solid var(--text);
+    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
+    cursor: pointer; align-items: center; justify-content: center; color: var(--text);
+  }
+  .topnav-burger svg { width: 20px; height: 20px; }
+  .topnav-menu {
+    display: none; flex-direction: column; gap: 4px;
+    max-width: 1152px; margin: 8px auto 0;
+    background: #fff; border: 3px solid var(--text); border-radius: 16px;
+    box-shadow: 0 5px 0 rgba(30, 41, 59, .16), 0 14px 26px rgba(30, 41, 59, .12);
+    padding: 10px;
+  }
+  .topnav-menu.open { display: flex; }
+  .topnav-menu a {
+    display: block; padding: 11px 14px; border-radius: 10px;
+    font-size: 14px; font-weight: 800; color: var(--text);
+    text-decoration: none; transition: background .15s;
+  }
+  .topnav-menu a:hover { background: var(--primary-soft); }
+  .topnav-menu .topnav-cta { justify-content: center; margin-top: 4px; }
+
   /* ===== 响应式 ===== */
   @media (max-width: 1000px) {
     .stats { grid-template-columns: repeat(2, 1fr); }
-    .level-chip { margin-left: 0; }
     .hero-links { margin-left: auto; }
   }
   @media (max-width: 900px) {
@@ -339,7 +409,7 @@
   }
   @media (max-width: 600px) {
     .stats { grid-template-columns: 1fr 1fr; gap: 12px; }
-    .hero { padding: 22px 16px 20px; }
+    .hero { padding: 104px 16px 20px; }
     .container { padding: 0 12px; }
     .brand-name { font-size: 21px; }
     .stat { padding: 12px; gap: 10px; }
@@ -348,9 +418,48 @@
     thead th, tbody td { padding: 9px 11px; font-size: 13px; }
     .blob { display: none; }
   }
+  @media (max-width: 900px) {
+    .topnav-links { display: none; }
+    .topnav-right { margin-left: auto; }
+    .topnav-burger { display: inline-flex; }
+  }
+  @media (max-width: 600px) {
+    .topnav-name .acc { display: none; }
+    .topnav-chip { display: none; }
+    .topnav-inner { padding: 8px 12px; gap: 8px; }
+    .topnav-cta { padding: 7px 12px; }
+  }
 </style>
 </head>
 <body>
+
+<nav class="topnav" aria-label="主导航">
+  <div class="topnav-inner">
+    <a href="#" class="topnav-brand" aria-label="回到顶部">
+      <span class="topnav-logo">西</span>
+      <span class="topnav-name">西番芥的<span class="acc">秘境工具箱</span></span>
+    </a>
+    <div class="topnav-links">
+      <a href="cards.html" data-i18n="navCards">副本卡片</a>
+      <a href="#stats" data-i18n="navStats">数据总览</a>
+      <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener" data-i18n="navBili">B站主页</a>
+    </div>
+    <div class="topnav-right">
+      <span class="topnav-chip">🦉 Lv.1</span>
+      <a href="#toolbar" class="topnav-cta" data-i18n="navCta">开始查询</a>
+    </div>
+    <button class="topnav-burger" id="topnavBurger" aria-label="打开菜单" aria-expanded="false">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+  </div>
+  <div class="topnav-menu" id="topnavMenu">
+    <span class="topnav-chip">🦉 Lv.1</span>
+    <a href="cards.html" data-i18n="navCards">副本卡片</a>
+    <a href="#stats" data-i18n="navStats">数据总览</a>
+    <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener" data-i18n="navBili">B站主页</a>
+    <a href="#toolbar" class="topnav-cta" data-i18n="navCta">开始查询</a>
+  </div>
+</nav>
 
 <section class="hero">
   <div class="blob blob-1"></div>
@@ -371,14 +480,13 @@
           更新于 <span id="updated">—</span>
         </div>
       </div>
-      <span class="level-chip" id="levelChip">🦉 Lv.1</span>
       <div class="hero-links">
         <a href="https://space.bilibili.com/346688237" id="bilibili" target="_blank" rel="noopener">B 站主页</a>
         <a href="cards.html" class="primary">副本卡片 🃏</a>
       </div>
     </div>
 
-    <div class="stats">
+    <div class="stats" id="stats">
       <div class="stat">
         <div class="icon i-coral">📚</div>
         <div><div class="num" id="statTotal">—</div><div class="label" data-i18n="statTotal">总技能条目</div></div>
@@ -402,7 +510,7 @@
 </section>
 
 <div class="container">
-  <div class="toolbar">
+  <div class="toolbar" id="toolbar">
     <div class="lang-switch" id="langSwitch">
       <button type="button" data-lang="zh" class="active">中文</button>
       <button type="button" data-lang="en">EN</button>
@@ -575,6 +683,7 @@ const I18N = {
     statTotal: "总技能条目", statDungeon: "覆盖副本", statInt: "可打断技能", statMag: "魔法可驱散",
     empty: "没有匹配的技能，换个关键词再试试吧！",
     loading: "加载中…", loadFail: "加载失败",
+    navCards: "副本卡片", navStats: "数据总览", navBili: "B站主页", navCta: "开始查询",
   },
   en: {
     dungeon: "Dungeon", mob: "Mob", spell: "Spell",
@@ -589,6 +698,7 @@ const I18N = {
     statTotal: "Total Spells", statDungeon: "Dungeons", statInt: "Interruptible", statMag: "Magic (Dispel)",
     empty: "No matching spells. Try another keyword!",
     loading: "Loading…", loadFail: "Load failed",
+    navCards: "Dungeon Cards", navStats: "Overview", navBili: "Bilibili", navCta: "Start Now",
   },
 };
 const t = (k) => (I18N[state.lang] && I18N[state.lang][k]) || I18N.zh[k] || k;
@@ -641,7 +751,8 @@ function renderAchievements() {
 // 等级徽章
 function renderLevel() {
   const lvl = Math.min(99, 1 + Math.floor(state.rows.length / 40));
-  $("#levelChip").textContent = "🦉 " + (state.lang === "en" ? "LV." : "Lv.") + " " + lvl;
+  const txt = "🦉 " + (state.lang === "en" ? "LV." : "Lv.") + " " + lvl;
+  document.querySelectorAll(".topnav-chip").forEach((c) => (c.textContent = txt));
 }
 
 async function load() {
@@ -820,6 +931,21 @@ function bindEvents() {
 
 bindEvents();
 setupColPicker();
+// 移动端导航菜单
+(function () {
+  const burger = $("#topnavBurger"), menu = $("#topnavMenu");
+  if (!burger || !menu) return;
+  burger.addEventListener("click", () => {
+    const open = menu.classList.toggle("open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  menu.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => {
+      menu.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+    })
+  );
+})();
 applyStaticLang();  // 先应用 localStorage 记忆的语言（数据加载前静态文案即可切换）
 load();
 </script>
