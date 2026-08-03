@@ -87,38 +87,10 @@
   }
 
   .hero-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .logo {
-    width: 56px; height: 56px; border-radius: 16px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--nav-pink-deep) 100%);
-    color: var(--text); font-weight: 900; font-size: 26px;
-    display: grid; place-items: center; flex: 0 0 auto;
-    border: 3px solid var(--text);
-    box-shadow: 0 4px 0 rgba(30, 41, 59, .3), 0 10px 18px rgba(245, 166, 157, .35);
-    font-family: "ZCOOL KuaiLe", "PingFang SC", sans-serif;
-  }
-  .brand { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-  .brand-name {
-    font-size: 26px; font-weight: 900; letter-spacing: 1px; color: var(--text);
-    font-family: "ZCOOL KuaiLe", "Baloo 2", "PingFang SC", sans-serif;
-    line-height: 1.2;
-  }
+
   .brand-name .accent { color: var(--primary-dark); }
   .brand-tag { font-size: 12.5px; color: var(--text-muted); font-weight: 600; }
   .brand-tag .dot { color: var(--off-line); margin: 0 8px; }
-  .hero-links { display: flex; gap: 12px; flex-wrap: wrap; margin-left: auto; }
-  .hero-links a {
-    padding: 11px 22px; border-radius: 12px; font-size: 14px; font-weight: 800;
-    color: var(--text); border: 3px solid var(--text); background: #fff;
-    box-shadow: 0 4px 0 rgba(30, 41, 59, .28);
-    transition: transform .06s, box-shadow .06s;
-  }
-  .hero-links a:hover { transform: translateY(2px); box-shadow: 0 2px 0 rgba(30, 41, 59, .28); text-decoration: none; }
-  .hero-links a.primary {
-    background: linear-gradient(135deg, var(--cta-dark), var(--cta)); color: #fff;
-    border-color: var(--cta-dark);
-    box-shadow: 0 4px 0 var(--cta-dark), 0 10px 16px rgba(34, 197, 94, .3);
-  }
-  .hero-links a.primary:hover { transform: translateY(-2px); box-shadow: 0 6px 0 var(--cta-dark), 0 14px 20px rgba(34, 197, 94, .35); }
 
   /* ===== 成就统计卡片 ===== */
   .stats {
@@ -400,10 +372,8 @@
   /* ===== 响应式 ===== */
   @media (max-width: 1000px) {
     .stats { grid-template-columns: repeat(2, 1fr); }
-    .hero-links { margin-left: auto; }
   }
   @media (max-width: 900px) {
-    .hero-links { width: 100%; margin-left: 0; }
     .toolbar input[type=text] { min-width: 0; max-width: none; width: 100%; }
     .progress-chip { width: 100%; min-width: 0; margin-left: 0; }
     .toolbar .count { margin-left: 0; }
@@ -471,7 +441,6 @@
 
   <div class="hero-inner">
     <div class="hero-row">
-      <div class="logo">西</div>
       <div class="brand">
         <div class="brand-name">西番芥的<span class="accent">秘境工具箱</span></div>
         <div class="brand-tag">
@@ -481,10 +450,6 @@
           <span class="dot">·</span>
           更新于 <span id="updated">—</span>
         </div>
-      </div>
-      <div class="hero-links">
-        <a href="https://space.bilibili.com/346688237" id="bilibili" target="_blank" rel="noopener">B 站主页</a>
-        <a href="cards.html" class="primary">副本卡片 🃏</a>
       </div>
     </div>
 

@@ -67,12 +67,6 @@
     transition: border-color .15s;
   }
   .toolbar select:hover, .toolbar button:hover { border-color: var(--primary); }
-  .toolbar .back {
-    color: var(--primary-dark); text-decoration: none; font-weight: 800;
-    padding: 7px 12px; border-radius: 12px; border: 3px solid var(--text); background: var(--primary-soft);
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
-  }
-  .toolbar .back:hover { background: var(--primary); color: var(--text); }
   .toolbar .share-btn {
     background: linear-gradient(135deg, var(--cta-dark), var(--cta)); color: #fff;
     box-shadow: 0 3px 0 var(--cta-dark);
@@ -365,7 +359,6 @@
 </nav>
 
 <div class="toolbar">
-  <a href="index.html" class="back">&larr; 返回</a>
   <div class="lang-switch" id="langSwitch">
     <button type="button" data-lang="zh" class="active">中文</button>
     <button type="button" data-lang="en">EN</button>
