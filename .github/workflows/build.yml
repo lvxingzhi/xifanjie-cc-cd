@@ -2,7 +2,7 @@ name: Build & Update
 
 on:
   schedule:
-    - cron: '0 3 * * 1'          # 每周一 03:00 UTC 自动刷新（镜像 MDT 当前内容）
+    - cron: '0 21 * * 1'          # 每周一 21:00 UTC 自动刷新（镜像 MDT 当前内容）
   workflow_dispatch:
     inputs:
       branch:
