@@ -322,7 +322,7 @@
   "1216643": {
     "zhCN": {
       "name": "血腥漩涡",
-      "description": "施法者疯狂旋转，持续8秒，每0.5秒对6码内的玩家造成3点物理伤害。"
+      "description": "施法者疯狂旋转，持续8秒，每0.5秒对6码内的玩家造成15254点物理伤害。"
     },
     "enUS": {
       "name": "Gore Whirl",
@@ -922,7 +922,7 @@
   "1216822": {
     "zhCN": {
       "name": "毒性喷射",
-      "description": "施法者朝玩家喷射毒液，造成8点自然伤害，此后每1秒额外造成4点自然伤害，持续12秒。"
+      "description": "施法者朝玩家喷射毒液，造成40676点自然伤害，此后每1秒额外造成20338点自然伤害，持续12秒。"
     },
     "enUS": {
       "name": "Poison Spray",
@@ -932,7 +932,7 @@
   "1216825": {
     "zhCN": {
       "name": "毒性喷射",
-      "description": "施法者朝玩家喷射毒液，造成8点自然伤害，此后每1秒额外造成4点自然伤害，持续12秒。"
+      "description": "施法者朝玩家喷射毒液，造成40676点自然伤害，此后每1秒额外造成20338点自然伤害，持续12秒。"
     },
     "enUS": {
       "name": "Poison Spray",
@@ -942,7 +942,7 @@
   "1216819": {
     "zhCN": {
       "name": "真菌之箭",
-      "description": "施法者对一名玩家造成12点自然伤害。"
+      "description": "施法者对一名玩家造成61014点自然伤害。"
     },
     "enUS": {
       "name": "Fungal Bolt",
@@ -972,7 +972,7 @@
   "1216834": {
     "zhCN": {
       "name": "酸蚀死亡",
-      "description": "酸液从施法者的尸体中不断渗出，每1秒对接触者造成10点自然伤害。"
+      "description": "酸液从施法者的尸体中不断渗出，每1秒对接触者造成50845点自然伤害。"
     },
     "enUS": {
       "name": "Acidic Demise",
@@ -982,7 +982,7 @@
   "1253700": {
     "zhCN": {
       "name": "灵魂煎熬",
-      "description": "施法者对一名玩家每1秒造成5点暗影伤害，持续15秒。"
+      "description": "施法者对一名玩家每1秒造成25423点暗影伤害，持续15秒。"
     },
     "enUS": {
       "name": "Soul Torment",
@@ -1052,7 +1052,7 @@
   "1216848": {
     "zhCN": {
       "name": "火焰吐息",
-      "description": "施法者朝一名玩家喷吐火球，每0.8秒造成6点火焰伤害，持续9秒。"
+      "description": "施法者朝一名玩家喷吐火球，每0.8秒造成27965点火焰伤害，持续9秒。"
     },
     "enUS": {
       "name": "Fire Spit",
@@ -1102,7 +1102,7 @@
   "1216860": {
     "zhCN": {
       "name": "爆发烈焰",
-      "description": "施法者以火焰能量强化自身，吸收85点伤害并使急速提高30%，持续20秒。"
+      "description": "施法者以火焰能量强化自身，吸收222855点伤害并使急速提高30%，持续20秒。"
     },
     "enUS": {
       "name": "Bolstering Flames",
@@ -1152,7 +1152,7 @@
   "1253739": {
     "zhCN": {
       "name": "撕扯血肉",
-      "description": "这个生物撕扯目标的血肉，使其流血不止，每1秒造成6点物理伤害并吸收20点治疗量，持续20秒。"
+      "description": "这个生物撕扯目标的血肉，使其流血不止，每1秒造成30507点物理伤害并吸收52436点治疗量，持续20秒。"
     },
     "enUS": {
       "name": "Shred Flesh",
@@ -1382,7 +1382,7 @@
   "1216963": {
     "zhCN": {
       "name": "孢子散布",
-      "description": "施法者向空气中释放孢子，每1秒对所有玩家造成5点自然伤害，持续10秒。附近处于休眠状态的烦人的鞭笞菇幼苗会被唤醒，并获得孢子充能。"
+      "description": "施法者向空气中释放孢子，每1秒对所有玩家造成22880点自然伤害，持续10秒。附近处于休眠状态的烦人的鞭笞菇幼苗会被唤醒，并获得孢子充能。"
     },
     "enUS": {
       "name": "Spore Dispersal",
@@ -1422,7 +1422,7 @@
   "1216985": {
     "zhCN": {
       "name": "刺穿撕咬",
-      "description": "施法者刺透目标的血肉，造成40点物理伤害并使其流血，每1秒造成6点物理伤害，持续8秒。"
+      "description": "施法者刺透目标的血肉，造成203380点物理伤害并使其流血，每1秒造成30507点物理伤害，持续8秒。"
     },
     "enUS": {
       "name": "Puncturing Bite",
@@ -1492,7 +1492,7 @@
   "1217010": {
     "zhCN": {
       "name": "凶猛扑击",
-      "description": "施法者猛扑向一名玩家，对3码内的玩家造成18点物理伤害。"
+      "description": "施法者猛扑向一名玩家，对3码内的玩家造成88979点物理伤害。"
     },
     "enUS": {
       "name": "Ferocious Pounce",
@@ -1752,7 +1752,7 @@
   "473644": {
     "zhCN": {
       "name": "瓶剂投掷",
-      "description": "施法者朝玩家投掷剧毒瓶剂，对冲击点周围3码内的玩家造成30点自然伤害并创造破碎瓶剂。"
+      "description": "施法者朝玩家投掷剧毒瓶剂，对冲击点周围3码内的玩家造成152535点自然伤害并创造破碎瓶剂。"
     },
     "enUS": {
       "name": "Phial Toss",
@@ -1782,7 +1782,7 @@
   "473647": {
     "zhCN": {
       "name": "瓶剂投掷",
-      "description": "施法者朝玩家投掷剧毒瓶剂，对冲击点周围3码内的玩家造成30点自然伤害并创造破碎瓶剂。"
+      "description": "施法者朝玩家投掷剧毒瓶剂，对冲击点周围3码内的玩家造成152535点自然伤害并创造破碎瓶剂。"
     },
     "enUS": {
       "name": "Phial Toss",
@@ -1792,7 +1792,7 @@
   "473649": {
     "zhCN": {
       "name": "破碎瓶剂",
-      "description": "破碎的瓶剂溢出毒液，每1秒对其中的玩家造成10点自然伤害。"
+      "description": "破碎的瓶剂溢出毒液，每1秒对其中的玩家造成50845点自然伤害。"
     },
     "enUS": {
       "name": "Shattered Phial",
@@ -1802,7 +1802,7 @@
   "473657": {
     "zhCN": {
       "name": "暗影箭",
-      "description": "施法者对一名玩家造成12点暗影伤害。"
+      "description": "施法者对一名玩家造成61014点暗影伤害。"
     },
     "enUS": {
       "name": "Shadow Bolt",
@@ -1842,7 +1842,7 @@
   "473663": {
     "zhCN": {
       "name": "脉冲尖啸",
-      "description": "施法者用护盾保护自己，吸收165点伤害并阻止沉默效果。施法者会尖啸16秒，每2秒对60码范围内的玩家造成6点暗影伤害。"
+      "description": "施法者用护盾保护自己，吸收432601点伤害并阻止沉默效果。施法者会尖啸16秒，每2秒对60码范围内的玩家造成31778点暗影伤害。"
     },
     "enUS": {
       "name": "Pulsing Shriek",
@@ -1872,7 +1872,7 @@
   "473668": {
     "zhCN": {
       "name": "脉冲尖啸",
-      "description": "施法者用护盾保护自己，吸收165点伤害并阻止沉默效果。施法者会尖啸16秒，每2秒对60码范围内的玩家造成6点暗影伤害。"
+      "description": "施法者用护盾保护自己，吸收432601点伤害并阻止沉默效果。施法者会尖啸16秒，每2秒对60码范围内的玩家造成31778点暗影伤害。"
     },
     "enUS": {
       "name": "Pulsing Shriek",
@@ -1892,7 +1892,7 @@
   "473672": {
     "zhCN": {
       "name": "脉冲尖啸",
-      "description": "施法者用护盾保护自己，吸收165点伤害并阻止沉默效果。施法者会尖啸16秒，每2秒对60码范围内的玩家造成6点暗影伤害。"
+      "description": "施法者用护盾保护自己，吸收432601点伤害并阻止沉默效果。施法者会尖啸16秒，每2秒对60码范围内的玩家造成31778点暗影伤害。"
     },
     "enUS": {
       "name": "Pulsing Shriek",
@@ -2272,7 +2272,7 @@
   "473776": {
     "zhCN": {
       "name": "腐臭喷吐",
-      "description": "施法者朝玩家发射胆汁，对受害者4码范围内的玩家每1秒造成4点自然伤害，持续8秒。此外，在施法者位置形成腐臭胆汁。"
+      "description": "施法者朝玩家发射胆汁，对受害者4码范围内的玩家每1秒造成20338点自然伤害，持续8秒。此外，在施法者位置形成腐臭胆汁。"
     },
     "enUS": {
       "name": "Fetid Spew",
@@ -2292,7 +2292,7 @@
   "473786": {
     "zhCN": {
       "name": "腐臭喷吐",
-      "description": "施法者朝玩家发射胆汁，对受害者4码范围内的玩家每1秒造成4点自然伤害，持续8秒。此外，在施法者位置形成腐臭胆汁。"
+      "description": "施法者朝玩家发射胆汁，对受害者4码范围内的玩家每1秒造成20338点自然伤害，持续8秒。此外，在施法者位置形成腐臭胆汁。"
     },
     "enUS": {
       "name": "Fetid Spew",
@@ -2302,7 +2302,7 @@
   "473789": {
     "zhCN": {
       "name": "腐臭胆汁",
-      "description": "施法者的胆汁池每1秒对其中的玩家造成16点自然伤害。"
+      "description": "施法者的胆汁池每1秒对其中的玩家造成81352点自然伤害。"
     },
     "enUS": {
       "name": "Fetid Bile",
@@ -2332,7 +2332,7 @@
   "473794": {
     "zhCN": {
       "name": "淬毒利刃",
-      "description": "施法者在刀刃上涂抹毒液，使其攻击每1秒造成5点自然伤害。此效果可叠加。"
+      "description": "施法者在刀刃上涂抹毒液，使其攻击每1秒造成25423点自然伤害。此效果可叠加。"
     },
     "enUS": {
       "name": "Poison Blades",
@@ -2342,7 +2342,7 @@
   "473795": {
     "zhCN": {
       "name": "淬毒利刃",
-      "description": "施法者在刀刃上涂抹毒液，使其攻击每1秒造成5点自然伤害。此效果可叠加。"
+      "description": "施法者在刀刃上涂抹毒液，使其攻击每1秒造成25423点自然伤害。此效果可叠加。"
     },
     "enUS": {
       "name": "Poison Blades",
@@ -2572,7 +2572,7 @@
   "473864": {
     "zhCN": {
       "name": "裂影步",
-      "description": "施法者传送到玩家身边并发动攻击，造成12点物理伤害。"
+      "description": "施法者传送到玩家身边并发动攻击，造成61014点物理伤害。"
     },
     "enUS": {
       "name": "Shadowrive",
@@ -2582,7 +2582,7 @@
   "473868": {
     "zhCN": {
       "name": "裂影步",
-      "description": "施法者传送到玩家身边并发动攻击，造成12点物理伤害。"
+      "description": "施法者传送到玩家身边并发动攻击，造成61014点物理伤害。"
     },
     "enUS": {
       "name": "Shadowrive",
@@ -2732,7 +2732,7 @@
   "1270618": {
     "zhCN": {
       "name": "烈焰新星",
-      "description": "施法者释放出一道烈焰新星，对60码范围内的所有玩家造成15点火焰伤害。"
+      "description": "施法者释放出一道烈焰新星，对60码范围内的所有玩家造成76268点火焰伤害。"
     },
     "enUS": {
       "name": "Flame Nova",
@@ -3622,7 +3622,7 @@
   "472118": {
     "zhCN": {
       "name": "点燃余烬",
-      "description": "烈焰残迹每1.5秒对其中的玩家造成15点火焰伤害。区域中央的炽焰腾流会对接触的玩家造成25点火焰伤害并将其击退。"
+      "description": "烈焰残迹每1.5秒对其中的玩家造成76268点火焰伤害。区域中央的炽焰腾流会对接触的玩家造成127113点火焰伤害并将其击退。"
     },
     "enUS": {
       "name": "Ignited Embers",
@@ -3642,7 +3642,7 @@
   "1266745": {
     "zhCN": {
       "name": "火焰吐息",
-      "description": "施法者朝一名玩家喷吐火球，每0.8秒造成6点火焰伤害，持续9秒。"
+      "description": "施法者朝一名玩家喷吐火球，每0.8秒造成27965点火焰伤害，持续9秒。"
     },
     "enUS": {
       "name": "Fire Spit",
@@ -4062,7 +4062,7 @@
   "470212": {
     "zhCN": {
       "name": "炽燃龙卷",
-      "description": "点燃余烬对来自燃烧烈风的风做出反应，喷射出火焰飓风，对击中的玩家造成25点火焰伤害并使其昏迷2秒，随后将其抛飞。"
+      "description": "点燃余烬对来自燃烧烈风的风做出反应，喷射出火焰飓风，对击中的玩家造成127113点火焰伤害并使其昏迷2秒，随后将其抛飞。"
     },
     "enUS": {
       "name": "Flaming Twisters",
@@ -5252,7 +5252,7 @@
   "1216135": {
     "zhCN": {
       "name": "灵魂之箭",
-      "description": "施法者对一名玩家造成12点暗影伤害。"
+      "description": "施法者对一名玩家造成61014点暗影伤害。"
     },
     "enUS": {
       "name": "Spirit Bolt",
@@ -5772,7 +5772,7 @@
   "1216250": {
     "zhCN": {
       "name": "奥术齐射",
-      "description": "施法者连续射出魔法能量，每道能量箭矢对一名玩家造成4点物理伤害。"
+      "description": "施法者连续射出魔法能量，每道能量箭矢对一名玩家造成21609点物理伤害。"
     },
     "enUS": {
       "name": "Arcane Salvo",
@@ -5782,7 +5782,7 @@
   "1216253": {
     "zhCN": {
       "name": "奥术齐射",
-      "description": "施法者连续射出魔法能量，每道能量箭矢对一名玩家造成4点物理伤害。"
+      "description": "施法者连续射出魔法能量，每道能量箭矢对一名玩家造成21609点物理伤害。"
     },
     "enUS": {
       "name": "Arcane Salvo",
@@ -5961,7 +5961,7 @@
   },
   "1263399": {
     "zhCN": {
-      "name": "渗漏猛击",
+      "name": "软泥猛击",
       "description": "祖拉尔用虚空能量猛击地面，对所有玩家造成61014点暗影伤害，随后每1秒造成额外20338点暗影伤害，持续6秒。猛击还会使凝结虚空出现在附近位置。"
     },
     "enUS": {
@@ -5982,7 +5982,7 @@
   "1216298": {
     "zhCN": {
       "name": "灵魂煎熬",
-      "description": "施法者对一名玩家每1秒造成5点暗影伤害，持续15秒。"
+      "description": "施法者对一名玩家每1秒造成25423点暗影伤害，持续15秒。"
     },
     "enUS": {
       "name": "Soul Torment",
@@ -6152,7 +6152,7 @@
   "1277799": {
     "zhCN": {
       "name": "野蛮劈砍",
-      "description": "施法者对当前目标造成70点物理伤害。"
+      "description": "施法者对当前目标造成355915点物理伤害。"
     },
     "enUS": {
       "name": "Brutal Chop",
@@ -6352,7 +6352,7 @@
   "1216419": {
     "zhCN": {
       "name": "射击",
-      "description": "施法者朝一名玩家射出利箭，造成8点物理伤害。"
+      "description": "施法者朝一名玩家射出利箭，造成40676点物理伤害。"
     },
     "enUS": {
       "name": "Shoot",
@@ -6462,7 +6462,7 @@
   "1216449": {
     "zhCN": {
       "name": "矢如雨下",
-      "description": "施法者向空中射出一阵箭雨，对冲击点周围3码内的玩家造成25点物理伤害。"
+      "description": "施法者向空中射出一阵箭雨，对冲击点周围3码内的玩家造成127113点物理伤害。"
     },
     "enUS": {
       "name": "Arrow Rain",
@@ -6472,7 +6472,7 @@
   "1216454": {
     "zhCN": {
       "name": "矢如雨下",
-      "description": "施法者向空中射出一阵箭雨，对冲击点周围3码内的玩家造成25点物理伤害。"
+      "description": "施法者向空中射出一阵箭雨，对冲击点周围3码内的玩家造成127113点物理伤害。"
     },
     "enUS": {
       "name": "Arrow Rain",
@@ -8340,7 +8340,7 @@
     },
     "enUS": {
       "name": "Defiled Slam",
-      "description": "Slams the ground with Fel energy, inflicting 17 Fire damage to all enemies and causes Defiled Detonation at nearby locations."
+      "description": "Slams the ground with Fel energy, inflicting 15 Fire damage to all enemies and causes Defiled Detonation at nearby locations."
     }
   },
   "1264106": {
@@ -8360,7 +8360,7 @@
     },
     "enUS": {
       "name": "Defiled Slam",
-      "description": "Slams the ground with Fel energy, inflicting 17 Fire damage to all enemies and causes Defiled Detonation at nearby locations."
+      "description": "Slams the ground with Fel energy, inflicting 15 Fire damage to all enemies and causes Defiled Detonation at nearby locations."
     }
   },
   "1298922": {
@@ -8476,7 +8476,7 @@
   "1294845": {
     "zhCN": {
       "name": "[Corrosive Fangs]",
-      "description": "[Corrosive Fangs]10 码范围3​秒 施法时间"
+      "description": "[Corrosive Fangs]100 码范围3​秒 施法时间"
     },
     "enUS": {
       "name": "Corrosive Fangs",
@@ -9090,7 +9090,7 @@
     },
     "enUS": {
       "name": "Bloodletting",
-      "description": "Zul'jan's Physical abilities cause players to hemorrhage, removing applications of Ritual Venom and creating pools of blood inflicting 96982 Nature damage every 1 sec to players within them."
+      "description": "Zul'jan's Physical abilities cause players to hemorrhage, removing applications of Ritual Venom and creating pools of blood inflicting 96875 Nature damage every 1 sec to players within them."
     }
   },
   "1250021": {
@@ -10430,7 +10430,7 @@
     },
     "enUS": {
       "name": "Harsh Winter",
-      "description": "The Winter Squall conjures a dense cloud in a 4 yard radius around itself. Players cannot target into or out of the cloud. Players within the cloud suffer 4 Frost damage every 2 sec."
+      "description": "The Winter Squall conjures a dense cloud in a 38793 yard radius around itself. Players cannot target into or out of the cloud. Players within the cloud suffer 38793 Frost damage every 2 sec."
     }
   },
   "1307921": {
@@ -10550,7 +10550,7 @@
     },
     "enUS": {
       "name": "Rotten Supplies",
-      "description": "Inflicts 4 Nature damage and leaves behind Rotten Ground for 20 sec."
+      "description": "Inflicts 38793 Nature damage and leaves behind Rotten Ground for 20 sec."
     }
   },
   "1297701": {
@@ -10560,7 +10560,7 @@
     },
     "enUS": {
       "name": "Rotten Ground",
-      "description": "Inflicts 8 Nature damage every 1 sec."
+      "description": "Inflicts 77586 Nature damage every 1 sec."
     }
   },
   "474408": {
@@ -10740,7 +10740,7 @@
     },
     "enUS": {
       "name": "Arc Lightning",
-      "description": "Caster strikes an enemy with a lightning bolt that arcs to another nearby enemy, inflicting 20 Nature damage. The spell affects up to 3 targets."
+      "description": "Caster strikes an enemy with a lightning bolt that arcs to another nearby enemy, inflicting 193965 Nature damage. The spell affects up to 3 targets."
     }
   },
   "474483": {
