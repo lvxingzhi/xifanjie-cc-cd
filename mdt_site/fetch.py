@@ -15,7 +15,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from .parser import toc_seasons
+from .parser import toc_seasons, toc_interface_targets, seasons_from_tree
 
 REPO_URL = "https://github.com/Nnoggie/MythicDungeonTools.git"
 
@@ -49,7 +49,18 @@ def fetch_mdt(branch: str = "master", lang: str = "zhCN") -> tuple[Path, str]:
     toc = read("MythicDungeonTools.toc")
     seasons = toc_seasons(toc)
     if not seasons:
-        raise RuntimeError(".toc 中未找到 mainline（大秘境）赛季配置")
+        # MDT 6.2+ 新格式：.toc 不再声明赛季 load XML（旧式 AllowLoadGameType 行已移除），
+        # mainline 由整包注释 WOW_INTERFACE_TARGETS 标识，赛季目录 = 顶层含 load_*.xml 的目录
+        targets = toc_interface_targets(toc)
+        if "mainline" not in targets:
+            raise RuntimeError(
+                f".toc 未找到 mainline 赛季声明（无旧式 AllowLoadGameType 行，"
+                f"WOW_INTERFACE_TARGETS={targets or '缺失'}）")
+        seasons = seasons_from_tree(tree)
+        if not seasons:
+            raise RuntimeError(
+                f".toc 声明了 mainline（WOW_INTERFACE_TARGETS={targets}），"
+                "但文件树中未找到含 load_*.xml 的赛季目录")
 
     needed: set[str] = {"MythicDungeonTools.toc"}
     for season, load_xml in seasons:

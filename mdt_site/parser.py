@@ -71,12 +71,46 @@ _TOC_LOAD_XML = re.compile(
 _IGNORE_DIRS = {"AceGUIWidgets", "Core", "Developer", "libs", "Modules", "Textures", "scripts"}
 
 
+_WOW_INTERFACE_TARGETS = re.compile(r'^#\s*WOW_INTERFACE_TARGETS:\s*([^\n]+)', re.M)
+
+
+def toc_interface_targets(toc_content: str) -> set[str]:
+    """解析 .toc 的 WOW_INTERFACE_TARGETS 注释（MDT 6.2+ 新格式）。
+
+    旧格式用 `[AllowLoadGameType mainline]` 声明赛季，新格式改为整包注释
+    `# WOW_INTERFACE_TARGETS: mainline-beta, mainline-test, mainline`。
+    """
+    m = _WOW_INTERFACE_TARGETS.search(toc_content)
+    if not m:
+        return set()
+    return {t.strip() for t in m.group(1).split(",")}
+
+
+def seasons_from_tree(paths) -> list[tuple[str, str]]:
+    """从仓库文件树扫描赛季目录：顶层含 load_*.xml 的目录（跳过非赛季目录）。
+
+    入参为相对路径列表（如 git ls-tree 输出或 glob 结果），返回 [(赛季目录, load_xml)]。
+    """
+    return sorted(
+        (season, name)
+        for p in paths
+        if "/" in p
+        for season, name in [p.split("/", 1)]
+        if "/" not in name  # 只认顶层
+        and name.startswith("load_") and name.endswith(".xml")
+        and season not in _IGNORE_DIRS
+    )
+
+
 def toc_seasons(toc_content: str) -> list[tuple[str, str]]:
     """从 .toc 文本提取 mainline（正式服大秘境）赛季配置：[(赛季目录, load_xml文件名)]。
 
-    换赛季 = MDT 改 TOC 一行（如 Midnight\load_midnight.xml → 新赛季\load_xxx.xml）；
+    旧格式（MDT 6.1 及更早）：TOC 里每赛季一行，如
+    `Midnight/load_midnight.xml [AllowLoadGameType mainline]`；
     mists 等非 mainline 游戏类型（如 MoP Remix 活动）不属于大秘境池，排除。
     文件名必须取 TOC 原名（如 MistsOfPandaria 的 load_mop.xml），不能靠赛季名推导。
+    MDT 6.2+ 新格式不再声明赛季行，本函数返回空列表，由调用方配合
+    toc_interface_targets + seasons_from_tree 扫描目录兜底。
     """
     return [(m.group(1), f"load_{m.group(2)}.xml")
             for m in _TOC_LOAD_XML.finditer(toc_content)
@@ -94,9 +128,8 @@ def find_seasons(mdt_root: Path) -> list[tuple[str, str]]:
         except Exception:
             pass
     # 兜底：扫描所有含 load_*.xml 的顶层目录（跳过非赛季目录）
-    return sorted(
-        (p.parent.name, p.name) for p in mdt_root.glob("*/load_*.xml")
-        if p.is_file() and p.parent.name not in _IGNORE_DIRS
+    return seasons_from_tree(
+        str(p.relative_to(mdt_root)) for p in mdt_root.glob("*/load_*.xml") if p.is_file()
     )
 
 
