@@ -7,10 +7,12 @@ Wowhead 技能数据获取（原 spell_fetcher）
     { "<spell_id>": { "zhCN": {"name": ..., "description": ...},
                       "enUS": {"name": ..., "description": ...} } }
 
-旧版单语言缓存（{"name": ..., "description": ...}）在加载时自动迁移为 zhCN。
+--fetch 模式：全量重拉所有技能，不信任旧缓存（PTR/赛季初 Wowhead 数据常残缺、
+404 占位或翻译错误，每次构建都拿最新值，修正自动跟上）；单技能失败时回退
+缓存旧值保证 data.json 完整。缓存仅作兑底，不再"永久封印"错误。
+非 --fetch 模式：只读缓存，零请求（本地快速构建用）。
 
 拉取支持线程池并发（--wowhead-workers）+ 全局限流 + 指数退避/429 退避 + 断点续传。
-CI 默认只走缓存；新赛季在本地跑一次 --fetch 补全新技能再 push。
 """
 from __future__ import annotations
 import json
@@ -101,11 +103,6 @@ class SpellFetcher:
         desc_html = m.group(1) if m else tooltip_html.split("</table>")[-1]
         return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", desc_html)).strip()
 
-    def _missing_locales(self, entry: dict | None) -> list[str]:
-        """该技能还缺哪些语言（含旧缓存迁移后缺 enUS 的情况）。"""
-        return [lang for lang in self.langs
-                if not entry or lang not in entry or not entry[lang].get("name")]
-
     def _request(self, spell_id: int, lang: str) -> dict:
         """单个请求，返回 {"name","description"}；彻底失败抛异常由上层处理。"""
         url = self.API_URL.format(spell_id=spell_id)
@@ -136,71 +133,72 @@ class SpellFetcher:
         raise RuntimeError(f"技能 {spell_id} ({lang}) 请求失败")
 
     def fetch_spell(self, spell_id: int) -> dict | None:
-        """单个技能：补全所有缺失语言的缓存。已全缓存 / no_fetch 时返回现状。"""
+        """单个技能：--fetch 时全量重拉两种语言，失败或 404 时回退缓存旧值；否则只读缓存。"""
         key = str(spell_id)
-        entry = self.cache.get(key)
-        missing = self._missing_locales(entry)
-        if not missing:
-            return entry
+        entry = dict(self.cache.get(key) or {})
         if self.no_fetch:
-            return entry
+            return entry or None
 
-        entry = entry or {}
-        for lang in missing:
+        for lang in self.langs:
             try:
-                entry[lang] = self._request(spell_id, lang)
+                fresh = self._request(spell_id, lang)
             except RuntimeError:
-                return None  # 该技能拉取失败，本次不写缓存，下次重试
+                continue  # 拉取失败：保留缓存旧值兑底
+            # 404 占位（name=spell_id, desc 空）不覆盖已有真实数据，
+            # 避免 Wowhead 临时性未收录把好值降级成占位符
+            if fresh["name"] == str(spell_id) and lang in entry:
+                continue
+            entry[lang] = fresh
+        if not entry:
+            return None  # 全部失败且无缓存
         self.cache[key] = entry
         return entry
 
     def fetch_all_spells(self, spell_ids: set[int]) -> dict[int, dict]:
-        """批量获取（线程池并发）：只请求缺语言的，返回所有命中的结果（按语言嵌套）。
+        """批量获取（线程池并发）：--fetch 时全量重拉所有技能（失败回退缓存），否则零请求只读缓存。
 
         并发安全：工作线程只负责网络请求并返回结果，缓存写入/落盘都在主线程完成。
         每 SAVE_EVERY 个批量落盘一次 + 结束/中断时，断点续传。
         """
         results = {}
-        to_fetch = [(sid, self._missing_locales(self.cache.get(str(sid))))
-                    for sid in spell_ids]
-        to_fetch = [(sid, missing) for sid, missing in to_fetch if missing]
+        if self.no_fetch:
+            for sid in spell_ids:
+                if str(sid) in self.cache:
+                    results[sid] = self.cache[str(sid)]
+            print(f"  未开启 --fetch，读取缓存 {len(results)}/{len(spell_ids)} 个技能，零请求")
+            return results
 
-        if not to_fetch:
-            print(f"  全部 {len(spell_ids)} 个技能均命中缓存（{len(self.langs)} 语言），零请求")
-        elif self.no_fetch:
-            print(f"  未开启 --fetch，跳过 {len(to_fetch)} 个技能（缺 {self.langs}，旧缓存迁移后需补一次）")
-        else:
-            total = len(to_fetch)
-            print(f"  需要补全 {total} 个技能（语言: {', '.join(self.langs)}，并发 {self.workers} 线程）")
-            done = 0
-            interrupted = False
-            executor = ThreadPoolExecutor(max_workers=self.workers)
-            try:
-                futures = {executor.submit(self.fetch_spell, sid): sid for sid, _ in to_fetch}
-                for fut in as_completed(futures):
-                    sid = futures[fut]
-                    try:
-                        entry = fut.result()
-                    except Exception:
-                        entry = None
-                    done += 1
-                    if entry:
-                        names = " / ".join(
-                            entry.get(l, {}).get("name", "?") for l in self.langs if entry.get(l))
-                        print(f"  [{done}/{total}] 技能 {sid} ✓ {names}")
-                    else:
-                        print(f"  [{done}/{total}] 技能 {sid} ✗ 失败")
-                    if done % self.SAVE_EVERY == 0:
-                        self._save_cache()  # 批量落盘，断点续传
-            except KeyboardInterrupt:
-                interrupted = True
-                self._save_cache()
-                print(f"\n  用户中断，进度已保存（{done}/{total}），下次从断点继续")
-                raise
-            finally:
-                # 正常完成：等全部收尾；中断：不等待在途请求，直接取消
-                executor.shutdown(wait=not interrupted, cancel_futures=interrupted)
-                self._save_cache()
+        total = len(spell_ids)
+        print(f"  全量重拉 {total} 个技能（语言: {', '.join(self.langs)}，并发 {self.workers} 线程）")
+        done = 0
+        interrupted = False
+        executor = ThreadPoolExecutor(max_workers=self.workers)
+        try:
+            futures = {executor.submit(self.fetch_spell, sid): sid for sid in spell_ids}
+            for fut in as_completed(futures):
+                sid = futures[fut]
+                try:
+                    entry = fut.result()
+                except Exception:
+                    entry = None
+                done += 1
+                if entry:
+                    names = " / ".join(
+                        entry.get(l, {}).get("name", "?") for l in self.langs if entry.get(l))
+                    print(f"  [{done}/{total}] 技能 {sid} ✓ {names}")
+                else:
+                    print(f"  [{done}/{total}] 技能 {sid} ✗ 失败且无缓存")
+                if done % self.SAVE_EVERY == 0:
+                    self._save_cache()  # 批量落盘，断点续传
+        except KeyboardInterrupt:
+            interrupted = True
+            self._save_cache()
+            print(f"\n  用户中断，进度已保存（{done}/{total}），下次从断点继续")
+            raise
+        finally:
+            # 正常完成：等全部收尾；中断：不等待在途请求，直接取消
+            executor.shutdown(wait=not interrupted, cancel_futures=interrupted)
+            self._save_cache()
 
         for sid in spell_ids:
             key = str(sid)

@@ -192,7 +192,7 @@
   "1216592": {
     "zhCN": {
       "name": "闪电链",
-      "description": "施法者释放闪电攻击一名玩家，造成12点自然伤害。闪电随后跳跃至距离目标最近的另一名玩家。"
+      "description": "施法者释放闪电攻击一名玩家，造成61014点自然伤害。闪电随后跳跃至距离目标最近的另一名玩家。"
     },
     "enUS": {
       "name": "Chain Lightning",
@@ -292,7 +292,7 @@
   "1216637": {
     "zhCN": {
       "name": "血腥漩涡",
-      "description": "施法者疯狂旋转，持续8秒，每0.5秒对6码内的玩家造成3点物理伤害。"
+      "description": "施法者疯狂旋转，持续8秒，每0.5秒对6码内的玩家造成15254点物理伤害。"
     },
     "enUS": {
       "name": "Gore Whirl",
@@ -7050,7 +7050,7 @@
     },
     "enUS": {
       "name": "Spiteful Hunt",
-      "description": "Each Uncoiled Writhe fixates on an enemy. Those that reach their target apply Spiteful Venom."
+      "description": "Each Uncoiled Writhe fixates on an enemy."
     }
   },
   "1216538": {
@@ -7330,7 +7330,7 @@
     },
     "enUS": {
       "name": "Rumbling Ward",
-      "description": "Caster creates a shield around itself that absorbs incoming damage, and pulses 3 Nature damage to all enemies every 2 sec for 1 min."
+      "description": "Caster creates a shield around itself that absorbs incoming damage, and pulses 24246 Nature damage to all enemies every 2 sec for 1 min."
     }
   },
   "1296519": {
@@ -7340,7 +7340,7 @@
     },
     "enUS": {
       "name": "Rumbling Ward",
-      "description": "Caster creates a shield around itself that absorbs incoming damage, and pulses 3 Nature damage to all enemies every 2 sec for 1 min."
+      "description": "Caster creates a shield around itself that absorbs incoming damage, and pulses 24246 Nature damage to all enemies every 2 sec for 1 min."
     }
   },
   "1235079": {

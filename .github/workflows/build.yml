@@ -1,17 +1,13 @@
 name: Build & Update
 
+# 纯手动触发：不随 push、不按定时。新赛季/PTR 或想刷新数据时，在 Actions 页面手动 Run。
 on:
-  schedule:
-    - cron: '5 21 * * 1'          # 每周一 21:05 UTC 自动刷新（镜像 MDT 当前内容）
   workflow_dispatch:
     inputs:
       branch:
         description: 'MDT 分支（master=正式服, ptr12.1=PTR 测试服）'
         type: string
         default: 'master'
-  push:
-    branches: [master]
-    paths-ignore: ['data/**', 'data.json']   # 回写数据不触发重跑
 
 permissions:
   contents: write    # 回写 data.json + data/（技能缓存）
@@ -32,9 +28,9 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
-      - name: 构建数据（定向拉取 MDT，仅所需文件，自动补全 Wowhead 技能描述）
+      - name: 构建数据（定向拉取 MDT，仅所需文件，全量重拉 Wowhead 技能描述，失败回退缓存）
         run: |
-          python -m mdt_site --branch "${{ github.event_name == 'workflow_dispatch' && inputs.branch || 'master' }}" --fetch
+          python -m mdt_site --branch "${{ inputs.branch }}" --fetch
 
       - name: 回写数据（data.json + 技能缓存）
         run: |

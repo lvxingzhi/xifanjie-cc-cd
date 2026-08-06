@@ -8,7 +8,7 @@ mdt_site - WoW 大秘境技能速查站构建器（合并原 MDTSpellExporter + 
     python -m mdt_site                          # 远程拉取 MDT master 并构建（默认）
     python -m mdt_site --branch ptr12.1         # 拉取指定 MDT 分支（如 PTR 12.1）
     python -m mdt_site --mdt ../MythicDungeonTools   # 用本地 MDT clone（本地开发）
-    python -m mdt_site --fetch                  # 查询 Wowhead 补全未缓存技能描述（新赛季用）
+    python -m mdt_site --fetch                  # 全量重拉 Wowhead 技能描述（新赛季/PTR 用，失败回退缓存）
 """
 from __future__ import annotations
 import argparse
@@ -33,7 +33,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lang", default="zhCN", choices=["zhCN", "enUS", "zhTW"],
                         help="本地化语言")
     parser.add_argument("--fetch", action="store_true",
-                        help="查询 Wowhead 补全未缓存技能描述（新赛季用，平时走缓存零请求）")
+                        help="全量重拉 Wowhead 技能描述（新赛季/PTR 用，失败回退缓存）")
     parser.add_argument("--wowhead-workers", type=int, default=10,
                         help="Wowhead 拉取并发线程数（--fetch 时生效，默认 10）")
     parser.add_argument("--data-dir", type=Path, default=PROJECT_ROOT / "data",
