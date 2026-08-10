@@ -7550,7 +7550,7 @@
     },
     "enUS": {
       "name": "Infest",
-      "description": "The serpent infests players with eggs, inflicting 4 Nature damage every 1 sec for 6 sec. The infestations burst upon expiration, inflicting 7 Nature damage within 8 yards and creating &nbsp;Hatchlings."
+      "description": "The serpent infests players with eggs, inflicting 4 Nature damage every 1 sec for 5 sec. The infestations burst upon expiration, inflicting 7 Nature damage within 8 yards and creating &nbsp;Hatchlings."
     }
   },
   "1308865": {
@@ -7560,7 +7560,7 @@
     },
     "enUS": {
       "name": "Infest",
-      "description": "The serpent infests players with eggs, inflicting 4 Nature damage every 1 sec for 6 sec. The infestations burst upon expiration, inflicting 7 Nature damage within 8 yards and creating &nbsp;Hatchlings."
+      "description": "The serpent infests players with eggs, inflicting 4 Nature damage every 1 sec for 5 sec. The infestations burst upon expiration, inflicting 7 Nature damage within 8 yards and creating &nbsp;Hatchlings."
     }
   },
   "1214663": {
@@ -7750,7 +7750,7 @@
     },
     "enUS": {
       "name": "Unstable Totem",
-      "description": "The totem becomes unstable, inflicting 3 Nature damage every 1.5 sec until its chieftain returns or is slain."
+      "description": "The totem becomes unstable, inflicting 3 Nature damage every 2 sec until its chieftain returns or is slain."
     }
   },
   "1243408": {
@@ -7990,7 +7990,7 @@
     },
     "enUS": {
       "name": "Fang Empowered",
-      "description": "The Fang of Ula'tek pulses with strength, inflicting 155172 Nature damage to all players every 1 sec. This effect stacks."
+      "description": "The Fang of Ula'tek pulses with strength, inflicting 116379 Nature damage to all players every 1 sec. This effect stacks."
     }
   },
   "1247644": {
@@ -8010,7 +8010,7 @@
     },
     "enUS": {
       "name": "Fang Empowered",
-      "description": "The Fang of Ula'tek pulses with strength, inflicting 155172 Nature damage to all players every 1 sec. This effect stacks."
+      "description": "The Fang of Ula'tek pulses with strength, inflicting 116379 Nature damage to all players every 1 sec. This effect stacks."
     }
   },
   "1231262": {
@@ -8280,7 +8280,7 @@
     },
     "enUS": {
       "name": "Proof of Mastery",
-      "description": "Absorbing the might of the arena champion, increasing the target's Mastery by (5 * $mas)%."
+      "description": "Absorbing the might of the arena champion, increasing the target's Mastery by (3 * $mas)%."
     }
   },
   "1298903": {
@@ -8290,7 +8290,7 @@
     },
     "enUS": {
       "name": "Proof of Endurance",
-      "description": "Absorbing the might of the arena champion, increasing the target's Versatility by 5%."
+      "description": "Absorbing the might of the arena champion, increasing the target's Versatility by 3%."
     }
   },
   "1307098": {
@@ -8750,7 +8750,7 @@
     },
     "enUS": {
       "name": "Death Rattle",
-      "description": "Every snake within the Writhing Coil unleashes a relentless rattle, inflicting 9698 Physical damage every 1 sec. This effect stacks, and increases its applications every 1 sec."
+      "description": "The Writhing Coil unleashes a relentless rattle, inflicting 9698 Physical damage every 1 sec. This effect stacks, and increases its applications every 1 sec until the Writhing Coil is pulled apart."
     }
   },
   "1294958": {
@@ -8840,7 +8840,7 @@
     },
     "enUS": {
       "name": "Death Rattle",
-      "description": "Every snake within the Writhing Coil unleashes a relentless rattle, inflicting 9698 Physical damage every 1 sec. This effect stacks, and increases its applications every 1 sec."
+      "description": "The Writhing Coil unleashes a relentless rattle, inflicting 9698 Physical damage every 1 sec. This effect stacks, and increases its applications every 1 sec until the Writhing Coil is pulled apart."
     }
   },
   "1235616": {
@@ -8990,7 +8990,7 @@
     },
     "enUS": {
       "name": "Infest",
-      "description": "The serpent infests players with eggs, inflicting 4 Nature damage every 1 sec for 6 sec. The infestations burst upon expiration, inflicting 7 Nature damage within 8 yards and creating &nbsp;Hatchlings."
+      "description": "The serpent infests players with eggs, inflicting 4 Nature damage every 1 sec for 5 sec. The infestations burst upon expiration, inflicting 7 Nature damage within 8 yards and creating &nbsp;Hatchlings."
     }
   },
   "1235656": {
@@ -9060,7 +9060,7 @@
     },
     "enUS": {
       "name": "Infest",
-      "description": "The serpent infests players with eggs, inflicting 4 Nature damage every 1 sec for 6 sec. The infestations burst upon expiration, inflicting 7 Nature damage within 8 yards and creating &nbsp;Hatchlings."
+      "description": "The serpent infests players with eggs, inflicting 4 Nature damage every 1 sec for 5 sec. The infestations burst upon expiration, inflicting 7 Nature damage within 8 yards and creating &nbsp;Hatchlings."
     }
   },
   "1293022": {
