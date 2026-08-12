@@ -3,177 +3,139 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="西番芥的秘境工具箱 · WoW 大秘境技能速查，像玩游戏一样学副本！" />
+<meta name="description" content="西番芥的秘境工具箱 · WoW 大秘境技能速查" />
 <title>西番芥的秘境工具箱 · WoW 大秘境技能速查</title>
 <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2322C55E'/><rect width='64' height='64' fill='none' stroke='%2315803D' stroke-width='4'/><text x='50%25' y='56%25' font-family='PingFang SC,Microsoft Yahei,sans-serif' font-size='34' font-weight='800' fill='%23fff' text-anchor='middle' dominant-baseline='middle'>西</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=DM+Sans:wght@400;500;700&family=Press+Start+2P&family=Space+Grotesk:wght@500;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
 <style>
+  /* ===== 色板（参考 LearnHub / educational-platform demo） ===== */
   :root {
-    --text: #1E293B;
+    --primary: #FDBCB4;       /* 珊瑚粉（小面积点缀） */
+    --primary-dark: #F5A69D;
+    --primary-soft: #FFF0EE;
+    --secondary: #ADD8E6;     /* 天蓝 */
+    --secondary-dark: #8BC4D6;
+    --cta: #22C55E;           /* 绿：按钮 / 打断 */
+    --cta-dark: #16A34A;
+    --accent-purple: #E6E6FA; /* 淡紫 */
+    --accent-mint: #98FF98;   /* 薄荷 */
+    --bg: #FFFFFF;            /* 卡片底 */
+    --bg-cream: #FFF9F5;      /* 页面底（奶油） */
+    --text: #2D3748;
     --text-muted: #64748B;
     --border: #E2E8F0;
-    --bg: #FFF9F5;
-    --card: #FFFFFF;
-    --primary: #FDBCB4;   /* LearnHub 珊瑚粉 */
-    --primary-dark: #C9665A;   /* 深珊瑚：文字/链接用 */
-    --primary-soft: #FFF0EE;   /* 珊瑚浅底 */
-    --secondary: #ADD8E6;      /* 天蓝 */
-    --secondary-dark: #8BC4D6;
-    --cta: #22C55E;   /* 绿色 CTA */
-    --cta-dark: #16A34A;
-    --cta-soft: #DCFCE7;
-    --mint: #98FF98;
-    --mint-soft: #E9FFE9;
-    --pink: #F9A8D4;
-    --pink-soft: #FDF2F8;
-    --purple: #A78BFA;
-    --purple-soft: #EDE9FE;
-    --green: #22C55E;
-    --green-dark: #15803D;
-    --green-soft: #DCFCE7;
-    --off-bg: #FAF3ED;
-    --off-line: #DDD4CB;
-    --sh: 0 6px 0 rgba(30, 41, 59, .18), 0 14px 26px rgba(30, 41, 59, .10);
-    --nav-pink: #FDBCB4;      /* LearnHub 珊瑚粉 */
-    --nav-pink-deep: #F5A69D;
-    --nav-blue: #ADD8E6;      /* 天蓝 */
-    --nav-blue-deep: #8BC4D6;
-    --nav-green: #22C55E;     /* CTA 绿 */
-    --nav-green-deep: #16A34A;
+    /* clay 设计令牌（Neo-brutalism 风格） */
+    --br: 3px solid var(--text);
+    --br-thin: 2px solid var(--text);
+    --sh-xs: 2px 2px 0 var(--text);
+    --sh-sm: 4px 4px 0 var(--text);
+    --sh-md: 6px 6px 0 var(--text);
   }
   * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+  html, body { margin: 0; padding: 0; background: var(--bg-cream); color: var(--text); }
   body {
-    font: 14px/1.6 "DM Sans", "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", PingFang SC, "Microsoft Yahei", sans-serif;
+    font: 14px/1.6 "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", PingFang SC, "Microsoft Yahei", sans-serif;
     min-height: 100vh;
-    background-color: var(--bg);
-    background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 7px, rgba(30, 41, 59, .018) 7px, rgba(30, 41, 59, .018) 8px),
-      repeating-linear-gradient(90deg, transparent, transparent 7px, rgba(30, 41, 59, .018) 7px, rgba(30, 41, 59, .018) 8px);
   }
-  a { color: var(--primary-dark); text-decoration: none; }
+  /* Halftone 网点背景纹理 */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(45, 55, 72, .6) 1px, transparent 1px);
+    background-size: 22px 22px;
+    opacity: .05;
+  }
+  a { color: var(--text); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  /* ===== 顶部 Hero 区 ===== */
-  .hero {
-    position: relative; overflow: hidden;
-    background:
-      radial-gradient(720px 240px at 8% -25%, rgba(253, 188, 180, .32), transparent 60%),
-      radial-gradient(640px 240px at 40% -30%, rgba(249, 168, 212, .20), transparent 60%),
-      radial-gradient(600px 240px at 72% -25%, rgba(152, 255, 152, .20), transparent 60%),
-      radial-gradient(560px 220px at 95% -20%, rgba(173, 216, 230, .28), transparent 60%),
-      linear-gradient(180deg, #FFFFFF 0%, var(--bg) 100%);
-    border-bottom: 3px solid var(--text);
-    padding: 112px 24px 28px;
+  /* ===== clay 卡片（双向硬阴影，参考 demo） ===== */
+  .clay-card {
+    background: var(--bg);
+    border-radius: 24px;
+    border: var(--br);
+    box-shadow: var(--sh-md), inset 0 -4px rgba(0, 0, 0, .08);
   }
-  .hero-inner { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; }
-  /* 彩色装饰块：彩色方块 + 粗黑边框 + 粘土阴影（借鉴参考站） */
-  .blob {
-    position: absolute; pointer-events: none;
-    border: 3px solid var(--text);
-    border-radius: 14px;
-    box-shadow: 0 4px 0 rgba(30, 41, 59, .22), 0 10px 18px rgba(30, 41, 59, .12);
-    animation: floaty 9s ease-in-out infinite alternate;
-  }
-  .blob-1 { width: 46px; height: 46px; background: var(--pink); top: -12px; left: 4%; }
-  .blob-2 { width: 30px; height: 30px; background: var(--purple); top: 54px; right: 2.5%; animation-delay: 1.2s; }
-  .blob-3 { width: 24px; height: 24px; border-radius: 50%; background: var(--mint); bottom: 10px; left: 36%; animation-delay: 2.4s; }
-  .blob-4 { width: 38px; height: 38px; background: var(--primary-soft); bottom: -8px; right: 24%; animation-delay: 3s; }
-  @keyframes floaty {
-    from { transform: translateY(-6px); }
-    to   { transform: translateY(9px); }
-  }
+  .clay-hover { transition: box-shadow .15s ease, transform .15s ease; }
+  .clay-hover:hover { box-shadow: var(--sh-sm), inset 0 -4px rgba(0, 0, 0, .08); transform: translate(2px, 2px); }
 
-  .hero-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-
-  .brand-name .accent { color: var(--primary-dark); }
-  .brand-tag { font-size: 12.5px; color: var(--text-muted); font-weight: 600; }
-  .brand-tag .dot { color: var(--off-line); margin: 0 8px; }
-
-  /* ===== 成就统计卡片 ===== */
-  .stats {
-    margin-top: 22px;
-    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px;
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: .8rem 1.6rem; font-weight: 800; border-radius: 14px;
+    border: var(--br); box-shadow: var(--sh-sm);
+    transition: all .15s ease; cursor: pointer; white-space: nowrap;
   }
-  .stat {
-    background: #fff; border: 3px solid var(--text); border-radius: 16px;
-    box-shadow: var(--sh);
-    padding: 14px 16px;
+  .btn:hover { box-shadow: var(--sh-xs); transform: translate(2px, 2px); text-decoration: none; }
+  .btn:active { box-shadow: 0 0 0 var(--text); transform: translate(4px, 4px); }
+  .btn-primary { background: var(--cta); color: #fff; }
+  .btn-primary:hover { background: var(--cta-dark); }
+  .btn-secondary { background: var(--secondary); color: var(--text); }
+  .btn-secondary:hover { background: var(--secondary-dark); }
+
+  /* ===== 悬浮导航 ===== */
+  html { scroll-behavior: smooth; }
+  #toolbar { scroll-margin-top: 110px; }
+  .topnav { position: fixed; top: 1rem; left: 1rem; right: 1rem; z-index: 50; }
+  .topnav-inner {
+    max-width: 1152px; margin: 0 auto;
+    background: var(--bg); border-radius: 24px;
+    border: var(--br);
+    box-shadow: var(--sh-md), inset 0 -4px rgba(0, 0, 0, .08);
+    padding: 10px 16px;
     display: flex; align-items: center; gap: 12px;
-    transition: transform .15s;
   }
-  .stat:hover { transform: translateY(-3px); }
-  .stat .icon {
-    width: 50px; height: 50px; border-radius: 14px; flex: 0 0 auto;
-    display: grid; place-items: center; font-size: 24px;
-    border: 3px solid var(--text);
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .2);
+  .topnav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none !important; }
+  .topnav-logo {
+    width: 40px; height: 40px; border-radius: 14px; flex: 0 0 auto;
+    background: var(--primary); border: var(--br);
+    box-shadow: var(--sh-sm);
+    display: grid; place-items: center;
+    font-size: 19px; font-weight: 900; color: var(--text); line-height: 1;
   }
-  .stat .icon.i-coral { background: var(--mint); }
-  .stat .icon.i-blue { background: var(--secondary); }
-  .stat .icon.i-yellow { background: var(--pink); }
-  .stat .icon.i-purple { background: var(--purple); }
-  .stat .num {
-    font-family: "Space Grotesk", "Baloo 2", sans-serif;
-    font-size: 22px; font-weight: 700; color: var(--text); line-height: 1.2;
+  .topnav-name {
+    font-family: "Fredoka", "PingFang SC", sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--text); white-space: nowrap; line-height: 1.2;
   }
-  .stat .num.acc { color: var(--text); }
-  .stat .num.ok { color: var(--green-dark); }
-  .stat .num.mag { color: var(--text); }
-  .stat .label { font-size: 12px; color: var(--text-muted); margin-top: 4px; font-weight: 600; }
+  .topnav-name .acc { color: #D9745F; }
+  .topnav-links { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+  .topnav-links a {
+    padding: 7px 12px; border-radius: 10px; font-size: 14px; font-weight: 700;
+    color: var(--text-muted); text-decoration: none; white-space: nowrap; transition: all .15s;
+  }
+  .topnav-links a:hover { color: var(--text); background: var(--primary-soft); text-decoration: none; }
+  .topnav-right { display: flex; align-items: center; gap: 10px; }
+  .topnav-right .btn { padding: 8px 16px; font-size: 13px; }
+  .topnav-burger {
+    display: none; width: 40px; height: 40px; border-radius: 14px; flex: 0 0 auto;
+    background: var(--secondary); border: var(--br);
+    box-shadow: var(--sh-sm);
+    cursor: pointer; align-items: center; justify-content: center; color: var(--text);
+  }
+  .topnav-burger svg { width: 20px; height: 20px; }
+  .topnav-menu {
+    display: none; flex-direction: column; gap: 6px;
+    max-width: 1152px; margin: 8px auto 0;
+    background: var(--bg); border: var(--br); border-radius: 20px;
+    box-shadow: var(--sh-md), inset 0 -4px rgba(0, 0, 0, .08);
+    padding: 12px;
+  }
+  .topnav-menu.open { display: flex; }
+  .topnav-menu a {
+    display: block; padding: 11px 14px; border-radius: 12px;
+    font-size: 14px; font-weight: 700; color: var(--text);
+    text-decoration: none; transition: background .15s;
+  }
+  .topnav-menu a:hover { background: var(--primary-soft); }
+  .topnav-menu .btn { justify-content: center; margin-top: 4px; }
 
-  /* ===== 成就墙 ===== */
-  .achieve { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; }
-  .achieve .a {
-    display: inline-flex; align-items: center; gap: 6px;
-    border-radius: 999px; padding: 7px 16px; font-weight: 800; font-size: 13px;
-    border: 3px solid var(--text); box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
-    white-space: nowrap;
-  }
-  .achieve .a.off {
-    background: var(--off-bg); color: #94A3B8; box-shadow: 0 3px 0 var(--off-line); filter: grayscale(.5);
-  }
-  .achieve .a.a0.on { background: var(--green-soft); color: var(--green-dark); }
-  .achieve .a.a1.on { background: var(--pink); color: var(--text); }
-  .achieve .a.a2.on { background: var(--primary); color: var(--text); }
-  .achieve .a.a3.on { background: var(--purple-soft); color: #5B21B6; }
-
-  /* ===== 工具栏（游戏控制台） ===== */
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-  .toolbar {
-    margin-top: 18px;
-    padding: 13px 15px;
-    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
-    background: #fff; border: 3px solid var(--text); border-radius: 16px;
-    box-shadow: var(--sh);
-  }
-  .toolbar select, .toolbar input[type=text] {
-    background: #fff; border: 3px solid var(--text); color: var(--text);
-    padding: 8px 13px; border-radius: 12px; font-size: 13px; outline: none; font-weight: 600;
-    transition: border-color .15s, box-shadow .15s;
-  }
-  .toolbar select:focus, .toolbar input[type=text]:focus {
-    border-color: var(--primary); box-shadow: 0 0 0 4px rgba(253, 188, 180, .4);
-  }
-  .toolbar input[type=text] { min-width: 260px; flex: 1; max-width: 460px; }
-  .toolbar > label {
-    display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700;
-    color: var(--text-muted); cursor: pointer; user-select: none;
-    padding: 7px 14px; border-radius: 999px;
-    border: 3px solid var(--text); background: #fff;
-    transition: all .15s;
-  }
-  .toolbar > label:hover { border-color: var(--primary-dark); }
-  .toolbar > label:has(input:checked) {
-    color: var(--primary-dark); border-color: var(--primary); background: var(--primary-soft);
-  }
-  .toolbar input[type=checkbox] { accent-color: var(--primary); width: 15px; height: 15px; }
-
+  /* ===== 语言切换（胶囊） ===== */
   .lang-switch {
     display: inline-flex; gap: 4px;
-    background: var(--off-bg); border: 3px solid var(--text); border-radius: 999px; padding: 3px;
+    background: var(--bg-cream); border: var(--br); border-radius: 999px; padding: 3px;
   }
   .lang-switch button {
     background: transparent; color: var(--text-muted); border: none;
@@ -182,39 +144,94 @@
   }
   .lang-switch button.active {
     background: var(--primary); color: var(--text);
-    box-shadow: 0 2px 0 var(--primary-dark);
+    box-shadow: 2px 2px 0 var(--primary-dark);
   }
 
+  /* ===== Hero 区 ===== */
+  .hero { position: relative; overflow: hidden; padding: 132px 24px 56px; }
+  .hero-inner {
+    position: relative; z-index: 1; max-width: 1152px; margin: 0 auto;
+    display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center;
+  }
+  /* 有机 blob 小装饰（小面积彩色点缀） */
+  .blob {
+    position: absolute; pointer-events: none; z-index: 0;
+    border: var(--br);
+    animation: floaty 8s ease-in-out infinite alternate;
+  }
+  .blob-1 { width: 34px; height: 34px; background: var(--accent-mint); top: 96px; left: 6%; border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
+  .blob-2 { width: 26px; height: 26px; background: var(--accent-purple); top: 180px; right: 8%; border-radius: 40% 60% 70% 30%/50% 60% 40% 50%; animation-delay: 1.6s; }
+  .blob-3 { width: 22px; height: 22px; background: var(--secondary); bottom: 60px; left: 46%; border-radius: 55% 45% 60% 40%/45% 55% 45% 55%; animation-delay: 3s; }
+  @keyframes floaty {
+    from { transform: translateY(-5px) rotate(-4deg); }
+    to   { transform: translateY(7px) rotate(5deg); }
+  }
+
+  .hero h1 {
+    font-family: "Fredoka", "PingFang SC", sans-serif;
+    font-size: 44px; font-weight: 700; line-height: 1.15; margin: 0 0 24px;
+    color: var(--text);
+  }
+  .hero h1 .acc { color: #D9745F; }
+  .hero-btns { display: flex; flex-wrap: wrap; gap: 14px; }
+
+  /* ===== 统计卡 2x2（大数字 + 标签） ===== */
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .stat { padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+  .stat .num {
+    font-family: "Fredoka", "Nunito", sans-serif;
+    font-size: 32px; font-weight: 600; color: var(--text); line-height: 1.1;
+  }
+  .stat .num.ok { color: var(--cta-dark); }
+  .stat .label { font-size: 12.5px; color: var(--text-muted); font-weight: 700; }
+
+  /* ===== 主内容 ===== */
+  .container { max-width: 1152px; margin: 0 auto; padding: 0 24px 72px; }
+
+  /* 工具栏 */
+  .toolbar {
+    padding: 14px 16px;
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  }
+  .toolbar select, .toolbar input[type=text] {
+    background: var(--bg); border: var(--br); color: var(--text);
+    padding: 8px 13px; border-radius: 12px; font-size: 13px; outline: none; font-weight: 700;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .toolbar select:focus, .toolbar input[type=text]:focus {
+    border-color: var(--primary); box-shadow: 0 0 0 4px rgba(253, 188, 180, .4);
+  }
+  .toolbar input[type=text] { min-width: 240px; flex: 1; max-width: 420px; }
+  .toolbar > label {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700;
+    color: var(--text-muted); cursor: pointer; user-select: none;
+    padding: 7px 14px; border-radius: 999px;
+    border: var(--br); background: var(--bg);
+    transition: all .15s;
+  }
+  .toolbar > label:hover { border-color: var(--primary-dark); }
+  .toolbar > label:has(input:checked) {
+    color: #D9745F; border-color: var(--primary); background: var(--primary-soft);
+  }
+  .toolbar input[type=checkbox] { accent-color: var(--primary); width: 15px; height: 15px; }
   .toolbar .count {
     margin-left: auto; color: var(--text-muted); font-size: 12.5px; font-weight: 700; white-space: nowrap;
   }
-  .toolbar .count b { color: var(--primary-dark); font-weight: 900; }
+  .toolbar .count b { color: #D9745F; font-weight: 900; }
 
-  /* 技能掌握度进度条 */
-  .progress-chip { margin-left: auto; display: flex; align-items: center; gap: 10px; min-width: 210px; }
-  .progress-track {
-    flex: 1; height: 18px; background: var(--off-bg);
-    border-radius: 999px; border: 3px solid var(--text); overflow: hidden;
-  }
-  .progress-fill {
-    height: 100%; width: 0%; border-radius: 999px;
-    background: linear-gradient(90deg, var(--cta), var(--cta-dark));
-    transition: width .35s ease;
-  }
-
-  /* ===== 列设置 ===== */
+  /* 列设置 */
   .col-picker { position: relative; }
-  .col-picker button {
-    background: #fff; color: var(--text); border: 3px solid var(--text);
+  .col-picker > button {
+    background: var(--bg); color: var(--text); border: var(--br);
     border-radius: 12px; padding: 8px 14px; font-size: 13px; font-weight: 700; cursor: pointer;
-    transition: border-color .15s, box-shadow .15s;
+    transition: border-color .15s;
   }
-  .col-picker button:hover { border-color: var(--primary); }
+  .col-picker > button:hover { border-color: var(--primary); }
   .col-picker-menu {
     position: absolute; top: calc(100% + 8px); left: 0;
-    background: #fff; border: 3px solid var(--text); border-radius: 14px;
+    background: var(--bg); border: var(--br); border-radius: 14px;
     padding: 9px; min-width: 150px; z-index: 30;
-    box-shadow: 0 6px 0 rgba(30, 41, 59, .18), 0 16px 30px rgba(30, 41, 59, .14);
+    box-shadow: var(--sh-md);
     display: flex; flex-direction: column; gap: 2px;
   }
   .col-picker-menu[hidden] { display: none; }
@@ -223,183 +240,79 @@
     border-radius: 10px; cursor: pointer; font-size: 13px; font-weight: 700;
     color: var(--text-muted); user-select: none;
   }
-  .col-picker-menu label:hover { background: var(--primary-soft); color: var(--primary-dark); }
+  .col-picker-menu label:hover { background: var(--primary-soft); color: #D9745F; }
   .col-picker-menu input { accent-color: var(--primary); }
 
   /* ===== 表格 ===== */
-  main { padding: 18px 0 60px; }
-  .table-wrap {
-    background: #fff; border: 3px solid var(--text); border-radius: 16px;
-    box-shadow: var(--sh);
-    overflow: hidden;
-  }
+  .table-wrap { margin-top: 24px; overflow: hidden; }
   table { width: 100%; border-collapse: collapse; }
   thead th {
-    background: #FAF3ED; color: var(--text); text-align: left;
-    padding: 12px 14px; border-bottom: 3px solid var(--text);
-    font-family: "Space Grotesk", "Baloo 2", "PingFang SC", sans-serif;
-    font-weight: 700; font-size: 11px; white-space: nowrap;
-    text-transform: uppercase; letter-spacing: 1px;
+    background: var(--primary-soft); color: var(--text); text-align: left;
+    padding: 13px 14px; border-bottom: 3px solid var(--text);
+    font-family: "Fredoka", "PingFang SC", sans-serif;
+    font-weight: 600; font-size: 12px; white-space: nowrap;
+    letter-spacing: .5px;
   }
-  tbody td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
   tbody tr:last-child td { border-bottom: none; }
-  tbody tr:nth-child(even) { background: #FBF6F1; }
+  tbody tr:nth-child(even) { background: #FBF8F4; }
   tbody tr:hover { background: var(--primary-soft); }
 
-  /* 彩色小标签（弱化粉红黄，低饱和） */
+  /* 彩色小标签（pill，无边框，小面积） */
   .tag {
     display: inline-block; padding: 2px 11px; border-radius: 999px;
-    font-size: 12px; font-weight: 800; line-height: 1.7;
-    border: 2px solid var(--text); box-shadow: 0 2px 0 rgba(30, 41, 59, .22); white-space: nowrap;
+    font-size: 12px; font-weight: 800; line-height: 1.7; white-space: nowrap;
   }
-  .tag-int { background: var(--green-soft); color: var(--green-dark); }
-  .tag-mag { background: #DBF0F8; color: #1E6E96; }
-  .tag-enrage { background: #FFE9D9; color: #C2410C; }
-  .tag-bleed { background: #FBE8E8; color: #9F1239; }
-  .tag-poison { background: var(--green-soft); color: var(--green-dark); }
-  .tag-disease { background: #F0F7E6; color: #4D7C0F; }
-  .tag-curse { background: #EEEAFB; color: #5B21B6; }
-  .tag-boss {
-    background: linear-gradient(135deg, var(--cta), var(--cta-dark)); color: #fff;
-    box-shadow: 0 2px 0 rgba(30, 41, 59, .3);
-  }
-  .tag-no { color: #CBD5E1; border-color: transparent; box-shadow: none; background: transparent; }
+  .tag-int { background: var(--cta); color: #fff; padding: 3px 13px; font-size: 12.5px; }
+  .tag-mag { background: #DDEAF7; color: #1D5E9E; }
+  .tag-enrage { background: #FDE9D5; color: #B4530A; }
+  .tag-bleed { background: #FADFE1; color: #8E1E36; }
+  .tag-poison { background: #F5F1D8; color: #6E7F14; }
+  .tag-disease { background: #E4E8D8; color: #4E5F1E; }
+  .tag-curse { background: #E9E5F5; color: #533E8F; }
+  .tag-boss { background: #8B5CF6; color: #fff; }
+  .tag-no { color: #CBD5E1; background: transparent; }
   .desc { color: var(--text-muted); max-width: 520px; line-height: 1.6; }
-  .spellname a { color: var(--primary-dark); font-weight: 700; }
+  .spellname a { color: #C75F4A; font-weight: 800; }
   .spellname a:hover { color: var(--text); }
-  .spellname .sid { color: #94A3B8; font-size: 12px; margin-top: 2px; }
+  .spellname .sid { color: #9AA5B1; font-size: 12px; margin-top: 2px; }
   .dungeon { color: var(--text); font-weight: 800; white-space: nowrap; }
-  .mob { white-space: nowrap; font-weight: 600; }
+  .mob { white-space: nowrap; font-weight: 800; font-size: 13.5px; }
   .mob .en { color: var(--text-muted); font-size: 12px; font-weight: 400; }
 
-  .empty { padding: 70px 20px; text-align: center; color: var(--text-muted); font-weight: 600; }
-  .empty .big {
-    display: inline-grid; place-items: center; margin-bottom: 16px;
-    width: 96px; height: 96px; border-radius: 50%;
-    background: var(--primary-soft); border: 3px solid var(--text);
-    box-shadow: 0 5px 0 rgba(30, 41, 59, .2); font-size: 44px;
-  }
+  .empty { padding: 70px 20px; text-align: center; color: var(--text-muted); font-weight: 700; }
 
   /* ===== 页脚 ===== */
   .site-footer {
-    max-width: 1200px; margin: 10px auto 0; padding: 20px 24px;
+    max-width: 1152px; margin: 0 auto; padding: 24px;
     color: var(--text-muted); font-size: 13px;
-    border-top: 3px solid var(--text);
     display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
   }
-  .site-footer .author {
-    background: var(--primary-soft); color: var(--primary-dark);
-    border: 2px solid var(--text); border-radius: 999px; padding: 2px 12px; font-weight: 800;
-  }
+  .site-footer b { color: #C75F4A; }
   .site-footer .right { margin-left: auto; }
 
-  /* ===== 悬浮导航栏（LearnHub 粘土积木风） ===== */
-  html { scroll-behavior: smooth; }
-  #stats, #toolbar { scroll-margin-top: 104px; }
-  .topnav {
-    position: fixed; top: 1rem; left: 1rem; right: 1rem; z-index: 50;
-  }
-  .topnav-inner {
-    max-width: 1152px; margin: 0 auto;
-    background: #fff; border: 3px solid var(--text); border-radius: 18px;
-    box-shadow: 0 5px 0 rgba(30, 41, 59, .16), 0 14px 26px rgba(30, 41, 59, .12);
-    padding: 10px 16px;
-    display: flex; align-items: center; gap: 12px;
-  }
-  .topnav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none !important; }
-  .topnav-logo {
-    width: 40px; height: 40px; border-radius: 12px; flex: 0 0 auto;
-    background: var(--nav-pink); border: 3px solid var(--text);
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
-    display: grid; place-items: center;
-    font-family: "ZCOOL KuaiLe", "PingFang SC", sans-serif;
-    font-size: 19px; font-weight: 900; color: var(--text); line-height: 1;
-  }
-  .topnav-name {
-    font-family: "ZCOOL KuaiLe", "Baloo 2", "PingFang SC", sans-serif;
-    font-size: 18px; font-weight: 900; color: var(--text); white-space: nowrap; line-height: 1.2;
-  }
-  .topnav-name .acc { color: #E07A6E; }
-  .topnav-links { display: flex; align-items: center; gap: 4px; margin-left: auto; }
-  .topnav-links a {
-    padding: 7px 12px; border-radius: 10px; font-size: 14px; font-weight: 800;
-    color: var(--text-muted); text-decoration: none; white-space: nowrap; transition: all .15s;
-  }
-  .topnav-links a:hover { color: var(--text); background: #FFF3F0; }
-  .topnav-right { display: flex; align-items: center; gap: 10px; }
-  .topnav-chip {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: #FFF3F0; color: #C06050;
-    font-family: "Press Start 2P", "Space Grotesk", sans-serif;
-    font-size: 10px; font-weight: 700; letter-spacing: .5px;
-    border: 3px solid var(--text); border-radius: 999px; padding: 7px 12px;
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .25); white-space: nowrap;
-  }
-  .topnav-cta {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--nav-green); color: #fff;
-    border: 3px solid var(--nav-green-deep); border-radius: 12px;
-    padding: 7px 16px; font-size: 14px; font-weight: 800;
-    box-shadow: 0 3px 0 var(--nav-green-deep);
-    text-decoration: none !important; white-space: nowrap;
-    transition: transform .06s, box-shadow .06s;
-  }
-  .topnav-cta:hover { transform: translateY(-2px); box-shadow: 0 5px 0 var(--nav-green-deep); }
-  .topnav-cta:active { transform: translateY(1px); box-shadow: 0 2px 0 var(--nav-green-deep); }
-  .topnav-burger {
-    display: none; width: 40px; height: 40px; border-radius: 12px; flex: 0 0 auto;
-    background: var(--nav-blue); border: 3px solid var(--text);
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
-    cursor: pointer; align-items: center; justify-content: center; color: var(--text);
-  }
-  .topnav-burger svg { width: 20px; height: 20px; }
-  .topnav-menu {
-    display: none; flex-direction: column; gap: 4px;
-    max-width: 1152px; margin: 8px auto 0;
-    background: #fff; border: 3px solid var(--text); border-radius: 16px;
-    box-shadow: 0 5px 0 rgba(30, 41, 59, .16), 0 14px 26px rgba(30, 41, 59, .12);
-    padding: 10px;
-  }
-  .topnav-menu.open { display: flex; }
-  .topnav-menu a {
-    display: block; padding: 11px 14px; border-radius: 10px;
-    font-size: 14px; font-weight: 800; color: var(--text);
-    text-decoration: none; transition: background .15s;
-  }
-  .topnav-menu a:hover { background: var(--primary-soft); }
-  .topnav-menu .topnav-cta { justify-content: center; margin-top: 4px; }
-
   /* ===== 响应式 ===== */
-  @media (max-width: 1000px) {
-    .stats { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 900px) {
+  @media (max-width: 960px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 32px; }
+    .topnav-links { display: none; }
+    .topnav-right { margin-left: auto; }
+    .topnav-burger { display: inline-flex; }
     .toolbar input[type=text] { min-width: 0; max-width: none; width: 100%; }
-    .progress-chip { width: 100%; min-width: 0; margin-left: 0; }
     .toolbar .count { margin-left: 0; }
     .desc { max-width: 300px; }
   }
   @media (max-width: 600px) {
-    .stats { grid-template-columns: 1fr 1fr; gap: 12px; }
-    .hero { padding: 104px 16px 20px; }
-    .container { padding: 0 12px; }
-    .brand-name { font-size: 21px; }
-    .stat { padding: 12px; gap: 10px; }
-    .stat .icon { width: 44px; height: 44px; font-size: 20px; }
-    .stat .num { font-size: 18px; }
-    thead th, tbody td { padding: 9px 11px; font-size: 13px; }
-    .blob { display: none; }
-  }
-  @media (max-width: 900px) {
-    .topnav-links { display: none; }
-    .topnav-right { margin-left: auto; }
-    .topnav-burger { display: inline-flex; }
-  }
-  @media (max-width: 600px) {
+    .hero { padding: 120px 16px 40px; }
+    .hero h1 { font-size: 32px; }
+    .container { padding: 0 12px 56px; }
+    .stats { gap: 12px; }
+    .stat { padding: 14px; }
+    .stat .num { font-size: 26px; }
     .topnav-name .acc { display: none; }
-    .topnav-chip { display: none; }
     .topnav-inner { padding: 8px 12px; gap: 8px; }
-    .topnav-cta { padding: 7px 12px; }
+    .topnav-right .btn { padding: 7px 12px; }
+    .blob { display: none; }
+    thead th, tbody td { padding: 9px 11px; font-size: 13px; }
   }
 </style>
 </head>
@@ -412,24 +325,26 @@
       <span class="topnav-name">西番芥的<span class="acc">秘境工具箱</span></span>
     </a>
     <div class="topnav-links">
-      <a href="cards.html" data-i18n="navCards">副本卡片</a>
-      <a href="#stats" data-i18n="navStats">数据总览</a>
       <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener" data-i18n="navBili">B站主页</a>
     </div>
     <div class="topnav-right">
-      <span class="topnav-chip">🦉 Lv.1</span>
-      <a href="#toolbar" class="topnav-cta" data-i18n="navCta">开始查询</a>
+      <div class="lang-switch" id="langSwitch">
+        <button type="button" data-lang="zh" class="active">中文</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a href="cards.html" class="btn btn-primary" data-i18n="navCta">副本卡片</a>
     </div>
     <button class="topnav-burger" id="topnavBurger" aria-label="打开菜单" aria-expanded="false">
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
     </button>
   </div>
   <div class="topnav-menu" id="topnavMenu">
-    <span class="topnav-chip">🦉 Lv.1</span>
-    <a href="cards.html" data-i18n="navCards">副本卡片</a>
-    <a href="#stats" data-i18n="navStats">数据总览</a>
+    <div class="lang-switch">
+      <button type="button" data-lang="zh" class="active">中文</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
     <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener" data-i18n="navBili">B站主页</a>
-    <a href="#toolbar" class="topnav-cta" data-i18n="navCta">开始查询</a>
+    <a href="cards.html" class="btn btn-primary" data-i18n="navCta">副本卡片</a>
   </div>
 </nav>
 
@@ -437,51 +352,38 @@
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
-  <div class="blob blob-4"></div>
 
   <div class="hero-inner">
-    <div class="hero-row">
-      <div class="brand">
-        <div class="brand-name">西番芥的<span class="accent">秘境工具箱</span></div>
-        <div class="brand-tag">
-          WoW 大秘境技能速查
-          <span class="dot">·</span>
-          数据基于 MythicDungeonTools
-          <span class="dot">·</span>
-          更新于 <span id="updated">—</span>
-        </div>
+    <div>
+      <h1>西番芥的<span class="acc">秘境工具箱</span></h1>
+      <div class="hero-btns">
+        <a href="cards.html" class="btn btn-primary" data-i18n="navCta">副本卡片</a>
       </div>
     </div>
 
     <div class="stats" id="stats">
-      <div class="stat">
-        <div class="icon i-coral">📚</div>
-        <div><div class="num" id="statTotal">—</div><div class="label" data-i18n="statTotal">总技能条目</div></div>
+      <div class="stat clay-card clay-hover">
+        <div class="num" id="statTotal">—</div>
+        <div class="label" data-i18n="statTotal">总技能条目</div>
       </div>
-      <div class="stat">
-        <div class="icon i-blue">🏰</div>
-        <div><div class="num acc" id="statDungeon">—</div><div class="label" data-i18n="statDungeon">覆盖副本</div></div>
+      <div class="stat clay-card clay-hover">
+        <div class="num" id="statDungeon">—</div>
+        <div class="label" data-i18n="statDungeon">覆盖副本</div>
       </div>
-      <div class="stat">
-        <div class="icon i-yellow">⚡</div>
-        <div><div class="num ok" id="statInt">—</div><div class="label" data-i18n="statInt">可打断技能</div></div>
+      <div class="stat clay-card clay-hover">
+        <div class="num ok" id="statInt">—</div>
+        <div class="label" data-i18n="statInt">可打断技能</div>
       </div>
-      <div class="stat">
-        <div class="icon i-purple">✨</div>
-        <div><div class="num mag" id="statMag">—</div><div class="label" data-i18n="statMag">魔法可驱散</div></div>
+      <div class="stat clay-card clay-hover">
+        <div class="num" id="statMag">—</div>
+        <div class="label" data-i18n="statMag">魔法可驱散</div>
       </div>
     </div>
-
-    <div class="achieve" id="achieve"></div>
   </div>
 </section>
 
 <div class="container">
-  <div class="toolbar" id="toolbar">
-    <div class="lang-switch" id="langSwitch">
-      <button type="button" data-lang="zh" class="active">中文</button>
-      <button type="button" data-lang="en">EN</button>
-    </div>
+  <div class="toolbar clay-card" id="toolbar">
     <select id="season"><option value="" data-i18n="allSeasons">全部赛季</option></select>
     <select id="dungeon"><option value="" data-i18n="allDungeons">全部副本</option></select>
     <input type="text" id="q" placeholder="搜索 技能名 / 怪物 / 描述…" autocomplete="off" />
@@ -491,53 +393,40 @@
       <button type="button" id="colPickerBtn"><span data-i18n="colPicker">列设置</span> ▾</button>
       <div class="col-picker-menu" id="colPickerMenu" hidden></div>
     </div>
-    <div class="progress-chip">
-      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
-      <span class="count" id="count">加载中…</span>
-    </div>
+    <span class="count" id="count">加载中…</span>
   </div>
 
-  <main>
-    <div class="table-wrap">
-      <table id="tbl">
-        <thead>
-          <tr>
-            <th class="col-dungeon" data-i18n="dungeon">副本</th>
-            <th class="col-mob" data-i18n="mob">怪物</th>
-            <th class="col-spell" data-i18n="spell">技能</th>
-            <th class="col-int" data-i18n="int">打断</th>
-            <th class="col-mag" data-i18n="mag">魔法</th>
-            <th class="col-enrage" data-i18n="enrage">激怒</th>
-            <th class="col-bleed" data-i18n="bleed">流血</th>
-            <th class="col-poison" data-i18n="poison">中毒</th>
-            <th class="col-disease" data-i18n="disease">疾病</th>
-            <th class="col-curse" data-i18n="curse">诅咒</th>
-            <th class="col-desc" data-i18n="desc">描述</th>
-          </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
-      <div class="empty" id="empty" hidden></div>
-    </div>
-  </main>
+  <div class="table-wrap clay-card">
+    <table id="tbl">
+      <thead>
+        <tr>
+          <th class="col-dungeon" data-i18n="dungeon">副本</th>
+          <th class="col-mob" data-i18n="mob">怪物</th>
+          <th class="col-spell" data-i18n="spell">技能</th>
+          <th class="col-int" data-i18n="int">打断</th>
+          <th class="col-mag" data-i18n="mag">魔法</th>
+          <th class="col-enrage" data-i18n="enrage">激怒</th>
+          <th class="col-bleed" data-i18n="bleed">流血</th>
+          <th class="col-poison" data-i18n="poison">中毒</th>
+          <th class="col-disease" data-i18n="disease">疾病</th>
+          <th class="col-curse" data-i18n="curse">诅咒</th>
+          <th class="col-desc" data-i18n="desc">描述</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <div class="empty" id="empty" hidden></div>
+  </div>
 </div>
 
 <footer class="site-footer">
-  <span>由 <span class="author">西番芥</span> 整理 · 仅供 WoW 玩家学习交流</span>
+  <span>由 <b>西番芥</b> 整理 · 仅供 WoW 玩家学习交流</span>
   <span class="right">数据源：MythicDungeonTools · 暴雪官方本地化</span>
 </footer>
 
 <script>
 const WOWHEAD_BASE = "https://www.wowhead.com/spell=";
 const AUTHOR = "西番芥";
-
-// 成就墙：满足条件即点亮（gamified）
-const ACH = [
-  { icon: "🏰", zh: "副本开拓者", en: "Dungeon Explorer", need: (s) => s.dungeons >= 8 },
-  { icon: "📚", zh: "技能百科", en: "Spell Master", need: (s) => s.total >= 300 },
-  { icon: "⚡", zh: "打断大师", en: "Interrupt Ace", need: (s) => s.intCount >= 80 },
-  { icon: "✨", zh: "净化使者", en: "Purifier", need: (s) => s.magCount >= 40 },
-];
 
 // 列定义：key 对应 CSS class col-xxx，label 是显示名，default 是默认是否显示
 const COLUMNS = [
@@ -650,7 +539,7 @@ const I18N = {
     statTotal: "总技能条目", statDungeon: "覆盖副本", statInt: "可打断技能", statMag: "魔法可驱散",
     empty: "没有匹配的技能，换个关键词再试试吧！",
     loading: "加载中…", loadFail: "加载失败",
-    navCards: "副本卡片", navStats: "数据总览", navBili: "B站主页", navCta: "开始查询",
+    navBili: "B站主页", navCta: "副本卡片",
   },
   en: {
     dungeon: "Dungeon", mob: "Mob", spell: "Spell",
@@ -665,7 +554,7 @@ const I18N = {
     statTotal: "Total Spells", statDungeon: "Dungeons", statInt: "Interruptible", statMag: "Magic (Dispel)",
     empty: "No matching spells. Try another keyword!",
     loading: "Loading…", loadFail: "Load failed",
-    navCards: "Dungeon Cards", navStats: "Overview", navBili: "Bilibili", navCta: "Start Now",
+    navBili: "Bilibili", navCta: "Dungeon Cards",
   },
 };
 const t = (k) => (I18N[state.lang] && I18N[state.lang][k]) || I18N.zh[k] || k;
@@ -683,12 +572,10 @@ function applyStaticLang() {
   renderColPickerMenu();
 }
 
-// 完整切换：静态文案 + 副本下拉显示名 + 表格数据 + 成就墙
+// 完整切换：静态文案 + 副本下拉显示名 + 表格数据
 function applyLang() {
   applyStaticLang();
   refreshDungeonSelect();
-  renderAchievements();
-  renderLevel();
   render();
 }
 
@@ -697,29 +584,6 @@ function dungeonLabel(d) {
   const en = state.lang === "en";
   const name = en ? (d.en || d.name) : d.name;
   return name + (en ? " (" + d.count + ")" : "（" + d.count + "）");
-}
-
-// 成就墙
-function renderAchievements() {
-  const s = {
-    dungeons: state.dungeons.length,
-    total: state.rows.length,
-    intCount: state.intCount,
-    magCount: state.magCount,
-  };
-  $("#achieve").innerHTML = ACH.map((a, i) => {
-    const on = a.need(s);
-    const name = state.lang === "en" ? a.en : a.zh;
-    return '<span class="a a' + i + ' ' + (on ? "on" : "off") + '" title="' + escapeHtml(name) + '">' +
-      a.icon + ' ' + escapeHtml(name) + '</span>';
-  }).join("");
-}
-
-// 等级徽章
-function renderLevel() {
-  const lvl = Math.min(99, 1 + Math.floor(state.rows.length / 40));
-  const txt = "🦉 " + (state.lang === "en" ? "LV." : "Lv.") + " " + lvl;
-  document.querySelectorAll(".topnav-chip").forEach((c) => (c.textContent = txt));
 }
 
 async function load() {
@@ -779,13 +643,6 @@ async function load() {
     $("#statDungeon").textContent = state.dungeons.length;
     $("#statInt").textContent = state.intCount;
     $("#statMag").textContent = state.magCount;
-    // 展示构建时间与 MDT 数据版本（而非浏览器时间）
-    const built = data.builtAt ? new Date(data.builtAt) : null;
-    const sha = (data.mdtSha || "").slice(0, 7);
-    $("#updated").textContent = built
-      ? built.toLocaleDateString() + (sha ? " · MDT " + sha : "")
-      : "—";
-
     applyLang();
   } catch (err) {
     $("#count").textContent = t("loadFail");
@@ -812,9 +669,8 @@ function render() {
     return true;
   });
 
-  // 技能掌握度进度条
+  // 技能掌握度
   const hit = list.length, total = state.rows.length;
-  $("#progFill").style.width = total ? Math.round(hit / total * 100) + "%" : "0%";
 
   $("#count").textContent = t("countHit") + " ";
   const b = document.createElement("b");
@@ -845,7 +701,7 @@ function render() {
     const desc = en ? (r.descriptionEn || r.description) : r.description;
     return "<tr>" +
     "<td class=\"dungeon col-dungeon\">" + escapeHtml(dungeonName) + "</td>" +
-    "<td class=\"mob col-mob\">" + (r.isBoss ? "<span class=\"tag tag-boss\">⭐ " + t("tagBoss") + "</span> " : "") + escapeHtml(mobMain) + (mobSub ? "<br><span class=\"en\">" + escapeHtml(mobSub) + "</span>" : "") + "</td>" +
+    "<td class=\"mob col-mob\">" + (r.isBoss ? "<span class=\"tag tag-boss\">" + t("tagBoss") + "</span> " : "") + escapeHtml(mobMain) + (mobSub ? "<br><span class=\"en\">" + escapeHtml(mobSub) + "</span>" : "") + "</td>" +
     "<td class=\"spellname col-spell\"><a href=\"" + WOWHEAD_BASE + encodeURIComponent(r.spellId) + "\" target=\"_blank\" rel=\"noopener\">" + escapeHtml(spellName) + "</a>" +
     "<div class=\"sid\">ID " + escapeHtml(r.spellId) + "</div></td>" +
     "<td class=\"col-int\">" + tagCell(r.interruptible, "int", "tagInt") + "</td>" +
@@ -886,7 +742,7 @@ function bindEvents() {
   $("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
   $("#onlyInterrupt").addEventListener("change", (e) => { state.onlyInterrupt = e.target.checked; render(); });
   $("#onlyMagic").addEventListener("change", (e) => { state.onlyMagic = e.target.checked; render(); });
-  // 中英切换
+  // 中英切换（导航 + 移动端菜单）
   document.querySelectorAll("#langSwitch button").forEach((btn) => {
     btn.addEventListener("click", () => {
       state.lang = btn.getAttribute("data-lang") === "en" ? "en" : "zh";

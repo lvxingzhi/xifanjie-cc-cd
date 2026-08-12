@@ -7,181 +7,241 @@
 <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2322C55E'/><rect width='64' height='64' fill='none' stroke='%2315803D' stroke-width='4'/><text x='50%25' y='56%25' font-family='PingFang SC,Microsoft Yahei,sans-serif' font-size='34' font-weight='800' fill='%23fff' text-anchor='middle' dominant-baseline='middle'>西</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=DM+Sans:wght@400;500;700&family=Press+Start+2P&family=Space+Grotesk:wght@500;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
 <style>
+  /* ===== 色板（与 index.html 一致） ===== */
   :root {
-    --text: #1E293B;
+    --primary: #FDBCB4;
+    --primary-dark: #F5A69D;
+    --primary-soft: #FFF0EE;
+    --secondary: #ADD8E6;
+    --secondary-dark: #8BC4D6;
+    --cta: #22C55E;
+    --cta-dark: #16A34A;
+    --accent-purple: #E6E6FA;
+    --accent-mint: #98FF98;
+    --bg: #FFFFFF;
+    --bg-cream: #FFF9F5;
+    --text: #2D3748;
     --text-muted: #64748B;
     --border: #E2E8F0;
-    --bg: #FFF9F5;
-    --card: #FFFFFF;
-    --primary: #FDBCB4;   /* LearnHub 珊瑚粉 */
-    --primary-dark: #C9665A;   /* 深珊瑚：文字/链接用 */
-    --primary-soft: #FFF0EE;   /* 珊瑚浅底 */
-    --secondary: #ADD8E6;      /* 天蓝 */
-    --secondary-dark: #8BC4D6;
-    --cta: #22C55E;   /* 绿色 CTA */
-    --cta-dark: #16A34A;
-    --cta-soft: #DCFCE7;
-    --mint: #98FF98;
-    --mint-soft: #E9FFE9;
-    --pink: #F9A8D4;
-    --pink-soft: #FDF2F8;
-    --purple: #A78BFA;
-    --purple-soft: #EDE9FE;
-    --green: #22C55E;
-    --green-dark: #15803D;
-    --green-soft: #DCFCE7;
-    --off-bg: #FAF3ED;
-    --off-line: #DDD4CB;
-    --sh: 0 6px 0 rgba(30, 41, 59, .18), 0 14px 26px rgba(30, 41, 59, .10);
-    --nav-pink: #FDBCB4;      /* LearnHub 珊瑚粉 */
-    --nav-pink-deep: #F5A69D;
-    --nav-blue: #ADD8E6;      /* 天蓝 */
-    --nav-blue-deep: #8BC4D6;
-    --nav-green: #22C55E;     /* CTA 绿 */
-    --nav-green-deep: #16A34A;
+    /* clay 设计令牌（Neo-brutalism 风格） */
+    --br: 3px solid var(--text);
+    --br-thin: 2px solid var(--text);
+    --sh-xs: 2px 2px 0 var(--text);
+    --sh-sm: 4px 4px 0 var(--text);
+    --sh-md: 6px 6px 0 var(--text);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font: 13px/1.6 "DM Sans", "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", PingFang SC, "Microsoft Yahei", sans-serif;
-    background-color: var(--bg);
-    background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 7px, rgba(30, 41, 59, .018) 7px, rgba(30, 41, 59, .018) 8px),
-      repeating-linear-gradient(90deg, transparent, transparent 7px, rgba(30, 41, 59, .018) 7px, rgba(30, 41, 59, .018) 8px);
+    font: 13px/1.6 "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", PingFang SC, "Microsoft Yahei", sans-serif;
+    background-color: var(--bg-cream);
     color: var(--text);
     padding: 96px 12px 40px;
     min-height: 100vh;
   }
+  /* Halftone 网点背景纹理 */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(45, 55, 72, .6) 1px, transparent 1px);
+    background-size: 22px 22px;
+    opacity: .05;
+  }
+  a { color: var(--text); text-decoration: none; }
+
+  /* ===== clay 卡片 ===== */
+  .clay-card {
+    background: var(--bg);
+    border-radius: 24px;
+    border: var(--br);
+    box-shadow: var(--sh-md), inset 0 -4px rgba(0, 0, 0, .08);
+  }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: .7rem 1.4rem; font-weight: 800; border-radius: 14px;
+    border: var(--br); box-shadow: var(--sh-sm);
+    transition: all .15s ease; cursor: pointer; white-space: nowrap;
+  }
+  .btn:hover { box-shadow: var(--sh-xs); transform: translate(2px, 2px); text-decoration: none; }
+  .btn:active { box-shadow: 0 0 0 var(--text); transform: translate(4px, 4px); }
+  .btn-primary { background: var(--cta); color: #fff; }
+  .btn-primary:hover { background: var(--cta-dark); }
+  .btn-secondary { background: var(--secondary); color: var(--text); }
+
+  /* ===== 悬浮导航 ===== */
+  .topnav { position: fixed; top: 1rem; left: 1rem; right: 1rem; z-index: 50; }
+  .topnav-inner {
+    max-width: 1152px; margin: 0 auto;
+    background: var(--bg); border-radius: 24px;
+    border: var(--br);
+    box-shadow: var(--sh-md), inset 0 -4px rgba(0, 0, 0, .08);
+    padding: 10px 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .topnav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none !important; }
+  .topnav-logo {
+    width: 40px; height: 40px; border-radius: 14px; flex: 0 0 auto;
+    background: var(--primary); border: var(--br);
+    box-shadow: var(--sh-sm);
+    display: grid; place-items: center;
+    font-size: 19px; font-weight: 900; color: var(--text); line-height: 1;
+  }
+  .topnav-name {
+    font-family: "Fredoka", "PingFang SC", sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--text); white-space: nowrap; line-height: 1.2;
+  }
+  .topnav-name .acc { color: #D9745F; }
+  .topnav-links { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+  .topnav-links a {
+    padding: 7px 12px; border-radius: 10px; font-size: 14px; font-weight: 700;
+    color: var(--text-muted); text-decoration: none; white-space: nowrap; transition: all .15s;
+  }
+  .topnav-links a:hover { color: var(--text); background: var(--primary-soft); text-decoration: none; }
+  .topnav-right { display: flex; align-items: center; gap: 10px; }
+  .topnav-right .btn { padding: 8px 16px; font-size: 13px; }
+  .topnav-burger {
+    display: none; width: 40px; height: 40px; border-radius: 14px; flex: 0 0 auto;
+    background: var(--secondary); border: var(--br);
+    box-shadow: var(--sh-sm);
+    cursor: pointer; align-items: center; justify-content: center; color: var(--text);
+  }
+  .topnav-burger svg { width: 20px; height: 20px; }
+  .topnav-menu {
+    display: none; flex-direction: column; gap: 6px;
+    max-width: 1152px; margin: 8px auto 0;
+    background: var(--bg); border: var(--br); border-radius: 20px;
+    box-shadow: var(--sh-md), inset 0 -4px rgba(0, 0, 0, .08);
+    padding: 12px;
+  }
+  .topnav-menu.open { display: flex; }
+  .topnav-menu a {
+    display: block; padding: 11px 14px; border-radius: 12px;
+    font-size: 14px; font-weight: 700; color: var(--text);
+    text-decoration: none; transition: background .15s;
+  }
+  .topnav-menu a:hover { background: var(--primary-soft); }
+  .topnav-menu .btn { justify-content: center; margin-top: 4px; }
+
+  /* ===== 语言切换 ===== */
+  .lang-switch {
+    display: inline-flex; gap: 4px;
+    background: var(--bg-cream); border: var(--br); border-radius: 999px; padding: 3px;
+  }
+  .lang-switch button {
+    background: transparent; color: var(--text-muted); border: none;
+    padding: 5px 12px; font-size: 13px; font-weight: 700; cursor: pointer; line-height: 1.3;
+    border-radius: 999px;
+  }
+  .lang-switch button.active {
+    background: var(--primary); color: var(--text);
+    box-shadow: 2px 2px 0 var(--primary-dark);
+  }
 
   /* ===== 工具栏 ===== */
   .toolbar {
-    max-width: 860px; margin: 0 auto 18px;
-    padding: 11px 14px; background: #fff; border: 3px solid var(--text); border-radius: 16px;
-    box-shadow: var(--sh);
+    max-width: 860px; margin: 0 auto 20px;
+    padding: 12px 14px;
     display: flex; flex-wrap: wrap; gap: 9px; align-items: center;
   }
   .toolbar select, .toolbar button {
-    background: #fff; color: var(--text); border: 3px solid var(--text);
+    background: var(--bg); color: var(--text); border: var(--br);
     border-radius: 12px; padding: 7px 12px; font-size: 13px; font-weight: 700; cursor: pointer;
     transition: border-color .15s;
   }
   .toolbar select:hover, .toolbar button:hover { border-color: var(--primary); }
   .toolbar .share-btn {
-    background: linear-gradient(135deg, var(--cta-dark), var(--cta)); color: #fff;
-    box-shadow: 0 3px 0 var(--cta-dark);
+    background: var(--cta); color: #fff;
+    box-shadow: 3px 3px 0 var(--cta-dark);
   }
-  .toolbar .share-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--cta-dark); }
-  .toolbar .lang-switch {
-    display: inline-flex; gap: 4px;
-    background: var(--off-bg); border: 3px solid var(--text); border-radius: 999px; padding: 3px;
-  }
-  .toolbar .lang-switch button {
-    background: transparent; color: var(--text-muted); border: none;
-    padding: 5px 12px; font-size: 13px; font-weight: 700; cursor: pointer; line-height: 1.3;
-    border-radius: 999px;
-  }
-  .toolbar .lang-switch button.active {
-    background: var(--primary); color: var(--text);
-    box-shadow: 0 2px 0 var(--primary-dark);
-  }
+  .toolbar .share-btn:hover { background: var(--cta-dark); box-shadow: 1px 1px 0 var(--cta-dark); transform: translate(2px, 2px); }
   .toolbar .hint { color: var(--text-muted); font-size: 11.5px; font-weight: 600; margin-left: auto; }
 
   /* ===== 卡片容器 ===== */
-  .cards { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+  .cards { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
 
-  /* ===== 单张卡片（clay-card 风格） ===== */
+  /* ===== 单张卡片 ===== */
   .card {
-    background: #fff; border-radius: 18px; border: 3px solid var(--text);
-    box-shadow: var(--sh);
-    position: relative; overflow: hidden;
+    overflow: hidden;
     page-break-inside: avoid;
   }
 
-  /* ===== 水印层 ===== */
-  .watermark-layer {
-    position: absolute; inset: 0;
-    pointer-events: none; user-select: none;
-    z-index: 10; overflow: hidden;
-  }
-  .watermark-layer svg { width: 100%; height: 100%; }
-
   /* ===== 卡片头部 ===== */
   .card-header {
-    padding: 14px 18px;
+    padding: 16px 20px;
     border-bottom: 3px solid var(--text);
     display: flex; align-items: center; gap: 12px;
     position: relative; z-index: 1;
-    background: linear-gradient(90deg, var(--primary-soft), #fff 55%);
+    background: var(--primary-soft);
   }
   .card-title-wrap { flex: 1; min-width: 0; }
+  .card-title-row { display: flex; align-items: center; gap: 10px; }
   .card-title {
-    font-size: 21px; font-weight: 900; color: var(--text); line-height: 1.2;
-    font-family: "ZCOOL KuaiLe", "Baloo 2", "PingFang SC", sans-serif;
-    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 22px; font-weight: 700; line-height: 1.2;
+    font-family: "Fredoka", "PingFang SC", sans-serif;
+    letter-spacing: .5px;
+    color: #fff;
+    background: #DC2626;
+    border: var(--br);
+    border-radius: 14px;
+    box-shadow: var(--sh-sm);
+    padding: 6px 16px;
+    transform: rotate(-0.5deg);
   }
-  .card-title-en { margin-top: 2px; font-size: 11.5px; color: var(--text-muted); font-weight: 600; }
+  .card-title-en { margin-top: 6px; font-size: 11.5px; color: var(--text-muted); font-weight: 600; }
   .card-season {
-    background: linear-gradient(135deg, var(--primary), var(--nav-pink-deep)); color: var(--text);
+    background: var(--secondary); color: var(--text);
     padding: 5px 13px; border-radius: 999px;
     font-size: 11px; font-weight: 800; letter-spacing: .5px; white-space: nowrap;
-    border: 3px solid var(--text);
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .3);
+    border: var(--br);
+    box-shadow: 3px 3px 0 rgba(45, 55, 72, .6);
+    transform: rotate(-1deg);
+  }
+  .boss-count {
+    background: #F59E0B; color: #fff;
+    padding: 5px 12px; border-radius: 999px;
+    font-size: 11px; font-weight: 900; letter-spacing: .5px; white-space: nowrap;
+    border: var(--br);
+    box-shadow: 3px 3px 0 rgba(45, 55, 72, .6);
+    transform: rotate(1.5deg);
   }
 
   /* ===== 怪物分组 ===== */
-  .mob-list { padding: 12px 14px; position: relative; z-index: 1; }
-  .mob-block {
-    margin-bottom: 9px; border: 3px solid var(--text); border-radius: 12px;
-    background: #fff; overflow: hidden; position: relative;
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .2);
-  }
+  .mob-list { padding: 14px 16px; position: relative; z-index: 1; }
+  .mob-block { margin-bottom: 12px; }
   .mob-block:last-child { margin-bottom: 0; }
-  .mob-block.is-boss { border-color: var(--text); box-shadow: 0 3px 0 var(--primary-dark); background: var(--primary-soft); }
 
   .mob-header {
-    padding: 7px 12px;
-    border-bottom: 1px solid var(--border); border-left: 4px solid var(--primary);
-    background: #fff;
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--border);
+    border-left: 5px solid var(--primary);
+    background: #FDF8F3;
+    border-radius: 0 12px 0 0;
     display: flex; align-items: center; gap: 7px;
   }
-  .mob-block.is-boss .mob-header { border-left-color: var(--primary-dark); background: var(--primary-soft); }
+  .mob-block.is-boss .mob-header { border-left-color: var(--cta); background: var(--primary-soft); }
   .boss-badge {
-    background: linear-gradient(135deg, var(--cta), var(--cta-dark)); color: #fff; font-weight: 900; font-size: 10px;
-    padding: 2px 8px; border-radius: 999px; letter-spacing: 1px;
-    border: 2px solid var(--text);
+    margin-left: auto;
+    background: #8B5CF6; color: #fff; font-weight: 900; font-size: 10px;
+    padding: 2px 10px; border-radius: 999px; letter-spacing: 1px;
+    border: var(--br-thin); box-shadow: 2px 2px 0 rgba(45, 55, 72, .25);
   }
   .mob-name-zh { font-size: 13.5px; font-weight: 800; color: var(--text); }
-  .mob-block.is-boss .mob-name-zh { color: var(--primary-dark); }
+  .mob-block.is-boss .mob-name-zh { color: #7C3AED; }
   .mob-name-en { font-size: 10.5px; color: var(--text-muted); font-weight: 600; margin-left: 3px; }
-  .mob-count {
-    margin-left: auto; font-size: 10.5px; color: var(--primary-dark); font-weight: 800;
-    background: var(--primary-soft); border: 2px solid var(--text);
-    padding: 1px 10px; border-radius: 999px; white-space: nowrap;
-  }
 
   /* ===== 技能列表 ===== */
-  .spell-list { padding: 0; }
   .spell-row {
-    padding: 6px 12px;
+    padding: 7px 12px;
     border-bottom: 1px dashed var(--border);
-    position: relative;
   }
   .spell-row:last-child { border-bottom: none; }
 
-  /* 技能行内水印 */
-  .spell-row-watermark {
-    position: absolute; right: 8px; top: 50%;
-    transform: translateY(-50%) rotate(-8deg);
-    font-size: 9px; font-weight: 700;
-    color: rgba(30, 41, 59, .08);
-    letter-spacing: 1px;
-    pointer-events: none; user-select: none;
-    white-space: nowrap;
-  }
-
-  /* 技能名 + 描述 同行 */
-  .spell-name { font-size: 13px; font-weight: 800; color: var(--primary-dark); }
+  .spell-name { font-size: 13px; font-weight: 800; color: #C75F4A; }
   .spell-desc-inline { font-size: 12px; color: var(--text-muted); margin-left: 6px; }
   .spell-tags {
     display: inline-flex; flex-wrap: wrap; gap: 4px; margin-left: 6px;
@@ -189,109 +249,34 @@
   }
   .spell-meta { font-size: 10px; color: var(--text-muted); margin-top: 1px; }
 
-  /* ===== 彩色小标签（弱化粉红黄，低饱和） ===== */
+  /* ===== 彩色小标签 ===== */
   .tag {
     display: inline-block; padding: 1px 9px; border-radius: 999px;
-    font-size: 10px; font-weight: 800; line-height: 1.7;
-    border: 2px solid var(--text); box-shadow: 0 2px 0 rgba(30, 41, 59, .2); white-space: nowrap;
+    font-size: 10px; font-weight: 800; line-height: 1.7; white-space: nowrap;
+    border: var(--br-thin); box-shadow: 2px 2px 0 rgba(45, 55, 72, .25);
   }
-  .tag-int { background: var(--green-soft); color: var(--green-dark); }
-  .tag-mag { background: #DBF0F8; color: #1E6E96; }
-  .tag-enrage { background: #FFE9D9; color: #C2410C; }
-  .tag-bleed { background: #FBE8E8; color: #9F1239; }
-  .tag-poison { background: var(--green-soft); color: var(--green-dark); }
-  .tag-disease { background: #F0F7E6; color: #4D7C0F; }
-  .tag-curse { background: #EEEAFB; color: #5B21B6; }
+  .tag-int { background: var(--cta); color: #fff; padding: 2px 10px; font-size: 10.5px; }
+  .tag-mag { background: #DDEAF7; color: #1D5E9E; }
+  .tag-enrage { background: #FDE9D5; color: #B4530A; }
+  .tag-bleed { background: #FADFE1; color: #8E1E36; }
+  .tag-poison { background: #F5F1D8; color: #6E7F14; }
+  .tag-disease { background: #E4E8D8; color: #4E5F1E; }
+  .tag-curse { background: #E9E5F5; color: #533E8F; }
 
   /* ===== 底部 ===== */
   .card-footer {
-    background: linear-gradient(90deg, var(--primary-soft), #fff 55%);
+    background: var(--primary-soft);
     border-top: 3px solid var(--text);
-    padding: 8px 16px; display: flex; align-items: center; gap: 12px;
+    padding: 9px 18px; display: flex; align-items: center; gap: 12px;
     position: relative; z-index: 1;
   }
   .footer-brand {
-    font-size: 11.5px; font-weight: 800; color: var(--primary-dark);
-    background: var(--primary-soft); border: 2px solid var(--text);
+    font-size: 11.5px; font-weight: 800; color: #C75F4A;
+    background: var(--primary-soft); border: var(--br-thin);
     border-radius: 999px; padding: 2px 12px;
   }
   .footer-social { margin-left: auto; text-align: right; font-size: 9.5px; color: var(--text-muted); line-height: 1.4; font-weight: 600; }
-  .footer-social .hl { color: var(--primary-dark); font-weight: 800; }
-
-  /* ===== 悬浮导航栏（LearnHub 粘土积木风） ===== */
-  html { scroll-behavior: smooth; }
-  .topnav {
-    position: fixed; top: 1rem; left: 1rem; right: 1rem; z-index: 50;
-  }
-  .topnav-inner {
-    max-width: 1152px; margin: 0 auto;
-    background: #fff; border: 3px solid var(--text); border-radius: 18px;
-    box-shadow: 0 5px 0 rgba(30, 41, 59, .16), 0 14px 26px rgba(30, 41, 59, .12);
-    padding: 10px 16px;
-    display: flex; align-items: center; gap: 12px;
-  }
-  .topnav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none !important; }
-  .topnav-logo {
-    width: 40px; height: 40px; border-radius: 12px; flex: 0 0 auto;
-    background: var(--nav-pink); border: 3px solid var(--text);
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
-    display: grid; place-items: center;
-    font-family: "ZCOOL KuaiLe", "PingFang SC", sans-serif;
-    font-size: 19px; font-weight: 900; color: var(--text); line-height: 1;
-  }
-  .topnav-name {
-    font-family: "ZCOOL KuaiLe", "Baloo 2", "PingFang SC", sans-serif;
-    font-size: 18px; font-weight: 900; color: var(--text); white-space: nowrap; line-height: 1.2;
-  }
-  .topnav-name .acc { color: #E07A6E; }
-  .topnav-links { display: flex; align-items: center; gap: 4px; margin-left: auto; }
-  .topnav-links a {
-    padding: 7px 12px; border-radius: 10px; font-size: 14px; font-weight: 800;
-    color: var(--text-muted); text-decoration: none; white-space: nowrap; transition: all .15s;
-  }
-  .topnav-links a:hover { color: var(--text); background: #FFF3F0; }
-  .topnav-right { display: flex; align-items: center; gap: 10px; }
-  .topnav-chip {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: #FFF3F0; color: #C06050;
-    font-family: "Press Start 2P", "Space Grotesk", sans-serif;
-    font-size: 10px; font-weight: 700; letter-spacing: .5px;
-    border: 3px solid var(--text); border-radius: 999px; padding: 7px 12px;
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .25); white-space: nowrap;
-  }
-  .topnav-cta {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--nav-green); color: #fff;
-    border: 3px solid var(--nav-green-deep); border-radius: 12px;
-    padding: 7px 16px; font-size: 14px; font-weight: 800;
-    box-shadow: 0 3px 0 var(--nav-green-deep);
-    text-decoration: none !important; white-space: nowrap;
-    transition: transform .06s, box-shadow .06s;
-  }
-  .topnav-cta:hover { transform: translateY(-2px); box-shadow: 0 5px 0 var(--nav-green-deep); }
-  .topnav-cta:active { transform: translateY(1px); box-shadow: 0 2px 0 var(--nav-green-deep); }
-  .topnav-burger {
-    display: none; width: 40px; height: 40px; border-radius: 12px; flex: 0 0 auto;
-    background: var(--nav-blue); border: 3px solid var(--text);
-    box-shadow: 0 3px 0 rgba(30, 41, 59, .25);
-    cursor: pointer; align-items: center; justify-content: center; color: var(--text);
-  }
-  .topnav-burger svg { width: 20px; height: 20px; }
-  .topnav-menu {
-    display: none; flex-direction: column; gap: 4px;
-    max-width: 1152px; margin: 8px auto 0;
-    background: #fff; border: 3px solid var(--text); border-radius: 16px;
-    box-shadow: 0 5px 0 rgba(30, 41, 59, .16), 0 14px 26px rgba(30, 41, 59, .12);
-    padding: 10px;
-  }
-  .topnav-menu.open { display: flex; }
-  .topnav-menu a {
-    display: block; padding: 11px 14px; border-radius: 10px;
-    font-size: 14px; font-weight: 800; color: var(--text);
-    text-decoration: none; transition: background .15s;
-  }
-  .topnav-menu a:hover { background: var(--primary-soft); }
-  .topnav-menu .topnav-cta { justify-content: center; margin-top: 4px; }
+  .footer-social .hl { color: #C75F4A; font-weight: 800; }
 
   /* ===== 分享模式 ===== */
   body.share-mode .toolbar { display: none; }
@@ -302,10 +287,7 @@
   body.share-mode .card-title { font-size: 18px; }
   body.share-mode .mob-list { padding: 8px 10px; }
   body.share-mode .spell-row { padding: 5px 9px; }
-  body.share-mode .card { box-shadow: 0 4px 0 rgba(30, 41, 59, .18), 0 10px 20px rgba(30, 41, 59, .08); }
-  /* 分享模式水印更明显 */
-  body.share-mode .watermark-layer svg text { fill: rgba(30, 41, 59, .12); }
-  body.share-mode .spell-row-watermark { color: rgba(30, 41, 59, .14); }
+  body.share-mode .card { box-shadow: var(--sh-sm), inset 0 -4px rgba(0, 0, 0, .08); }
 
   /* ===== 空状态 ===== */
   .empty { text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 14px; font-weight: 600; }
@@ -324,9 +306,8 @@
   }
   @media (max-width: 600px) {
     .topnav-name .acc { display: none; }
-    .topnav-chip { display: none; }
     .topnav-inner { padding: 8px 12px; gap: 8px; }
-    .topnav-cta { padding: 7px 12px; }
+    .topnav-right .btn { padding: 7px 12px; }
   }
 </style>
 </head>
@@ -339,26 +320,22 @@
       <span class="topnav-name">西番芥的<span class="acc">秘境工具箱</span></span>
     </a>
     <div class="topnav-links">
-      <a href="index.html">速查表</a>
       <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener">B站主页</a>
     </div>
     <div class="topnav-right">
-      <span class="topnav-chip">🃏 卡片视图</span>
-      <a href="index.html" class="topnav-cta">返回速查表</a>
+      <a href="index.html" class="btn btn-primary">返回速查表</a>
     </div>
     <button class="topnav-burger" id="topnavBurger" aria-label="打开菜单" aria-expanded="false">
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
     </button>
   </div>
   <div class="topnav-menu" id="topnavMenu">
-    <span class="topnav-chip">🃏 卡片视图</span>
-    <a href="index.html">速查表</a>
     <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener">B站主页</a>
-    <a href="index.html" class="topnav-cta">返回速查表</a>
+    <a href="index.html" class="btn btn-primary">返回速查表</a>
   </div>
 </nav>
 
-<div class="toolbar">
+<div class="toolbar clay-card">
   <div class="lang-switch" id="langSwitch">
     <button type="button" data-lang="zh" class="active">中文</button>
     <button type="button" data-lang="en">EN</button>
@@ -372,7 +349,6 @@
 <div class="cards" id="cards"></div>
 
 <script>
-const WATERMARK = "制作者:西番芥";
 const BILIBILI_ID = "346688237";
 
 const ESC = { "\u0026": "\u0026amp;", "\u003c": "\u0026lt;", "\u003e": "\u0026gt;", "\u0022": "\u0026quot;", "\u0027": "\u0026#39;" };
@@ -385,14 +361,16 @@ const I18N = {
     share: "分享模式", shareExit: "退出分享模式", hint: "长截图分享",
     tagInt: "可打断", tagMagic: "魔法", tagEnrage: "激怒", tagBleed: "流血",
     tagPoison: "中毒", tagDisease: "疾病", tagCurse: "诅咒",
-    spells: "技能", empty: "暂无数据",
+    empty: "暂无数据",
+
   },
   en: {
     allSeasons: "All Seasons", allDungeons: "All Dungeons",
     share: "Share Mode", shareExit: "Exit Share Mode", hint: "Long screenshot share",
     tagInt: "Int", tagMagic: "Magic", tagEnrage: "Enrage", tagBleed: "Bleed",
     tagPoison: "Poison", tagDisease: "Disease", tagCurse: "Curse",
-    spells: "spells", empty: "No data",
+    empty: "No data",
+
   },
 };
 const t = (k) => (I18N[lang] && I18N[lang][k]) || I18N.zh[k] || k;
@@ -400,24 +378,6 @@ const t = (k) => (I18N[lang] && I18N[lang][k]) || I18N.zh[k] || k;
 // 副本下拉显示名（选中值始终为中文名，仅显示随语言切换）
 function dungeonLabel(d) {
   return lang === "en" ? (d.en || d.name) : d.name;
-}
-
-/* 生成SVG平铺水印 */
-function buildWatermarkSvg(idx) {
-  /* 用SVG pattern实现真正的平铺重复水印，保证覆盖整个卡片 */
-  const text = WATERMARK;
-  const id = "wm" + idx;
-  return '<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">' +
-    '<defs>' +
-      '<pattern id="' + id + '" x="0" y="0" width="320" height="200" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">' +
-        '<text x="10" y="80" font-size="14" font-weight="700" fill="rgba(30,41,59,.06)" letter-spacing="3" ' +
-          'font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft Yahei,sans-serif">' +
-          escapeHtml(text) +
-        '</text>' +
-      '</pattern>' +
-    '</defs>' +
-    '<rect width="100%" height="100%" fill="url(#' + id + ')"/>' +
-  '</svg>';
 }
 
 let allRows = [], allDungeons = [], allSeasons = [];
@@ -512,7 +472,7 @@ function render() {
     return;
   }
 
-  container.innerHTML = dungeonNames.map((name, idx) => {
+  container.innerHTML = dungeonNames.map((name) => {
     const g = groups[name];
 
     const mobs = {}; const mobOrder = [];
@@ -525,6 +485,7 @@ function render() {
       mobs[k].spells.push(r);
     }
     mobOrder.sort((a, b) => (mobs[b].isBoss ? 1 : 0) - (mobs[a].isBoss ? 1 : 0));
+    const bossCount = mobOrder.filter((k) => mobs[k].isBoss).length;
 
     const mobsHtml = mobOrder.map((k) => {
       const m = mobs[k];
@@ -546,26 +507,26 @@ function render() {
             descHtml +
             tagsHtml +
           '</div>' +
-          '<span class="spell-row-watermark">' + WATERMARK + '</span>' +
           '</div>';
       }).join("");
 
       return '<div class="mob-block' + (m.isBoss ? ' is-boss' : '') + '">' +
         '<div class="mob-header">' +
-          (m.isBoss ? '<span class="boss-badge">BOSS</span>' : '') +
           '<span class="mob-name-zh">' + escapeHtml(mobMain) + '</span>' +
           '<span class="mob-name-en">' + escapeHtml(mobSub) + '</span>' +
-          '<span class="mob-count">' + m.spells.length + ' ' + t("spells") + '</span>' +
+          (m.isBoss ? '<span class="boss-badge">BOSS</span>' : '') +
         '</div>' +
         '<div class="spell-list">' + spellsHtml + '</div>' +
         '</div>';
     }).join("");
 
-    return '<div class="card">' +
-      '<div class="watermark-layer">' + buildWatermarkSvg(idx) + '</div>' +
+    return '<div class="card clay-card">' +
       '<div class="card-header">' +
         '<div class="card-title-wrap">' +
-          '<div class="card-title">' + escapeHtml(lang === "en" ? (g.dungeonEn || g.dungeonZh) : g.dungeonZh) + '</div>' +
+          '<div class="card-title-row">' +
+            '<div class="card-title">' + escapeHtml(lang === "en" ? (g.dungeonEn || g.dungeonZh) : g.dungeonZh) + '</div>' +
+            (bossCount > 0 ? '<span class="boss-count">BOSS ×' + bossCount + '</span>' : '') +
+          '</div>' +
           '<div class="card-title-en">' + escapeHtml(lang === "en" ? g.dungeonZh : (g.dungeonEn || '')) + '</div>' +
         '</div>' +
         '<span class="card-season">' + escapeHtml(g.season) + '</span>' +
