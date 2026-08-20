@@ -1,0 +1,38 @@
+{
+  "473898": {
+    "zhCN": {
+      "name": "军团打击",
+      "description": "歼灭者萨祖克斯用战斧猛烈挥击，造成533403点物理伤害，并使目标受到的治疗效果降低80%，持续8秒。"
+    },
+    "enUS": {
+      "name": "Legion Strike",
+      "description": "Xathuux the Annihilator performs a powerful swing with his axe that inflicts 533403 Physical damage and reduces healing received by 80% for 8 sec."
+    }
+  },
+  "372730": {
+    "zhCN": {
+      "name": "毁灭猛击",
+      "description": "施法者对当前目标造成533403点物理伤害和145474点自然伤害。"
+    },
+    "enUS": {
+      "name": "Crushing Smash",
+      "description": "The caster inflicts 533403 Physical damage and 145474 Nature damage to its current target."
+    }
+  },
+  "1216571": {
+    "zhCN": {
+      "name": "邪能飞弹",
+      "description": "朝敌人发射混乱飞弹，每1秒造成火焰伤害，持续5秒。"
+    },
+    "enUS": {
+      "name": "Fel Missiles",
+      "description": "Launches disorderly missiles at an enemy, inflicting Fire damage every 1 sec for 5 sec."
+    }
+  },
+  "117665": {
+    "zhCN": {
+      "name": "凡尘之羁",
+      "description": "疑之煞淡出现实世界，受到的伤害降低99%，并强迫所有敌人面对他们各自的疑惑。"
+    }
+  }
+}
