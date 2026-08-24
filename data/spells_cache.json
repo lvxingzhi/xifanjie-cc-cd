@@ -11206,21 +11206,21 @@
   "1302007": {
     "zhCN": {
       "name": "刃舞",
-      "description": "施法者在接下来的1.2秒内，每0.4秒打击所有敌人，造成48491点火焰伤害。"
+      "description": "施法者在接下来的1.2秒内，每0.4秒打击所有敌人，造成43642点火焰伤害。"
     },
     "enUS": {
       "name": "Blade Dance",
-      "description": "Caster strikes all enemies every 0.4 sec for 1.2 sec, inflicting 48491 Fire damage."
+      "description": "Caster strikes all enemies every 0.4 sec for 1.2 sec, inflicting 43642 Fire damage."
     }
   },
   "1302010": {
     "zhCN": {
       "name": "刃舞",
-      "description": "施法者在接下来的1.2秒内，每0.4秒打击所有敌人，造成48491点火焰伤害。"
+      "description": "施法者在接下来的1.2秒内，每0.4秒打击所有敌人，造成43642点火焰伤害。"
     },
     "enUS": {
       "name": "Blade Dance",
-      "description": "Caster strikes all enemies every 0.4 sec for 1.2 sec, inflicting 48491 Fire damage."
+      "description": "Caster strikes all enemies every 0.4 sec for 1.2 sec, inflicting 43642 Fire damage."
     }
   },
   "1250813": {
@@ -12876,11 +12876,11 @@
   "1302897": {
     "zhCN": {
       "name": "消耗生命力",
-      "description": "塞塔里斯的化身吞噬净化的生命力，为自己恢复相当于最大生命值2%的生命值，并且每2秒恢复相当于最大生命值(1 / 10)%的生命值。此效果可叠加。"
+      "description": "塞塔里斯的化身吞噬净化的生命力，为自己恢复相当于最大生命值2%的生命值，并且每3秒恢复相当于最大生命值(1 / 10)%的生命值。此效果可叠加。"
     },
     "enUS": {
       "name": "Consume Lifeforce",
-      "description": "The Avatar of Sethraliss consumes Cleansed Lifeforce, healing herself for 2% of her maximum health and regenerating (1 / 10)% of her maximum health every 2 sec. This effect stacks."
+      "description": "The Avatar of Sethraliss consumes Cleansed Lifeforce, healing herself for 2% of her maximum health and regenerating (1 / 10)% of her maximum health every 3 sec. This effect stacks."
     }
   },
   "1302945": {
@@ -12966,11 +12966,11 @@
   "1303105": {
     "zhCN": {
       "name": "凌空猛击",
-      "description": "达萨王跃向目标玩家，发动一记猛击，对冲击点8码范围内的玩家造成174568点物理伤害。"
+      "description": "达萨王跃向目标玩家，发动一记猛击，对冲击点8码范围内的玩家造成164870点物理伤害。"
     },
     "enUS": {
       "name": "Aerial Smash",
-      "description": "King Dazar leaps at target players, unleashing a powerful smash that inflicts 174568 Physical damage to players within 8 yards of impact."
+      "description": "King Dazar leaps at target players, unleashing a powerful smash that inflicts 164870 Physical damage to players within 8 yards of impact."
     }
   },
   "270920": {
@@ -12996,11 +12996,11 @@
   "1303115": {
     "zhCN": {
       "name": "凌空猛击",
-      "description": "达萨王跃向目标玩家，发动一记猛击，对冲击点8码范围内的玩家造成174568点物理伤害。"
+      "description": "达萨王跃向目标玩家，发动一记猛击，对冲击点8码范围内的玩家造成164870点物理伤害。"
     },
     "enUS": {
       "name": "Aerial Smash",
-      "description": "King Dazar leaps at target players, unleashing a powerful smash that inflicts 174568 Physical damage to players within 8 yards of impact."
+      "description": "King Dazar leaps at target players, unleashing a powerful smash that inflicts 164870 Physical damage to players within 8 yards of impact."
     }
   },
   "270927": {
@@ -13066,11 +13066,11 @@
   "1303324": {
     "zhCN": {
       "name": "震地之跃",
-      "description": "塔扎拉跃向目标玩家，对冲击点8码范围内的玩家造成174568点物理伤害。"
+      "description": "塔扎拉跃向目标玩家，对冲击点8码范围内的玩家造成164870点物理伤害。"
     },
     "enUS": {
       "name": "Quaking Leap",
-      "description": "T'zala leaps at target players, inflicting 174568 Physical damage to players within 8 yards of impact."
+      "description": "T'zala leaps at target players, inflicting 164870 Physical damage to players within 8 yards of impact."
     }
   },
   "1303326": {
@@ -13086,11 +13086,11 @@
   "1303327": {
     "zhCN": {
       "name": "震地之跃",
-      "description": "塔扎拉跃向目标玩家，对冲击点8码范围内的玩家造成174568点物理伤害。"
+      "description": "塔扎拉跃向目标玩家，对冲击点8码范围内的玩家造成164870点物理伤害。"
     },
     "enUS": {
       "name": "Quaking Leap",
-      "description": "T'zala leaps at target players, inflicting 174568 Physical damage to players within 8 yards of impact."
+      "description": "T'zala leaps at target players, inflicting 164870 Physical damage to players within 8 yards of impact."
     }
   },
   "1303372": {
@@ -13146,11 +13146,11 @@
   "1303446": {
     "zhCN": {
       "name": "污秽打击",
-      "description": "堕落的守护者用残暴的挥砍攻击其当前目标，造成484912点物理伤害，并每1秒额外造成58189点暗影伤害，持续10秒。该效果可叠加。"
+      "description": "堕落的守护者用残暴的挥砍攻击其当前目标，造成484912点物理伤害，并每1秒额外造成29095点暗影伤害，持续25秒。该效果可叠加。"
     },
     "enUS": {
       "name": "Tainted Strike",
-      "description": "The Corrupted Guardian attacks their current target with a brutal slash, inflicting 484912 Physical damage and an additional 58189 Shadow damage every 1 sec for 10 sec. This effect stacks."
+      "description": "The Corrupted Guardian attacks their current target with a brutal slash, inflicting 484912 Physical damage and an additional 29095 Shadow damage every 1 sec for 25 sec. This effect stacks."
     }
   },
   "1303452": {
@@ -13436,11 +13436,11 @@
   "1312214": {
     "zhCN": {
       "name": "腐化",
-      "description": "黑暗能量每1秒造成29095点暗影伤害，使造成的治疗效果降低33%，并使受到的物理伤害提高300%，持续15秒。此效果可叠加。"
+      "description": "黑暗能量每1秒造成4点暗影伤害，使造成的治疗效果降低33%，并使受到的物理伤害提高250%，持续15秒。此效果可叠加。"
     },
     "enUS": {
       "name": "Corruption",
-      "description": "The dark energy inflicts 29095 Shadow damage every 1 sec, reduces healing done by 33%, and increases Physical damage taken by 300% for 15 sec. This effect stacks."
+      "description": "The dark energy inflicts 4 Shadow damage every 1 sec, reduces healing done by 33%, and increases Physical damage taken by 250% for 15 sec. This effect stacks."
     }
   },
   "1296045": {
@@ -15096,11 +15096,11 @@
   "1300803": {
     "zhCN": {
       "name": "污秽打击",
-      "description": "堕落的守护者用残暴的挥砍攻击其当前目标，造成484912点物理伤害，并每1秒额外造成58189点暗影伤害，持续10秒。该效果可叠加。"
+      "description": "堕落的守护者用残暴的挥砍攻击其当前目标，造成484912点物理伤害，并每1秒额外造成29095点暗影伤害，持续25秒。该效果可叠加。"
     },
     "enUS": {
       "name": "Tainted Strike",
-      "description": "The Corrupted Guardian attacks their current target with a brutal slash, inflicting 484912 Physical damage and an additional 58189 Shadow damage every 1 sec for 10 sec. This effect stacks."
+      "description": "The Corrupted Guardian attacks their current target with a brutal slash, inflicting 484912 Physical damage and an additional 29095 Shadow damage every 1 sec for 25 sec. This effect stacks."
     }
   },
   "1292623": {
