@@ -7016,11 +7016,11 @@
   "1306641": {
     "zhCN": {
       "name": "鲜血献祭",
-      "description": "仪式首领召唤祭坛之灵来剖开玩家，造成87284点物理伤害并吸收下一次180032点治疗量。"
+      "description": "仪式首领召唤祭坛之灵来剖开玩家，造成87284点物理伤害并吸收下一次162029点治疗量。"
     },
     "enUS": {
       "name": "Blood Sacrifice",
-      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 87284 Physical damage and causing the next 180032 healing to be absorbed."
+      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 87284 Physical damage and causing the next 162029 healing to be absorbed."
     }
   },
   "1263636": {
@@ -7076,11 +7076,11 @@
   "1306657": {
     "zhCN": {
       "name": "鲜血献祭",
-      "description": "仪式首领召唤祭坛之灵来剖开玩家，造成87284点物理伤害并吸收下一次180032点治疗量。"
+      "description": "仪式首领召唤祭坛之灵来剖开玩家，造成87284点物理伤害并吸收下一次162029点治疗量。"
     },
     "enUS": {
       "name": "Blood Sacrifice",
-      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 87284 Physical damage and causing the next 180032 healing to be absorbed."
+      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 87284 Physical damage and causing the next 162029 healing to be absorbed."
     }
   },
   "1253410": {
@@ -7656,11 +7656,11 @@
   "1294567": {
     "zhCN": {
       "name": "麻痹射击",
-      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成135775点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
+      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成67888点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
     },
     "enUS": {
       "name": "Paralyzing Shots",
-      "description": "The Twinfang spits numbing venom at players, inflicting 135775 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
+      "description": "The Twinfang spits numbing venom at players, inflicting 67888 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
     }
   },
   "1306856": {
@@ -7676,7 +7676,7 @@
   "1294569": {
     "zhCN": {
       "name": "麻痹射击",
-      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成135775点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
+      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成67888点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
     },
     "enUS": {
       "name": "Paralyzing Shots",
@@ -7686,21 +7686,21 @@
   "1294568": {
     "zhCN": {
       "name": "麻痹射击",
-      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成135775点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
+      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成67888点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
     },
     "enUS": {
       "name": "Paralyzing Shots",
-      "description": "The Twinfang spits numbing venom at players, inflicting 135775 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
+      "description": "The Twinfang spits numbing venom at players, inflicting 67888 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
     }
   },
   "1294570": {
     "zhCN": {
       "name": "麻痹射击",
-      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成135775点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
+      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成67888点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
     },
     "enUS": {
       "name": "Paralyzing Shots",
-      "description": "The Twinfang spits numbing venom at players, inflicting 135775 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
+      "description": "The Twinfang spits numbing venom at players, inflicting 67888 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
     }
   },
   "1294572": {
@@ -7746,11 +7746,11 @@
   "1306893": {
     "zhCN": {
       "name": "不稳定的图腾",
-      "description": "酋长处于战斗状态期间，图腾变得极不稳定，每2秒造成32295点自然伤害。"
+      "description": "酋长处于战斗状态期间，图腾变得极不稳定，每2秒造成29095点自然伤害。"
     },
     "enUS": {
       "name": "Unstable Totem",
-      "description": "The totem becomes unstable, inflicting 32295 Nature damage every 2 sec while the chieftain remains in combat."
+      "description": "The totem becomes unstable, inflicting 29095 Nature damage every 2 sec while the chieftain remains in combat."
     }
   },
   "1243408": {
@@ -7986,11 +7986,11 @@
   "1300888": {
     "zhCN": {
       "name": "毒牙强化",
-      "description": "乌拉特克之牙随力量脉动，每1秒对所有玩家造成116379点自然伤害。该效果可叠加。"
+      "description": "乌拉特克之牙随力量脉动，每1秒对所有玩家造成93103点自然伤害。该效果可叠加。"
     },
     "enUS": {
       "name": "Fang Empowered",
-      "description": "The Fang of Ula'tek pulses with strength, inflicting 116379 Nature damage to all players every 1 sec. This effect stacks."
+      "description": "The Fang of Ula'tek pulses with strength, inflicting 93103 Nature damage to all players every 1 sec. This effect stacks."
     }
   },
   "1247644": {
@@ -8006,11 +8006,11 @@
   "1300892": {
     "zhCN": {
       "name": "毒牙强化",
-      "description": "乌拉特克之牙随力量脉动，每1秒对所有玩家造成116379点自然伤害。该效果可叠加。"
+      "description": "乌拉特克之牙随力量脉动，每1秒对所有玩家造成93103点自然伤害。该效果可叠加。"
     },
     "enUS": {
       "name": "Fang Empowered",
-      "description": "The Fang of Ula'tek pulses with strength, inflicting 116379 Nature damage to all players every 1 sec. This effect stacks."
+      "description": "The Fang of Ula'tek pulses with strength, inflicting 93103 Nature damage to all players every 1 sec. This effect stacks."
     }
   },
   "1231262": {
@@ -8826,11 +8826,11 @@
   "1307269": {
     "zhCN": {
       "name": "麻痹射击",
-      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成135775点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
+      "description": "双牙向玩家喷吐麻痹毒液，在命中时造成67888点自然伤害，并且每1秒额外造成48491点自然伤害，持续20秒。受影响的玩家会逐渐瘫痪，每一次受到伤害都会使移动速度降低10%。"
     },
     "enUS": {
       "name": "Paralyzing Shots",
-      "description": "The Twinfang spits numbing venom at players, inflicting 135775 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
+      "description": "The Twinfang spits numbing venom at players, inflicting 67888 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
     }
   },
   "1299080": {
@@ -10116,11 +10116,11 @@
   "1307765": {
     "zhCN": {
       "name": "进食狂热",
-      "description": "拉维跑向最近的腐肉堆大快朵颐，获得一个能吸收所有伤害的护盾。在护盾被移除之前，拉维每1.5秒对所有敌人施加腐肉喷发。[拉维狼吞虎咽，并且在处于进食狂热时会将腐肉块扔到坑里。]"
+      "description": "拉维跑向最近的腐肉堆大快朵颐，获得一个能吸收所有伤害的护盾。在护盾被移除之前，拉维每3秒对所有敌人施加腐肉喷发。[拉维狼吞虎咽，并且在处于进食狂热时会将腐肉块扔到坑里。]"
     },
     "enUS": {
       "name": "Feeding Frenzy",
-      "description": "Rav'i runs to feast on the nearest Carrion Pile, gaining a shield that absorbs all damage. Until her shield is removed, Rav'i applies Carrion Burst to all enemies every 1.5 sec.[Rav'i is a Messy Eater, and throws chunks of rotting meat across the pit while in a Feeding Frenzy.]"
+      "description": "Rav'i runs to feast on the nearest Carrion Pile, gaining a shield that absorbs all damage. Until her shield is removed, Rav'i applies Carrion Burst to all enemies every 3 sec.[Rav'i is a Messy Eater, and throws chunks of rotting meat across the pit while in a Feeding Frenzy.]"
     }
   },
   "474231": {
@@ -10476,21 +10476,21 @@
   "1297684": {
     "zhCN": {
       "name": "黑暗契约",
-      "description": "施法者牺牲10%的最大生命值，并为自己施加相当于最大生命值35%的护盾。"
+      "description": "施法者牺牲10%的最大生命值，并为自己施加相当于最大生命值30%的护盾。"
     },
     "enUS": {
       "name": "Dark Pact",
-      "description": "Caster sacrifices 10% of its max health and shields itself for 35% of its max health"
+      "description": "Caster sacrifices 10% of its max health and shields itself for 30% of its max health"
     }
   },
   "1297686": {
     "zhCN": {
       "name": "黑暗契约",
-      "description": "施法者牺牲10%的最大生命值，并为自己施加相当于最大生命值35%的护盾。"
+      "description": "施法者牺牲10%的最大生命值，并为自己施加相当于最大生命值30%的护盾。"
     },
     "enUS": {
       "name": "Dark Pact",
-      "description": "Caster sacrifices 10% of its max health and shields itself for 35% of its max health"
+      "description": "Caster sacrifices 10% of its max health and shields itself for 30% of its max health"
     }
   },
   "1238294": {
@@ -11496,11 +11496,11 @@
   "1250937": {
     "zhCN": {
       "name": "喷毒",
-      "description": "薯身蟾主母喷吐腐蚀毒素，对所有玩家造成135775点自然伤害。毒液还会每1.5秒额外造成58189点自然伤害，持续9秒。"
+      "description": "薯身蟾主母喷吐腐蚀毒素，对所有玩家造成67888点自然伤害。毒液还会每1.5秒额外造成58189点自然伤害，持续9秒。"
     },
     "enUS": {
       "name": "Toxic Spew",
-      "description": "The Potatoad Matriarch belches corrosive toxins, inflicting 135775 Nature damage to all players. The poisonous fluid inflicts an additional 58189 Nature damage every 1.5 sec for 9 sec."
+      "description": "The Potatoad Matriarch belches corrosive toxins, inflicting 67888 Nature damage to all players. The poisonous fluid inflicts an additional 58189 Nature damage every 1.5 sec for 9 sec."
     }
   },
   "1306235": {
@@ -11786,21 +11786,21 @@
   "1306333": {
     "zhCN": {
       "name": "贪婪爪击",
-      "description": "近战挥击使攻击速度提高20%，持续2秒。该效果可叠加。"
+      "description": "近战挥击使攻击速度提高10%，持续2秒。该效果可叠加。"
     },
     "enUS": {
       "name": "Ravenous Claws",
-      "description": "Melee swings increase attack speed by 20% for 2 sec. This effect stacks."
+      "description": "Melee swings increase attack speed by 10% for 2 sec. This effect stacks."
     }
   },
   "1306338": {
     "zhCN": {
       "name": "贪婪爪击",
-      "description": "近战挥击使攻击速度提高20%，持续2秒。该效果可叠加。"
+      "description": "近战挥击使攻击速度提高10%，持续2秒。该效果可叠加。"
     },
     "enUS": {
       "name": "Ravenous Claws",
-      "description": "Melee swings increase attack speed by 20% for 2 sec. This effect stacks."
+      "description": "Melee swings increase attack speed by 10% for 2 sec. This effect stacks."
     }
   },
   "1226469": {
@@ -12396,11 +12396,11 @@
   "1306517": {
     "zhCN": {
       "name": "鲜血献祭",
-      "description": "仪式首领召唤祭坛之灵来剖开玩家，造成87284点物理伤害并吸收下一次180032点治疗量。"
+      "description": "仪式首领召唤祭坛之灵来剖开玩家，造成87284点物理伤害并吸收下一次162029点治疗量。"
     },
     "enUS": {
       "name": "Blood Sacrifice",
-      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 87284 Physical damage and causing the next 180032 healing to be absorbed."
+      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 87284 Physical damage and causing the next 162029 healing to be absorbed."
     }
   },
   "1234846": {
@@ -12476,11 +12476,11 @@
   "1306550": {
     "zhCN": {
       "name": "鲜血献祭",
-      "description": "仪式首领召唤祭坛之灵来剖开玩家，造成87284点物理伤害并吸收下一次180032点治疗量。"
+      "description": "仪式首领召唤祭坛之灵来剖开玩家，造成87284点物理伤害并吸收下一次162029点治疗量。"
     },
     "enUS": {
       "name": "Blood Sacrifice",
-      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 87284 Physical damage and causing the next 180032 healing to be absorbed."
+      "description": "The Ritual Chieftain invokes spirits of the altar to gut players, inflicting 87284 Physical damage and causing the next 162029 healing to be absorbed."
     }
   },
   "1234855": {
@@ -13676,11 +13676,11 @@
   "1305225": {
     "zhCN": {
       "name": "地壳震击",
-      "description": "施法者震击当前目标，使其失去平衡，造成物理伤害，并使其受到的伤害提高35%，持续8秒。此效果可叠加。"
+      "description": "施法者震击当前目标，使其失去平衡，造成物理伤害，并使其受到的伤害提高25%，持续8秒。此效果可叠加。"
     },
     "enUS": {
       "name": "Tectonic Strike",
-      "description": "The caster knocks its current target off balance, inflicting Physical damage and increasing their damage taken by 35% for 8 sec. This effect stacks."
+      "description": "The caster knocks its current target off balance, inflicting Physical damage and increasing their damage taken by 25% for 8 sec. This effect stacks."
     }
   },
   "1297034": {
@@ -14676,11 +14676,11 @@
   "373693": {
     "zhCN": {
       "name": "活动炸弹",
-      "description": "施法者每1秒造成58189点火焰伤害，持续6秒。该效果结束时会发生爆炸，对6码范围内的玩家造成77586点火焰伤害，并将其击飞到空中。"
+      "description": "施法者每1秒造成52371点火焰伤害，持续6秒。该效果结束时会发生爆炸，对6码范围内的玩家造成69827点火焰伤害，并将其击飞到空中。"
     },
     "enUS": {
       "name": "Living Bomb",
-      "description": "The caster inflicts 58189 Fire damage every 1 sec for 6 sec.The affliction explodes upon expiration, inflicting 77586 Fire damage to players within 6 yds and knocking them into the air."
+      "description": "The caster inflicts 52371 Fire damage every 1 sec for 6 sec.The affliction explodes upon expiration, inflicting 69827 Fire damage to players within 6 yds and knocking them into the air."
     }
   },
   "373727": {
