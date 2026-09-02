@@ -7680,7 +7680,7 @@
     },
     "enUS": {
       "name": "Paralyzing Shots",
-      "description": "The Twinfang spits numbing venom at players, inflicting 135775 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
+      "description": "The Twinfang spits numbing venom at players, inflicting 67888 Nature damage on impact and an additional 48491 Nature damage every 1 sec for 20 sec.Affected players become paralyzed over time, reducing their movement speed by 10% with each tick."
     }
   },
   "1294568": {
@@ -15721,6 +15721,96 @@
     "enUS": {
       "name": "Gale Force",
       "description": "Aspix launches gale force winds at players, inflicting 77586 Nature damage and pushing them away."
+    }
+  },
+  "1288087": {
+    "zhCN": {
+      "name": "电闪雷鸣",
+      "description": "阿德里斯挥舞着闪烁电弧的利刃向前冲刺，造成581895点自然伤害（由8码范围内的所有玩家均摊）。随后他会引导一记震耳欲聋的惊雷，对20码范围内的所有敌人造成387930点自然伤害。"
+    },
+    "enUS": {
+      "name": "Thunder and Lightning",
+      "description": "Adderis dashes forward with his arcing blade, inflicting 581895 Nature damage divided evenly between all players within 8 yards.He then winds up a massive peal of thunder, inflicting 387930 Nature damage to all enemies within 20 yards."
+    }
+  },
+  "272388": {
+    "zhCN": {
+      "name": "暗影弹幕",
+      "description": "Inflicts 58190 Shadow damage to an enemy.Inflicts 48491 Shadow damage to an enemy every 2 sec for 4秒."
+    },
+    "enUS": {
+      "name": "Shadow Barrage",
+      "description": "Inflicts 58190 Shadow damage to an enemy.Inflicts 48491 Shadow damage to an enemy every 2 sec for 4 sec."
+    }
+  },
+  "1314051": {
+    "zhCN": {
+      "name": "电闪雷鸣",
+      "description": "阿德里斯挥舞着闪烁电弧的利刃向前冲刺，造成581895点自然伤害（由8码范围内的所有玩家均摊）。随后他会引导一记震耳欲聋的惊雷，对20码范围内的所有敌人造成387930点自然伤害。"
+    },
+    "enUS": {
+      "name": "Thunder and Lightning",
+      "description": "Adderis dashes forward with his arcing blade, inflicting 581895 Nature damage divided evenly between all players within 8 yards.He then winds up a massive peal of thunder, inflicting 387930 Nature damage to all enemies within 20 yards."
+    }
+  },
+  "1314082": {
+    "zhCN": {
+      "name": "扰乱心智",
+      "description": "引导能够扭曲心智的能量，使敌人的心智陷入迷惑，持续5秒。"
+    },
+    "enUS": {
+      "name": "Addle Mind",
+      "description": "Channels mind-altering energy, disorienting the enemy for 5 sec."
+    }
+  },
+  "1298304": {
+    "zhCN": {
+      "name": "黑暗启示",
+      "description": "在5秒后释放黑暗启示，对20码范围内的敌人造成473120点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Dark Revelation",
+      "description": "Unleashes a Dark Revelation after 5 sec, &nbsp;inflicting 473120 Shadow damage to enemies within 20 yards."
+    }
+  },
+  "1314883": {
+    "zhCN": {
+      "name": "狩猎跃击",
+      "description": "跳向目标玩家并释放一系列撕裂攻击，每次攻击都会对锥形范围内的玩家造成145474点物理伤害。"
+    },
+    "enUS": {
+      "name": "Hunting Leap",
+      "description": "Jumps towards a targeted player and unleashes a series of gutripping attacks, inflicting 145474 Physical to players in a cone with each attack."
+    }
+  },
+  "1314884": {
+    "zhCN": {
+      "name": "狩猎跃击",
+      "description": "雷班跳向一名被选中的玩家，造成67888点物理伤害，并每1秒额外造成38793点物理伤害，持续4秒。随后雷班发动一连串开膛裂腹的攻击，每次攻击对锥形范围内的玩家造成145474点物理伤害。"
+    },
+    "enUS": {
+      "name": "Hunting Leap",
+      "description": "Reban jumps towards a targeted player, inflicting 67888 Physical damage and additional 38793 Physical damage every 1 sec for 4 sec. Reban then follows up with a series of gutripping attacks, inflicting 145474 Physical to players in a cone with each attack."
+    }
+  },
+  "1314885": {
+    "zhCN": {
+      "name": "狩猎跃击",
+      "description": "雷班跳向一名被选中的玩家，造成67888点物理伤害，并每1秒额外造成38793点物理伤害，持续4秒。随后雷班发动一连串开膛裂腹的攻击，每次攻击对锥形范围内的玩家造成145474点物理伤害。"
+    },
+    "enUS": {
+      "name": "Hunting Leap",
+      "description": "Reban jumps towards a targeted player, inflicting 67888 Physical damage and additional 38793 Physical damage every 1 sec for 4 sec. Reban then follows up with a series of gutripping attacks, inflicting 145474 Physical to players in a cone with each attack."
+    }
+  },
+  "1309385": {
+    "zhCN": {
+      "name": "黑暗之池",
+      "description": "站在黑暗之池中时每2秒会受到58189点暗影伤害。"
+    },
+    "enUS": {
+      "name": "Pool of Darkness",
+      "description": "Standing within a Pool of Darkness inflicts 58189 Shadow damage every 2 sec."
     }
   }
 }
