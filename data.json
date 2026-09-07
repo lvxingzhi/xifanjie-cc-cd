@@ -39840,7 +39840,1953 @@
       "season": "Midnight"
     }
   ],
+  "enemyMap": {
+    "160": {
+      "total": 655,
+      "en": "Murder Row",
+      "e": {
+        "1": [
+          "Felwyrm",
+          1
+        ],
+        "2": [
+          "Row Hooligan",
+          3
+        ],
+        "3": [
+          "Felonious Mage",
+          7
+        ],
+        "4": [
+          "Bribed Guard",
+          25
+        ],
+        "5": [
+          "Bribed Captain",
+          35
+        ],
+        "6": [
+          "Seductive Sayaad",
+          6
+        ],
+        "7": [
+          "Massive Felwyrm",
+          12
+        ],
+        "8": [
+          "Street Sneak",
+          3
+        ],
+        "9": [
+          "Warehouse Worker",
+          2
+        ],
+        "10": [
+          "Keen Taskmaster",
+          7
+        ],
+        "11": [
+          "Unleashed Imp",
+          2
+        ],
+        "12": [
+          "Trained Felhunter",
+          5
+        ],
+        "13": [
+          "Fel Invoker",
+          7
+        ],
+        "14": [
+          "Wrathguard Flayer",
+          5
+        ],
+        "15": [
+          "Corrupted Warlock",
+          25
+        ],
+        "16": [
+          "Demon Fly",
+          1
+        ],
+        "17": [
+          "Shivan Punisher",
+          25
+        ],
+        "18": [
+          "Felmaster Lucsei",
+          30
+        ],
+        "19": [
+          "Defiled Golem",
+          35
+        ],
+        "20": [
+          "Xathuux the Annihilator",
+          0
+        ],
+        "21": [
+          "Kystia Manaheart",
+          0
+        ],
+        "22": [
+          "Zaen Bladesorrow",
+          0
+        ],
+        "23": [
+          "Nibbles",
+          0
+        ],
+        "24": [
+          "Lithiel Cinderfury",
+          0
+        ],
+        "25": [
+          "Furious Vilefiend",
+          0
+        ],
+        "26": [
+          "Forbidden Freight",
+          0
+        ],
+        "27": [
+          "Crate Loader",
+          0
+        ],
+        "28": [
+          "Silvermoon Patron",
+          0
+        ],
+        "29": [
+          "Legion Axe",
+          0
+        ],
+        "30": [
+          "Selenar Sunshy",
+          0
+        ],
+        "31": [
+          "Masked Noble",
+          0
+        ],
+        "32": [
+          "Rowdy Patron",
+          0
+        ],
+        "33": [
+          "Wild Imp",
+          0
+        ],
+        "34": [
+          "Infernal",
+          0
+        ],
+        "35": [
+          "Nauseous Patron",
+          0
+        ],
+        "36": [
+          "Influentual Reviewer",
+          0
+        ],
+        "37": [
+          "Tiny Felwyrm",
+          0
+        ],
+        "38": [
+          "Kystia Manaheart",
+          0
+        ],
+        "39": [
+          "Seductive Sayaad",
+          6
+        ],
+        "40": [
+          "Belath Dawnblade",
+          0
+        ],
+        "41": [
+          "Trained Felhunter",
+          0
+        ]
+      }
+    },
+    "161": {
+      "total": 729,
+      "en": "Den of Nalorakk",
+      "e": {
+        "1": [
+          "Spirit of Hunger",
+          25
+        ],
+        "2": [
+          "Earthwhisper Tender",
+          7
+        ],
+        "3": [
+          "Thornclaw Gatherer",
+          5
+        ],
+        "4": [
+          "Territorial Matriarch",
+          8
+        ],
+        "5": [
+          "The Winter Squall",
+          50
+        ],
+        "6": [
+          "Frostfang",
+          5
+        ],
+        "7": [
+          "Terra Rumbler",
+          7
+        ],
+        "8": [
+          "Frigid Mauler",
+          9
+        ],
+        "9": [
+          "Glacial Revenant",
+          7
+        ],
+        "10": [
+          "Avatar of Determination",
+          28
+        ],
+        "11": [
+          "Ruthless Totemcaller",
+          5
+        ],
+        "12": [
+          "Stormbound Mystic",
+          7
+        ],
+        "13": [
+          "Grizzled Warbringer",
+          25
+        ],
+        "14": [
+          "Bonded Beasttamer",
+          6
+        ],
+        "15": [
+          "Curious Yearling",
+          0
+        ],
+        "16": [
+          "The Hoardmonger",
+          0
+        ],
+        "17": [
+          "Keen-Eyed Striker",
+          7
+        ],
+        "18": [
+          "Sentinel of Winter",
+          0
+        ],
+        "19": [
+          "Raging Squall",
+          0
+        ],
+        "20": [
+          "Fractured Shivercore",
+          0
+        ],
+        "21": [
+          "Loa Speaker Nanea",
+          35
+        ],
+        "22": [
+          "Grizzled Warbringer",
+          0
+        ],
+        "23": [
+          "Loyal Saberfang",
+          5
+        ],
+        "24": [
+          "Starvation Effigy",
+          0
+        ],
+        "25": [
+          "Nalorakk",
+          0
+        ],
+        "26": [
+          "Zul'jarra",
+          0
+        ],
+        "27": [
+          "Echo of Nalorakk",
+          0
+        ],
+        "28": [
+          "Snow Orb Stalker",
+          0
+        ],
+        "29": [
+          "Volatile Totem",
+          0
+        ],
+        "30": [
+          "The Pale Eye",
+          0
+        ],
+        "31": [
+          "Keen-Eyed Striker",
+          7
+        ],
+        "32": [
+          "Magma Totem",
+          0
+        ]
+      }
+    },
+    "162": {
+      "total": 686,
+      "en": "The Blinding Vale",
+      "e": {
+        "1": [
+          "Lightgorged Lasher",
+          7
+        ],
+        "2": [
+          "Lasher",
+          1
+        ],
+        "3": [
+          "Underbrush Stalker",
+          6
+        ],
+        "4": [
+          "Virid Grovekeeper",
+          20
+        ],
+        "5": [
+          "Sporeblight Belcher",
+          25
+        ],
+        "6": [
+          "Radiant Spellsower",
+          7
+        ],
+        "7": [
+          "Lightfeather Petalwing",
+          7
+        ],
+        "8": [
+          "Thorny Saptor",
+          5
+        ],
+        "9": [
+          "Spineshield Beetle",
+          1
+        ],
+        "10": [
+          "Leafy Grovecrawler",
+          7
+        ],
+        "11": [
+          "Overgrown Hydra",
+          25
+        ],
+        "12": [
+          "Luminous Thornmaw",
+          22
+        ],
+        "13": [
+          "Meittik",
+          0
+        ],
+        "14": [
+          "Kezkitt",
+          0
+        ],
+        "15": [
+          "Lekshi",
+          0
+        ],
+        "16": [
+          "Lightwarden Ruia",
+          0
+        ],
+        "17": [
+          "Ziekket",
+          0
+        ],
+        "18": [
+          "Ikuzz the Light Hunter",
+          0
+        ],
+        "19": [
+          "Lightblossom",
+          0
+        ],
+        "20": [
+          "Spirit Bear",
+          0
+        ],
+        "21": [
+          "Spirit Moonkin",
+          0
+        ],
+        "22": [
+          "Lightspawn Lasher",
+          0
+        ],
+        "23": [
+          "Potatoad Matriarch",
+          60
+        ],
+        "24": [
+          "Potadpole Egg",
+          0
+        ],
+        "25": [
+          "Newborn Potadpole",
+          0
+        ],
+        "26": [
+          "Bloodthorn Roots",
+          0
+        ]
+      }
+    },
+    "163": {
+      "total": 738,
+      "en": "Voidscar Arena",
+      "e": {
+        "1": [
+          "Lost Sethrak",
+          4
+        ],
+        "2": [
+          "Feral Saberon",
+          4
+        ],
+        "3": [
+          "Sycophantic Tarasek",
+          4
+        ],
+        "4": [
+          "Longtooth Tuskarr",
+          5
+        ],
+        "5": [
+          "Dominated Brawler",
+          7
+        ],
+        "6": [
+          "Enthralled Shaman",
+          7
+        ],
+        "7": [
+          "Voidtouched Magi",
+          25
+        ],
+        "8": [
+          "Brutal Overseer",
+          25
+        ],
+        "9": [
+          "Aegyra the Unyielding",
+          40
+        ],
+        "10": [
+          "Raj'kess the Spellstorm",
+          40
+        ],
+        "11": [
+          "Chitigoth",
+          25
+        ],
+        "12": [
+          "Raging Raptor",
+          5
+        ],
+        "13": [
+          "Protective Turtle",
+          5
+        ],
+        "14": [
+          "Brutok",
+          25
+        ],
+        "15": [
+          "Abducted Drakonid",
+          5
+        ],
+        "16": [
+          "Angry Krolusk",
+          8
+        ],
+        "17": [
+          "Savage Shredclaw",
+          5
+        ],
+        "18": [
+          "Kilivore Screamer",
+          7
+        ],
+        "19": [
+          "Agitated Voidscythe",
+          25
+        ],
+        "20": [
+          "Blistercreep",
+          1
+        ],
+        "21": [
+          "Watchful Harrower",
+          65
+        ],
+        "22": [
+          "Devouring Brutalizer",
+          30
+        ],
+        "23": [
+          "Scavenging Siphoid",
+          1
+        ],
+        "24": [
+          "Voidminder",
+          7
+        ],
+        "25": [
+          "Taz'Rah",
+          0
+        ],
+        "26": [
+          "Atroxus",
+          0
+        ],
+        "27": [
+          "Charonus",
+          0
+        ],
+        "28": [
+          "Toxic Creeper",
+          0
+        ],
+        "29": [
+          "Magma Totem",
+          0
+        ],
+        "30": [
+          "Ethereal Shade",
+          0
+        ],
+        "31": [
+          "Targeting Stalker",
+          0
+        ],
+        "32": [
+          "Gravitic Orb",
+          0
+        ]
+      }
+    },
+    "164": {
+      "total": 817,
+      "en": "Altar of Fangs",
+      "e": {
+        "1": [
+          "Ritual Chieftain",
+          25
+        ],
+        "2": [
+          "Bloodletter",
+          5
+        ],
+        "3": [
+          "High Evolutionist",
+          7
+        ],
+        "4": [
+          "Hatchling",
+          0
+        ],
+        "5": [
+          "Living Venom",
+          1
+        ],
+        "6": [
+          "Primal Serpent",
+          7
+        ],
+        "7": [
+          "Ravenous Descendant",
+          5
+        ],
+        "8": [
+          "Ula'tek's Chosen",
+          25
+        ],
+        "9": [
+          "Ascendant Serpent",
+          30
+        ],
+        "10": [
+          "Twinfang Harrower",
+          25
+        ],
+        "11": [
+          "Venom Leech",
+          1
+        ],
+        "12": [
+          "Rattling Writhe",
+          25
+        ],
+        "13": [
+          "Blade of the Altar",
+          5
+        ],
+        "14": [
+          "Rav'i",
+          0
+        ],
+        "15": [
+          "The Writhing Coil",
+          0
+        ],
+        "16": [
+          "Zul'jan",
+          0
+        ],
+        "17": [
+          "Uncoiled Writhe",
+          0
+        ],
+        "18": [
+          "Infused Eggs",
+          0
+        ],
+        "19": [
+          "Ritual Snake",
+          0
+        ],
+        "20": [
+          "Ritual Spirit",
+          0
+        ],
+        "21": [
+          "Uncoiled Writhe",
+          0
+        ]
+      }
+    },
+    "42": {
+      "total": 551,
+      "en": "Ruby Life Pools",
+      "e": {
+        "1": [
+          "Primal Juggernaut",
+          25
+        ],
+        "2": [
+          "Deepstone Earthshaper",
+          5
+        ],
+        "3": [
+          "Earthbound Guardian",
+          5
+        ],
+        "4": [
+          "Flashfrost Chillweaver",
+          7
+        ],
+        "5": [
+          "Infused Whelp",
+          0
+        ],
+        "6": [
+          "Defier Draghar",
+          30
+        ],
+        "7": [
+          "Melidrussa Chillworn",
+          0
+        ],
+        "8": [
+          "Scorchling",
+          0
+        ],
+        "9": [
+          "Thunderhead",
+          48
+        ],
+        "10": [
+          "Primalist Cinderweaver",
+          7
+        ],
+        "11": [
+          "Blazebound Destroyer",
+          25
+        ],
+        "12": [
+          "Ashseer Flamelasher",
+          7
+        ],
+        "13": [
+          "Ruinous Stormbringer",
+          10
+        ],
+        "14": [
+          "Flamegullet",
+          40
+        ],
+        "15": [
+          "Kokia Blazehoof",
+          0
+        ],
+        "16": [
+          "Storm Warrior",
+          5
+        ],
+        "17": [
+          "Primal Thundercloud",
+          0
+        ],
+        "18": [
+          "Tempest Channeler",
+          25
+        ],
+        "19": [
+          "High Channeler Ryvati",
+          30
+        ],
+        "20": [
+          "Erkhart Stormvein",
+          0
+        ],
+        "21": [
+          "Kyrakka",
+          0
+        ],
+        "22": [
+          "Blazebound Firestorm",
+          0
+        ],
+        "23": [
+          "Infused Whelp",
+          0
+        ],
+        "24": [
+          "Scorchling",
+          0
+        ]
+      }
+    },
+    "20": {
+      "total": 687,
+      "en": "Temple of Sethraliss",
+      "e": {
+        "1": [
+          "Sandswept Hunter",
+          7
+        ],
+        "2": [
+          "Barbed Krolusk",
+          5
+        ],
+        "3": [
+          "Storm Adept",
+          7
+        ],
+        "4": [
+          "Sandfury Stonefist",
+          25
+        ],
+        "5": [
+          "Shrouded Fang",
+          7
+        ],
+        "6": [
+          "Sand-Sworn Rider",
+          25
+        ],
+        "7": [
+          "Poisonous Viper",
+          7
+        ],
+        "8": [
+          "Lightning Serpent",
+          5
+        ],
+        "9": [
+          "Dutiful Tamer",
+          7
+        ],
+        "10": [
+          "Krolusk Matriarch",
+          16
+        ],
+        "11": [
+          "Faithless Subjugator",
+          7
+        ],
+        "12": [
+          "Brood Tender",
+          7
+        ],
+        "13": [
+          "Merektha",
+          0
+        ],
+        "14": [
+          "Agitated Nimbus",
+          30
+        ],
+        "15": [
+          "Imbued Stormcaller",
+          12
+        ],
+        "16": [
+          "Static Anomaly",
+          5
+        ],
+        "17": [
+          "Twisted Hexxer",
+          25
+        ],
+        "18": [
+          "Avatar of Sethraliss",
+          0
+        ],
+        "19": [
+          "Spark Channeler",
+          5
+        ],
+        "20": [
+          "A Knot of Snakes",
+          0
+        ],
+        "21": [
+          "Toxic Viper",
+          0
+        ],
+        "22": [
+          "Storm Serpent",
+          0
+        ],
+        "23": [
+          "Merektha",
+          0
+        ],
+        "24": [
+          "Orb Watcher",
+          25
+        ],
+        "25": [
+          "Lightning Spire",
+          0
+        ],
+        "26": [
+          "Sandswept Marksman",
+          0
+        ],
+        "27": [
+          "Loose Spark",
+          0
+        ],
+        "28": [
+          "Polarized Spire",
+          0
+        ],
+        "29": [
+          "Eye of Sethraliss",
+          0
+        ],
+        "30": [
+          "Adderis",
+          0
+        ],
+        "31": [
+          "Aspix",
+          0
+        ],
+        "32": [
+          "Egg",
+          0
+        ],
+        "33": [
+          "Galvazzt",
+          0
+        ],
+        "34": [
+          "Swarming Krolusk",
+          0
+        ],
+        "35": [
+          "Faithless Tormentor",
+          5
+        ],
+        "36": [
+          "Corrupted Guardian",
+          0
+        ],
+        "37": [
+          "Lifeforce",
+          0
+        ],
+        "38": [
+          "Essence Defiler",
+          0
+        ],
+        "39": [
+          "Twisted Hexxer",
+          0
+        ],
+        "40": [
+          "Faithless Tormentor",
+          0
+        ],
+        "41": [
+          "Spark Channeler",
+          5
+        ],
+        "42": [
+          "Faithless Conscript",
+          0
+        ],
+        "43": [
+          "Snake",
+          0
+        ],
+        "44": [
+          "Lesser Lifeforce",
+          0
+        ],
+        "45": [
+          "Temple Disruptor",
+          5
+        ]
+      }
+    },
+    "17": {
+      "total": 608,
+      "en": "King's Rest",
+      "e": {
+        "1": [
+          "Animated Guardian",
+          22
+        ],
+        "2": [
+          "Minion of Zul",
+          0
+        ],
+        "3": [
+          "Risen Hexer",
+          20
+        ],
+        "4": [
+          "Shadow-Borne Champion",
+          25
+        ],
+        "5": [
+          "Umbral Warrior",
+          5
+        ],
+        "6": [
+          "The Golden Serpent",
+          0
+        ],
+        "7": [
+          "Skeletal Hunting Raptor",
+          10
+        ],
+        "8": [
+          "Queen Patlaa",
+          25
+        ],
+        "9": [
+          "King A'akul",
+          25
+        ],
+        "10": [
+          "Bloodsworn Assassin",
+          7
+        ],
+        "11": [
+          "Seneschal M'bara",
+          10
+        ],
+        "12": [
+          "Guard Captain Atu",
+          10
+        ],
+        "13": [
+          "King Rahu'ai",
+          25
+        ],
+        "14": [
+          "King Timalji",
+          25
+        ],
+        "15": [
+          "Queen Wasi",
+          25
+        ],
+        "16": [
+          "Purification Construct",
+          25
+        ],
+        "17": [
+          "Interment Construct",
+          15
+        ],
+        "18": [
+          "Mchimba the Embalmer",
+          0
+        ],
+        "19": [
+          "Phantom Hex Priest",
+          7
+        ],
+        "20": [
+          "Royal Berserker",
+          22
+        ],
+        "21": [
+          "Spectral Shaman",
+          7
+        ],
+        "22": [
+          "Ghostly Brute",
+          25
+        ],
+        "23": [
+          "Honored Raptor",
+          5
+        ],
+        "24": [
+          "Shadow of Zul",
+          30
+        ],
+        "25": [
+          "King Dazar",
+          0
+        ],
+        "26": [
+          "Embalming Fluid",
+          1
+        ],
+        "27": [
+          "Thundering Totem",
+          0
+        ],
+        "28": [
+          "Explosive Totem",
+          0
+        ],
+        "29": [
+          "Torrent Totem",
+          0
+        ],
+        "30": [
+          "Coffin",
+          0
+        ],
+        "31": [
+          "T'zala",
+          0
+        ],
+        "32": [
+          "Reban",
+          0
+        ],
+        "33": [
+          "Minion of Zul",
+          0
+        ],
+        "34": [
+          "Aka'ali the Conqueror",
+          0
+        ],
+        "35": [
+          "Zanazal the Wise",
+          0
+        ],
+        "36": [
+          "Kula the Butcher",
+          0
+        ],
+        "37": [
+          "Half-Finished Mummy",
+          7
+        ],
+        "38": [
+          "Animated Gold",
+          0
+        ],
+        "39": [
+          "Healing Tide Totem",
+          0
+        ]
+      }
+    },
+    "45": {
+      "total": 460,
+      "en": "Algethar Academy",
+      "e": {
+        "1": [
+          "Corrupted Manafiend",
+          5
+        ],
+        "2": [
+          "Spellbound Battleaxe",
+          5
+        ],
+        "3": [
+          "Vicious Ravager",
+          15
+        ],
+        "4": [
+          "Arcane Forager",
+          4
+        ],
+        "5": [
+          "Unruly Textbook",
+          4
+        ],
+        "6": [
+          "Vexamus",
+          0
+        ],
+        "7": [
+          "Guardian Sentry",
+          18
+        ],
+        "8": [
+          "Territorial Eagle",
+          2
+        ],
+        "9": [
+          "Alpha Eagle",
+          15
+        ],
+        "10": [
+          "Crawth",
+          0
+        ],
+        "11": [
+          "Aggravated Skitterfly",
+          4
+        ],
+        "12": [
+          "Vile Lasher",
+          9
+        ],
+        "13": [
+          "Hungry Lasher",
+          2
+        ],
+        "14": [
+          "Overgrown Ancient",
+          0
+        ],
+        "15": [
+          "Algeth'ar Echoknight",
+          15
+        ],
+        "16": [
+          "Spectral Invoker",
+          5
+        ],
+        "17": [
+          "Echo of Doragosa",
+          0
+        ]
+      }
+    },
+    "153": {
+      "total": 585,
+      "en": "Magisters Terrace",
+      "e": {
+        "1": [
+          "Arcane Magister",
+          7
+        ],
+        "2": [
+          "Animated Codex",
+          2
+        ],
+        "3": [
+          "Blazing Pyromancer",
+          12
+        ],
+        "4": [
+          "Runed Spellbreaker",
+          12
+        ],
+        "5": [
+          "Voidling",
+          1
+        ],
+        "6": [
+          "Hollowsoul Shredder",
+          5
+        ],
+        "7": [
+          "Dreadful Voidwalker",
+          7
+        ],
+        "8": [
+          "Shadowrift Voidcaller",
+          12
+        ],
+        "9": [
+          "Devouring Tyrant",
+          12
+        ],
+        "10": [
+          "Void Terror",
+          7
+        ],
+        "11": [
+          "Arcanotron Custos",
+          0
+        ],
+        "12": [
+          "Seranel Sunlash",
+          0
+        ],
+        "13": [
+          "Gemellus",
+          0
+        ],
+        "14": [
+          "Degentrius",
+          0
+        ],
+        "15": [
+          "Brightscale Wyrm",
+          1
+        ],
+        "16": [
+          "Arcane Sentry",
+          16
+        ],
+        "17": [
+          "Vigilant Librarian",
+          0
+        ],
+        "18": [
+          "Sunblade Enforcer",
+          5
+        ],
+        "19": [
+          "Lightward Healer",
+          5
+        ],
+        "20": [
+          "Gemellus",
+          0
+        ],
+        "21": [
+          "Void-Infused Brightscale",
+          1
+        ],
+        "22": [
+          "Celestial Drifter",
+          0
+        ],
+        "23": [
+          "Unstable Voidling",
+          0
+        ],
+        "24": [
+          "Hollowsoul Shredder",
+          5
+        ],
+        "25": [
+          "Spellwoven Familiar",
+          1
+        ]
+      }
+    },
+    "154": {
+      "total": 607,
+      "en": "Maisara Caverns",
+      "e": {
+        "1": [
+          "Frenzied Berserker",
+          5
+        ],
+        "2": [
+          "Keen Headhunter",
+          7
+        ],
+        "3": [
+          "Dread Souleater",
+          15
+        ],
+        "4": [
+          "Ritual Hexxer",
+          7
+        ],
+        "5": [
+          "Hexbound Eagle",
+          3
+        ],
+        "6": [
+          "Hex Guardian",
+          15
+        ],
+        "7": [
+          "Warding Mask",
+          2
+        ],
+        "8": [
+          "Bramblemaw Bear",
+          5
+        ],
+        "9": [
+          "Mire Laborer",
+          1
+        ],
+        "10": [
+          "Hulking Juggernaut",
+          15
+        ],
+        "11": [
+          "Umbral Shadowbinder",
+          5
+        ],
+        "12": [
+          "Restless Gnarldin",
+          15
+        ],
+        "13": [
+          "Reanimated Warrior",
+          2
+        ],
+        "14": [
+          "Grim Skirmisher",
+          2
+        ],
+        "15": [
+          "Tormented Shade",
+          7
+        ],
+        "16": [
+          "Rokh'zal",
+          10
+        ],
+        "17": [
+          "Bound Defender",
+          15
+        ],
+        "18": [
+          "Hollow Soulrender",
+          15
+        ],
+        "19": [
+          "Muro'jin",
+          0
+        ],
+        "20": [
+          "Nekraxx",
+          0
+        ],
+        "21": [
+          "Vordaza",
+          0
+        ],
+        "22": [
+          "Rak'tul",
+          0
+        ],
+        "23": [
+          "Unstable Phantom",
+          0
+        ],
+        "24": [
+          "Soulbind Totem",
+          0
+        ],
+        "25": [
+          "Zaib'yan",
+          7
+        ],
+        "26": [
+          "Gloomwing Bat",
+          5
+        ],
+        "27": [
+          "Death's Grasp",
+          0
+        ],
+        "28": [
+          "Rokh'zal",
+          0
+        ]
+      }
+    },
+    "155": {
+      "total": 596,
+      "en": "Nexus Point Xenas",
+      "e": {
+        "1": [
+          "Shadowguard Defender",
+          5
+        ],
+        "2": [
+          "Reformed Voidling",
+          1
+        ],
+        "3": [
+          "Corewright Arcanist",
+          5
+        ],
+        "4": [
+          "Hollowsoul Scrounger",
+          3
+        ],
+        "5": [
+          "Flux Engineer",
+          7
+        ],
+        "6": [
+          "Nexus Adept",
+          7
+        ],
+        "7": [
+          "Circuit Seer",
+          15
+        ],
+        "8": [
+          "Cursed Voidcaller",
+          3
+        ],
+        "9": [
+          "Dreadflail",
+          8
+        ],
+        "10": [
+          "Duskfright Herald",
+          15
+        ],
+        "11": [
+          "Grand Nullifier",
+          7
+        ],
+        "12": [
+          "Null Sentinel",
+          15
+        ],
+        "13": [
+          "Lingering Image",
+          15
+        ],
+        "14": [
+          "Radiant Swarm",
+          2
+        ],
+        "15": [
+          "Lightwrought",
+          7
+        ],
+        "16": [
+          "Flarebat",
+          3
+        ],
+        "17": [
+          "Kasreth",
+          0
+        ],
+        "18": [
+          "Corewarden Nysarra",
+          0
+        ],
+        "19": [
+          "Lothraxion",
+          0
+        ],
+        "20": [
+          "Smudge",
+          0
+        ],
+        "21": [
+          "[DNT] Conduit Stalker",
+          0
+        ],
+        "22": [
+          "Dreadflail",
+          0
+        ],
+        "23": [
+          "Grand Nullifier",
+          0
+        ],
+        "24": [
+          "Fractured Image",
+          0
+        ],
+        "25": [
+          "Nullifier",
+          0
+        ],
+        "26": [
+          "Voidcaller",
+          0
+        ],
+        "27": [
+          "Mana Battery",
+          0
+        ],
+        "28": [
+          "Corespark Conduit",
+          0
+        ],
+        "29": [
+          "Corewarden Nysarra",
+          0
+        ],
+        "30": [
+          "Broken Pipe",
+          0
+        ],
+        "31": [
+          "Corespark Pylon",
+          0
+        ],
+        "32": [
+          "Fractured Image",
+          0
+        ],
+        "33": [
+          "Mana Battery",
+          0
+        ],
+        "34": [
+          "Core Technician",
+          0
+        ]
+      }
+    },
+    "150": {
+      "total": 643,
+      "en": "Pit of Saron",
+      "e": {
+        "1": [
+          "Deathwhisper Necrolyte",
+          15
+        ],
+        "2": [
+          "Risen Soldier",
+          0
+        ],
+        "3": [
+          "Arcanist Cadaver",
+          0
+        ],
+        "4": [
+          "Gloombound Shadebringer",
+          7
+        ],
+        "5": [
+          "Quarry Tormentor",
+          5
+        ],
+        "6": [
+          "Dreadpulse Lich",
+          15
+        ],
+        "7": [
+          "Rotting Ghoul",
+          5
+        ],
+        "8": [
+          "Ymirjar Graveblade",
+          11
+        ],
+        "9": [
+          "Leaping Geist",
+          2
+        ],
+        "10": [
+          "Plungetalon Gargoyle",
+          6
+        ],
+        "11": [
+          "Lumbering Plaguehorror",
+          6
+        ],
+        "12": [
+          "Iceborn Proto-Drake",
+          9
+        ],
+        "13": [
+          "Wrathbone Enforcer",
+          5
+        ],
+        "14": [
+          "Rimebone Coldwraith",
+          7
+        ],
+        "15": [
+          "Glacieth",
+          20
+        ],
+        "16": [
+          "Krick",
+          0
+        ],
+        "17": [
+          "Ick",
+          0
+        ],
+        "18": [
+          "Forgemaster Garfrost",
+          0
+        ],
+        "19": [
+          "Scourgelord Tyrannus",
+          0
+        ],
+        "20": [
+          "Rimefang",
+          0
+        ],
+        "21": [
+          "Rotling",
+          0
+        ],
+        "22": [
+          "Scourge Plaguespreader",
+          0
+        ],
+        "23": [
+          "Shade of Krick",
+          0
+        ]
+      }
+    },
+    "11": {
+      "total": 568,
+      "en": "Seat of the Triumvirate",
+      "e": {
+        "1": [
+          "Merciless Subjugator",
+          10
+        ],
+        "2": [
+          "Rift Warden",
+          20
+        ],
+        "3": [
+          "Ruthless Riftstalker",
+          9
+        ],
+        "4": [
+          "Ravenous Umbralfin",
+          8
+        ],
+        "5": [
+          "Umbral War-Adept",
+          15
+        ],
+        "6": [
+          "Dire Voidbender",
+          8
+        ],
+        "7": [
+          "Void-Infused Destroyer",
+          15
+        ],
+        "8": [
+          "Grand Shadow-Weaver",
+          15
+        ],
+        "9": [
+          "Viceroy Nezhar",
+          0
+        ],
+        "10": [
+          "Zuraal the Ascended",
+          0
+        ],
+        "11": [
+          "Saprish",
+          0
+        ],
+        "12": [
+          "Darkfang",
+          0
+        ],
+        "13": [
+          "Famished Broken",
+          1
+        ],
+        "14": [
+          "Shadowguard Champion",
+          3
+        ],
+        "15": [
+          "Dark Conjurer",
+          7
+        ],
+        "16": [
+          "Bound Voidcaller",
+          0
+        ],
+        "17": [
+          "Coalesced Void",
+          0
+        ],
+        "18": [
+          "Umbral Tentacle",
+          0
+        ],
+        "19": [
+          "L'ura",
+          0
+        ],
+        "20": [
+          "Shadewing",
+          0
+        ],
+        "21": [
+          "Depravation Wave Stalker",
+          0
+        ],
+        "22": [
+          "Void Tentacle",
+          0
+        ],
+        "23": [
+          "Shadowguard Champion",
+          0
+        ]
+      }
+    },
+    "151": {
+      "total": 431,
+      "en": "Skyreach",
+      "e": {
+        "1": [
+          "Soaring Chakram Master",
+          5
+        ],
+        "2": [
+          "Driving Gale-Caller",
+          7
+        ],
+        "3": [
+          "Raging Squall",
+          1
+        ],
+        "4": [
+          "Lowborn Servant",
+          1
+        ],
+        "5": [
+          "Blinding Sun Priestess",
+          5
+        ],
+        "6": [
+          "Initiate of the Rising Sun",
+          7
+        ],
+        "7": [
+          "Adept of the Dawn",
+          7
+        ],
+        "8": [
+          "Solar Elemental",
+          15
+        ],
+        "9": [
+          "Solar Construct",
+          12
+        ],
+        "10": [
+          "Suntalon",
+          2
+        ],
+        "11": [
+          "Suntalon Tamer",
+          5
+        ],
+        "12": [
+          "Ranjit",
+          0
+        ],
+        "13": [
+          "Araknath",
+          0
+        ],
+        "14": [
+          "Skyreach Sun Construct Prototype",
+          0
+        ],
+        "15": [
+          "Rukhran",
+          0
+        ],
+        "16": [
+          "Dread Raven",
+          15
+        ],
+        "17": [
+          "Outcast Warrior",
+          5
+        ],
+        "18": [
+          "Sunwing",
+          0
+        ],
+        "19": [
+          "High Sage Viryx",
+          0
+        ],
+        "20": [
+          "Arakkoa Magnifying Glass",
+          0
+        ],
+        "21": [
+          "Adorned Bladetalon",
+          12
+        ],
+        "22": [
+          "Solar Orb",
+          0
+        ]
+      }
+    },
+    "152": {
+      "total": 591,
+      "en": "Windrunner Spire",
+      "e": {
+        "1": [
+          "Restless Steward",
+          7
+        ],
+        "2": [
+          "Dutiful Groundskeeper",
+          4
+        ],
+        "3": [
+          "Spellguard Magus",
+          15
+        ],
+        "4": [
+          "Windrunner Soldier",
+          5
+        ],
+        "5": [
+          "Fervent Apothecary",
+          5
+        ],
+        "6": [
+          "Ardent Cutthroat",
+          6
+        ],
+        "7": [
+          "Zealous Reaver",
+          4
+        ],
+        "8": [
+          "Devoted Woebringer",
+          15
+        ],
+        "9": [
+          "Flesh Behemoth",
+          20
+        ],
+        "10": [
+          "Territorial Dragonhawk",
+          7
+        ],
+        "11": [
+          "Spindleweb Hatchling",
+          1
+        ],
+        "12": [
+          "Creeping Spindleweb",
+          7
+        ],
+        "13": [
+          "Apex Lynx",
+          15
+        ],
+        "14": [
+          "Pesty Lashling",
+          1
+        ],
+        "15": [
+          "Bloated Lasher",
+          17
+        ],
+        "16": [
+          "Scouting Trapper",
+          5
+        ],
+        "17": [
+          "Swiftshot Archer",
+          7
+        ],
+        "18": [
+          "Phalanx Breaker",
+          15
+        ],
+        "19": [
+          "Loyal Worg",
+          5
+        ],
+        "20": [
+          "Lingering Marauder",
+          6
+        ],
+        "21": [
+          "Spectral Axethrower",
+          7
+        ],
+        "22": [
+          "Phantasmal Mystic",
+          15
+        ],
+        "23": [
+          "Emberdawn",
+          0
+        ],
+        "24": [
+          "Kalis",
+          0
+        ],
+        "25": [
+          "Latch",
+          0
+        ],
+        "26": [
+          "Commander Kroluk",
+          0
+        ],
+        "27": [
+          "Restless Heart",
+          0
+        ],
+        "28": [
+          "Flaming Updraft",
+          0
+        ],
+        "29": [
+          "Phalanx Breaker",
+          0
+        ],
+        "30": [
+          "Haunting Grunt",
+          4
+        ]
+      }
+    }
+  },
   "total": 1727,
-  "builtAt": "2026-09-07T10:04:04+00:00",
+  "builtAt": "2026-09-07T10:18:10+00:00",
   "mdtSha": "1cbb06bab1bc3dbed091d1e1a5d2157e553c10a2"
 }
