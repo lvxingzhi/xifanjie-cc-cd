@@ -85,11 +85,31 @@
   #panel .p-tag.int { border-color: #cf222e; color: #cf222e; }
   #panel .p-desc { color: #57606a; font-size: 12.5px; }
   #panel .p-empty { color: #57606a; font-size: 12.5px; }
+
+  /* 快捷路线条 */
+  .quick {
+    display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+    margin-bottom: 14px;
+  }
+  .quick-label { font-size: 12.5px; color: #57606a; margin-right: 2px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; padding: 3px 10px; cursor: pointer;
+    border: 1px solid #d0d7de; border-radius: 999px; background: #f6f8fa;
+  }
+  .chip:hover { background: #f0f6ff; border-color: #0969da; }
+  .chip.cur { background: #daf5ff; border-color: #0969da; }
+  .chip .x {
+    font-size: 12px; line-height: 1; color: #57606a; padding: 1px;
+    border-radius: 50%;
+  }
+  .chip .x:hover { color: #cf222e; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>MDT 路线查看</h1>
+  <div class="quick" id="quick"></div>
   <textarea id="input" placeholder="粘贴 MDT 导出串（!~MDT2~ 开头）" spellcheck="false"></textarea>
   <div class="bar">
     <button id="btn">查看</button>
@@ -194,6 +214,7 @@ const state = {
   dungeonZh: {},                       // dungeonEn -> dungeonZh
   spells: {},                          // mobEn -> [{ spellName, tags, description }]
   route: null,                         // 解码出的 preset
+  routes: [],                         // 快捷路线 [{ name, s, custom? }]
 };
 
 async function loadData() {
@@ -211,6 +232,45 @@ async function loadData() {
       desc: r.description || r.descriptionEn || "",
     });
   }
+}
+
+// ---------------------------------------------------------------------------
+// 快捷路线条：routes.json 为准（改文件即生效）
+// ---------------------------------------------------------------------------
+async function fetchBuiltinRoutes() {
+  try {
+    const res = await fetch("routes.json", { cache: "no-cache" });
+    if (!res.ok) return;
+    const builtin = await res.json();
+    if (!Array.isArray(builtin)) return;
+    state.routes = builtin
+      .filter((r) => r && r.name && r.s && r.s.startsWith("!~MDT2~"))
+      .map((r) => ({ name: r.name, s: r.s }));
+  } catch (_) { /* routes.json 不存在时忽略 */ }
+}
+
+function renderQuick() {
+  const q = $("#quick");
+  const cur = state.route && state.route._quickName;
+  q.innerHTML = state.routes.length
+    ? `<span class="quick-label">快捷:</span>` +
+      state.routes.map((r, i) =>
+        `<span class="chip${r.name === cur ? " cur" : ""}" data-i="${i}">${esc(r.name)}` +
+        `<span class="x" data-del="${i}" title="删除">×</span></span>`
+      ).join("")
+    : "";
+}
+
+function useRoute(i) {
+  const r = state.routes[i];
+  if (!r) return;
+  $("#input").value = r.s;
+  go(r.name);
+}
+
+function delRoute(i) {
+  state.routes.splice(i, 1);
+  renderQuick();
 }
 
 // ---------------------------------------------------------------------------
@@ -318,29 +378,46 @@ document.addEventListener("click", (e) => {
 // ---------------------------------------------------------------------------
 // 入口
 // ---------------------------------------------------------------------------
-async function go() {
+async function go(fromQuick) {
   const err = $("#err");
   err.textContent = "";
   try {
     const s = $("#input").value.trim();
     if (!s) return;
     state.route = await decodeMdt2(s);
+    state.route._quickName = fromQuick || null;   // 快捷条高亮用
     render();
     resetPanel();
+    renderQuick();
   } catch (e) {
     $("#out").innerHTML = "";
     resetPanel();
+    state.route = null;
+    renderQuick();
     err.textContent = "解码失败：" + (e.message || e);
   }
 }
 
-$("#btn").addEventListener("click", go);
+$("#btn").addEventListener("click", () => go());
 $("#input").addEventListener("keydown", (e) => {
   if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) go();
 });
 
+// 快捷条事件委托：点 chip = 使用；点 × = 删除
+$("#quick").addEventListener("click", (e) => {
+  const del = e.target.closest("[data-del]");
+  if (del) {
+    e.stopPropagation();
+    delRoute(Number(del.getAttribute("data-del")));
+    return;
+  }
+  const chip = e.target.closest(".chip");
+  if (chip) useRoute(Number(chip.getAttribute("data-i")));
+});
+
 (async function init() {
   resetPanel();
+  fetchBuiltinRoutes().then(renderQuick);
   try {
     await loadData();
   } catch (e) {
