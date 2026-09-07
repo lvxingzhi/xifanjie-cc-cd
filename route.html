@@ -14,7 +14,7 @@
     font: 14px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft Yahei", sans-serif;
     color: #24292f; background: #fff; padding: 24px 16px 60px;
   }
-  .wrap { max-width: 880px; margin: 0 auto; }
+  .wrap { max-width: 1200px; margin: 0 auto; }
   h1 { font-size: 16px; margin: 0 0 14px; font-weight: 600; color: #57606a; }
   textarea {
     width: 100%; height: 72px; padding: 8px 10px;
@@ -57,31 +57,34 @@
   .mobs { display: flex; flex-wrap: wrap; gap: 4px 18px; }
   .mob {
     font-size: 14px; padding: 2px 4px; margin: 0 -4px;
-    border-bottom: 1px dotted #8c959f; cursor: default;
+    border-bottom: 1px dotted #8c959f; cursor: pointer;
     border-radius: 2px;
   }
-  .mob:hover { background: #f0f6ff; border-bottom-color: #0969da; }
+  .mob:hover, .mob.sel { background: #f0f6ff; border-bottom-color: #0969da; }
+  .mob.sel { border-bottom-style: solid; }
   .mob .cnt { color: #57606a; font-size: 12.5px; }
   .mob.boss { font-weight: 600; }
 
-  /* 技能浮动框 */
-  #tip {
-    position: fixed; z-index: 10; display: none;
-    max-width: 420px; max-height: 70vh; overflow-y: auto;
-    background: #fff; border: 1px solid #8c959f; border-radius: 6px;
-    padding: 10px 12px; font-size: 13px; line-height: 1.6;
-    box-shadow: 0 4px 14px rgba(36, 41, 47, .18);
+  /* 右侧技能面板 */
+  .layout { display: flex; gap: 20px; align-items: flex-start; }
+  .layout .main { flex: 1; min-width: 0; }
+  #panel {
+    position: sticky; top: 16px;
+    width: 320px; flex: none; max-height: calc(100vh - 32px); overflow-y: auto;
+    border: 1px solid #d8dee4; border-radius: 6px;
+    padding: 12px 14px; font-size: 13px; line-height: 1.6;
+    background: #fff;
   }
-  #tip .t-mob { font-weight: 600; font-size: 13.5px; margin-bottom: 6px; }
-  #tip .t-spell { margin-top: 8px; }
-  #tip .t-spell:first-of-type { margin-top: 0; }
-  #tip .t-name { font-weight: 600; }
-  #tip .t-tag {
+  #panel .p-mob { font-weight: 600; font-size: 13.5px; margin-bottom: 6px; }
+  #panel .p-spell { margin-top: 9px; }
+  #panel .p-name { font-weight: 600; }
+  #panel .p-tag {
     display: inline-block; font-size: 11px; line-height: 1.4; padding: 0 5px;
     margin-left: 6px; border: 1px solid #8c959f; border-radius: 3px; color: #57606a;
   }
-  #tip .t-tag.int { border-color: #cf222e; color: #cf222e; }
-  #tip .t-desc { color: #57606a; font-size: 12.5px; }
+  #panel .p-tag.int { border-color: #cf222e; color: #cf222e; }
+  #panel .p-desc { color: #57606a; font-size: 12.5px; }
+  #panel .p-empty { color: #57606a; font-size: 12.5px; }
 </style>
 </head>
 <body>
@@ -90,12 +93,14 @@
   <textarea id="input" placeholder="粘贴 MDT 导出串（!~MDT2~ 开头）" spellcheck="false"></textarea>
   <div class="bar">
     <button id="btn">查看</button>
-    <span class="hint">粘贴后点击查看；鼠标悬停怪物名显示技能</span>
+    <span class="hint">粘贴后点击查看；点击怪物名在右侧显示技能</span>
     <span class="err" id="err"></span>
   </div>
-  <div id="out"></div>
+  <div class="layout">
+    <div class="main" id="out"></div>
+    <div id="panel"></div>
+  </div>
 </div>
-<div id="tip"></div>
 
 <script>
 "use strict";
@@ -211,18 +216,6 @@ async function loadData() {
 // ---------------------------------------------------------------------------
 // 渲染
 // ---------------------------------------------------------------------------
-function tagHtml(s) {
-  const tags = [];
-  if (s.int) tags.push(["打断", "int"]);
-  if (s.magic) tags.push(["魔法"]);
-  if (s.enrage) tags.push(["激怒"]);
-  if (s.bleed) tags.push(["流血"]);
-  if (s.poison) tags.push(["中毒"]);
-  if (s.disease) tags.push(["疾病"]);
-  if (s.curse) tags.push(["诅咒"]);
-  return tags.map((t) => `<span class="t-tag${t[1] ? " " + t[1] : ""}">${t[0]}</span>`).join("");
-}
-
 function render() {
   const route = state.route;
   const idx = String(route.value.currentDungeonIdx);
@@ -279,41 +272,48 @@ function zhDungeon(en) {
   return state.dungeonZh[en] || en;
 }
 
-// 技能浮动框
-const tip = $("#tip");
-document.addEventListener("mouseover", (e) => {
-  const el = e.target.closest(".mob");
-  if (!el || !state.route) return;
-  const enName = el.getAttribute("data-mob");
+// 右侧技能面板：点击怪物名选中，面板显示该怪全部技能
+const panel = $("#panel");
+let selectedMob = null;
+
+function tagHtml(s) {
+  const tags = [];
+  if (s.int) tags.push(["打断", "int"]);
+  if (s.magic) tags.push(["魔法"]);
+  if (s.enrage) tags.push(["激怒"]);
+  if (s.bleed) tags.push(["流血"]);
+  if (s.poison) tags.push(["中毒"]);
+  if (s.disease) tags.push(["疾病"]);
+  if (s.curse) tags.push(["诅咒"]);
+  return tags.map((t) => `<span class="p-tag${t[1] ? " " + t[1] : ""}">${t[0]}</span>`).join("");
+}
+
+function resetPanel() {
+  selectedMob = null;
+  panel.innerHTML = `<div class="p-empty">点击怪物名查看技能</div>`;
+}
+
+function showMob(enName) {
+  selectedMob = enName;
+  document.querySelectorAll(".mob.sel").forEach((el) => el.classList.remove("sel"));
+  document.querySelectorAll(`.mob[data-mob="${CSS.escape(enName)}"]`).forEach((el) => el.classList.add("sel"));
   const spells = state.spells[enName];
   if (!spells || !spells.length) {
-    tip.innerHTML = `<div class="t-mob">${esc(state.zh[enName] || enName)}</div><div class="t-desc">无技能数据</div>`;
-  } else {
-    tip.innerHTML = `<div class="t-mob">${esc(state.zh[enName] || enName)}</div>` +
-      spells.map((s) =>
-        `<div class="t-spell"><span class="t-name">${esc(s.name)}</span>${tagHtml(s)}` +
-        (s.desc ? `<div class="t-desc">${esc(s.desc)}</div>` : "")
-      ).join("");
+    panel.innerHTML = `<div class="p-mob">${esc(state.zh[enName] || enName)}</div><div class="p-empty">无技能数据</div>`;
+    return;
   }
-  tip.style.display = "block";
-  positionTip(e);
-});
-document.addEventListener("mousemove", (e) => {
-  if (tip.style.display === "block") positionTip(e);
-});
-document.addEventListener("mouseout", (e) => {
-  if (e.target.closest && e.target.closest(".mob")) tip.style.display = "none";
-});
-
-function positionTip(e) {
-  const pad = 14;
-  let x = e.clientX + pad, y = e.clientY + pad;
-  const r = tip.getBoundingClientRect();
-  if (x + r.width > innerWidth - 8) x = e.clientX - r.width - pad;
-  if (y + r.height > innerHeight - 8) y = e.clientY - r.height - pad;
-  tip.style.left = Math.max(8, x) + "px";
-  tip.style.top = Math.max(8, y) + "px";
+  panel.innerHTML = `<div class="p-mob">${esc(state.zh[enName] || enName)}</div>` +
+    spells.map((s) =>
+      `<div class="p-spell"><span class="p-name">${esc(s.name)}</span>${tagHtml(s)}` +
+      (s.desc ? `<div class="p-desc">${esc(s.desc)}</div>` : "")
+    ).join("");
 }
+
+document.addEventListener("click", (e) => {
+  const el = e.target.closest(".mob");
+  if (!el) return;
+  showMob(el.getAttribute("data-mob"));
+});
 
 // ---------------------------------------------------------------------------
 // 入口
@@ -326,8 +326,10 @@ async function go() {
     if (!s) return;
     state.route = await decodeMdt2(s);
     render();
+    resetPanel();
   } catch (e) {
     $("#out").innerHTML = "";
+    resetPanel();
     err.textContent = "解码失败：" + (e.message || e);
   }
 }
@@ -338,6 +340,7 @@ $("#input").addEventListener("keydown", (e) => {
 });
 
 (async function init() {
+  resetPanel();
   try {
     await loadData();
   } catch (e) {
