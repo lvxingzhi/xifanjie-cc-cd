@@ -44,6 +44,7 @@ class Enemy:
     characteristics: list[str] = field(default_factory=list)
     spells: dict[int, SpellAttr] = field(default_factory=dict)
     is_boss: bool = False
+    count: int = 0                # 进度计数（route 页计算 pull 进度用；boss 为 0）
 
 
 @dataclass
@@ -55,6 +56,8 @@ class DungeonData:
     name_cn: str = ""
     short_name_key: str = ""
     short_name_cn: str = ""
+    dungeon_index: int = 0        # MDT dungeonIndex（route 导入串按此索引副本）
+    total_count: int = 0          # 副本总进度（dungeonTotalCount.normal）
     enemies: list[Enemy] = field(default_factory=list)
 
 
@@ -179,6 +182,12 @@ def parse_dungeon_file(file_path: Path) -> Optional[DungeonData]:
     m = re.search(r'shortName\s*=\s*L\["([^"]+)"\]', content)
     if m:
         dungeon.short_name_key = m.group(1)
+    m = re.search(r'local dungeonIndex\s*=\s*(\d+)', content)
+    if m:
+        dungeon.dungeon_index = int(m.group(1))
+    m = re.search(r'dungeonTotalCount\[dungeonIndex\]\s*=\s*\{\s*normal\s*=\s*(\d+)', content)
+    if m:
+        dungeon.total_count = int(m.group(1))
 
     in_enemies = in_enemy = in_characteristics = in_spells = in_spell_entry = False
     spells_depth = 0
@@ -209,6 +218,10 @@ def parse_dungeon_file(file_path: Path) -> Optional[DungeonData]:
         m = re.match(r'\["id"\]\s*=\s*(\d+)', stripped)
         if m:
             current_enemy.npc_id = int(m.group(1))
+            continue
+        m = re.match(r'\["count"\]\s*=\s*(\d+)', stripped)
+        if m:
+            current_enemy.count = int(m.group(1))
             continue
         m = re.match(r'\["creatureType"\]\s*=\s*"([^"]+)"', stripped)
         if m:

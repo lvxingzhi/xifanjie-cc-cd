@@ -325,6 +325,7 @@
       <span class="topnav-name">西番芥的<span class="acc">秘境工具箱</span></span>
     </a>
     <div class="topnav-links">
+      <a href="route.html" data-i18n="navRoute">路线查看</a>
       <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener" data-i18n="navBili">B站主页</a>
     </div>
     <div class="topnav-right">
@@ -343,6 +344,7 @@
       <button type="button" data-lang="zh" class="active">中文</button>
       <button type="button" data-lang="en">EN</button>
     </div>
+    <a href="route.html" data-i18n="navRoute">路线查看</a>
     <a href="https://space.bilibili.com/346688237" target="_blank" rel="noopener" data-i18n="navBili">B站主页</a>
     <a href="cards.html" class="btn btn-primary" data-i18n="navCta">副本卡片</a>
   </div>
@@ -539,7 +541,7 @@ const I18N = {
     statTotal: "总技能条目", statDungeon: "覆盖副本", statInt: "可打断技能", statMag: "魔法可驱散",
     empty: "没有匹配的技能，换个关键词再试试吧！",
     loading: "加载中…", loadFail: "加载失败",
-    navBili: "B站主页", navCta: "副本卡片",
+    navBili: "B站主页", navCta: "副本卡片", navRoute: "路线查看",
   },
   en: {
     dungeon: "Dungeon", mob: "Mob", spell: "Spell",
@@ -554,7 +556,7 @@ const I18N = {
     statTotal: "Total Spells", statDungeon: "Dungeons", statInt: "Interruptible", statMag: "Magic (Dispel)",
     empty: "No matching spells. Try another keyword!",
     loading: "Loading…", loadFail: "Load failed",
-    navBili: "Bilibili", navCta: "Dungeon Cards",
+    navBili: "Bilibili", navCta: "Dungeon Cards", navRoute: "Route Viewer",
   },
 };
 const t = (k) => (I18N[state.lang] && I18N[state.lang][k]) || I18N.zh[k] || k;

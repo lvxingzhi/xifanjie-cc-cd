@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="MDT 路线查看 · 粘贴导出串查看怪物组与技能" />
+<title>路线查看</title>
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2322C55E'/><text x='50%25' y='56%25' font-family='PingFang SC,Microsoft Yahei,sans-serif' font-size='34' font-weight='800' fill='%23fff' text-anchor='middle' dominant-baseline='middle'>路</text></svg>" />
+<style>
+  /* 低调表格风：系统字体、灰白配色，看起来像内部文档 */
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font: 14px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft Yahei", sans-serif;
+    color: #24292f; background: #fff; padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 16px; margin: 0 0 14px; font-weight: 600; color: #57606a; }
+  textarea {
+    width: 100%; height: 72px; padding: 8px 10px;
+    font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    border: 1px solid #d0d7de; border-radius: 6px; resize: vertical; outline: none;
+  }
+  textarea:focus { border-color: #0969da; }
+  .bar { display: flex; gap: 10px; align-items: center; margin: 10px 0 24px; flex-wrap: wrap; }
+  button {
+    font: inherit; font-size: 13px; padding: 5px 18px; cursor: pointer;
+    border: 1px solid #d0d7de; border-radius: 6px; background: #f6f8fa; color: #24292f;
+  }
+  button:hover { background: #eff2f5; }
+  .hint { font-size: 12.5px; color: #57606a; }
+  .err { color: #cf222e; font-size: 13px; white-space: pre-wrap; }
+
+  /* 路线摘要 */
+  .summary {
+    font-size: 13.5px; color: #24292f; margin-bottom: 18px;
+    padding-bottom: 10px; border-bottom: 1px solid #d8dee4;
+    display: flex; gap: 16px; flex-wrap: wrap;
+  }
+  .summary b { font-weight: 600; }
+
+  /* pull 段框 */
+  .pull {
+    border: 1px solid #d8dee4; border-radius: 6px;
+    margin-bottom: 10px; padding: 10px 14px 12px;
+  }
+  .pull-head {
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+    font-size: 13px; color: #57606a; margin-bottom: 6px;
+  }
+  .pull-head .no { font-weight: 600; color: #24292f; }
+  .pull-head .forces { margin-left: auto; font-variant-numeric: tabular-nums; }
+  .pull-head .swatch {
+    display: inline-block; width: 10px; height: 10px; border-radius: 2px;
+    vertical-align: baseline; margin-right: 4px;
+  }
+  .mobs { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+  .mob {
+    font-size: 14px; padding: 2px 4px; margin: 0 -4px;
+    border-bottom: 1px dotted #8c959f; cursor: default;
+    border-radius: 2px;
+  }
+  .mob:hover { background: #f0f6ff; border-bottom-color: #0969da; }
+  .mob .cnt { color: #57606a; font-size: 12.5px; }
+  .mob.boss { font-weight: 600; }
+
+  /* 技能浮动框 */
+  #tip {
+    position: fixed; z-index: 10; display: none;
+    max-width: 420px; max-height: 70vh; overflow-y: auto;
+    background: #fff; border: 1px solid #8c959f; border-radius: 6px;
+    padding: 10px 12px; font-size: 13px; line-height: 1.6;
+    box-shadow: 0 4px 14px rgba(36, 41, 47, .18);
+  }
+  #tip .t-mob { font-weight: 600; font-size: 13.5px; margin-bottom: 6px; }
+  #tip .t-spell { margin-top: 8px; }
+  #tip .t-spell:first-of-type { margin-top: 0; }
+  #tip .t-name { font-weight: 600; }
+  #tip .t-tag {
+    display: inline-block; font-size: 11px; line-height: 1.4; padding: 0 5px;
+    margin-left: 6px; border: 1px solid #8c959f; border-radius: 3px; color: #57606a;
+  }
+  #tip .t-tag.int { border-color: #cf222e; color: #cf222e; }
+  #tip .t-desc { color: #57606a; font-size: 12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>MDT 路线查看</h1>
+  <textarea id="input" placeholder="粘贴 MDT 导出串（!~MDT2~ 开头）" spellcheck="false"></textarea>
+  <div class="bar">
+    <button id="btn">查看</button>
+    <span class="hint">粘贴后点击查看；鼠标悬停怪物名显示技能</span>
+    <span class="err" id="err"></span>
+  </div>
+  <div id="out"></div>
+</div>
+<div id="tip"></div>
+
+<script>
+"use strict";
+const $ = (sel) => document.querySelector(sel);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g,
+  (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// ---------------------------------------------------------------------------
+// mini CBOR 解码器（WoW C_EncodingUtil.SerializeCBOR 输出的子集）
+// 注意：WoW 的字符串字段与 map key 均为 bytes 类型，需转 UTF-8；数字 key 为整数
+// ---------------------------------------------------------------------------
+function cborDecode(u8) {
+  let p = 0;
+  const td = new TextDecoder();
+
+  function readUint(ai) {
+    if (ai < 24) return ai;
+    if (ai === 24) return u8[p++];
+    if (ai === 25) { const v = (u8[p] << 8) | u8[p + 1]; p += 2; return v; }
+    if (ai === 26) { const v = u8[p] * 16777216 + ((u8[p + 1] << 16) | (u8[p + 2] << 8) | u8[p + 3]); p += 4; return v; }
+    if (ai === 27) {
+      const v = u8[p] * 72057594037927940 + u8[p + 1] * 281474976710656 + u8[p + 2] * 1099511627776
+        + u8[p + 3] * 4294967296 + ((u8[p + 4] << 24) | (u8[p + 5] << 16) | (u8[p + 6] << 8) | u8[p + 7]);
+      p += 8; return v;
+    }
+    throw new Error("不支持的 CBOR additional info " + ai);
+  }
+  const fromBytes = (v) => (v instanceof Uint8Array ? td.decode(v) : v);
+
+  function readItem() {
+    const ib = u8[p++];
+    const mt = ib >> 5, ai = ib & 0x1f;
+    if (mt === 0) return readUint(ai);
+    if (mt === 1) return -1 - readUint(ai);
+    if (mt === 2 || mt === 3) {
+      const n = readUint(ai);
+      const v = u8.subarray(p, p + n); p += n;
+      return mt === 2 ? v : td.decode(v);
+    }
+    if (mt === 4) {
+      const n = ai === 31 ? -1 : readUint(ai);
+      const out = [];
+      if (n === -1) { while (u8[p] !== 0xff) out.push(readItem()); p++; }
+      else for (let i = 0; i < n; i++) out.push(readItem());
+      return out;
+    }
+    if (mt === 5) {
+      const n = ai === 31 ? -1 : readUint(ai);
+      const out = {};
+      const put = (k, v) => {
+        const ks = fromBytes(k);
+        out[typeof ks === "number" ? String(ks) : ks] = fromBytes(v);
+      };
+      if (n === -1) { while (u8[p] !== 0xff) { const k = readItem(); put(k, readItem()); } p++; }
+      else for (let i = 0; i < n; i++) { const k = readItem(); put(k, readItem()); }
+      return out;
+    }
+    if (mt === 7) {
+      if (ai === 20) return false;
+      if (ai === 21) return true;
+      if (ai === 22) return null;
+    }
+    throw new Error("不支持的 CBOR major type " + mt);
+  }
+
+  const v = readItem();
+  if (p !== u8.length) throw new Error("CBOR 有未消费的尾随字节");
+  return v;
+}
+
+// 解码链：!~MDT2~ → base64 → raw deflate → CBOR
+async function decodeMdt2(str) {
+  const PREFIX = "!~MDT2~";
+  if (!str.startsWith(PREFIX)) throw new Error("仅支持 !~MDT2~ 新版导出格式（旧版 ! 开头请用新版 MDT 重新导出）");
+  const b64 = str.slice(PREFIX.length).replace(/\s+/g, "");
+  const bin = atob(b64);
+  const u8 = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+  const stream = new DecompressionStream("deflate-raw");
+  const resp = new Response(new Blob([u8]).stream().pipeThrough(stream));
+  const raw = new Uint8Array(await resp.arrayBuffer());
+  return cborDecode(raw);
+}
+
+// ---------------------------------------------------------------------------
+// 数据
+// ---------------------------------------------------------------------------
+const state = {
+  enemyMap: {},                        // dungeonIdx -> { total, en, e: { enemyIdx: [enName, count] } }
+  zh: {},                              // mobEn -> mobZh
+  dungeonZh: {},                       // dungeonEn -> dungeonZh
+  spells: {},                          // mobEn -> [{ spellName, tags, description }]
+  route: null,                         // 解码出的 preset
+};
+
+async function loadData() {
+  const res = await fetch("data.json", { cache: "no-cache" });
+  if (!res.ok) throw new Error("HTTP " + res.status);
+  const data = await res.json();
+  state.enemyMap = data.enemyMap || {};
+  for (const r of data.rows || []) {
+    state.zh[r.mobEn] = r.mobZh || r.mobEn;
+    state.dungeonZh[r.dungeonEn] = r.dungeonZh || r.dungeonEn;
+    (state.spells[r.mobEn] = state.spells[r.mobEn] || []).push({
+      name: r.spellName || r.spellNameEn,
+      int: !!r.interruptible, magic: !!r.isMagic, enrage: !!r.isEnrage,
+      bleed: !!r.isBleed, poison: !!r.isPoison, disease: !!r.isDisease, curse: !!r.isCurse,
+      desc: r.description || r.descriptionEn || "",
+    });
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 渲染
+// ---------------------------------------------------------------------------
+function tagHtml(s) {
+  const tags = [];
+  if (s.int) tags.push(["打断", "int"]);
+  if (s.magic) tags.push(["魔法"]);
+  if (s.enrage) tags.push(["激怒"]);
+  if (s.bleed) tags.push(["流血"]);
+  if (s.poison) tags.push(["中毒"]);
+  if (s.disease) tags.push(["疾病"]);
+  if (s.curse) tags.push(["诅咒"]);
+  return tags.map((t) => `<span class="t-tag${t[1] ? " " + t[1] : ""}">${t[0]}</span>`).join("");
+}
+
+function render() {
+  const route = state.route;
+  const idx = String(route.value.currentDungeonIdx);
+  const dmap = state.enemyMap[idx];
+  if (!dmap) {
+    $("#out").innerHTML = `<div class="err">路线副本（MDT index ${esc(idx)}）不在当前赛季数据中</div>`;
+    return;
+  }
+  const pulls = route.value.pulls || [];
+  const lmon = (route.lmonitor && route.lmonitor.pulls) || [];
+
+  // 汇总进度
+  let totalForces = 0;
+  const pullHtml = pulls.map((pull, i) => {
+    const mobs = [];
+    let forces = 0, isBossPull = true;
+    for (const key of Object.keys(pull)) {
+      if (key === "color") continue;
+      const e = dmap.e[key];
+      if (!e) continue;                     // 索引缺失（数据版本差异）时跳过
+      const [name, count] = e;
+      const clones = pull[key].length;
+      forces += count * clones;
+      if (count > 0) isBossPull = false;    // pull 内全部 count=0 → boss pull
+      mobs.push({ name, clones, count });
+    }
+    totalForces += forces;
+    const color = pull.color || "";
+    const label = lmon[i] && lmon[i].name ? lmon[i].name : ("Pull " + (i + 1));
+    const mobHtml = mobs.map((m) =>
+      `<span class="mob${m.count === 0 ? " boss" : ""}" data-mob="${esc(m.name)}">` +
+      `${esc(state.zh[m.name] || m.name)}${m.clones > 1 ? ` <span class="cnt">×${m.clones}</span>` : ""}</span>`
+    ).join("");
+    return `<div class="pull">` +
+      `<div class="pull-head">` +
+      `<span class="no">${esc(label)}</span>` +
+      (isBossPull ? `<span class="hint">Boss</span>` : "") +
+      `<span class="forces">${color ? `<span class="swatch" style="background:#${esc(color)}"></span>` : ""}${forces > 0 ? forces + " 进度" : ""}</span>` +
+      `</div><div class="mobs">${mobHtml}</div></div>`;
+  }).join("");
+
+  const dungeonName = zhDungeon(dmap.en);
+  $("#out").innerHTML =
+    `<div class="summary">` +
+    `<b>${esc(route.text || "未命名路线")}</b>` +
+    `<span>${esc(dungeonName)}</span>` +
+    `<span>难度 +${esc(route.difficulty ?? "?")}</span>` +
+    `<span>进度 ${totalForces}/${dmap.total}</span>` +
+    `</div>` + pullHtml;
+}
+
+// 副本中文名：enemyMap 只有英文名，从 rows 建立的映射里取，缺失时回退英文名
+function zhDungeon(en) {
+  return state.dungeonZh[en] || en;
+}
+
+// 技能浮动框
+const tip = $("#tip");
+document.addEventListener("mouseover", (e) => {
+  const el = e.target.closest(".mob");
+  if (!el || !state.route) return;
+  const enName = el.getAttribute("data-mob");
+  const spells = state.spells[enName];
+  if (!spells || !spells.length) {
+    tip.innerHTML = `<div class="t-mob">${esc(state.zh[enName] || enName)}</div><div class="t-desc">无技能数据</div>`;
+  } else {
+    tip.innerHTML = `<div class="t-mob">${esc(state.zh[enName] || enName)}</div>` +
+      spells.map((s) =>
+        `<div class="t-spell"><span class="t-name">${esc(s.name)}</span>${tagHtml(s)}` +
+        (s.desc ? `<div class="t-desc">${esc(s.desc)}</div>` : "")
+      ).join("");
+  }
+  tip.style.display = "block";
+  positionTip(e);
+});
+document.addEventListener("mousemove", (e) => {
+  if (tip.style.display === "block") positionTip(e);
+});
+document.addEventListener("mouseout", (e) => {
+  if (e.target.closest && e.target.closest(".mob")) tip.style.display = "none";
+});
+
+function positionTip(e) {
+  const pad = 14;
+  let x = e.clientX + pad, y = e.clientY + pad;
+  const r = tip.getBoundingClientRect();
+  if (x + r.width > innerWidth - 8) x = e.clientX - r.width - pad;
+  if (y + r.height > innerHeight - 8) y = e.clientY - r.height - pad;
+  tip.style.left = Math.max(8, x) + "px";
+  tip.style.top = Math.max(8, y) + "px";
+}
+
+// ---------------------------------------------------------------------------
+// 入口
+// ---------------------------------------------------------------------------
+async function go() {
+  const err = $("#err");
+  err.textContent = "";
+  try {
+    const s = $("#input").value.trim();
+    if (!s) return;
+    state.route = await decodeMdt2(s);
+    render();
+  } catch (e) {
+    $("#out").innerHTML = "";
+    err.textContent = "解码失败：" + (e.message || e);
+  }
+}
+
+$("#btn").addEventListener("click", go);
+$("#input").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) go();
+});
+
+(async function init() {
+  try {
+    await loadData();
+  } catch (e) {
+    $("#err").textContent = "data.json 加载失败：" + e.message;
+  }
+})();
+</script>
+</body>
+</html>

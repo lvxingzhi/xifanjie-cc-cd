@@ -86,10 +86,27 @@ def build_data(dungeons: list[DungeonData], spell_data: dict, mdt_sha: str) -> d
         if name in dungeon_map:  # 只有有数据的副本计入赛季
             seasons.setdefault(d.season, []).append(sanitize(d.english_name))
 
+    # MDT 路线导入串的索引映射（route.html 用）：
+    # dungeonIndex -> { 副本总进度, enemyIdx -> [英文名, 进度count] }
+    # Boss 的 count 为 0；中文名由前端从 rows 的 mobEn 反查
+    enemy_map: dict[str, dict] = {}
+    for d in dungeons:
+        name = sanitize(d.name_cn or d.english_name)
+        if name not in dungeon_map:  # 跳过无技能数据的副本（与上面保持一致）
+            continue
+        enemies = {
+            str(i + 1): [sanitize(e.name), e.count]
+            for i, e in enumerate(d.enemies)
+        }
+        enemy_map[str(d.dungeon_index)] = {
+            "total": d.total_count, "en": sanitize(d.english_name), "e": enemies,
+        }
+
     return {
         "seasons": seasons,
         "dungeons": list(dungeon_map.values()),
         "rows": rows,
+        "enemyMap": enemy_map,
         "total": len(rows),
         "builtAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "mdtSha": mdt_sha,
