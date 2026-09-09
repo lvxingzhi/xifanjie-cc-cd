@@ -135,17 +135,14 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g,
 function cborDecode(u8) {
   let p = 0;
   const td = new TextDecoder();
+  const dv = new DataView(u8.buffer, u8.byteOffset, u8.byteLength);
 
   function readUint(ai) {
     if (ai < 24) return ai;
     if (ai === 24) return u8[p++];
-    if (ai === 25) { const v = (u8[p] << 8) | u8[p + 1]; p += 2; return v; }
-    if (ai === 26) { const v = u8[p] * 16777216 + ((u8[p + 1] << 16) | (u8[p + 2] << 8) | u8[p + 3]); p += 4; return v; }
-    if (ai === 27) {
-      const v = u8[p] * 72057594037927940 + u8[p + 1] * 281474976710656 + u8[p + 2] * 1099511627776
-        + u8[p + 3] * 4294967296 + ((u8[p + 4] << 24) | (u8[p + 5] << 16) | (u8[p + 6] << 8) | u8[p + 7]);
-      p += 8; return v;
-    }
+    if (ai === 25) { const v = dv.getUint16(p); p += 2; return v; }
+    if (ai === 26) { const v = dv.getUint32(p); p += 4; return v; }
+    if (ai === 27) { const v = Number(dv.getBigUint64(p)); p += 8; return v; }
     throw new Error("不支持的 CBOR additional info " + ai);
   }
   const fromBytes = (v) => (v instanceof Uint8Array ? td.decode(v) : v);
@@ -182,8 +179,19 @@ function cborDecode(u8) {
       if (ai === 20) return false;
       if (ai === 21) return true;
       if (ai === 22) return null;
+      // 浮点数（标注旋转角度等，出现在 objects 自由绘图里）
+      if (ai === 25) { const v = halfToFloat(dv.getUint16(p)); p += 2; return v; }
+      if (ai === 26) { const v = dv.getFloat32(p); p += 4; return v; }
+      if (ai === 27) { const v = dv.getFloat64(p); p += 8; return v; }
     }
     throw new Error("不支持的 CBOR major type " + mt);
+  }
+
+  function halfToFloat(h) {
+    const s = (h & 0x8000) >> 15, e = (h & 0x7c00) >> 10, f = h & 0x03ff;
+    if (e === 0) return (s ? -1 : 1) * Math.pow(2, -14) * (f / 1024);
+    if (e === 0x1f) return f ? NaN : (s ? -Infinity : Infinity);
+    return (s ? -1 : 1) * Math.pow(2, e - 15) * (1 + f / 1024);
   }
 
   const v = readItem();
