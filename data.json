@@ -6952,7 +6952,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightgorged Lasher",
+      "mobZh": "光噬鞭笞者",
       "mobEn": "Lightgorged Lasher",
       "npcId": "245345",
       "creatureType": "Elemental",
@@ -6975,7 +6975,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightgorged Lasher",
+      "mobZh": "光噬鞭笞者",
       "mobEn": "Lightgorged Lasher",
       "npcId": "245345",
       "creatureType": "Elemental",
@@ -6998,7 +6998,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lasher",
+      "mobZh": "鞭笞者",
       "mobEn": "Lasher",
       "npcId": "245410",
       "creatureType": "Elemental",
@@ -7021,7 +7021,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Underbrush Stalker",
+      "mobZh": "灌林追猎者",
       "mobEn": "Underbrush Stalker",
       "npcId": "245339",
       "creatureType": "Humanoid",
@@ -7044,7 +7044,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Underbrush Stalker",
+      "mobZh": "灌林追猎者",
       "mobEn": "Underbrush Stalker",
       "npcId": "245339",
       "creatureType": "Humanoid",
@@ -7067,7 +7067,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Underbrush Stalker",
+      "mobZh": "灌林追猎者",
       "mobEn": "Underbrush Stalker",
       "npcId": "245339",
       "creatureType": "Humanoid",
@@ -7090,7 +7090,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Virid Grovekeeper",
+      "mobZh": "翠绿林地守护者",
       "mobEn": "Virid Grovekeeper",
       "npcId": "245346",
       "creatureType": "Humanoid",
@@ -7113,7 +7113,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Virid Grovekeeper",
+      "mobZh": "翠绿林地守护者",
       "mobEn": "Virid Grovekeeper",
       "npcId": "245346",
       "creatureType": "Humanoid",
@@ -7136,7 +7136,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Virid Grovekeeper",
+      "mobZh": "翠绿林地守护者",
       "mobEn": "Virid Grovekeeper",
       "npcId": "245346",
       "creatureType": "Humanoid",
@@ -7159,7 +7159,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Sporeblight Belcher",
+      "mobZh": "孢荒喷射者",
       "mobEn": "Sporeblight Belcher",
       "npcId": "254850",
       "creatureType": "Elemental",
@@ -7182,7 +7182,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Sporeblight Belcher",
+      "mobZh": "孢荒喷射者",
       "mobEn": "Sporeblight Belcher",
       "npcId": "254850",
       "creatureType": "Elemental",
@@ -7205,7 +7205,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Sporeblight Belcher",
+      "mobZh": "孢荒喷射者",
       "mobEn": "Sporeblight Belcher",
       "npcId": "254850",
       "creatureType": "Elemental",
@@ -7228,7 +7228,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Sporeblight Belcher",
+      "mobZh": "孢荒喷射者",
       "mobEn": "Sporeblight Belcher",
       "npcId": "254850",
       "creatureType": "Elemental",
@@ -7251,7 +7251,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Sporeblight Belcher",
+      "mobZh": "孢荒喷射者",
       "mobEn": "Sporeblight Belcher",
       "npcId": "254850",
       "creatureType": "Elemental",
@@ -7274,7 +7274,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Sporeblight Belcher",
+      "mobZh": "孢荒喷射者",
       "mobEn": "Sporeblight Belcher",
       "npcId": "254850",
       "creatureType": "Elemental",
@@ -7297,7 +7297,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Radiant Spellsower",
+      "mobZh": "光耀播法者",
       "mobEn": "Radiant Spellsower",
       "npcId": "245336",
       "creatureType": "Humanoid",
@@ -7320,7 +7320,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Radiant Spellsower",
+      "mobZh": "光耀播法者",
       "mobEn": "Radiant Spellsower",
       "npcId": "245336",
       "creatureType": "Humanoid",
@@ -7343,7 +7343,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Radiant Spellsower",
+      "mobZh": "光耀播法者",
       "mobEn": "Radiant Spellsower",
       "npcId": "245336",
       "creatureType": "Humanoid",
@@ -7366,7 +7366,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Radiant Spellsower",
+      "mobZh": "光耀播法者",
       "mobEn": "Radiant Spellsower",
       "npcId": "245336",
       "creatureType": "Humanoid",
@@ -7389,7 +7389,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightfeather Petalwing",
+      "mobZh": "光羽瓣翼鸟",
       "mobEn": "Lightfeather Petalwing",
       "npcId": "245484",
       "creatureType": "Elemental",
@@ -7412,7 +7412,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightfeather Petalwing",
+      "mobZh": "光羽瓣翼鸟",
       "mobEn": "Lightfeather Petalwing",
       "npcId": "245484",
       "creatureType": "Elemental",
@@ -7435,7 +7435,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightfeather Petalwing",
+      "mobZh": "光羽瓣翼鸟",
       "mobEn": "Lightfeather Petalwing",
       "npcId": "245484",
       "creatureType": "Elemental",
@@ -7458,7 +7458,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Thorny Saptor",
+      "mobZh": "多刺的迅叶龙",
       "mobEn": "Thorny Saptor",
       "npcId": "245473",
       "creatureType": "Elemental",
@@ -7481,7 +7481,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Thorny Saptor",
+      "mobZh": "多刺的迅叶龙",
       "mobEn": "Thorny Saptor",
       "npcId": "245473",
       "creatureType": "Elemental",
@@ -7504,7 +7504,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Thorny Saptor",
+      "mobZh": "多刺的迅叶龙",
       "mobEn": "Thorny Saptor",
       "npcId": "245473",
       "creatureType": "Elemental",
@@ -7527,7 +7527,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Thorny Saptor",
+      "mobZh": "多刺的迅叶龙",
       "mobEn": "Thorny Saptor",
       "npcId": "245473",
       "creatureType": "Elemental",
@@ -7550,7 +7550,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Thorny Saptor",
+      "mobZh": "多刺的迅叶龙",
       "mobEn": "Thorny Saptor",
       "npcId": "245473",
       "creatureType": "Elemental",
@@ -7573,7 +7573,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Thorny Saptor",
+      "mobZh": "多刺的迅叶龙",
       "mobEn": "Thorny Saptor",
       "npcId": "245473",
       "creatureType": "Elemental",
@@ -7596,7 +7596,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Thorny Saptor",
+      "mobZh": "多刺的迅叶龙",
       "mobEn": "Thorny Saptor",
       "npcId": "245473",
       "creatureType": "Elemental",
@@ -7619,7 +7619,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Thorny Saptor",
+      "mobZh": "多刺的迅叶龙",
       "mobEn": "Thorny Saptor",
       "npcId": "245473",
       "creatureType": "Elemental",
@@ -7642,7 +7642,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Thorny Saptor",
+      "mobZh": "多刺的迅叶龙",
       "mobEn": "Thorny Saptor",
       "npcId": "245473",
       "creatureType": "Elemental",
@@ -7665,7 +7665,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spineshield Beetle",
+      "mobZh": "脊盾甲虫",
       "mobEn": "Spineshield Beetle",
       "npcId": "245527",
       "creatureType": "Beast",
@@ -7688,7 +7688,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spineshield Beetle",
+      "mobZh": "脊盾甲虫",
       "mobEn": "Spineshield Beetle",
       "npcId": "245527",
       "creatureType": "Beast",
@@ -7711,7 +7711,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spineshield Beetle",
+      "mobZh": "脊盾甲虫",
       "mobEn": "Spineshield Beetle",
       "npcId": "245527",
       "creatureType": "Beast",
@@ -7734,7 +7734,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spineshield Beetle",
+      "mobZh": "脊盾甲虫",
       "mobEn": "Spineshield Beetle",
       "npcId": "245527",
       "creatureType": "Beast",
@@ -7757,7 +7757,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Leafy Grovecrawler",
+      "mobZh": "多叶林莽爬行者",
       "mobEn": "Leafy Grovecrawler",
       "npcId": "245460",
       "creatureType": "Elemental",
@@ -7780,7 +7780,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Leafy Grovecrawler",
+      "mobZh": "多叶林莽爬行者",
       "mobEn": "Leafy Grovecrawler",
       "npcId": "245460",
       "creatureType": "Elemental",
@@ -7803,7 +7803,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Leafy Grovecrawler",
+      "mobZh": "多叶林莽爬行者",
       "mobEn": "Leafy Grovecrawler",
       "npcId": "245460",
       "creatureType": "Elemental",
@@ -7826,7 +7826,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Overgrown Hydra",
+      "mobZh": "长得过大的多头花",
       "mobEn": "Overgrown Hydra",
       "npcId": "245513",
       "creatureType": "Elemental",
@@ -7849,7 +7849,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Overgrown Hydra",
+      "mobZh": "长得过大的多头花",
       "mobEn": "Overgrown Hydra",
       "npcId": "245513",
       "creatureType": "Elemental",
@@ -7872,7 +7872,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Overgrown Hydra",
+      "mobZh": "长得过大的多头花",
       "mobEn": "Overgrown Hydra",
       "npcId": "245513",
       "creatureType": "Elemental",
@@ -7895,7 +7895,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Overgrown Hydra",
+      "mobZh": "长得过大的多头花",
       "mobEn": "Overgrown Hydra",
       "npcId": "245513",
       "creatureType": "Elemental",
@@ -7918,7 +7918,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Luminous Thornmaw",
+      "mobZh": "发光的棘喉兽",
       "mobEn": "Luminous Thornmaw",
       "npcId": "246871",
       "creatureType": "Elemental",
@@ -7941,7 +7941,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Luminous Thornmaw",
+      "mobZh": "发光的棘喉兽",
       "mobEn": "Luminous Thornmaw",
       "npcId": "246871",
       "creatureType": "Elemental",
@@ -7964,7 +7964,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Luminous Thornmaw",
+      "mobZh": "发光的棘喉兽",
       "mobEn": "Luminous Thornmaw",
       "npcId": "246871",
       "creatureType": "Elemental",
@@ -7987,7 +7987,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Luminous Thornmaw",
+      "mobZh": "发光的棘喉兽",
       "mobEn": "Luminous Thornmaw",
       "npcId": "246871",
       "creatureType": "Elemental",
@@ -8010,7 +8010,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Meittik",
+      "mobZh": "梅提克",
       "mobEn": "Meittik",
       "npcId": "243028",
       "creatureType": "Humanoid",
@@ -8033,7 +8033,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Meittik",
+      "mobZh": "梅提克",
       "mobEn": "Meittik",
       "npcId": "243028",
       "creatureType": "Humanoid",
@@ -8056,7 +8056,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Meittik",
+      "mobZh": "梅提克",
       "mobEn": "Meittik",
       "npcId": "243028",
       "creatureType": "Humanoid",
@@ -8079,7 +8079,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Meittik",
+      "mobZh": "梅提克",
       "mobEn": "Meittik",
       "npcId": "243028",
       "creatureType": "Humanoid",
@@ -8102,7 +8102,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Meittik",
+      "mobZh": "梅提克",
       "mobEn": "Meittik",
       "npcId": "243028",
       "creatureType": "Humanoid",
@@ -8125,7 +8125,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Kezkitt",
+      "mobZh": "科兹齐特",
       "mobEn": "Kezkitt",
       "npcId": "243029",
       "creatureType": "Humanoid",
@@ -8148,7 +8148,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Kezkitt",
+      "mobZh": "科兹齐特",
       "mobEn": "Kezkitt",
       "npcId": "243029",
       "creatureType": "Humanoid",
@@ -8171,7 +8171,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Kezkitt",
+      "mobZh": "科兹齐特",
       "mobEn": "Kezkitt",
       "npcId": "243029",
       "creatureType": "Humanoid",
@@ -8194,7 +8194,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Kezkitt",
+      "mobZh": "科兹齐特",
       "mobEn": "Kezkitt",
       "npcId": "243029",
       "creatureType": "Humanoid",
@@ -8217,7 +8217,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Kezkitt",
+      "mobZh": "科兹齐特",
       "mobEn": "Kezkitt",
       "npcId": "243029",
       "creatureType": "Humanoid",
@@ -8240,7 +8240,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lekshi",
+      "mobZh": "莱克希",
       "mobEn": "Lekshi",
       "npcId": "243030",
       "creatureType": "Humanoid",
@@ -8263,7 +8263,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lekshi",
+      "mobZh": "莱克希",
       "mobEn": "Lekshi",
       "npcId": "243030",
       "creatureType": "Humanoid",
@@ -8286,7 +8286,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lekshi",
+      "mobZh": "莱克希",
       "mobEn": "Lekshi",
       "npcId": "243030",
       "creatureType": "Humanoid",
@@ -8309,7 +8309,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lekshi",
+      "mobZh": "莱克希",
       "mobEn": "Lekshi",
       "npcId": "243030",
       "creatureType": "Humanoid",
@@ -8332,7 +8332,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lekshi",
+      "mobZh": "莱克希",
       "mobEn": "Lekshi",
       "npcId": "243030",
       "creatureType": "Humanoid",
@@ -8355,7 +8355,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lekshi",
+      "mobZh": "莱克希",
       "mobEn": "Lekshi",
       "npcId": "243030",
       "creatureType": "Humanoid",
@@ -8378,7 +8378,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lekshi",
+      "mobZh": "莱克希",
       "mobEn": "Lekshi",
       "npcId": "243030",
       "creatureType": "Humanoid",
@@ -8401,7 +8401,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lekshi",
+      "mobZh": "莱克希",
       "mobEn": "Lekshi",
       "npcId": "243030",
       "creatureType": "Humanoid",
@@ -8424,7 +8424,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8447,7 +8447,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8470,7 +8470,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8493,7 +8493,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8516,7 +8516,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8539,7 +8539,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8562,7 +8562,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8585,7 +8585,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8608,7 +8608,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8631,7 +8631,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8654,7 +8654,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8677,7 +8677,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8700,7 +8700,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8723,7 +8723,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8746,7 +8746,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8769,7 +8769,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8792,7 +8792,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightwarden Ruia",
+      "mobZh": "护光者鲁伊亚",
       "mobEn": "Lightwarden Ruia",
       "npcId": "245912",
       "creatureType": "Humanoid",
@@ -8815,7 +8815,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -8838,7 +8838,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -8861,7 +8861,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -8884,7 +8884,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -8907,7 +8907,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -8930,7 +8930,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -8953,7 +8953,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -8976,7 +8976,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -8999,7 +8999,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -9022,7 +9022,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -9045,7 +9045,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -9068,7 +9068,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ziekket",
+      "mobZh": "兹欧凯特",
       "mobEn": "Ziekket",
       "npcId": "247676",
       "creatureType": "Elemental",
@@ -9091,7 +9091,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9114,7 +9114,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9137,7 +9137,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9160,7 +9160,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9183,7 +9183,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9206,7 +9206,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9229,7 +9229,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9252,7 +9252,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9275,7 +9275,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9298,7 +9298,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9321,7 +9321,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9344,7 +9344,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Ikuzz the Light Hunter",
+      "mobZh": "圣光猎手伊库兹",
       "mobEn": "Ikuzz the Light Hunter",
       "npcId": "244887",
       "creatureType": "Elemental",
@@ -9367,7 +9367,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightblossom",
+      "mobZh": "光明之花",
       "mobEn": "Lightblossom",
       "npcId": "244528",
       "creatureType": "Not specified",
@@ -9390,7 +9390,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spirit Bear",
+      "mobZh": "幽灵熊",
       "mobEn": "Spirit Bear",
       "npcId": "246367",
       "creatureType": "Beast",
@@ -9413,7 +9413,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spirit Bear",
+      "mobZh": "幽灵熊",
       "mobEn": "Spirit Bear",
       "npcId": "246367",
       "creatureType": "Beast",
@@ -9436,7 +9436,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spirit Bear",
+      "mobZh": "幽灵熊",
       "mobEn": "Spirit Bear",
       "npcId": "246367",
       "creatureType": "Beast",
@@ -9459,7 +9459,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spirit Bear",
+      "mobZh": "幽灵熊",
       "mobEn": "Spirit Bear",
       "npcId": "246367",
       "creatureType": "Beast",
@@ -9482,7 +9482,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spirit Moonkin",
+      "mobZh": "幽灵枭兽",
       "mobEn": "Spirit Moonkin",
       "npcId": "246371",
       "creatureType": "Beast",
@@ -9505,7 +9505,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spirit Moonkin",
+      "mobZh": "幽灵枭兽",
       "mobEn": "Spirit Moonkin",
       "npcId": "246371",
       "creatureType": "Beast",
@@ -9528,7 +9528,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spirit Moonkin",
+      "mobZh": "幽灵枭兽",
       "mobEn": "Spirit Moonkin",
       "npcId": "246371",
       "creatureType": "Beast",
@@ -9551,7 +9551,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Spirit Moonkin",
+      "mobZh": "幽灵枭兽",
       "mobEn": "Spirit Moonkin",
       "npcId": "246371",
       "creatureType": "Beast",
@@ -9574,7 +9574,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightspawn Lasher",
+      "mobZh": "光诞鞭笞者",
       "mobEn": "Lightspawn Lasher",
       "npcId": "247755",
       "creatureType": "Elemental",
@@ -9597,7 +9597,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightspawn Lasher",
+      "mobZh": "光诞鞭笞者",
       "mobEn": "Lightspawn Lasher",
       "npcId": "247755",
       "creatureType": "Elemental",
@@ -9620,7 +9620,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Lightspawn Lasher",
+      "mobZh": "光诞鞭笞者",
       "mobEn": "Lightspawn Lasher",
       "npcId": "247755",
       "creatureType": "Elemental",
@@ -9643,7 +9643,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Potatoad Matriarch",
+      "mobZh": "薯身蟾主母",
       "mobEn": "Potatoad Matriarch",
       "npcId": "249756",
       "creatureType": "Elemental",
@@ -9666,7 +9666,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Potatoad Matriarch",
+      "mobZh": "薯身蟾主母",
       "mobEn": "Potatoad Matriarch",
       "npcId": "249756",
       "creatureType": "Elemental",
@@ -9689,7 +9689,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Potatoad Matriarch",
+      "mobZh": "薯身蟾主母",
       "mobEn": "Potatoad Matriarch",
       "npcId": "249756",
       "creatureType": "Elemental",
@@ -9712,7 +9712,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Potatoad Matriarch",
+      "mobZh": "薯身蟾主母",
       "mobEn": "Potatoad Matriarch",
       "npcId": "249756",
       "creatureType": "Elemental",
@@ -9735,7 +9735,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Potatoad Matriarch",
+      "mobZh": "薯身蟾主母",
       "mobEn": "Potatoad Matriarch",
       "npcId": "249756",
       "creatureType": "Elemental",
@@ -9758,7 +9758,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Potadpole Egg",
+      "mobZh": "薯身幼蟾卵",
       "mobEn": "Potadpole Egg",
       "npcId": "249783",
       "creatureType": "Beast",
@@ -9781,7 +9781,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Newborn Potadpole",
+      "mobZh": "新生的薯身幼蟾",
       "mobEn": "Newborn Potadpole",
       "npcId": "250202",
       "creatureType": "Elemental",
@@ -9804,7 +9804,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Newborn Potadpole",
+      "mobZh": "新生的薯身幼蟾",
       "mobEn": "Newborn Potadpole",
       "npcId": "250202",
       "creatureType": "Elemental",
@@ -9827,7 +9827,7 @@
     {
       "dungeonZh": "夺目谷",
       "dungeonEn": "The Blinding Vale",
-      "mobZh": "Bloodthorn Roots",
+      "mobZh": "血棘之根",
       "mobEn": "Bloodthorn Roots",
       "npcId": "253571",
       "creatureType": "Not specified",
@@ -20315,7 +20315,7 @@
     {
       "dungeonZh": "塞塔里斯神庙",
       "dungeonEn": "Temple of Sethraliss",
-      "mobZh": "Egg",
+      "mobZh": "卵",
       "mobEn": "Egg",
       "npcId": "263181",
       "creatureType": "Humanoid",
@@ -20338,7 +20338,7 @@
     {
       "dungeonZh": "塞塔里斯神庙",
       "dungeonEn": "Temple of Sethraliss",
-      "mobZh": "Egg",
+      "mobZh": "卵",
       "mobEn": "Egg",
       "npcId": "263181",
       "creatureType": "Humanoid",
@@ -23052,7 +23052,7 @@
     {
       "dungeonZh": "诸王之眠",
       "dungeonEn": "King's Rest",
-      "mobZh": "Thundering Totem",
+      "mobZh": "雷鸣图腾",
       "mobEn": "Thundering Totem",
       "npcId": "135761",
       "creatureType": "Totem",
@@ -23075,7 +23075,7 @@
     {
       "dungeonZh": "诸王之眠",
       "dungeonEn": "King's Rest",
-      "mobZh": "Thundering Totem",
+      "mobZh": "雷鸣图腾",
       "mobEn": "Thundering Totem",
       "npcId": "135761",
       "creatureType": "Totem",
@@ -41787,6 +41787,6 @@
     }
   },
   "total": 1727,
-  "builtAt": "2026-09-07T10:18:10+00:00",
-  "mdtSha": "1cbb06bab1bc3dbed091d1e1a5d2157e553c10a2"
+  "builtAt": "2026-09-10T07:18:47+00:00",
+  "mdtSha": "952d152a8694bbde8421dc14995522f853515886"
 }
