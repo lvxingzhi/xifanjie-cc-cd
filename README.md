@@ -68,4 +68,4 @@ python -m mdt_site --fetch --wowhead-workers 10   # Wowhead 并发数，默认 1
 
 - 数据提取自 [Nnoggie/MythicDungeonTools](https://github.com/Nnoggie/MythicDungeonTools)（GPL-2.0，只提取游戏数据，不并入本仓库代码）
 - 技能描述来自 Wowhead API
-- 站点仅供 WoW 玩家学习交流
+- 站点仅供 WoW 玩家学习交流.
